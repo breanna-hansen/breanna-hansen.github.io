@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 3.0rem;
   padding: 30px;
+  line-height: 48px;
 }
 h2 {
   font-size: 2.0rem;
@@ -37,4 +38,13 @@ footer {
 }
 a {
   color: #087CA7;
+}
+@media (max-width: 380px) {
+  #header-img {
+    float: none;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
