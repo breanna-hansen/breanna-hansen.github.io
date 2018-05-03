@@ -39,7 +39,7 @@ footer {
 a {
   color: #087CA7;
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   #header-img {
     float: none;
     padding: 10px;
