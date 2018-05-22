@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em)
+
   <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
   /* Delete these CSS comments after reading. */
   /* This main css file contains the default rules and is geared toward the small/phone view */
@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   text-align: center;
+  display: inline-flex;
 }
 
 header, nav, main, footer {
@@ -104,7 +105,9 @@ main h2 {
 main figure {
   margin: 0 0 .2rem 2%; width:96%;
 }
-main figure img {}
+main figure img {
+  display: hidden;
+}
 
 h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Times New Roman', serif;
@@ -145,7 +148,7 @@ article h3 {
   text-align: center;
 }
 
-.forecast {
+section.forecast {
   display: none;
 }
 .images {

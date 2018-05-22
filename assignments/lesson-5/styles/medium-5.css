@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 600px) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
@@ -8,7 +8,7 @@
     }
 
     section.forecast {
-      display: visible
+      display: visible;
   }
 }
 
@@ -18,40 +18,45 @@
 }
 
 header, nav, main, footer {
-  max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
   display: block;
 }
 
 header {
-  height: 100px;
+  height: 120px;
 }
+
 header h1 {
+  text-align: center;
+  width: 100%;
   font-size: 2.7rem;
   top: 15px;
   left: auto;
 }
 
 header .subheading, header h1, header img {
-  position: absolute;
+  position: static;
 }
 
 header img {
-  top: 15px;
-  left: auto;
+  position: relative;
+  top: 30px;
   float: left;
 }
 
 .fa-bars {
-  position: relative;
-  top: 20px;
+  display: none;
+  top: 60px;
   padding-right: 20px;
   float: right;
 }
 
 header .subheading {
   top: 55px;
-  width: 300px;
+  left: auto;
   font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
 }
 
 h2 {
@@ -94,17 +99,11 @@ main {
 main h2 {
 }
 main figure {
-  background-image: url('../images/rsz_sunny-day.png');
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 200px;
-  padding-left: 350px;
   float: left;
-  margin: 0 0 .2rem 2%; width:96%;
-  display: inline;
+  margin: 0 0 .2rem 2%; width:48%;
+  display: inline-block;
 }
 main figure img {
-  display: none;
 }
 
 h2, h3, h4, h5, h6 {
@@ -132,6 +131,7 @@ footer {
 }
 article {
   text-align: left;
+  clear: right;
 }
 article img {
   display: block;
@@ -144,10 +144,6 @@ table {
 }
 article h3 {
   text-align: center;
-}
-
-.forecast {
-  display: none;
 }
 .images {
   width: 90%;
