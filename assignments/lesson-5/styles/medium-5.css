@@ -1,11 +1,172 @@
-@media only screen and (min-width: 64em)
-
-  @media only screen and (min-width: ___________) {
+@media only screen and (min-width: 64em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
 
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
+    nav button {
+      display: hidden;
+    }
 
+    section.forecast {
+      display: visible
+  }
+}
+
+
+* {
+  flex-flow: row wrap;
+}
+
+header, nav, main, footer {
+  max-width: 1024px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  display: block;
+}
+
+header {
+  height: 100px;
+}
+header h1 {
+  font-size: 2.7rem;
+  top: 15px;
+  left: auto;
+}
+
+header .subheading, header h1, header img {
+  position: absolute;
+}
+
+header img {
+  top: 15px;
+  left: auto;
+  float: left;
+}
+
+.fa-bars {
+  position: relative;
+  top: 20px;
+  padding-right: 20px;
+  float: right;
+}
+
+header .subheading {
+  top: 55px;
+  width: 300px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.250rem;
+}
+nav {
+  background-color: #00487c;
+  width: 100%;
+}
+nav button {}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+nav ul li a {
+  display: inline;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+nav ul li.active a {
+  color: #ffd332;
+}
+nav ul li a:hover {
+  color: #c0c0c0;
+}
+
+main {
+}
+
+main h2 {
+}
+main figure {
+  background-image: url('../images/rsz_sunny-day.png');
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 200px;
+  padding-left: 350px;
+  float: left;
+  margin: 0 0 .2rem 2%; width:96%;
+  display: inline;
+}
+main figure img {
+  display: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-weight: 300;
+  color: #00487c;
+}
+.contact {
+  background-color: #c0c0c0;
+  padding: 10px;
+}
+.footer-bar {
+  padding: 10px;
+  background-color: #0080aa;
+}
+footer {
+  font-size: .8rem;
+}
+
+
+/* my css */
+.highlow p {
+  display: inline;
+  padding: 10px;
+}
+article {
+  text-align: left;
+}
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+table {
+  margin: auto;
+}
+article h3 {
+  text-align: center;
+}
+
+.forecast {
+  display: none;
+}
+.images {
+  width: 90%;
+}
+.weather-type {
+  font-size: 2.0rem;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 10px;
+}
+.current {
+  margin: auto;
+  display: table;
+}
+.img-article {
+  margin: auto;
+}
+.weather-summary {
+  display: inline;
+  float: right;
 }

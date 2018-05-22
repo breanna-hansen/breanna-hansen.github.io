@@ -12,6 +12,8 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header, nav, main, footer {
