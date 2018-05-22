@@ -1,4 +1,204 @@
 @media only screen and (min-width: 64em) {
 
+  nav button {
+    display: hidden;
+  }
 
+  section.forecast {
+    display: contents;
+    display: block;
+    clear: both;
+    padding-top: 5px;
+  }
+
+  * {
+    flex-flow: row wrap;
+  }
+
+  header, nav, main, footer {
+    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    display: block;
+  }
+
+  header {
+    height: 120px;
+    background-image: url('../images/rsz_blue-header-background.png');
+  }
+  header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    top: 15px;
+    left: 0px;
+  }
+
+  header .subheading, header h1, header img {
+    position: static;
+  }
+
+  header img {
+    position: relative;
+    top: 15;
+    left: 0;
+    float: left;
+  }
+
+  .fa-bars {
+    display: none;
+    top: 60px;
+    padding-right: 20px;
+    float: right;
+  }
+
+  header .subheading {
+    top: 55px;
+    left: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.250rem;
+  }
+  nav {
+    background-color: #00487c;
+    width: 100%;
+  }
+  nav button {}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul li a {
+    display: inline;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    color: #ffd332;
+  }
+  nav ul li a:hover {
+    color: #c0c0c0;
+  }
+
+  main {
+  }
+
+  .full-width {
+    width: 100%;
+    display: contents;
+  }
+
+  main h2 {
+  }
+  main figure {
+  }
+  main figure img {
+    display: none;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-weight: 300;
+    color: #00487c;
+  }
+  .contact {
+  }
+  .footer-bar {
+    padding: 10px;
+    background-color: #0080aa;
+  }
+  footer {
+    clear: both;
+    font-size: .8rem;
+  }
+
+
+  /* my css */
+  .highlow p {
+    display: block;
+    padding: 0 10px;
+    float: right;
+  }
+  article {
+    text-align: left;
+    clear: right;
+  }
+  article p {
+    width: 48%;
+    float: left;
+  }
+  article img {
+    display: inline-block;
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    float: right;
+  }
+  table {
+    margin: auto;
+  }
+  article h3 {
+    text-align: center;
+  }
+  .images {
+    width: 90%;
+  }
+  .weather-type {
+    font-size: 2.0rem;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 32px;
+    padding: 10px;
+    float: right;
+  }
+  .current {
+    margin: auto;
+    display: table;
+  }
+  .img-article {
+    margin: auto;
+  }
+  .weather-summary {
+    width: 48%;
+    display: inline;
+    float: right;
+  }
+  .weather-summary h3 {
+    margin: 0;
+  }
+
+  .current picture {
+    float: left;
+  }
+
+  .conditions {
+    display: block;
+    clear: both;
+  }
+  /*closing bracket */
+
+  tr img {
+    width: 20px;
+  }
+  td {
+    vertical-align: bottom;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .gray-fill {
+    background-color: #ececec;
+  }
 }
