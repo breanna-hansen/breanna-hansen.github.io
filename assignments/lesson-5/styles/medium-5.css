@@ -7,7 +7,9 @@
     }
 
     section.forecast {
-      display: visible;
+      display: contents;
+      display: block;
+      clear: right;
   }
 
 
@@ -119,24 +121,32 @@
     background-color: #0080aa;
   }
   footer {
+    clear: both;
     font-size: .8rem;
   }
 
 
   /* my css */
   .highlow p {
-    display: inline;
-    padding: 10px;
+    display: block;
+    padding: 0 10px;
+    float: right;
   }
   article {
     text-align: left;
     clear: right;
   }
+  article p {
+    width: 48%;
+    float: left;
+  }
   article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
     padding-bottom: 10px;
+    float: right;
   }
   table {
     margin: auto;
@@ -151,8 +161,9 @@
     font-size: 2.0rem;
     display: table-cell;
     vertical-align: middle;
-    line-height: 40px;
+    line-height: 32px;
     padding: 10px;
+    float: right;
   }
   .current {
     margin: auto;
@@ -162,12 +173,26 @@
     margin: auto;
   }
   .weather-summary {
+    width: 48%;
     display: inline;
     float: right;
   }
 
+  .current picture {
+    float: left;
+  }
 
+  .conditions {
+    display: block;
+    clear: both;
+  }
   /*closing bracket */
 
+  tr img {
+    width: 30px;
+  }
 
+  td {
+    background-color: #c0c0c0;
+  }
 }
