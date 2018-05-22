@@ -1,7 +1,6 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5em) {
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-
 
     nav button {
       display: hidden;
@@ -24,8 +23,6 @@ header, nav, main, footer {
 
 header {
   height: 120px;
-  display: inline;
-
 }
 
 header h1 {
