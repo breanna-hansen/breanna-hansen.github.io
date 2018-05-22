@@ -6,25 +6,25 @@
   * {
     box-sizing: border-box;
     margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center; /* changed text-align to center and logo moved to middle? */
+  text-align: center;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer {
   max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
   display: block;
 }
 
 header {
   background-color: #00487c;
-  opacity: 0.9;
-  background-image: url('../images/rsz_blue-header-background.png');
   color: #ffffff;
   width: 100%;
   position: relative;
@@ -33,13 +33,13 @@ header {
 header h1 {
   font-family: 'Arvo', 'Times New Roman', serif;
   font-weight: 300;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   color: #ffffff;
   margin: 0;
   padding: 0;
   font-weight: 300;
   top: 15px;
-  left: 85px;
+  left: 70px;
 }
 
 header .subheading, header h1, header img {
@@ -53,15 +53,16 @@ header img {
 
 .fa-bars {
   position: relative;
-  top: 15px;
+  top: 20px;
   padding-right: 20px;
   float: right;
 }
 
 header .subheading {
-  top: 50px;
-  left: 85px;
+  top: 45px;
+  left: 55px;
   width: 175px;
+  font-size: 0.9rem;
 }
 
 h2 {
@@ -101,8 +102,10 @@ main {
 
 main h2 {
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+main figure {
+  margin: 0 0 .2rem 2%; width:96%;
+}
+main figure img {}
 
 h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Times New Roman', serif;
@@ -130,6 +133,9 @@ footer {
 article {
   text-align: left;
 }
+article img {
+  text-align: center;
+}
 table {
   margin: auto;
 }
@@ -141,5 +147,19 @@ article h3 {
   display: none;
 }
 .images {
-  width: 100%;
+  width: 90%;
+}
+.weather-type {
+  font-size: 2.0rem;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 10px;
+}
+.current {
+  margin: auto;
+  display: table;
+}
+.img-article {
+  margin: auto;
 }

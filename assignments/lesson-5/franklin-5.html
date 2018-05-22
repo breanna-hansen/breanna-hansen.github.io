@@ -7,6 +7,7 @@
     <title></title>
     <meta name="description" content="">
     <link rel="stylesheet" href="styles/main-5.css">
+
   </head>
   <body>
 
@@ -28,26 +29,25 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
-
     <main>
       <h2>Page Title</h2>
       <figure>
-        <img src="images/rsz_cloudy-banner.jpg" alt="Partly Cloudy">
+        <img class="images" src="images/sunny-banner.jpeg" alt="Sunny Day">
       </figure>
       <section class="weather-summary">
         <h3>Weather Summary</h3>
+        <div class="current">
+          <span class="weather-type">Sunny</span>
+          <picture>
+            <img src="images/sunny-icon.PNG" alt="Sunny Icon">
+          </picture>
+        </div>
         <div class="highlow">
           <p>High: 90&deg;</p>
           <p>Low: 66&deg;</p>
         </div>
-        <div class="current">
-          Sunny
-          <picture>
-            <img src="images/#" alt="">
-          </picture>
-        </div>
         <div class="conditions">
-          <p>Precipitation: 0&deg;</p>
+          <p>Precipitation: 0&deg;F</p>
           <p>Wind Speed: 5 mph SW</p>
         </div>
       </section>
@@ -88,16 +88,17 @@
 
       <article>
         <h3>Franklin Breaks Record</h3>
-        <img src="">
         <p class="town-article">
+          This week's pollen count is up due to high winds.
         </p>
+        <img class="img-article" src="images/small-pollen.jpg" alt="Pollen and Allergens">
       </article>
 
     </main>
 
     <footer>
       <section class="contact">
-        WeatherView<br>
+        <strong>WeatherView</strong><br>
         999.999.9999<br>
         123 Main St. Anytown, US 99999<br>
         Google Map
