@@ -140,3 +140,6 @@ article h3 {
 .forecast {
   display: none;
 }
+.images {
+  width: 100%;
+}
