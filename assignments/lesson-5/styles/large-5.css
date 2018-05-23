@@ -113,7 +113,8 @@
   }
 
   .full-width {
-    display: contents;
+    display: block;
+    width: 100%;
   }
 
   main h2 {
@@ -152,6 +153,7 @@
     padding: 10px;
   }
   article p {
+    
     width: 45%;
     float: left;
   }

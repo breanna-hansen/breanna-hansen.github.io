@@ -24,6 +24,7 @@ header, nav, main, footer {
 }
 
 header {
+  background-image: url('../images/sunny-banner.jpeg');
   background-color: #00487c;
   color: #ffffff;
   width: 100%;
