@@ -18,7 +18,7 @@
   }
 
   header, nav, main, footer {
-    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     display: block;
   }
 
@@ -102,6 +102,9 @@
   }
 
   main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   main h2 {
@@ -141,6 +144,7 @@
   article {
     text-align: left;
     clear: right;
+    padding: 10px;
   }
   article p {
     width: 48%;
@@ -210,13 +214,14 @@
     width: 75px;
   }
   .forecast table {
-    width: 80%;
+    width: 100%;
     text-align: left;
   }
   .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
+    color: #000000;
   }
   .forecast td {
     padding: 5px 0px 5px 5px;

@@ -1,19 +1,21 @@
-@media only screen and (min-width: 37.5em)
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
-  /* Delete these CSS comments after reading. */
-  /* This main css file contains the default rules and is geared toward the small/phone view */
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
+<link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
   font-family: 'Open Sans', 'Helvetica', sans-serif;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 header, nav, main, footer {
@@ -25,7 +27,8 @@ header {
   background-color: #00487c;
   color: #ffffff;
   width: 100%;
-  height: 100px;
+  position: relative;
+  height: 75px;
 }
 header h1 {
   font-family: 'Arvo', 'Times New Roman', serif;
@@ -34,7 +37,6 @@ header h1 {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-weight: 300;
   top: 15px;
   left: 70px;
 }
@@ -49,10 +51,9 @@ header img {
 }
 
 .fa-bars {
-  position: relative;
+  position: absolute;
   top: 20px;
-  padding-right: 20px;
-  float: right;
+  left: 87%;
 }
 
 header .subheading {
@@ -84,6 +85,7 @@ nav ul li {
 nav ul li a {
   display: block;
   color: #ffffff;
+  text-align: center;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -96,13 +98,18 @@ nav ul li a:hover {
 
 main {
 }
+.full-width {
+  display: none;
+}
 
 main h2 {
 }
 main figure {
   margin: 0 0 .2rem 2%; width:96%;
 }
-main figure img {}
+main figure img {
+  display: hidden;
+}
 
 h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Times New Roman', serif;
@@ -110,15 +117,16 @@ h2, h3, h4, h5, h6 {
   color: #00487c;
 }
 .contact {
-  background-color: #c0c0c0;
+  background-color: #ececec;
   padding: 10px;
 }
 .footer-bar {
+  color: #ffffff;
   padding: 10px;
   background-color: #0080aa;
+  font-size: .8rem;
 }
 footer {
-  font-size: .8rem;
 }
 
 
@@ -134,7 +142,7 @@ article img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 table {
   margin: auto;
@@ -142,24 +150,518 @@ table {
 article h3 {
   text-align: center;
 }
-
-.forecast {
+a {
+  color: #0080aa;
+  text-decoration: none;
+}
+section.forecast {
   display: none;
 }
+
 .images {
   width: 90%;
 }
+
 .weather-type {
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   display: table-cell;
   vertical-align: middle;
-  line-height: 40px;
   padding: 10px;
 }
+
 .current {
   margin: auto;
   display: table;
 }
-.img-article {
-  margin: auto;
+
+.logo {
+  display: inline-block;
+}
+.logo img {
+  width: 55px;
+}
+#med-view {
+  display: none;
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 63.9em) {
+
+  /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+  nav button {
+    display: hidden;
+  }
+
+  section.forecast {
+    display: contents;
+    display: block;
+    clear: both;
+    padding-top: 5px;
+  }
+
+  * {
+    flex-flow: row wrap;
+  }
+
+  header, nav, main, footer {
+    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    display: block;
+  }
+
+  header {
+    height: 120px;
+    background-image: url('../images/rsz_blue-header-background.png');
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    top: 15px;
+    left: 0px;
+  }
+
+  header .subheading, header h1, header img {
+    position: static;
+  }
+
+  header img {
+    position: relative;
+    top: 15;
+    left: 0;
+    float: left;
+  }
+
+  .fa-bars {
+    display: none;
+    top: 60px;
+    padding-right: 20px;
+    float: right;
+  }
+
+  header .subheading {
+    top: 55px;
+    left: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.250rem;
+  }
+  nav {
+    background-color: #00487c;
+    width: 100%;
+  }
+  nav button {}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*might want to remove this later to see if stuff extends past */
+  }
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul li a {
+    display: inline;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    color: #ffd332;
+  }
+  nav ul li a:hover {
+    color: #c0c0c0;
+  }
+
+  main {
+  }
+
+  main h2 {
+  }
+  main figure {
+    float: left;
+    margin: 0 0 .2rem 2%; width:48%;
+    display: inline-block;
+  }
+  main figure img {
+    display: table-cell;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-weight: 300;
+    color: #00487c;
+  }
+  .contact {
+  }
+  .footer-bar {
+    padding: 10px;
+    background-color: #0080aa;
+  }
+  footer {
+    clear: both;
+    font-size: .8rem;
+  }
+
+
+  /* my css */
+  .highlow p {
+    display: block;
+    padding: 0 10px;
+    float: right;
+  }
+  article {
+    text-align: left;
+    clear: right;
+    padding: 10px;
+  }
+  article p {
+    width: 48%;
+    float: left;
+  }
+  article img {
+    display: inline-block;
+    width: 48%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    float: right;
+  }
+  table {
+    margin: auto;
+  }
+  article h3 {
+    text-align: center;
+  }
+  .images {
+    width: 90%;
+  }
+  .weather-type {
+    font-size: 2.0rem;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 32px;
+    padding: 10px;
+    float: right;
+  }
+  .current {
+    margin: auto;
+    display: table;
+  }
+  .img-article {
+    margin: auto;
+  }
+  .weather-summary {
+    width: 48%;
+    display: inline;
+    float: right;
+  }
+  .weather-summary h3 {
+    margin: 0;
+  }
+
+  .current picture {
+    float: left;
+  }
+
+  .conditions {
+    display: block;
+    clear: both;
+  }
+  /*closing bracket */
+
+  tr img {
+    width: 20px;
+  }
+  td {
+    vertical-align: bottom;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .logo img {
+    width: 75px;
+  }
+  .forecast table {
+    width: 80%;
+    text-align: left;
+  }
+  .forecast th {
+    padding: 5px 0px 5px 5px;
+    background-color: #ececec;
+    border-bottom: 1px solid #0080aa;
+  }
+  .forecast td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  .weather-summary table {
+    text-align: left;
+  }
+  .weather-summary td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+  #sl-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+
+  body {
+    width: 1024px;
+  }
+  nav button {
+    display: hidden;
+  }
+
+  section.forecast {
+    display: contents;
+    display: block;
+    clear: both;
+    padding-top: 5px;
+  }
+
+  * {
+    flex-flow: row wrap;
+  }
+
+  header, nav, main, footer {
+    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    display: block;
+  }
+
+  header {
+    width: 100%;
+    height: 90px;
+    background-image: url('../images/rsz_blue-header-background.png');
+    padding-top: 10px;
+  }
+  header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    top: 15px;
+    left: 0px;
+  }
+
+  header .subheading, header h1, header img {
+    position: static;
+  }
+
+  header img {
+    position: relative;
+    top: 15;
+    left: 0;
+    float: left;
+  }
+
+  .fa-bars {
+    display: none;
+    top: 60px;
+    padding-right: 20px;
+    float: right;
+  }
+
+  header .subheading {
+    top: 55px;
+    left: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.250rem;
+  }
+  nav {
+    background-color: #00487c;
+    width: 100%;
+  }
+  nav button {}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+  }
+  nav ul li a {
+    display: inline;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    color: #ffd332;
+  }
+  nav ul li a:hover {
+    color: #c0c0c0;
+  }
+
+  main {
+  }
+
+  .full-width {
+    display: contents;
+  }
+
+  main h2 {
+  }
+  main figure {
+  }
+  main figure img {
+    display: none;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Times New Roman', serif;
+    font-weight: 300;
+    color: #00487c;
+  }
+  .contact {
+  }
+  .footer-bar {
+    padding: 10px;
+    background-color: #0080aa;
+  }
+  footer {
+    clear: both;
+    font-size: .8rem;
+  }
+
+
+  /* my css */
+  .highlow p {
+    padding: 0 10px;
+    float: right;
+  }
+  article {
+    clear: right;
+    padding: 10px;
+  }
+  article p {
+    width: 45%;
+    float: left;
+  }
+  article img {
+    display: inline-block;
+    width: 45%;
+    float: right;
+  }
+  table {
+    margin: auto;
+  }
+  article h3 {
+    text-align: center;
+  }
+  .images {
+    width: 90%;
+  }
+  .weather-type {
+    font-size: 2.0rem;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 32px;
+    padding: 10px;
+    float: right;
+  }
+  .current {
+    margin: auto;
+    display: table;
+  }
+  .img-article {
+    margin: auto;
+  }
+  .weather-summary {
+    width: 48%;
+    display: inline;
+    float: right;
+  }
+  .weather-summary h3 {
+    margin: 0;
+  }
+
+  .current picture {
+    float: left;
+  }
+
+  .conditions {
+    display: block;
+    clear: both;
+  }
+  /*closing bracket */
+
+  tr img {
+    width: 20px;
+  }
+  td {
+    vertical-align: bottom;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .gray-fill {
+    background-color: #ececec;
+  }
+  .logo {
+    display: inline-block;
+  }
+  .logo img {
+    width: 75px;
+  }
+  .title {
+    display: inline-block
+  }
+  .weather-summary {
+    float: left;
+  }
+  picture {
+    float: left;
+  }
+  .highlow {
+    float: right;
+  }
+  .forecast table {
+    width: 80%;
+    text-align: left;
+  }
+  .forecast th {
+    padding: 5px 0px 5px 5px;
+    background-color: #ececec;
+    border-bottom: 1px solid #0080aa;
+  }
+  .forecast td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  .weather-summary table {
+    text-align: left;
+  }
+  .weather-summary td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
 }

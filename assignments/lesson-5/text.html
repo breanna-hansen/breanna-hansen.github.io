@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
+    <link rel="stylesheet" href="noramlize.css">
     <link rel="stylesheet" href="styles/main-5.css">
     <link rel="stylesheet" href="styles/medium-5.css">
     <link rel="stylesheet" href="styles/large-5.css">
@@ -13,9 +14,13 @@
   <body>
 
     <header>
-      <img src="images/weatherview-logo.png" alt="WeatherView Logo">
-      <h1>WeatherView</h1>
-      <div class="subheading">Precision Forecasting</div>
+      <div class="logo">
+        <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo">
+      </div>
+      <div class="title">
+        <h1>WeatherView</h1>
+        <div class="subheading">Precision Forecasting</div>
+      </div>
       <img class="fa-bars" src="images/rsz_white-hamburger-icon.png">
     </header>
 
@@ -31,18 +36,22 @@
       </ul>
     </nav>
     <main>
-      <h2>Franklin</h2>
+      <img class="full-width" src="images/rsz_sunny-banner.jpg" alt="Sunny Days">
+      <h2 class="sl-view">Franklin</h2>
       <figure>
         <img class="images" src="images/rsz_sunny-day.png" alt="Sunny Day">
       </figure>
+      <div class="current">
+        <h2 id="med-view">Franklin</h2>
+        <span class="weather-type">Sunny</span>
+        <picture>
+          <img src="images/rsz_sunny-icon.png" alt="Sunny Icon">
+        </picture>
+      </div>
       <section class="weather-summary">
         <table>
-          <thead><h3>Weather Summary</h3></thead>
+          <thead></thead>
           <tr>
-            <td>Summary</td>
-            <td>Sunny<img src="images/sunny-icon.PNG" alt="Sunny Icon"></td>
-          </tr>
-          <tr class="gray-fill">
             <td>High</td>
             <td>90&deg;F</td>
           </tr>
@@ -50,7 +59,7 @@
             <td>Low</td>
             <td>66&deg;F</td>
           </tr>
-          <tr class="gray-fill">
+          <tr>
             <td>Chance Precipitation</td>
             <td>0%</td>
           </tr>
@@ -61,53 +70,99 @@
         </table>
       </section>
 
-      <section class="weather-summary">
-        <h3>Weather Summary</h3>
-        <div class="current">
-          <span class="weather-type">Sunny</span>
-          <picture>
-            <img src="images/sunny-icon.PNG" alt="Sunny Icon">
-          </picture>
-        </div>
-        <div class="highlow">
-          <p>High: 90&deg;</p>
-          <p>Low: 66&deg;</p>
-        </div>
-        <div class="conditions">
-          <p>Precipitation: 0&deg;F</p>
-          <p>Wind Speed: 5 mph SW</p>
-        </div>
-      </section>
-
       <section class="forecast">
         <h3>Ten Day Forecast</h3>
         <table>
           <thead>
             <tr>
-              <th>Day 1</th>
-              <th>Day 2</th>
-              <th>Day 3</th>
-              <th>Day 4</th>
-              <th>Day 5</th>
-              <th>Day 6</th>
-              <th>Day 7</th>
-              <th>Day 8</th>
-              <th>Day 9</th>
-              <th>Day 10</th>
+              <th>Day</th>
+              <th>Description</th>
+              <th>HIGH/LO</th>
+              <th>Precip</th>
+              <th>Wind</th>
+              <th>Humidity</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>89&deg;F</td>
-              <td>87&deg;F</td>
-              <td>78&deg;F</td>
-              <td>75&deg;F</td>
-              <td>72&deg;F</td>
-              <td>72&deg;F</td>
-              <td>79&deg;F</td>
-              <td>83&deg;F</td>
-              <td>85&deg;F</td>
-              <td>89&deg;F</td>
+              <td>Monday</td>
+              <td>Light Rain</td>
+              <td>78&deg;&sol;50&deg;</td>
+              <td>70&percnt;</td>
+              <td>SSW 8 mph</td>
+              <td>82&percnt;</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Rain</td>
+              <td>62&deg;&sol;46&deg;</td>
+              <td>70&percnt;</td>
+              <td>SSW 13 mph</td>
+              <td>85&percnt;</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Mostly Sunny</td>
+              <td>75&deg;&sol;45&deg;</td>
+              <td>20&percnt;</td>
+              <td>SW 13 mph</td>
+              <td>59&percnt;</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Sunny</td>
+              <td>81&deg;&sol;48&deg;</td>
+              <td>0&percnt;</td>
+              <td>SSE 11 mph</td>
+              <td>45&percnt;</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Partly Cloudy</td>
+              <td>76&deg;&sol;47&deg;</td>
+              <td>20&percnt;</td>
+              <td>SW 9 mph</td>
+              <td>50&percnt;</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>PM Thunderstorms</td>
+              <td>71&deg;&sol;48&deg;</td>
+              <td>80&percnt;</td>
+              <td>W 9 mph</td>
+              <td>64&percnt;</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Partly Cloudy</td>
+              <td>71&deg;&sol;48&deg;</td>
+              <td>20&percnt;</td>
+              <td>WNW 8 mph</td>
+              <td>69&percnt;</td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>PM Thunderstorms</td>
+              <td>72&deg;&sol;48&deg;</td>
+              <td>50&percnt;</td>
+              <td>SW 10 mph</td>
+              <td>66&percnt;</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Mostly Sunny</td>
+              <td>74&deg;&sol;50&deg;</td>
+              <td>20&percnt;</td>
+              <td>SW 10 mph</td>
+              <td>61&percnt;</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Partly Cloudy</td>
+              <td>77&deg;&sol;50&deg;</td>
+              <td>20&percnt;</td>
+              <td>SSW 10 mph</td>
+              <td>52&percnt;</td>
             </tr>
           </tbody>
         </table>
@@ -116,7 +171,7 @@
       <article>
         <h3>Franklin Breaks Record</h3>
         <p class="town-article">
-          This week's pollen count is up due to high winds.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <img class="img-article" src="images/small-pollen.jpg" alt="Pollen and Allergens">
       </article>
