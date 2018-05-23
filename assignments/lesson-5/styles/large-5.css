@@ -19,7 +19,7 @@
   }
 
   header, nav, main, footer {
-    max-width: 1023px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     display: block;
   }
 
