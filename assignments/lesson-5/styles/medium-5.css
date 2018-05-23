@@ -25,6 +25,12 @@
   header {
     height: 120px;
     background-image: url('../images/rsz_blue-header-background.png');
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   header h1 {
     text-align: center;
@@ -75,6 +81,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden; /*might want to remove this later to see if stuff extends past */
   }
   nav ul li {
     display: inline-block;
@@ -198,7 +205,32 @@
     padding: 0 10px;
     text-align: left;
   }
-  .gray-fill {
+
+  .logo img {
+    width: 75px;
+  }
+  .forecast table {
+    width: 80%;
+    text-align: left;
+  }
+  .forecast th {
+    padding: 5px 0px 5px 5px;
     background-color: #ececec;
+    border-bottom: 1px solid #0080aa;
+  }
+  .forecast td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  .weather-summary table {
+    text-align: left;
+  }
+  .weather-summary td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+  #sl-view {
+    display: none;
   }
 }
