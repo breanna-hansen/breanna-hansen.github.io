@@ -164,6 +164,10 @@ section.forecast {
   width: 96%;
 }
 
+.weather-summary h3 {
+  display: none;
+}
+
 .weather-type {
   font-size: 1.5rem;
   display: table-cell;
@@ -186,22 +190,15 @@ section.forecast {
   display: none;
 }
 
-
-
-
-
 .highlow {
   display: inline-block;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
 .highlow p {
   display: block;
   padding: 0px;
-  margin: auto;
+  margin: 0px;
   width: 200px;
-  float: none;
   border-bottom: 1px solid #0080aa;
   text-align: left;
 }

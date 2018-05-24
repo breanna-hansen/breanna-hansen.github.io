@@ -136,11 +136,7 @@
 
 
   /* my css */
-  .highlow p {
-    display: block;
-    padding: 0 10px;
-    float: right;
-  }
+
   article {
     display: inline-block;
     clear: right;
@@ -160,6 +156,10 @@
   .images {
     width: 100%;
   }
+
+  .weather-summary h3 {
+    display: block;
+  }
   .weather-type {
     font-size: 2.0rem;
     display: table-cell;
@@ -178,19 +178,10 @@
     display: inline;
     float: right;
   }
-  .weather-summary h3 {
-    margin: 0;
-  }
 
   .current picture {
     float: left;
   }
-
-  .conditions {
-    display: block;
-    clear: both;
-  }
-  /*closing bracket */
 
   tr img {
     width: 20px;
@@ -233,4 +224,24 @@
     display: block;
     clear: both;
   }
+
+  .highlow {
+    display: inline-block;
+    margin: auto;
+  }
+
+  .highlow p {
+    width: 260px;
+  }
+
+  .conditions {
+    margin: auto;
+    display: inline-block;
+  }
+
+  .conditions p {
+    width: 265px;
+  }
+
+
 }
