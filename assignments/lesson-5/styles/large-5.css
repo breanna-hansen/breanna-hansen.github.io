@@ -31,7 +31,6 @@
 
   header h1 {
     text-align: center;
-    width: 100%;
     font-size: 2.2rem;
     top: 15px;
     left: 0px;
@@ -50,9 +49,6 @@
 
   .fa-bars {
     display: none;
-    top: 60px;
-    padding-right: 20px;
-    float: right;
   }
 
   header .subheading {
@@ -73,40 +69,19 @@
 
   nav {
     background-color: #00487c;
-    width: 100%;
-  }
-
-  nav button {}
-
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   nav ul li {
     display: inline-block;
-    text-align: center;
     padding: 10px;
   }
 
   nav ul li a {
-    display: inline;
-    color: #ffffff;
     padding: 8px 16px;
-    text-decoration: none;
-  }
-
-  nav ul li.active a {
-    color: #ffd332;
-  }
-
-  nav ul li a:hover {
-    color: #c0c0c0;
   }
 
   main {
-    width: 960px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
@@ -117,21 +92,10 @@
     width: 100%;
   }
 
-  main h2 {
-  }
-  main figure {
-  }
   main figure img {
     display: none;
   }
 
-  h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', 'Times New Roman', serif;
-    font-weight: 300;
-    color: #00487c;
-  }
-  .contact {
-  }
   .footer-bar {
     padding: 10px;
     background-color: #0080aa;
@@ -153,7 +117,6 @@
     padding: 10px;
   }
   article p {
-    
     width: 45%;
     float: left;
   }
@@ -168,7 +131,7 @@
     text-align: center;
   }
   .images {
-    width: 90%;
+    display: none;
   }
   .weather-type {
     font-size: 2.0rem;
@@ -179,8 +142,7 @@
     float: right;
   }
   .current {
-    margin: auto;
-    display: table;
+    float: left;
   }
   .img-article {
     margin: auto;
@@ -234,7 +196,7 @@
     float: right;
   }
   .forecast table {
-    width: 80%;
+    width: 100%;
     text-align: left;
   }
   .forecast th {
@@ -253,5 +215,9 @@
   .weather-summary td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;
+  }
+  .top-line {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
