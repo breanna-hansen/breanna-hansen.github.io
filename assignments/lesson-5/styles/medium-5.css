@@ -3,7 +3,7 @@
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
     nav button {
-      display: hidden;
+      display: none;
     }
 
     section.forecast {
@@ -46,8 +46,8 @@
 
   header img {
     position: relative;
-    top: 15;
-    left: 0;
+    top: 15px;
+    left: 0px;
     float: left;
   }
 
@@ -165,7 +165,7 @@
     text-align: center;
   }
   .images {
-    width: 90%;
+    width: 100%;
   }
   .weather-type {
     font-size: 2.0rem;
