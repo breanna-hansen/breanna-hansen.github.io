@@ -231,7 +231,8 @@
   }
 
   .highlow p {
-    width: 260px;
+    width: 240px;
+    font-size: 1.1rem;
   }
 
   .conditions {
@@ -240,7 +241,8 @@
   }
 
   .conditions p {
-    width: 265px;
+    font-size: 1.1rem;
+    width: 240px;
   }
 
 

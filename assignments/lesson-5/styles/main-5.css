@@ -131,10 +131,6 @@ footer {
 
 
 /* my css */
-.highlow p {
-  display: inline;
-  padding: 10px;
-}
 
 article h3 {
   text-align: center;
@@ -169,15 +165,10 @@ section.forecast {
 }
 
 .weather-type {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: table-cell;
   vertical-align: middle;
   padding: 10px;
-}
-
-.current {
-  margin: auto;
-  display: table;
 }
 
 .logo {
@@ -202,6 +193,7 @@ section.forecast {
   border-bottom: 1px solid #0080aa;
   text-align: left;
 }
+
 .conditions {
   display: inline-block;
 }
@@ -213,3 +205,4 @@ section.forecast {
   border-bottom: 1px solid #0080aa;
   width: 200px;
 }
+

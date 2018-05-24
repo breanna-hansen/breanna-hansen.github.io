@@ -62,11 +62,10 @@
 
   nav ul li {
     display: inline-block;
-    padding: 10px;
   }
 
   nav ul li a {
-    padding: 8px 16px;
+    padding: 10px 53px;
   }
 
   main {
@@ -171,12 +170,12 @@
 
   .highlow p {
     width: 265px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .conditions {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .conditions p {
@@ -196,7 +195,7 @@
     text-align: left;
   }
 
-  .forecast th, .weather-summary th {
+  .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
@@ -205,20 +204,6 @@
   .forecast td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;
-  }
-
-  .weather-summary table {
-    text-align: left;
-  }
-
-  .weather-summary td {
-    padding: 5px 0px 5px 5px;
-    border-bottom: 1px solid #0080aa;
-  }
-
-  .top-line {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .full-width {
