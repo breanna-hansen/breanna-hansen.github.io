@@ -1,16 +1,16 @@
 @media only screen and (min-width: 37.5em) and (max-width: 63.9em) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+  /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    nav button {
-      display: none;
-    }
+  nav button {
+    display: none;
+  }
 
-    section.forecast {
-      display: contents;
-      display: block;
-      clear: both;
-      padding-top: 5px;
+  section.forecast {
+    display: contents;
+    display: block;
+    clear: both;
+    padding-top: 5px;
   }
 
   * {
@@ -136,7 +136,11 @@
 
 
   /* my css */
-
+  .highlow p {
+    display: block;
+    padding: 0 10px;
+    float: right;
+  }
   article {
     display: inline-block;
     clear: right;
@@ -156,10 +160,6 @@
   .images {
     width: 100%;
   }
-
-  .weather-summary h3 {
-    display: block;
-  }
   .weather-type {
     font-size: 2.0rem;
     display: table-cell;
@@ -178,10 +178,19 @@
     display: inline;
     float: right;
   }
+  .weather-summary h3 {
+    margin: 0;
+  }
 
   .current picture {
     float: left;
   }
+
+  .conditions {
+    display: block;
+    clear: both;
+  }
+  /*closing bracket */
 
   tr img {
     width: 20px;
@@ -224,26 +233,4 @@
     display: block;
     clear: both;
   }
-
-  .highlow {
-    display: inline-block;
-    margin: auto;
-  }
-
-  .highlow p {
-    width: 240px;
-    font-size: 1.1rem;
-  }
-
-  .conditions {
-    margin: auto;
-    display: inline-block;
-  }
-
-  .conditions p {
-    font-size: 1.1rem;
-    width: 240px;
-  }
-
-
 }

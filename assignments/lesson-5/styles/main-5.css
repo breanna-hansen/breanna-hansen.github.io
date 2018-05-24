@@ -1,16 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
-  /* Delete these CSS comments after reading. */
-  /* This main css file contains the default rules and is geared toward the small/phone view */
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
@@ -131,6 +130,10 @@ footer {
 
 
 /* my css */
+.highlow p {
+  display: inline;
+  padding: 10px;
+}
 
 article h3 {
   text-align: center;
@@ -160,15 +163,16 @@ section.forecast {
   width: 96%;
 }
 
-.weather-summary h3 {
-  display: none;
-}
-
 .weather-type {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   display: table-cell;
   vertical-align: middle;
   padding: 10px;
+}
+
+.current {
+  margin: auto;
+  display: table;
 }
 
 .logo {
@@ -181,19 +185,25 @@ section.forecast {
   display: none;
 }
 
+
+
+
+
 .highlow {
   display: inline-block;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .highlow p {
   display: block;
   padding: 0px;
-  margin: 0px;
+  margin: auto;
   width: 200px;
+  float: none;
   border-bottom: 1px solid #0080aa;
   text-align: left;
 }
-
 .conditions {
   display: inline-block;
 }
@@ -205,4 +215,3 @@ section.forecast {
   border-bottom: 1px solid #0080aa;
   width: 200px;
 }
-

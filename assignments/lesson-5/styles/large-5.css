@@ -62,10 +62,11 @@
 
   nav ul li {
     display: inline-block;
+    padding: 10px;
   }
 
   nav ul li a {
-    padding: 10px 53px;
+    padding: 8px 16px;
   }
 
   main {
@@ -112,41 +113,37 @@
     display: none;
   }
 
+  .highlow {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .highlow p {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 265px;
+    float: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #0080aa;
+    text-align: left;
+  }
+
   .images {
     display: none;
   }
-  .weather-summary h3 {
-    display: block;
-  }
-  .weather-type {
-    font-size: 2.0rem;
-    line-height: 64px;
-    float: right;
-  }
 
-  #weather-icon {
+  .weather-type {
     display: inline-block;
-    width: 100px;
+    font-size: 2.0rem;
+    line-height: 32px;
+    float: right;
   }
 
   .current {
     display: inline-block;
     margin: 0px;
-  }
-
-  .current, .conditions, .highlow {
-    vertical-align: middle;
-  }
- /* .weather-type {
-    font-size: 1.5rem;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
-  }
-
-  .current {
-    margin: auto;
-    display: table; */
   }
 
   .img-article {
@@ -162,23 +159,16 @@
     float: left;
   }
 
-  .highlow {
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .highlow p {
-    width: 265px;
-    font-size: 1.3rem;
-  }
-
   .conditions {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .conditions p {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    border-bottom: 1px solid #0080aa;
     width: 265px;
   }
 
@@ -195,7 +185,7 @@
     text-align: left;
   }
 
-  .forecast th {
+  .forecast th, .weather-summary th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
@@ -204,6 +194,20 @@
   .forecast td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;
+  }
+
+  .weather-summary table {
+    text-align: left;
+  }
+
+  .weather-summary td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  .top-line {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .full-width {
@@ -220,5 +224,8 @@
     margin: 0px;
   }
 
+  #weather-icon {
+    width: 100px;
+  }
 
 }
