@@ -44,10 +44,6 @@
     float: left;
   }
 
-  .fa-bars {
-    display: none;
-  }
-
   header .subheading {
     top: 55px;
     left: 0px;
@@ -80,54 +76,83 @@
     padding-bottom: 20px;
   }
 
-  .full-width {
-    display: block;
-    width: 100%;
-  }
-
   main figure img {
     display: none;
   }
 
-  /* my css */
-  .highlow p {
-    padding: 0 10px;
-    float: right;
+  picture {
+    float: left;
   }
+
   article {
     display: inline-block;
     clear: right;
     padding: 10px;
   }
-  article p {
-    width: 45%;
-    float: left;
-  }
+
   article img {
+    margin: 0px;
     width: 45%;
     float: right;
+    padding: 10px;
   }
+
+  tr img {
+    width: 20px;
+  }
+
+  td {
+    vertical-align: bottom;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  /* class selectors */
+
+  .fa-bars {
+    display: none;
+  }
+
+  .highlow {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .highlow p {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 265px;
+    float: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #0080aa;
+    text-align: left;
+  }
+
   .images {
     display: none;
   }
+
   .weather-type {
+    display: inline-block;
     font-size: 2.0rem;
     line-height: 32px;
     float: right;
   }
+
   .current {
-    float: left;
+    display: inline-block;
+    margin: 0px;
   }
+
   .img-article {
     margin: auto;
   }
+
   .weather-summary {
-    width: 48%;
-    display: inline;
-    float: right;
-  }
-  .weather-summary h3 {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .current picture {
@@ -135,43 +160,37 @@
   }
 
   .conditions {
-    display: block;
-    clear: both;
+    display: inline-block;
+    font-size: 1.5rem;
   }
-  /*closing bracket */
 
-  tr img {
-    width: 20px;
-  }
-  td {
-    vertical-align: bottom;
-    padding: 0 10px;
+  .conditions p {
+    padding: 0px;
+    margin: 0px;
     text-align: left;
+    border-bottom: 1px solid #0080aa;
+    width: 265px;
   }
+
   .logo img {
     width: 75px;
   }
+
   .title {
     display: inline-block
   }
-  .weather-summary {
-    float: left;
-  }
-  picture {
-    float: left;
-  }
-  .highlow {
-    float: right;
-  }
+
   .forecast table {
     width: 100%;
     text-align: left;
   }
-  .forecast th {
+
+  .forecast th, .weather-summary th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
   }
+
   .forecast td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;
@@ -180,12 +199,33 @@
   .weather-summary table {
     text-align: left;
   }
+
   .weather-summary td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;
   }
+
   .top-line {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .full-width {
+    display: block;
+    width: 100%;
+  }
+
+  /* id selectors */
+
+  #radar {
+    float: right;
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #weather-icon {
+    width: 100px;
+  }
+
 }
