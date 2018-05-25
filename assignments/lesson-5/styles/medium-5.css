@@ -134,11 +134,8 @@
     font-size: .8rem;
   }
 
-
-  /* my css */
   .highlow p {
     display: block;
-    float: right;
   }
   article {
     display: inline-block;

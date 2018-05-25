@@ -70,7 +70,7 @@
   }
 
   main {
-    width: 1024px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
@@ -115,17 +115,16 @@
 
   .highlow {
     display: inline-block;
-    margin-left: 15%;
-    margin-right: 15%;
+    vertical-align: middle;
   }
 
   .highlow p {
     display: block;
     padding: 0px;
     margin: 0px;
-    width: 265px;
+    width: 215px;
     float: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid #0080aa;
     text-align: left;
   }
@@ -139,11 +138,14 @@
     font-size: 2.0rem;
     line-height: 32px;
     float: right;
+    padding: 28px;
   }
 
   .current {
     display: inline-block;
     margin: 0px;
+    vertical-align: middle;
+    width: 250px;
   }
 
   .img-article {
@@ -161,7 +163,8 @@
 
   .conditions {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
   }
 
   .conditions p {
@@ -169,7 +172,7 @@
     margin: 0px;
     text-align: left;
     border-bottom: 1px solid #0080aa;
-    width: 265px;
+    width: 215px;
   }
 
   .logo img {

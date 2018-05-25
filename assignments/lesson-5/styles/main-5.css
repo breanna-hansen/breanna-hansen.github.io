@@ -130,10 +130,6 @@ footer {
 
 
 /* my css */
-.highlow p {
-  display: inline;
-  padding: 10px;
-}
 
 article h3 {
   text-align: center;
@@ -196,11 +192,11 @@ section.forecast {
   display: block;
   padding: 0px;
   margin: auto;
-  width: 200px;
-  float: none;
+  width: 180px;
   border-bottom: 1px solid #0080aa;
   text-align: left;
 }
+
 .conditions {
   display: inline-block;
   padding-bottom: 20px;
@@ -211,7 +207,7 @@ section.forecast {
   margin: 0px;
   text-align: left;
   border-bottom: 1px solid #0080aa;
-  width: 200px;
+  width: 180px;
 }
 .weather-summary {
   padding-top: 20px;
