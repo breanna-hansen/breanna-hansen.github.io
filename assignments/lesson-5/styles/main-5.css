@@ -5,10 +5,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
 }  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -26,7 +22,6 @@ header {
   background-color: #00487c;
   color: #ffffff;
   width: 100%;
-  position: relative;
   height: 75px;
 }
 header h1 {
@@ -73,14 +68,13 @@ nav {
   width: 100%;
 }
 nav button {}
+
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* check his notes */
   margin: 0;
   padding: 0;
 }
-nav ul li {
-  text-align: center;
-}
+
 nav ul li a {
   display: block;
   color: #ffffff;
@@ -88,6 +82,7 @@ nav ul li a {
   padding: 8px 16px;
   text-decoration: none;
 }
+
 nav ul li.active a {
   color: #ffd332;
 }
@@ -95,16 +90,13 @@ nav ul li a:hover {
   color: #c0c0c0;
 }
 
-main {
-}
 .full-width {
   display: none;
 }
 
-main h2 {
-}
 main figure {
-  margin: 0 0 .2rem 2%; width:96%;
+  margin: 0 0 .2rem 2%;
+  width:96%;
 }
 main figure img {
   display: none;
@@ -114,6 +106,7 @@ h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Times New Roman', serif;
   font-weight: 300;
   color: #00487c;
+  text-align: center;
 }
 .contact {
   background-color: #ececec;
@@ -124,15 +117,6 @@ h2, h3, h4, h5, h6 {
   padding: 10px;
   background-color: #0080aa;
   font-size: .8rem;
-}
-footer {
-}
-
-
-/* my css */
-
-article h3 {
-  text-align: center;
 }
 
 article p {
@@ -210,7 +194,7 @@ section.forecast {
 .weather-summary {
   padding-top: 20px;
 }
-footer .site-name {
+.site-name {
   font-weight: 300;
   font-family: 'Arvo', 'Times New Roman', serif;
   font-size: 20px;
