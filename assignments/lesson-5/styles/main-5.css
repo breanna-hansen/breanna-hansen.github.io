@@ -1,11 +1,9 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
   box-sizing: border-box;
   margin: 0;
-}  /* This wildcard applies to all elements ensuring a box layout model */
+}
 
 body {
   font-size: 16px;
@@ -14,16 +12,44 @@ body {
 }
 
 header, nav, main, footer {
-  max-width: 600px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 600px;
   display: block;
 }
+
+a {
+  color: #0080aa;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-weight: 300;
+  color: #00487c;
+  text-align: center;
+}
+
+/* header */
 
 header {
   background-color: #00487c;
   color: #ffffff;
-  width: 100%;
   height: 75px;
 }
+
+header img, header h1, header .subheading {
+  position: absolute;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  width: 55px;
+  top: 18px;
+  left: 15px;
+}
+
 header h1 {
   font-family: 'Arvo', 'Times New Roman', serif;
   font-weight: 300;
@@ -32,16 +58,14 @@ header h1 {
   margin: 0;
   padding: 0;
   top: 15px;
-  left: 70px;
+  left: 75px;
 }
 
-header .subheading, header h1, header img {
-  position: absolute;
-}
-
-header img {
-  top: 15px;
-  left: 10px;
+header .subheading {
+  width: 175px;
+  font-size: 0.9rem;
+  top: 45px;
+  left: 75px;
 }
 
 .fa-bars {
@@ -50,24 +74,12 @@ header img {
   left: 87%;
 }
 
-header .subheading {
-  top: 45px;
-  left: 55px;
-  width: 175px;
-  font-size: 0.9rem;
-}
+/* nav */
 
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.250rem;
-}
 nav {
   background-color: #00487c;
   width: 100%;
 }
-nav button {}
 
 nav ul {
   list-style-type: none; /* check his notes */
@@ -90,8 +102,15 @@ nav ul li a:hover {
   color: #c0c0c0;
 }
 
+/* banner image */
+
 .full-width {
   display: none;
+}
+/* main */
+
+h2 {
+  font-size: 1.5rem;
 }
 
 main figure {
@@ -99,56 +118,17 @@ main figure {
   width:96%;
 }
 main figure img {
-  display: none;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: 'Arvo', 'Times New Roman', serif;
-  font-weight: 300;
-  color: #00487c;
-  text-align: center;
-}
-.contact {
-  background-color: #ececec;
-  padding: 10px;
-}
-.footer-bar {
-  color: #ffffff;
-  padding: 10px;
-  background-color: #0080aa;
-  font-size: .8rem;
-}
-
-article p {
-  text-align: left;
-}
-article img {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 10px;
-}
-table {
+  display: block;
+  width: 96%;
   margin: auto;
 }
 
-a {
-  color: #0080aa;
-  text-decoration: none;
+.weather-summary {
+  padding-top: 20px;
 }
-section.forecast {
+
+.weather-summary h2 {
   display: none;
-}
-
-.images {
-  display: block;
-  width: 96%;
-}
-
-.weather-type {
-  font-size: 1.5rem;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 10px;
 }
 
 .current {
@@ -156,15 +136,11 @@ section.forecast {
   display: table;
 }
 
-.logo {
-  display: inline-block;
-}
-.logo img {
-  width: 55px;
-}
-
-.weather-summary h2 {
-  display: none;
+.weather-type {
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
 }
 
 .highlow {
@@ -192,11 +168,40 @@ section.forecast {
   border-bottom: 1px solid #0080aa;
   width: 180px;
 }
-.weather-summary {
-  padding-top: 20px;
+
+section.forecast {
+  display: none;
 }
+
+h3 {
+  font-size: 1.250rem;
+}
+
+article p {
+  text-align: left;
+}
+article img {
+  margin: auto;
+  width: 96%;
+  padding-bottom: 10px;
+}
+
+/* footer */
+
+.contact {
+  background-color: #ececec;
+  padding: 10px;
+}
+
 .site-name {
   font-weight: 300;
   font-family: 'Arvo', 'Times New Roman', serif;
   font-size: 18px;
+}
+
+.footer-bar {
+  color: #ffffff;
+  padding: 10px;
+  background-color: #0080aa;
+  font-size: .8rem;
 }

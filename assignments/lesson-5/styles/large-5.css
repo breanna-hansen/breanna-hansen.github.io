@@ -1,19 +1,10 @@
 @media only screen and (min-width: 64em) {
 
-  nav button {
-    display: none;
-  }
-
-  section.forecast {
-    display: block;
-    clear: both;
-    padding-top: 5px;
-  }
-
   header, nav, main, footer {
-    max-width: 100%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-    display: block;
+    max-width: 100%;
   }
+
+  /* header */
 
   header {
     height: 90px;
@@ -21,38 +12,45 @@
     padding-top: 10px;
   }
 
-  header h1 {
-    text-align: center;
-    font-size: 2.2rem;
-    top: 15px;
-    left: 0px;
-  }
-
   header .subheading, header h1, header img {
     position: static;
   }
 
-  header img {
+  .title {
+    display: inline-block
+  }
+
+  .logo img {
     position: relative;
-    top: 15px;
+    width: 75px;
+    top: 5px;
+    left: 5px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
     left: 0px;
-    float: left;
   }
 
   header .subheading {
     top: 55px;
     left: 0px;
     font-size: 1.2rem;
-    text-align: center;
     width: 100%;
   }
 
-  h2 {
-    font-size: 2.0rem;
+  .fa-bars {
+    display: none;
   }
 
-  h3 {
-    font-size: 1.375rem;
+  /* nav */
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    overflow: hidden;
   }
 
   nav ul li {
@@ -61,8 +59,17 @@
   }
 
   nav ul li a {
-    padding: 8px 16px;
+    display: inline;
   }
+
+  /* banner */
+
+  .full-width {
+    display: block;
+    width: 100%;
+  }
+
+  /* main */
 
   main {
     width: 960px;
@@ -71,71 +78,22 @@
     padding-bottom: 20px;
   }
 
+  h2 {
+    font-size: 2.0rem;
+  }
+
   main figure img {
     display: none;
   }
 
-  picture {
-    float: left;
+  .weather-summary {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  article {
-    display: inline-block;
-    clear: right;
-    padding: 10px;
-  }
-
-  article img {
-    margin: 0px;
-    width: 45%;
-    float: right;
-    padding: 10px;
-  }
-
-  tr img {
-    width: 20px;
-  }
-
-  td {
-    vertical-align: bottom;
-    padding: 0 10px;
-    text-align: left;
-  }
-
-  /* class selectors */
-
-  .fa-bars {
-    display: none;
-  }
-
-  .highlow {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .highlow p {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    width: 225px;
-    float: none;
-    font-size: 1.3rem;
-    border-bottom: 1px solid #0080aa;
-    text-align: left;
-  }
-
-  .images {
-    display: none;
-  }
-
-  .weather-type {
-    display: inline-block;
-    font-size: 2.0rem;
-    line-height: 32px;
-    float: right;
-    padding: 28px;
+  .weather-summary h2 {
+      display: none;
+    }
   }
 
   .current {
@@ -146,40 +104,45 @@
     width: 250px;
   }
 
-  .img-article {
-    margin: auto;
-  }
-
-  .weather-summary {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .current picture {
+  .current picture img {
+    width: 100px;
     float: left;
   }
 
-  .conditions {
+  .weather-type {
     display: inline-block;
+    font-size: 2.0rem;
+    line-height: 32px;
+    float: right;
+    padding: 28px;
+  }
+
+  .highlow {
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .highlow p {
+    margin: 0px;
+    width: 225px;
+    float: none;
+    font-size: 1.3rem;
+  }
+
+  .conditions {
     font-size: 1.3rem;
     vertical-align: middle;
     padding-bottom: 0px;
   }
 
   .conditions p {
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
-    border-bottom: 1px solid #0080aa;
     width: 225px;
   }
 
-  .logo img {
-    width: 75px;
-  }
-
-  .title {
-    display: inline-block
+  section.forecast {
+    display: block;
+    padding-top: 5px;
   }
 
   .forecast table {
@@ -187,7 +150,7 @@
     text-align: left;
   }
 
-  .forecast th, .weather-summary th {
+  .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
@@ -198,35 +161,19 @@
     border-bottom: 1px solid #0080aa;
   }
 
-  .weather-summary table {
-    text-align: left;
+  h3 {
+    font-size: 1.375rem;
   }
 
-  .weather-summary td {
-    padding: 5px 0px 5px 5px;
-    border-bottom: 1px solid #0080aa;
+  article {
+    padding: 10px;
   }
 
-  .top-line {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .full-width {
-    display: block;
-    width: 100%;
-  }
-
-  /* id selectors */
-
-  #radar {
-    float: right;
-    width: 20px;
-    padding: 0px;
+  article img {
     margin: 0px;
+    width: 48%;
+    float: right;
+    padding: 10px;
   }
 
-  .current picture img {
-    width: 100px;
-  }
 }
