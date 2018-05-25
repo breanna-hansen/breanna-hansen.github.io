@@ -184,8 +184,6 @@ section.forecast {
 
 .highlow {
   display: inline-block;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 
 .highlow p {
@@ -211,4 +209,10 @@ section.forecast {
 }
 .weather-summary {
   padding-top: 20px;
+}
+.site-name {
+  font-weight: 300;
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #00487c;
 }

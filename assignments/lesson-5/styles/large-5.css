@@ -116,15 +116,17 @@
   .highlow {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .highlow p {
     display: block;
     padding: 0px;
     margin: 0px;
-    width: 215px;
+    width: 225px;
     float: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-bottom: 1px solid #0080aa;
     text-align: left;
   }
@@ -144,6 +146,7 @@
   .current {
     display: inline-block;
     margin: 0px;
+    padding: 0px;
     vertical-align: middle;
     width: 250px;
   }
@@ -163,8 +166,9 @@
 
   .conditions {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     vertical-align: middle;
+    padding-bottom: 0px;
   }
 
   .conditions p {
@@ -172,7 +176,7 @@
     margin: 0px;
     text-align: left;
     border-bottom: 1px solid #0080aa;
-    width: 215px;
+    width: 225px;
   }
 
   .logo img {
