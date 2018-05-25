@@ -138,7 +138,6 @@
   /* my css */
   .highlow p {
     display: block;
-    padding: 0 10px;
     float: right;
   }
   article {
@@ -187,8 +186,7 @@
   }
 
   .conditions {
-    display: block;
-    clear: both;
+    display: inline-block;
   }
   /*closing bracket */
 

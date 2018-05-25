@@ -160,6 +160,7 @@ section.forecast {
 }
 
 .images {
+  display: block;
   width: 96%;
 }
 
@@ -185,10 +186,6 @@ section.forecast {
   display: none;
 }
 
-
-
-
-
 .highlow {
   display: inline-block;
   margin-left: 15%;
@@ -206,6 +203,7 @@ section.forecast {
 }
 .conditions {
   display: inline-block;
+  padding-bottom: 20px;
 }
 
 .conditions p {
@@ -214,4 +212,7 @@ section.forecast {
   text-align: left;
   border-bottom: 1px solid #0080aa;
   width: 200px;
+}
+.weather-summary {
+  padding-top: 20px;
 }
