@@ -93,7 +93,6 @@
 
   .weather-summary h2 {
       display: none;
-    }
   }
 
   .current {
@@ -176,7 +175,4 @@
     padding: 10px;
   }
 
-body {
-  padding: 10px;
-}
 }
