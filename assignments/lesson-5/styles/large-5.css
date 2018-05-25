@@ -226,8 +226,7 @@
     margin: 0px;
   }
 
-  #weather-icon {
+  .current picture img {
     width: 100px;
   }
-
 }

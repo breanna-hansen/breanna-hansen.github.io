@@ -162,7 +162,8 @@ section.forecast {
 .logo img {
   width: 55px;
 }
-#med-view {
+
+.weather-summary h2 {
   display: none;
 }
 
@@ -197,6 +198,5 @@ section.forecast {
 .site-name {
   font-weight: 300;
   font-family: 'Arvo', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #00487c;
+  font-size: 18px;
 }
