@@ -165,12 +165,21 @@
   }
 
   article {
-    padding: 10px;
+    display: inline-block;
+    clear: right;
+    padding-bottom: 20px;
+  }
+
+  .swap {
+    display: block;
+  }
+
+  article p {
+    width: 100%
   }
 
   article img {
-    margin: 0px;
-    width: 48%;
+    width: 45%;
     float: right;
     padding: 10px;
   }

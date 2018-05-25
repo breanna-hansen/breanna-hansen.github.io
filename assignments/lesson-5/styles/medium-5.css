@@ -141,7 +141,15 @@
   article {
     display: inline-block;
     clear: right;
-    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  .swap {
+    display: block;
+  }
+
+  article p {
+    width: 100%
   }
 
   article img {
