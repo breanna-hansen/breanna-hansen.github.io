@@ -46,6 +46,7 @@ header img, header h1, header .subheading {
 
 .logo img {
   width: 55px;
+  height: auto;
   top: 13px;
   left: 15px;
 }
@@ -116,12 +117,13 @@ h2 {
 
 main figure {
   margin: 0 0 .2rem 2%;
-  width:96%;
+  width: 96%;
 }
 
 main figure img {
   display: block;
   width: 96%;
+  height: auto;
   margin: auto;
 }
 
@@ -194,6 +196,7 @@ article p {
 article img {
   margin: auto;
   width: 92%;
+  height: auto;
   padding: 20px 0px;
 }
 
