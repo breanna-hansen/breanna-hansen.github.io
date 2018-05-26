@@ -144,25 +144,27 @@ main figure img {
 }
 
 .highlow {
-  display: inline-block;
+  display: block;
 }
 
 .highlow p {
   display: block;
+  padding: 5px 0px 0px 0px;
   margin: auto;
   width: 180px;
   border-bottom: 1px solid #0080aa;
   text-align: left;
+  line-height: 1.1rem;
 }
 
 .conditions {
-  display: inline-block;
+  display: block;
   padding-bottom: 20px;
 }
 
 .conditions p {
-  padding: 0px;
-  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  margin: auto;
   text-align: left;
   border-bottom: 1px solid #0080aa;
   width: 180px;

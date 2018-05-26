@@ -123,17 +123,17 @@
     vertical-align: middle;
     margin-left: 10%;
     margin-right: 10%;
+    display: inline-block
   }
 
   .highlow p {
-    margin: 0px;
     width: 225px;
-    float: none;
     font-size: 1.3rem;
-    padding: 5px 0px;
+    padding: 10px 0px 0px 0px;
   }
 
   .conditions {
+    display: inline-block;
     font-size: 1.3rem;
     vertical-align: middle;
     padding-bottom: 0px;
@@ -141,7 +141,8 @@
 
   .conditions p {
     width: 225px;
-    padding: 5px 0px;
+    font-size: 1.3rem;
+    padding: 10px 0px 0px 0px;
   }
 
   section.forecast {
