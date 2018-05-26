@@ -129,12 +129,14 @@
     text-align: left;
     font-size: .9rem;
   }
+
   .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
     color: #000000;
   }
+
   .forecast td {
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid #0080aa;

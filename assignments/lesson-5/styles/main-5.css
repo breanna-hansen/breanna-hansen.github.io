@@ -46,7 +46,7 @@ header img, header h1, header .subheading {
 
 .logo img {
   width: 55px;
-  top: 18px;
+  top: 13px;
   left: 15px;
 }
 
@@ -107,6 +107,7 @@ nav ul li a:hover {
 .full-width {
   display: none;
 }
+
 /* main */
 
 h2 {
@@ -117,6 +118,7 @@ main figure {
   margin: 0 0 .2rem 2%;
   width:96%;
 }
+
 main figure img {
   display: block;
   width: 96%;
