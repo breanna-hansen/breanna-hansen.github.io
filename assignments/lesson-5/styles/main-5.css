@@ -197,9 +197,18 @@ article img {
 
 /* footer */
 
+.map {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 20px;
+}
+
 .contact {
   background-color: #ececec;
   padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
 .site-name {
@@ -213,4 +222,9 @@ article img {
   padding: 10px;
   background-color: #0080aa;
   font-size: .8rem;
+}
+
+.footer-bar a {
+  color: #ffffff;
+  text-decoration: underline;
 }
