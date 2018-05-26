@@ -127,6 +127,7 @@
     width: 225px;
     float: none;
     font-size: 1.3rem;
+    padding: 5px 0px;
   }
 
   .conditions {
@@ -137,6 +138,7 @@
 
   .conditions p {
     width: 225px;
+    padding: 5px 0px;
   }
 
   section.forecast {
