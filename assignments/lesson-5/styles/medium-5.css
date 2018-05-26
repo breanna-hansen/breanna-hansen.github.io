@@ -23,7 +23,7 @@
     width: 75px;
     position: relative;
     top: 10px;
-    left: 0;
+    left: 0px;
   }
 
   header h1 {
@@ -97,7 +97,7 @@
   }
 
   .weather-summary h2 {
-    margin: 0;
+    margin: 0px;
     display: block;
     padding-bottom: 10px;
   }
