@@ -19,7 +19,9 @@
     <header>
       <div class="logo">
         <figure>
-          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo" sizes="5vw" srcset="images/stormy-weather-icon-55-text.png 1x, images/stormy-weather-icon-75-test.png 2x",>
+          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo" sizes="5vw"
+               srcset="images/stormy-weather-icon-55-text.png 400w,
+                       images/stormy-weather-icon-75-test.png 950w,">
         </figure>
       </div>
       <div class="title">
@@ -43,13 +45,17 @@
     </nav>
 
     <main>
-      <picture>
-        <img class="full-width" src="images/franklin-original-1024.jpeg" alt="City landscape of Franklin, MN">
-      </picture>
--
+     <!-- <picture>
+        <img class="full-width" src="images/franklin-original/franklin-original-large.jpeg" alt="City landscape of Franklin, MN">
+      </picture> -->
+
       <h2>Franklin, MN</h2>
+
       <figure>
-        <img src="images/rsz_franklin-city.jpg" alt="River front of the city of Franklin, MN" sizes="50vw" srcset="images/franklincity300test.jpg 300w", srcset="images/franklin-city-test.jpg" 500w,>
+        <img src="images/franklin-original-large.jpeg" alt="Landscape of Franklin, MN" sizes="50vw"
+             srcset="images/franklin-original/franklin-city-small.jpg 400w,
+                     images/franklin-original/franklin-city-medium.jpg 550w,
+                     images/franklin-original/franklin-city-large.jpeg 950w,">
       </figure>
 
       <section class="weather-summary">
@@ -57,7 +63,9 @@
         <div class="current">
           <span class="weather-type">Sunny</span>
           <picture>
-            <img src="images/rsz_sunny-icon.png" alt="Sunny Weather Icon">
+            <img src="images/rsz_sunny-icon.png" alt="Sunny Weather Icon" sizes="100vw"
+                 srcset="images/rsz_sunny-icon.png 400w,
+                         images/rsz_stormy-weather-icon.png 950w,">
           </picture>
         </div>
 
