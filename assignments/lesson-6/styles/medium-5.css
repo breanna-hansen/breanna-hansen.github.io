@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) and (max-width: 63.9em) {
+@media only screen and (min-width: 37.5em) {
 
   header, nav, main, footer {
     max-width: 100%;
@@ -42,7 +42,7 @@
     padding-top: 25px;
   }
 
-  .fa-bars {
+  .hamburger {
     display: none;
   }
 
@@ -63,12 +63,17 @@
 
   nav ul li a {
     display: inline;
+    border: none;
+  }
+
+  nav ul.hide {
+    display: block;
   }
 
   /* main */
 
   main {
-    width: 80%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -114,7 +119,6 @@
   }
 
   section.forecast {
-    display: contents;
     display: block;
     margin: auto;
     clear: both;
@@ -127,14 +131,12 @@
   .forecast table {
     width: 100%;
     text-align: left;
-    font-size: .9rem;
   }
 
   .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #ececec;
     border-bottom: 1px solid #0080aa;
-    color: #000000;
   }
 
   .forecast td {

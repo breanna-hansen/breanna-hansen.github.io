@@ -18,21 +18,23 @@
 
     <header>
       <div class="logo">
-        <picture>
-          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo">
-        </picture>
+        <figure>
+          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo" srcset="images/stormy-weather-icon-55-text.png 1x" srcset="images/stormy-weather-icon-75-test.png 2x",>
+        </figure>
       </div>
       <div class="title">
         <h1>WeatherView</h1>
-      <div class="subheading">Precision Forecasting</div>
+        <div class="subheading">Precision Forecasting</div>
       </div>
-      <picture>
-        <img class="fa-bars" src="images/rsz_white-hamburger-icon.png" alt="Navigation Bar Toggle Icon">
-      </picture>
+      <button onclick="toggleHam()">
+        <picture>
+          <img class="hamburger" src="images/rsz_white-hamburger-icon.png" alt="Navigation Bar Toggle Icon">
+        </picture>
+      </button>
     </header>
 
     <nav>
-      <ul>
+      <ul id="navigation" class="hide">
         <li><a href="#">Home</a></li>
         <li class="active"><a href="#">Franklin</a></li>
         <li><a href="#">Springfield</a></li>
@@ -49,7 +51,7 @@
 -
       <h2>Franklin, MN</h2>
       <figure>
-        <img src="images/rsz_franklin-city.jpg" alt="River front of the city of Franklin, MN">
+        <img src="images/rsz_franklin-city.jpg" alt="River front of the city of Franklin, MN" sizes="50vw" srcset="images/franklincity300test.jpg 300w", srcset="images/franklin-city-test.jpg" 500w,>
       </figure>
 
       <section class="weather-summary">
@@ -204,6 +206,6 @@
     </footer>
 
     <script src="/scripts/currentdate.js"></script>
-
+    <script src="/scripts/toggleHam.js"></script>
   </body>
 </html>

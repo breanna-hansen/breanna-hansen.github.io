@@ -69,9 +69,10 @@ header .subheading {
   left: 75px;
 }
 
-.fa-bars {
+.hamburger {
+  display: block;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 87%;
 }
 
@@ -82,10 +83,19 @@ nav {
   width: 100%;
 }
 
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 nav ul {
   list-style-type: none; /* check his notes */
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 nav ul li a {
@@ -94,13 +104,19 @@ nav ul li a {
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
+  border-top: 1px solid #ffffff;
 }
 
 nav ul li.active a {
   color: #ffd332;
+  background-color: #003256;
 }
 nav ul li a:hover {
   color: #c0c0c0;
+}
+
+nav ul.hide {
+  display: none;
 }
 
 /* banner image */
