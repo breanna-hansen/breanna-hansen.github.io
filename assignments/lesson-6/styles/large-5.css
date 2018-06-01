@@ -18,8 +18,10 @@
     font-size: 2.0rem;
   }
 
-  main figure img {
-    display: none;
+  .franklin {
+    display: block;
+    position: absolute;
+    top: 100px;
   }
 
   .weather-summary {

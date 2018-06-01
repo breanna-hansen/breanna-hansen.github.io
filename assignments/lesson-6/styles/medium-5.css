@@ -20,7 +20,6 @@
   }
 
   .logo img {
-    width: 75px;
     position: relative;
     top: 10px;
     left: 0px;
@@ -78,16 +77,15 @@
     display: none;
   }
 
-  main figure {
+  .franklin {
     float: left;
     width: 48%;
     display: inline-block;
   }
 
-  main figure img {
+  .weather-summary picture img {
     display: table-cell;
     padding-top: 20px;
-    width: 100%;
   }
 
   .weather-summary {
