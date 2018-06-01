@@ -42,15 +42,11 @@
     padding-top: 25px;
   }
 
-  .hamburger {
+  button.hamburger {
     display: none;
   }
 
   /* nav */
-
-  nav button {
-    display: none;
-  }
 
   nav ul {
     overflow: hidden;

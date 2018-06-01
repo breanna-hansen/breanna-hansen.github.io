@@ -19,17 +19,15 @@
     <header>
       <div class="logo">
         <figure>
-          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo" srcset="images/stormy-weather-icon-55-text.png 1x" srcset="images/stormy-weather-icon-75-test.png 2x",>
+          <img src="images/rsz_stormy-weather-icon.png" alt="WeatherView Logo" sizes="5vw" srcset="images/stormy-weather-icon-55-text.png 1x, images/stormy-weather-icon-75-test.png 2x",>
         </figure>
       </div>
       <div class="title">
         <h1>WeatherView</h1>
         <div class="subheading">Precision Forecasting</div>
       </div>
-      <button onclick="toggleHam()">
-        <picture>
-          <img class="hamburger" src="images/rsz_white-hamburger-icon.png" alt="Navigation Bar Toggle Icon">
-        </picture>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
       </button>
     </header>
 
@@ -205,7 +203,7 @@
       <div class="footer-bar">&copy;2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span></div>
     </footer>
 
-    <script src="/scripts/currentdate.js"></script>
-    <script src="/scripts/toggleHam.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/toggleHam.js"></script>
   </body>
 </html>
