@@ -136,16 +136,9 @@ h2 {
   font-size: 1.5rem;
 }
 
-img.franklin {
+.franklin {
   margin: 0 0 .2rem 2%;
   width: 96%;
-}
-
-section.weather-summary picture {
-  display: block;
-  width: 96%;
-  height: auto;
-  margin: auto;
 }
 
 .weather-summary {
@@ -159,6 +152,12 @@ section.weather-summary picture {
 .current {
   margin: auto;
   display: table;
+}
+
+.current picture {
+  display: block;
+  height: auto;
+  margin: auto;
 }
 
 .weather-type {

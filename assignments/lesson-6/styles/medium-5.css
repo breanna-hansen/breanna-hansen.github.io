@@ -81,10 +81,6 @@
     float: left;
     width: 48%;
     display: inline-block;
-  }
-
-  .weather-summary picture img {
-    display: table-cell;
     padding-top: 20px;
   }
 
@@ -101,15 +97,23 @@
     padding-bottom: 10px;
   }
 
-  .current picture {
-    float: left;
-  }
-
   .weather-type {
     font-size: 2.0rem;
     line-height: 32px;
-    padding: 20px 0px;
-    float: right;
+    padding: 10px 0px;
+  }
+
+  .current {
+    width: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .current picture {
+    margin: 0px;
+    padding: 0px;
   }
 
   section.forecast {
