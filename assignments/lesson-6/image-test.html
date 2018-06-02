@@ -1,17 +1,229 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Local Weather Forecast for Franklin, MN | WeatherView</title>
+    <meta name="description" content="WeatherView provides the latest local weather and storm alerts forecast for Franklin, MN. Find the current breaking weather news and articles for the area.">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo%7COpen+Sans+Condensed:300">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-5.css">
+    <link rel="stylesheet" href="styles/medium-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
+  </head>
+
   <body>
-hello this is actually our page
 
-    <figure>
-      <img src="images/franklin-city-test.jpg" alt="River front of the city of Franklin, MN" sizes="50vw"
-           srcset="images/franklin-original-small.jpeg 400w,
-           images/franklin-original-medium.jpg 550w,
-           images/franklin-original-large.jpeg 800w,">
-      <!--srcset="images/franklin-city-test.jpg 400w,
-      images/franklin-city.jpg 800w,
-      images/franklin-original-800.jpg 1100w"-->
-    </figure>
+    <header>
+      <div class="logo">
+        <figure>
+          <img src="images/weatherview-logo.png" alt="WeatherView Logo">
+        </figure>
+      </div>
+      <div class="title">
+        <h1>WeatherView</h1>
+        <div class="subheading">Precision Forecasting</div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
 
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Franklin</a></li>
+        <li><a href="#">Springfield</a></li>
+        <li><a href="#">Greenville</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <h2>Franklin, MN</h2>
+
+      <picture>
+        <img class="franklin" src="images/franklin-original-medium-crop.jpg" alt="Landscape of Franklin, MN" sizes="100vw"
+             srcset="images/franklin-small-400.jpeg 400w,
+                     images/franklin-small-600.jpeg 600w,
+                     images/franklin-medium-800.jpeg 800w,
+                     images/franklin-medium-1024.jpeg 1024w,
+                     images/franklin-large-1400.jpeg 1400w">
+      </picture>
+
+      <section class="weather-summary">
+        <h2>Franklin, MN</h2>
+        <div class="current">
+          <span class="weather-type">Sunny</span>
+          <picture>
+            <img src="images/sunny-weather-icon.png" alt="Sunny Weather Icon">
+          </picture>
+        </div>
+
+        <div class="highlow">
+          <p>High: 90&deg;</p>
+          <p>Low: 66&deg;</p>
+        </div>
+
+        <div class="conditions">
+          <p>Precipitation: 0&percnt;</p>
+          <p>Wind Speed: 5 mph SW</p>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h3>Ten Day Forecast</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Description</th>
+              <th>HIGH/LO</th>
+              <th>Precip</th>
+              <th>Wind</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Light Rain</td>
+              <td>78&deg;&sol;50&deg;</td>
+              <td>70&percnt;</td>
+              <td>8 mph SSW</td>
+              <td>82&percnt;</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Rain</td>
+              <td>62&deg;&sol;46&deg;</td>
+              <td>70&percnt;</td>
+              <td>13 mph SSW</td>
+              <td>85&percnt;</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Mostly Sunny</td>
+              <td>75&deg;&sol;45&deg;</td>
+              <td>20&percnt;</td>
+              <td>13 mph SW</td>
+              <td>59&percnt;</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Sunny</td>
+              <td>81&deg;&sol;48&deg;</td>
+              <td>0&percnt;</td>
+              <td>11 mph SSE</td>
+              <td>45&percnt;</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Partly Cloudy</td>
+              <td>76&deg;&sol;47&deg;</td>
+              <td>20&percnt;</td>
+              <td>9 mph SW</td>
+              <td>50&percnt;</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>PM Thunderstorms</td>
+              <td>71&deg;&sol;48&deg;</td>
+              <td>80&percnt;</td>
+              <td>9 mph W</td>
+              <td>64&percnt;</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Partly Cloudy</td>
+              <td>71&deg;&sol;48&deg;</td>
+              <td>20&percnt;</td>
+              <td>8 mph WNW</td>
+              <td>69&percnt;</td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>PM Thunderstorms</td>
+              <td>72&deg;&sol;48&deg;</td>
+              <td>50&percnt;</td>
+              <td>10 mph SW</td>
+              <td>66&percnt;</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Mostly Sunny</td>
+              <td>74&deg;&sol;50&deg;</td>
+              <td>20&percnt;</td>
+              <td>10 mph SW</td>
+              <td>61&percnt;</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Partly Cloudy</td>
+              <td>77&deg;&sol;50&deg;</td>
+              <td>20&percnt;</td>
+              <td>10 mph SSW</td>
+              <td>52&percnt;</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <article>
+        <h3>Franklin Breaks Record</h3>
+        <div class="swap">
+          <picture>
+            <img src="images/fallen-trees-in-Franklin.jpg" alt="Damaged home in Franklin, MN, from wind storm" sizes="48vw"
+                 srcset="images/fallen-trees-small.jpg 300w,
+                         images/fallen-trees-large.jpg 480w">
+          </picture>
+          <p class="town-article">
+            Franklin broke a new record for maximum wind speeds in the area on May 24, 2017. Previous maximum wind speeds for the town were recorded on April 28, 1984, and measured at 89 mph. On Thursday, the wind speed topped out at 92 mph. Even with warning by local weather stations to be prepare properties and outside items for high winds, the residents of Franklin still face a large-scale recovery project.
+          </p>
+          <p>
+            While no people were injured in the wind storm, the Fish and Game Department responded to several reports of injured wildlife in the area. A small moose was trapped under several downed trees and was extricated. Several other dear had received injuries and were unable to walk well. They are currently being cared for by the local zoo and will be released back into the wild once they have recuperated.
+          </p>
+          <p>Numerous homes and vehicles were damaged in town by downed trees. Power was cutoff for the east side residents due to snapped power lines. The are of Hyde Park was hit particularly hard with downed trees and several are blocking roads. Officials have asked the community to please stay clear of the area unless you live nearby.
+          </p>
+          <p>
+            If you are interested in volunteering to help with cleanup or injured animals, please contact Zoe with the local Red Cross at (218) 358-9385.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <span class="site-name">WeatherView</span><br>
+        123 Main St.<br>
+        Franklin, MN 55333<br>
+        (218) 235-3859<br>
+        contact@weatherview.com
+      </div>
+
+      <div class="footer-bar">&copy;2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span></div>
+    </footer>
+
+    <script>
+      function currentDate() {
+        var d = new Date();
+        var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var n = weekday[d.getDay()];
+        var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var m = month[d.getMonth()];
+        return (n + ", " + d.getDate() + " " + m + " " + d.getFullYear());
+      }
+
+      document.getElementById("currentdate").innerHTML = currentDate();
+
+      function toggleHam() {
+        document.getElementById("navigation").classList.toggle("hide");
+      }
+
+    </script>
   </body>
 </html>
