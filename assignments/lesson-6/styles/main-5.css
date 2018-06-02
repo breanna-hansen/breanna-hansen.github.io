@@ -25,7 +25,7 @@ h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #00487c;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* ---------- header ---------- */
@@ -128,11 +128,11 @@ nav ul.hide {
 
 h2 {
   font-size: 1.5rem;
+  padding: 20px;
 }
 
 .franklin {
-  margin: 0 0 .2rem 2%;
-  width: 96%;
+  width: 100%;
 }
 
 .weather-summary {
@@ -201,15 +201,20 @@ h3 {
   flex-direction: column-reverse;
 }
 
+article h3 {
+  padding-bottom: 20px;
+}
+
 article p {
   text-align: left;
-  width: 92%;
-  margin: 1em auto;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 article img {
   margin: auto;
-  width: 92%;
+  width: 100%;
   height: auto;
   padding: 20px 0px;
 }
