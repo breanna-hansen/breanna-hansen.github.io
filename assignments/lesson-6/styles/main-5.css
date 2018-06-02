@@ -28,7 +28,7 @@ h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
-/* header */
+/* ---------- header ---------- */
 
 header {
   background-color: #00487c;
@@ -81,7 +81,7 @@ button.hamburger {
   line-height: 2.6rem;
 }
 
-/* nav */
+/* ---------- nav ---------- */
 
 nav {
   background-color: #00487c;
@@ -124,13 +124,7 @@ nav ul.hide {
   display: none;
 }
 
-/* banner image */
-
-.full-width {
-  display: none;
-}
-
-/* main */
+/* ---------- main ---------- */
 
 h2 {
   font-size: 1.5rem;
@@ -156,8 +150,8 @@ h2 {
 
 .current picture {
   display: block;
-  height: auto;
   margin: auto;
+  vertical-align: middle;
 }
 
 .weather-type {
@@ -220,7 +214,7 @@ article img {
   padding: 20px 0px;
 }
 
-/* footer */
+/* ---------- footer ---------- */
 
 .contact {
   background-color: #ececec;
