@@ -71,7 +71,7 @@ button.hamburger {
   display: block;
   position: absolute;
   top: 0px;
-  left: 87%;
+  left: 88%;
   border: none;
   color: #ffffff;
   background-color: transparent;
@@ -201,8 +201,8 @@ h3 {
   flex-direction: column-reverse;
 }
 
-article h3 {
-  padding-bottom: 20px;
+h3 {
+  padding: 20px 0px;
 }
 
 article p {
