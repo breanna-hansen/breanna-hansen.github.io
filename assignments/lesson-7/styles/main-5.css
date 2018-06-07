@@ -213,6 +213,21 @@ h3 {
 
 /* ---------- gallery ---------- */
 
-figure {
-
+.gallery-heading {
+  display: block;
 }
+
+figure {
+  padding: 5px;
+  display: table;
+}
+
+figure img {
+  display: block;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
