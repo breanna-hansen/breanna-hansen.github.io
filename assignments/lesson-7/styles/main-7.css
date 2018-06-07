@@ -16,6 +16,10 @@ header, nav, main, footer {   /* HOW TO GET ALL CONTAINERS TO STRETCH ACROSS VIE
 
 }
 
+main {
+  margin: 0 4%;
+}
+
 a {
   color: #0080aa;
   text-decoration: none;
@@ -81,13 +85,15 @@ nav {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   padding: 0px;
   overflow: hidden;
 }
 
 nav ul li a {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   color: #ffffff;
   align-items: center;
   justify-content: center;
@@ -181,7 +187,7 @@ h3 {
 }
 
 .swap picture img {  /* how to get image to align with other containers? */
-  padding: 20px 0px;
+  padding-bottom: 20px;
 }
 
 /* ---------- footer ---------- */
@@ -215,6 +221,16 @@ h3 {
   display: block;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  margin: 0 4%;
+}
+
 figure {
   padding: 5px;
   display: table;
@@ -228,4 +244,3 @@ figcaption {
   display: table-caption;
   caption-side: bottom;
 }
-

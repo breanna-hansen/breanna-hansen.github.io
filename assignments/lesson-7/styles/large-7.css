@@ -1,4 +1,9 @@
 @media only screen and (min-width: 64em) {
+  /* ---------- nav ---------- */
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
 
   /* ---------- main ---------- */
 
@@ -78,4 +83,8 @@
     grid-row-gap: 10px;
   }
 
+}
+
+.box-shadow:hover {
+  box-shadow: 5px 5px 10px gray;
 }

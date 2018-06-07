@@ -39,6 +39,7 @@
   }
 
   nav ul li a {
+    padding: 8px 10px;
     border: none;
   }
 
@@ -49,6 +50,7 @@
   /* ---------- main ---------- */
 
   main {
+    padding-bottom: 20px;
   }
 
   main h2 {
@@ -111,10 +113,6 @@
     border-bottom: 1px solid #0080aa;
   }
 
-  article {
-    padding-bottom: 20px;
-  }
-
   .swap {
     display: inline-block;
   }
@@ -141,20 +139,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-  }
-
-  figure {
-    padding: 5px;
-    display: table;
-  }
-
-  figure img {
-    display: block;
-  }
-
-  figcaption {
-    display: table-caption;
-    caption-side: bottom;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 
 }
