@@ -67,13 +67,14 @@
         </div>
 
         <div class="highlow">
-          <p>High: 90&deg;</p>
-          <p>Low: 66&deg;</p>
+          <p>High: <span id="high">90</span>&deg;</p>
+          <p>Low: <span id="low">66</span>&deg;</p>
         </div>
 
         <div class="conditions">
           <p>Precipitation: 0&percnt;</p>
-          <p>Wind Speed: 5 mph SW</p>
+          <p>Wind Speed: <span id="windspeed">5</span> mph SW</p>
+          <p id="windchill" onload="calculateWindchill()"></p>
         </div>
       </section>
 
@@ -212,5 +213,6 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/toggleHam.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
