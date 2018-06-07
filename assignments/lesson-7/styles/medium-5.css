@@ -1,0 +1,139 @@
+@media only screen and (min-width: 37.5em) {
+
+  header, nav, main, footer {
+  }
+
+  /* ---------- header ---------- */
+
+  header {
+    background-image: url('../images/rsz_blue-header-background.png');
+    justify-content: center;
+  }
+
+  header img, header h1, header .subheading {
+    padding: 8px 10px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header .subheading {
+    font-size: 1.2rem;
+  }
+
+  button.hamburger {
+    display: none;
+  }
+
+  /* ---------- nav ---------- */
+
+  nav ul {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  nav ul li {
+    display: inline-flex;
+  }
+
+  nav ul li a {
+    border: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  /* ---------- main ---------- */
+
+  main {
+  }
+
+  main h2 {
+    display: none;
+  }
+
+  .town-summary {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .franklin {
+    padding-top: 20px;
+    width: 50%;
+  }
+
+  .weather-summary {
+    padding: 5px 0px;
+    width: 50%;
+    background-color: #ececec;
+  }
+
+  .weather-summary h2 {
+    padding-bottom: 10px;
+  }
+
+  .weather-type {
+    font-size: 2.0rem;
+  }
+
+  .current {
+    width: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  .current picture {
+  }
+
+  section.forecast {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .forecast table {
+    text-align: left;
+  }
+
+  .forecast th {
+    padding: 5px 0px 5px 5px;
+    background-color: #ececec;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  .forecast td {
+    padding: 5px 0px 5px 5px;
+    border-bottom: 1px solid #0080aa;
+  }
+
+  article {
+    padding-bottom: 20px;
+  }
+
+  .swap {
+    display: inline-block;
+  }
+
+  .swap p {
+    width: 100%;
+  }
+
+  .swap picture img {
+    width: 50%;
+    float: right;
+    padding: 0px 0px 0px  20px;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    clear: right;
+  }
+
+}

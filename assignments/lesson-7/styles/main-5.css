@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  text-align: center;
+  line-height: 1.1rem;
+}
+
+header, nav, main, footer {   /* HOW TO GET ALL CONTAINERS TO STRETCH ACROSS VIEWPORT? */
+  max-width: 100%;
+}
+
+a {
+  color: #0080aa;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-weight: 300;
+  color: #00487c;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ---------- header ---------- */
+
+header {
+  background-color: #00487c;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+header img, header h1, header .subheading {
+  padding: 5px 10px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+header .subheading {
+  font-size: 0.9rem;
+}
+
+.hamburger {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 0px 3% 0px 0px;
+  line-height: 2.2rem;
+}
+
+/* ---------- nav ---------- */
+
+nav {
+  background-color: #00487c;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+nav ul li a {
+  display: flex;
+  flex-flow: column nowrap;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-top: 1px solid #ffffff;
+}
+
+nav ul li.active a {
+  color: #ffd332;
+  background-color: #003256;
+}
+nav ul li a:hover {
+  color: #c0c0c0;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/* ---------- main ---------- */
+
+.franklin {
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.weather-summary {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-summary h2 {
+  display: none;
+}
+
+.current {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.weather-type {
+  font-size: 1.5rem;
+  align-self: center;
+  padding: 10px;
+}
+
+.highlow {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.conditions p, .highlow p {
+  padding: 5px 0px 0px 0px;
+  text-align: left;
+  border-bottom: 1px solid #0080aa;
+  width: 200px;
+}
+
+.conditions {
+  padding-bottom: 20px;
+}
+
+section.forecast {
+  display: none;
+}
+
+h3 {
+  font-size: 1.250rem;
+  padding: 20px 0px;
+}
+
+.swap {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.swap p {
+  text-align: left;
+  margin-bottom: 1rem;
+  flex: 1 1 96%;
+}
+
+.swap picture img {  /* how to get image to align with other containers? */
+  padding: 20px 0px;
+  flex-basis: 100px;
+}
+
+/* ---------- footer ---------- */
+
+.contact {
+  background-color: #ececec;
+  padding: 20px;
+}
+
+.site-name {
+  font-weight: 300;
+  font-family: 'Arvo', 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.footer-bar {
+  color: #ffffff;
+  padding: 15px;
+  background-color: #0080aa;
+  font-size: .8rem;
+}
+
+.footer-bar a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ---------- gallery ---------- */
+
+figure {
+
+}
