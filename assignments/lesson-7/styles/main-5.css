@@ -13,7 +13,7 @@ body {
 }
 
 header, nav, main, footer {   /* HOW TO GET ALL CONTAINERS TO STRETCH ACROSS VIEWPORT? */
-  max-width: 100%;
+
 }
 
 a {
@@ -178,12 +178,10 @@ h3 {
 .swap p {
   text-align: left;
   margin-bottom: 1rem;
-  flex: 1 1 96%;
 }
 
 .swap picture img {  /* how to get image to align with other containers? */
   padding: 20px 0px;
-  flex-basis: 100px;
 }
 
 /* ---------- footer ---------- */
