@@ -93,10 +93,6 @@ nav ul {
   overflow: hidden;
 }
 
-nav ul li {
-  padding: 10px 0px;
-}
-
 nav ul li.active {
   background-color: #003256;
 }
@@ -232,18 +228,12 @@ h3 {
 
 /* ---------- gallery ---------- */
 
-.gallery-heading {
-  display: block;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  justify-items: center;
-  margin: 0 4%;
 }
 
 figure {
@@ -258,4 +248,8 @@ figure img {
 figcaption {
   display: table-caption;
   caption-side: bottom;
+}
+
+.box-shadow {
+  margin: auto;
 }
