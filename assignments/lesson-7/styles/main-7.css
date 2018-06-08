@@ -28,7 +28,7 @@ a {
 h2, h3, h4, h5, h6 {
   font-family: 'Arvo', 'Times New Roman', serif;
   font-weight: 300;
-  color: #00487c;
+  color: #0080aa;
   text-align: center;
   padding: 10px;
 }
@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 header img, header h1, header .subheading {
@@ -52,6 +52,7 @@ header img, header h1, header .subheading {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding-left: 10px;
 }
 
 header h1 {
@@ -92,13 +93,15 @@ nav ul {
   overflow: hidden;
 }
 
+nav ul li {
+  padding: 10px 0px;
+}
 nav ul li a {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   align-items: center;
   justify-content: center;
-  padding: 8px 16px;
   text-decoration: none;
   border-top: 1px solid #ffffff;
 }
@@ -119,6 +122,9 @@ nav ul.hide {
 
 .franklin {
   width: 100%;
+  object-fit: cover;
+  object-position: bottom right;
+  height: 235px;
 }
 
 h2 {
@@ -208,7 +214,8 @@ h3 {
 .footer-bar {
   color: #ffffff;
   padding: 15px;
-  background-color: #0080aa;
+  background-image: url('../images/rsz_blue-header-background.png');
+  background-position: center;
   font-size: .8rem;
 }
 
