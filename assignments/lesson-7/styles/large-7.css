@@ -36,9 +36,9 @@
   .weather-summary {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
     padding-top: 20px;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .weather-summary h2 {
@@ -53,11 +53,8 @@
     margin: 0px;
   }
 
-  .highlow {
-  }
-
   .highlow p, .conditions p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 10px 0px 0px 0px;
     width: 230px;
   }

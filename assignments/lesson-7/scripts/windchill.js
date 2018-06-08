@@ -26,4 +26,4 @@ function average (highT, lowT)
   return avg;
 }
 
-document.getElementById('windchill').innerHTML = "Windchill: " + calculateWindChill();
+document.getElementById('windchill').innerHTML = calculateWindChill();
