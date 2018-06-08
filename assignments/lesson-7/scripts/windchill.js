@@ -9,7 +9,6 @@ function calculateWindChill()
   {
     result = windChill(highT, lowT, speed);
   }
-
   return result;
 }
 

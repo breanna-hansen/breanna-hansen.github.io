@@ -36,10 +36,13 @@
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   nav ul li {
     display: inline-flex;
+    padding: 5px 0px;
   }
 
   nav ul li a {

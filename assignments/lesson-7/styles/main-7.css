@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 15px 0px;
 }
 
 header img, header h1, header .subheading {
@@ -96,19 +96,25 @@ nav ul {
 nav ul li {
   padding: 10px 0px;
 }
+
+nav ul li.active {
+  background-color: #003256;
+}
+
 nav ul li a {
   display: flex;
   flex-direction: column;
   color: #ffffff;
+  text-align: center;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   border-top: 1px solid #ffffff;
+  padding: 8px 16px;
 }
 
 nav ul li.active a {
   color: #ffd332;
-  background-color: #003256;
 }
 nav ul li a:hover {
   color: #c0c0c0;
