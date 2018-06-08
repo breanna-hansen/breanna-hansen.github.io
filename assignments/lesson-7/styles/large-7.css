@@ -1,17 +1,15 @@
 @media only screen and (min-width: 64em) {
   /* ---------- nav ---------- */
 
-  nav ul {
-    width: 960px;
-  }
-
   nav ul li a {
     padding: 8px 16px;
   }
 
   nav ul.hide {
     display: inline-flex;
+    width: 960px;
   }
+
   /* ---------- main ---------- */
 
   body {
