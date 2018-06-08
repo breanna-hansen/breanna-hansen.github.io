@@ -87,8 +87,9 @@
     grid-row-gap: 10px;
   }
 
+  .box-shadow:hover {
+    box-shadow: 5px 5px 10px gray;
+  }
+
 }
 
-.box-shadow:hover {
-  box-shadow: 5px 5px 10px gray;
-}
