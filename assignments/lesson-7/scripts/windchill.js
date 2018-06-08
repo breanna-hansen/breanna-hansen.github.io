@@ -3,7 +3,7 @@ function calculateWindChill()
   let highT = parseFloat(document.getElementById('high').innerHTML);
   let lowT = parseFloat(document.getElementById('low').innerHTML);
   let speed = parseFloat(document.getElementById('windspeed').innerHTML);
-  let result = "Please enter a wind speed greater then 0 miles per hour";
+  let result = "0";
 
   if (speed > 0)
   {
