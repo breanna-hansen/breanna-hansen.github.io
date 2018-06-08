@@ -188,6 +188,7 @@ h3 {
 
 .swap picture img {  /* how to get image to align with other containers? */
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 /* ---------- footer ---------- */

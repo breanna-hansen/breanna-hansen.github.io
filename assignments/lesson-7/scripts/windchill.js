@@ -1,4 +1,4 @@
-function calculateWindchill()
+function calculateWindChill()
 {
   let highT = parseFloat(document.getElementById('high').innerHTML);
   let lowT = parseFloat(document.getElementById('low').innerHTML);
@@ -7,21 +7,21 @@ function calculateWindchill()
 
   if (speed > 0)
   {
-    result = windChill(tempF, speed).toFixed(2);
+    result = windChill(highT, lowT, speed).toFixed(2);
   }
 
   document.getElementById('windchill').innerHTML = "Windchill: " + result;
 }
 
-function windChill(tempF, speed)
+function windChill(highT, lowT, speed)
 {
-  let avg = average(high, low);
-  let windChillResult = 35.74 + 0.6215 * tempF - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
+  let avg = average(highT, lowT);
+  let windChillResult = 35.74 + 0.6215 * avg - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * avg * Math.pow(speed, 0.16));
   return windChillResult;
 }
 
-function average (high, low)
+function average (highT, lowT)
 {
-  let avg = (high + low) / 2;
+  let avg = (highT + lowT) / 2;
   return avg;
 }
