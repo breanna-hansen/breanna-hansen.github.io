@@ -39,13 +39,13 @@ header {
   background-color: #00487c;
   color: #ffffff;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 10px 0px;
 }
 
 header img, header h1, header .subheading {
-  padding: 5px 10px;
+  padding: 5px 0px;
 }
 
 .logo {
@@ -75,6 +75,7 @@ header .subheading {
   font-weight: bold;
   padding: 0px 3% 0px 0px;
   line-height: 2.2rem;
+  align-self: flex-start;
 }
 
 /* ---------- nav ---------- */
