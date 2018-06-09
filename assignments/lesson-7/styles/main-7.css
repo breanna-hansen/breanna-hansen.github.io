@@ -196,7 +196,7 @@ h3 {
 }
 
 .swap picture img {  /* how to get image to align with other containers? */
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   max-width: 100%;
 }
 
@@ -232,17 +232,13 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-gap: 10px;
+  padding-bottom: 15px;
 }
 
-figure {
-  padding: 5px;
+.box-shadow figure {
+  margin: 5px;
   display: table;
-}
-
-figure img {
-  display: block;
 }
 
 figcaption {
