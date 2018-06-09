@@ -79,13 +79,13 @@
   }
 
   .town-summary picture{
-    width: 50%;
+    flex: 1 1 50%;
     padding-top: 20px;
   }
 
   .weather-summary {
     padding: 5px 0px;
-    width: 50%;
+    flex: 1 1 50%;
   }
 
   .weather-summary h2 {
