@@ -12,10 +12,6 @@ body {
   line-height: 1.1rem;
 }
 
-header, nav, main, footer {   /* HOW TO GET ALL CONTAINERS TO STRETCH ACROSS VIEWPORT? */
-
-}
-
 main {
   margin: 0 4%;
 }
@@ -195,7 +191,7 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.swap picture img {  /* how to get image to align with other containers? */
+.swap picture img {
   padding-bottom: 15px;
   max-width: 100%;
 }
