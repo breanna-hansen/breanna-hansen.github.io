@@ -13,9 +13,6 @@
 
   /* ---------- main ---------- */
 
-  body {
-    flex-basis: 960px;
-  }
   main {
     width: 960px;
     margin-left: auto;
@@ -91,4 +88,3 @@
   }
 
 }
-
