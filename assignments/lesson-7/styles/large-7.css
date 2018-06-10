@@ -24,12 +24,6 @@
     padding: 30px 0px;
   }
 
-  .town-summary {
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-  }
-
   .town-summary picture{
     flex: 1 1 100%;
     margin: 0px;
@@ -38,9 +32,9 @@
 
   .weather-summary {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     padding-top: 20px;
-    width: 100%;
+    flex: 1 1 100%;
     justify-content: space-around;
   }
 
