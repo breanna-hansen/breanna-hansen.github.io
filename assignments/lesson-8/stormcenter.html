@@ -45,9 +45,16 @@
 
   <main>
 
-    <h2 class="gallery-heading">Storm Center</h2>
+    <h2 class="top-heading">Storm Center</h2>
 
     <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" required min="5"></label>
+        <label>Email <input type="email" name="email" placeholder="youremail@email.com"></label>
+        <label>Phone&ast; <input type="tel" name="phone" required></label>
+        <label>Zip Code&ast; <input type="number" name="zipcode" required></label>
+      </fieldset>
 
 
     </form>

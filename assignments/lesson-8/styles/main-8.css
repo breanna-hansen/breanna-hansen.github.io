@@ -245,3 +245,9 @@ figcaption {
 .box-shadow {
   margin: auto;
 }
+
+/* --------- storm center ---------- */
+
+label {
+  display: flex;
+}
