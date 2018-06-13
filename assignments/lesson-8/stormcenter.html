@@ -47,15 +47,52 @@
 
     <h2 class="top-heading">Storm Center</h2>
 
-    <form>
+    <form method="get" action="">
       <fieldset>
         <legend>Personal Information</legend>
-        <label>Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" required min="5"></label>
-        <label>Email <input type="email" name="email" placeholder="youremail@email.com"></label>
-        <label>Phone&ast; <input type="tel" name="phone" required></label>
-        <label>Zip Code&ast; <input type="number" name="zipcode" required></label>
+        <label class="top">Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" pattern="[A-Za-z]" min="5" required></label>
+        <label class="top">Email <input type="email" name="email" placeholder="youremail@email.com"></label>
+        <label class="top">Phone&ast; <input type="tel" name="phone" required></label>
+        <label class="top">Zip Code&ast; <input type="number" name="zipcode" required></label>
       </fieldset>
 
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date <input type="date"></label>
+        <label class="top">Storm Type
+          <input list="storms" autocomplete="address-level1">
+          <datalist id="storms">
+            <option value="Please select">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+        </label>
+
+        <label class="range">Storm Severity (1 to 10)&nbsp;<input type="range" id="rating" value="5" min="1" max="10" step="1"> </label>
+
+        <label class="top">Storm Region
+          <select name="region">
+            <option value="Select" selected disabled>Select region ...</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfield">Springfield</option>
+          </select>
+        </label>
+        <label class="sbs">User in-danger
+          <input type="radio" name="in-danger" value="yes" class="sbs"> Yes
+          <input type="radio" name="in-danger" value="no" class="sbs"> No
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information or Comments</legend>
+        <textarea placeholder="Enter comments here..."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Send Storm Notification" class="submitBtn">
 
     </form>
 
