@@ -280,6 +280,18 @@ form label.top, form div, form label.range {
   padding-top: 1rem;
 }
 
+.rate {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  padding-top: 0.5rem;
+}
+
+#ratingvalue {
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
 form label.top input, form label.top select {
   -webkit-appearance: none;
   display: block;
@@ -315,7 +327,7 @@ form textarea {
 /* ---------- slider ----------*/
 
 input[type="range"] {
-  width: 20rem;
+  width: 18rem;
 }
 
 .slider {
