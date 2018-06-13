@@ -50,7 +50,7 @@
     <form method="get" action="">
       <fieldset>
         <legend>Personal Information</legend>
-        <label class="top">Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Five or more characters" required></label>
+        <label class="top">Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" pattern="[A-Za-z]{4}" title="Four or more characters" required></label>
         <label class="top">Email <input type="email" name="email" placeholder="youremail@email.com"></label>
         <label class="top">Phone&ast; <input type="tel" name="phone" required></label>
         <label class="top">Zip Code&ast; <input type="number" name="zipcode" required></label>
