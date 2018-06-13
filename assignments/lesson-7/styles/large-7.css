@@ -29,7 +29,7 @@
   }
 
   .town-summary picture{
-    width: 100%;
+    flex: 1 1 100%;
     margin: 0px;
     padding: 0px;
   }
