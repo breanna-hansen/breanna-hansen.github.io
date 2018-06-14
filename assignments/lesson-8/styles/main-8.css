@@ -278,10 +278,14 @@ form label {
   line-height: 1.5rem;
 }
 
-form label.top, form div, form label.range {
+form label.top, form label.range {
   display: flex;
   flex-flow: column nowrap;
   padding-top: 1rem;
+}
+
+form div {
+  padding-top: 1.5rem;
 }
 
 .rate {
