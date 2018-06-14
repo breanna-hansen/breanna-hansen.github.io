@@ -252,30 +252,39 @@ figcaption {
 
 /* --------- form ---------- */
 
+p.left {
+  text-align: left;
+}
+
 form {
   text-align: left;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
 }
 
 fieldset {
   margin: 1.275rem 2%;
-  border: 1px solid #0080aa;
   padding: 1rem 2%;
   min-width: 96%;
+  background-color: #ececec;
+  border: 1px solid #0080aa;
 }
 
 legend {
-  background-color: #ececec;
+  background-color: #00487c;
   padding: 5px 10px;
-  font-weight: bold;
+  border: 1px solid #c0c0c0;
+  color: #ffffff;
 }
 
 form label, form div, textarea {
   line-height: 1.5rem;
   margin-left: 10px;
+}
+
+form div {
+  padding-bottom: .5rem;
 }
 
 label.top, label.range {
@@ -313,11 +322,10 @@ label.top input, label.top select {
 
 label.side {
   display: block;
-  padding: .75rem .75rem .75rem 0px;
+  padding: .25rem 0px;
 }
 
 input.submitbutton {
-  border: none;
   background-color: #ffd332;
   color: #00487c;
   font-weight: bold;
@@ -344,7 +352,7 @@ input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 8px;
-  background: #00487c;
+  background-color: #00487c;
   outline: none;
   margin: 0.5rem 0px;
 }
