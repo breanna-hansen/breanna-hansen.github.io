@@ -163,7 +163,7 @@ h2 {
 }
 
 .conditions p, .highlow p {
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0px 3px 0px;
   text-align: left;
   border-bottom: 1px solid #0080aa;
   width: 200px;
