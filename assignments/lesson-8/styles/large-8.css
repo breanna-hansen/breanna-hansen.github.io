@@ -56,13 +56,9 @@
 
   .conditions p, .highlow p {
     font-size: 1.2rem;
+    line-height: 1.2rem;
     padding: 10px 0px 0px 0px;
     width: 230px;
-  }
-
-  .conditions {
-    font-size: 1.3rem;
-    padding-bottom: 0px;
   }
 
   section.forecast {
@@ -71,6 +67,7 @@
 
   h3 {
     font-size: 1.375rem;
+    line-height: 1.375rem;
     padding: 30px 0px;
   }
 

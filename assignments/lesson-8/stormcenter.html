@@ -47,13 +47,13 @@
 
     <h2 class="top-heading">Storm Center</h2>
 
-    <form method="get" action="">
+    <form method="get" action="thanks.html">
       <fieldset>
         <legend>Personal Information</legend>
-        <label class="top">Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" pattern="[A-Za-z]" min="5" required></label>
-        <label class="top">Email <input type="email" name="email" placeholder="youremail@email.com"></label>
+        <label class="top">Full Name&ast; <input type="text" name="fullName" placeholder="Full Name" pattern="[A-Za-z]+{.5,}" required></label>
+        <label class="top">Email <input type="email" name="email" placeholder="youremail@gmail.com"></label>
         <label class="top">Phone&ast; <input type="tel" name="phone" required></label>
-        <label class="top">Zip Code&ast; <input type="number" name="zipcode" required></label>
+        <label class="top">Zip Code&ast; <input type="number" name="zipcode" max="5" required></label>
       </fieldset>
 
       <fieldset>
