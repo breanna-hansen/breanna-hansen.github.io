@@ -265,6 +265,10 @@ form {
 }
 
 fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin: 1.275rem 2%;
   padding: 1rem 2%;
   min-width: 96%;
