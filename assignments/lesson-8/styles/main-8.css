@@ -301,7 +301,7 @@ form div {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
   padding-top: 0.5rem;
   margin-left: 0px;
 }
@@ -318,7 +318,7 @@ label.top input, label.top select {
   padding: .75rem;
   line-height: 1.2rem;
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
   margin: 0rem;
 }
 
@@ -334,14 +334,14 @@ input.submitbutton {
   padding: .75rem .75rem;
   margin-bottom: 1.5rem;
   width: 96%;
-  max-width: 20rem;
+  max-width: 30rem;
   box-shadow: 3px 3px 3px #c0c0c0;
   justify-content: center;
 }
 
 textarea {
   width: 100%;
-  max-width: 20rem;
+  max-width: 30rem;
   height: 15rem;
   margin: 0rem;
 }
