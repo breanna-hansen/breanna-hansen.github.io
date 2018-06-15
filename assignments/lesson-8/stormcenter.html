@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Local Weather Gallery Images | Weatherview</title>
-    <meta name="description" content="Browse our viewer submitted weather images for the local areas of Franklin, Springville, and Greenfield. Weatherview accepts image submissions at contact@weatherview.com.">
-
+    <title>Storm Center Submission Form | Weatherview</title>
+    <meta name="description" content="Submit weather condition information to WeatherView via our Storm Center Submission interface for the local areas of Franklin, Springville, and Greenfield.">
+    <meta name="author" content="Breanna G. Hansen">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo%7COpen+Sans+Condensed:300">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main-8.css">
@@ -53,7 +53,7 @@
       <fieldset>
         <legend>Personal Information</legend>
         <label class="top">Full Name&ast;
-          <input type="text" name="fullName" pattern="[A-Za-z]{.5,}" placeholder="Full Name"  required>
+          <input type="text" name="fullName" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required>
         </label>
         <label class="top">Email
           <input type="email" name="email" placeholder="youremail@gmail.com">
@@ -62,7 +62,7 @@
           <input type="tel" name="phone" required>
         </label>
         <label class="top">Zip Code&ast;
-          <input type="number" name="zipcode" required>
+          <input type="number" name="zipcode" pattern="{5}" required>
         </label>
       </fieldset>
 
@@ -102,6 +102,9 @@
         <div>User in-danger</div>
         <label class="side">
           <input type="radio" name="in-danger" value="yes"> Yes
+        </label>
+        <label class="side">
+          <input type="radio" name="in-danger" value="maybe"> Maybe
         </label>
         <label class="side">
           <input type="radio" name="in-danger" value="no"> No
