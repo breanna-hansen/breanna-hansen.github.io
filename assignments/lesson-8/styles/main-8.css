@@ -261,6 +261,7 @@ form {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
 }
 
 fieldset {
@@ -280,7 +281,6 @@ legend {
 
 form label, form div, textarea {
   line-height: 1.5rem;
-  margin-left: 10px;
 }
 
 form div {
@@ -300,7 +300,8 @@ form div {
 .rate {
   display: flex;
   flex-direction: row;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   padding-top: 0.5rem;
   margin-left: 0px;
 }
@@ -318,6 +319,7 @@ label.top input, label.top select {
   line-height: 1.2rem;
   width: 100%;
   max-width: 20rem;
+  margin: 0rem;
 }
 
 label.side {
@@ -329,17 +331,19 @@ input.submitbutton {
   background-color: #ffd332;
   color: #00487c;
   font-weight: bold;
-  padding: .75rem 1.5rem;
+  padding: .75rem .75rem;
   margin-bottom: 1.5rem;
   width: 96%;
   max-width: 20rem;
   box-shadow: 3px 3px 3px #c0c0c0;
+  justify-content: center;
 }
 
 textarea {
   width: 100%;
   max-width: 20rem;
   height: 15rem;
+  margin: 0rem;
 }
 
 /* ---------- slider ---------- */
@@ -388,6 +392,6 @@ input[type="range"] {
   font-family: 'Arvo', 'Times New Roman', serif;
   font-size: 4rem;
   color: #ffd332;
-  padding: 4rem 0px;
+  padding: 3rem 0rem 4rem 0rem;
   line-height: 4rem;
 }
