@@ -156,4 +156,21 @@
     grid-template-columns: 1fr 1fr;
   }
 
+/* ---------- home page ---------- */
+
+  div.cityData {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cityData img, .cityData div {
+    width: 50%;
+  }
+
+  .cityData img {
+    order: 0;
+    max-height: 250px;
+  }
 }

@@ -33,18 +33,33 @@
     <nav>
       <ul id="navigation" class="hide">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="franklin-8.html">Franklin</a></li>
+        <li><a href="franklin-9.html">Franklin</a></li>
         <li><a href="#">Springfield</a></li>
         <li><a href="#">Greenville</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery-8.html">Gallery</a></li>
-      </ul>
+        <li><a href="gallery-9.html">Gallery</a></li>
       </ul>
     </nav>
 
   <main>
 
-    <div id="towns"></div>
+    <div class="weather-article">
+    </div>
+
+    <div class="cityData">
+      <img src="images/franklin-city-small.jpg" alt="Franklin County, MN">
+      <div id="Franklin"></div>
+    </div>
+
+    <div class="cityData">
+      <div id="Springfield"></div>
+      <img src="images/franklin-city-small.jpg" alt="Springfield, MN">
+    </div>
+
+    <div class="cityData">
+      <img src="images/franklin-city-small.jpg" alt="Greenville, MN">
+      <div id="Greenville"></div>
+    </div>
 
   </main>
 
@@ -63,5 +78,8 @@
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/toggleHam.js"></script>
   <script src="scripts/weather.js"></script>
+  <script>
+    GetData('homePage');
+  </script>
   </body>
 </html>

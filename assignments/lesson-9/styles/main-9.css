@@ -395,3 +395,26 @@ input[type="range"] {
   padding: 3rem 0rem 4rem 0rem;
   line-height: 4rem;
 }
+
+/* ---------- home page ---------- */
+
+div.cityData {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cityData img, .cityData div {
+  padding: 20px 20px 0px 20px;
+}
+
+.cityData img {
+  order: 1;
+ object-fit: cover;
+}
+
+td {
+  padding-right: 1rem;
+  text-align: left;
+}
