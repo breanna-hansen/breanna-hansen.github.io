@@ -398,15 +398,11 @@ input[type="range"] {
 
 /* ---------- home page ---------- */
 
-div.cityData {
+.cityData {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-
-.cityData img, .cityData div {
-  padding: 20px 20px 0px 20px;
 }
 
 .cityData img {

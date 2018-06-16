@@ -81,4 +81,38 @@
     box-shadow: 5px 5px 10px gray;
   }
 
+/* ---------- home page ---------- */
+
+  .stats {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .cityData {
+    display: flex;
+    flex-flow: column;
+    box-shadow: 5px 5px 5px #ececec;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .cityData img {
+    order: 1;
+  }
+
+  .cityData div {
+    min-height: 250px;
+    padding: 0px;
+  }
+
+  .cityData img, .cityData div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cityData div {
+    box-shadow: none;
+  }
 }

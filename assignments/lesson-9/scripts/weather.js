@@ -25,41 +25,10 @@ function homePage(data) {
   /*document.getElementById('cityName').innerHTML = data.towns[0].name; */
     let dataSet = data.towns;
     let allData = buildTable(dataSet);
-      document.getElementById('Franklin').innerHTML = buildTable(data.towns[0]);
+      document.getElementById('franklinCity').innerHTML = buildTable(data.towns[0]);
       document.getElementById('Springfield').innerHTML = buildTable(data.towns[1]);
       document.getElementById('Greenville').innerHTML = buildTable(data.towns[3]);
     }
-
-  //document.getElementById('stats').innerHTML = allData;
-   /* "<table>" +
-    "<tbody>" +
-    "<tr>" +
-    "<td>Motto: </td>" +
-    "<td>" + data.towns[0].motto + "</td>" +
-    "</tr>" +
-    "<tr>" +
-    "<td>Year founded: </td>" +
-    "<td>" + data.towns[0].yearFounded + "</td>" +
-    "</tr>" +
-    "<tr>" +
-    "<td>Population: </td>" +
-    "<td>" + data.towns[0].currentPopulation + "</td>" +
-    "</tr>" +
-    "<tr>" +
-    "<td>Annual rainfall: </td>" +
-    "<td>" + data.towns[0].averageRainfall +  "</td>" +
-    "</tr>" +
-    "</tbody>" +
-    "</table>"; */
-
-
-
-
-   /* "Motto: " + data.towns[0].motto + "<br>" + "Year Founded: " + data.towns[0].yearFounded + "<br>" + "Population: " + data.towns[0].currentPopulation + "<br>" + "Average rainfall: " + data.towns[0].averageRainfall; */
-/*  document.getElementById('motto').innerHTML = data.towns[0].motto;
-  document.getElementById('year').innerHTML = data.towns[0].yearFounded;
-  document.getElementById('population').innerHTML = data.towns[0].currentPopulation;
-  document.getElementById('rainfall').innerHTML = data.towns[0].averageRainfall;*/
 
 function buildTable(tableData){
   allData = "<table>" +
@@ -98,7 +67,7 @@ function franklinData(data) {
     date += event[x] + "<br>";
   }
   document.getElementById('events').innerHTML = date;
-  //document.getElementById('motto').innerHTML = data.towns[0].motto;
+  document.getElementById('franklinCity').innerHTML = buildTable(data.towns[0]);
 }
 
 function springfieldData(data) {

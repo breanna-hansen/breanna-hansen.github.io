@@ -158,7 +158,7 @@
 
 /* ---------- home page ---------- */
 
-  div.cityData {
+  .cityData {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -166,11 +166,38 @@
   }
 
   .cityData img, .cityData div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+    padding: 0px 20px;
+  }
+
+  .cityData div {
+    box-shadow: 5px 5px 5px #ececec;
+  }
+
+  td {
+    padding-right: 1rem;
+    text-align: left;
   }
 
   .cityData img {
     order: 0;
     max-height: 250px;
   }
+
+  .stats {
+    padding: 20px 0px;
+  }
+}
+
+/* ---------- city info/events ---------- */
+
+div.cityInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
 }
