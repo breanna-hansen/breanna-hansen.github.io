@@ -260,8 +260,6 @@ form {
   text-align: left;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
 }
 
 fieldset {
@@ -332,11 +330,10 @@ input.submitbutton {
   color: #00487c;
   font-weight: bold;
   padding: .75rem .75rem;
-  margin-bottom: 1.5rem;
-  width: 96%;
-  max-width: 30rem;
+  margin: 1.275rem 2%;
+  max-width: 31rem;
   box-shadow: 3px 3px 3px #c0c0c0;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 textarea {
