@@ -5,15 +5,13 @@ let requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&APPI
   weatherRequest.onload =  function () {
   let weatherData = JSON.parse(weatherRequest.responseText);
 
-  document.getElementById('current-temp').innerHTML = weatherData.main.temp; /* correct */
+  document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
     document.getElementById('humidity').innerHTML = weatherData.main.humidity; /* correct */
-    document.getElementById('windspeed').innerHTML = weatherData.wind.speed; /* correct */
-    document.getElementById('winddeg').innerHTML = weatherData.wind.deg;
-    document.getElementById('cityName').innerHTML = weatherData.name;
-    document.getElementById('citymainname').innerHTML = weatherData.main.name;
-    document.getElementById('main-weather').innerHTML = weatherData.weather.main;
+    document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed); /* correct */
     document.getElementById('min-temp').innerHTML = weatherData.main.temp_min;
     document.getElementById('max-temp').innerHTML = weatherData.main.temp_max;
+    document.getElementById('cityName').innerHTML = weatherData.name; /*correct */
+    document.getElementById('main-weather').innerHTML = weatherData.weather.main;
     document.getElementById('cloudy').innerHTML = weatherData.clouds.all;
     document.getElementById('sunrise').innerHTML = weatherData.sys.sunrise;
     document.getElementById('sunset').innerHTML = weatherData.sys.sunset;
@@ -25,7 +23,6 @@ let requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&APPI
     document.getElementById('wind').innerHTML = weatherData.wind[0];
     document.getElementById('clouds').innerHTML = weatherData.clouds[0];
     document.getElementById('rain').innerHTML = weatherData.rain[0];
+    document.getElementById('weather-description').innerHTML = weatherData.weather.description;
     console.log(weatherData);
   }
-
-  8:13

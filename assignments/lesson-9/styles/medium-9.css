@@ -78,7 +78,7 @@
     height: 280px;
   }
 
-  .town-summary picture{
+  .town-summary picture {
     flex: 1 1 50%;
     padding-top: 20px;
   }
@@ -94,17 +94,14 @@
   }
 
   .weather-type {
-    font-size: 2.0rem;
+    font-size: 1.5rem;
   }
 
   .current {
     display: flex;
-    flex-direction: row-reverse;
+    flex-flow: row-reverse nowrap;
     align-items: center;
     justify-content: center;
-  }
-
-  .current picture {
   }
 
   section.forecast {
