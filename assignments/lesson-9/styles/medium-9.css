@@ -158,11 +158,16 @@
 
 /* ---------- home page ---------- */
 
+  div.stats {
+    display: block;
+  }
+
   .cityData {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
   }
 
   .cityData img, .cityData div {
@@ -183,14 +188,14 @@
   }
 
   .cityData img {
-    order: 0;
     max-height: 250px;
+    object-fit: cover;
   }
 
-  .stats {
-    padding: 20px 0px;
+  #franklinCity, #Springfield, #Greenville {
+    padding: 10px;
+    line-height: 1rem;
   }
-}
 
 /* ---------- city info/events ---------- */
 
@@ -200,4 +205,17 @@ div.cityInfo {
   justify-content: space-around;
   align-items: flex-start;
   text-align: left;
+  margin-top: 20px;
+  border: 1px solid #ececec;
+}
+
+  div.cityInfo h3 {
+    padding-top: 10px;
+  }
+
+  .city-events {
+    line-height: 1.2rem;
+    padding: 10px;
+  }
+
 }

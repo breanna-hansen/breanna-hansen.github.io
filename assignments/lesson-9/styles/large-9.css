@@ -37,9 +37,10 @@
   .weather-summary {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    margin-top: 20px;
     flex: 1 1 100%;
     justify-content: space-around;
+    border: 1px solid #ececec;
   }
 
   .weather-summary h2 {
@@ -83,9 +84,8 @@
 
 /* ---------- home page ---------- */
 
-  .stats {
+  div.stats {
     display: flex;
-    flex-flow: row nowrap;
   }
 
   .cityData {
@@ -93,6 +93,8 @@
     flex-flow: column;
     box-shadow: 5px 5px 5px #ececec;
     padding: 0px 20px 20px 20px;
+    border: 1px solid #ececec;
+    margin: 20px auto 0px auto;
   }
 
   .cityData img {
@@ -114,5 +116,9 @@
 
   .cityData div {
     box-shadow: none;
+  }
+
+  #franklinCity, #Springfield, #Greenville {
+    border: none;
   }
 }

@@ -33,8 +33,8 @@ function homePage(data) {
 function buildTable(tableData){
   allData = "<table>" +
     "<tbody>" +
-    "<tr colspan='2'>" +
-    "<td><h3>" + tableData.name +
+    "<tr>" +
+    "<td colspan='2'><h3>" + tableData.name +
     "</h3></td>" +
     "</tr>" +
     "<tr>" +

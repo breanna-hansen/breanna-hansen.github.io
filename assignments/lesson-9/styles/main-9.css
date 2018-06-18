@@ -398,19 +398,6 @@ input[type="range"] {
 
 /* ---------- home page ---------- */
 
-.cityData {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.cityData img {
-  order: 1;
- object-fit: cover;
-}
-
-td {
-  padding-right: 1rem;
-  text-align: left;
-}
+div.stats (
+  display:
+)
