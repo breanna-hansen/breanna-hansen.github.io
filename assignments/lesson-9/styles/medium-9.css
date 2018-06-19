@@ -152,6 +152,11 @@
     grid-template-columns: 1fr 1fr;
   }
 
+/* ---------- form ---------- */
+
+  input.submitbutton {
+    margin: 0rem 0rem 1.5rem 1rem;
+  }
 /* ---------- home page ---------- */
 
   div.stats {
