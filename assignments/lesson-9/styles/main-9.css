@@ -333,7 +333,7 @@ input.submitbutton {
   width: 96%;
   max-width: 30rem;
   box-shadow: 3px 3px 3px #c0c0c0;
-  align-self: flex-start;
+  align-self: center;
 }
 
 textarea {
