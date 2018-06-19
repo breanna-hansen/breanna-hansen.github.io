@@ -34,8 +34,4 @@ let requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&APPI
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData); /* correct */
     document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
     document.getElementById('weathericon').innerHTML = '<img src="http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png" alt="Weather Icon">';
-    document.getElementById('mainweather').innerHTML = weatherData.weather[0].main;
-    document.getElementById('weatherid').innerHTML = weatherData.weather[0].id;
-
-
   }

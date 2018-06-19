@@ -75,7 +75,7 @@
   }
 
   .franklin {
-    height: 280px;
+    height: 250px;
   }
 
   .town-summary picture {
@@ -93,7 +93,7 @@
     flex: 1 1 50%;
   }
 
-  .weather-summary h2 {
+  .cityName {
     display: flex;
     padding-bottom: 10px;
   }
@@ -113,10 +113,6 @@
     flex-flow: column nowrap;
   }
 
-  .forecast table {
-    text-align: left;
-  }
-
   .forecast th {
     padding: 5px 0px 5px 5px;
     background-color: #00487c;
@@ -126,7 +122,6 @@
 
   .forecast td {
     padding: 5px 0px 0px 0px;
-    text-align: left;
     border-bottom: 1px solid #0080aa;
   }
 
@@ -185,7 +180,6 @@
 
   td {
     padding-right: 1rem;
-    text-align: left;
   }
 
   .cityData img {
@@ -196,6 +190,7 @@
   #franklinCity, #Springfield, #Greenville {
     padding: 10px;
     line-height: 1rem;
+    flex: 1 1 50%;
   }
 
 /* ---------- city info/events ---------- */
@@ -205,7 +200,6 @@ div.cityInfo {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  text-align: left;
   margin-top: 20px;
   border: 1px solid #ececec;
 }
@@ -215,6 +209,7 @@ div.cityInfo {
   }
 
   .city-events {
+    flex: 1 1 50%;
     line-height: 1.2rem;
     padding: 10px;
   }
