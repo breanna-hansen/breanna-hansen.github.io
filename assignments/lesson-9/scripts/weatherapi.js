@@ -24,25 +24,22 @@ let requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&APPI
       return pm + ':' + m.substr(-2) + ' p.m.';
     }
 
-
-
-   /* document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
+    document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
     document.getElementById('humidity').innerHTML = weatherData.main.humidity; /* correct */
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed); /* correct */
-    document.getElementById('min-temp').innerHTML = Math.round(weatherData.main.temp_min); /* works */
-    document.getElementById('max-temp').innerHTML = Math.round(weatherData.main.temp_max); /* works */
+    document.getElementById('min-temp').innerHTML = Math.round(weatherData.main.temp_min); /* correct */
+    document.getElementById('max-temp').innerHTML = Math.round(weatherData.main.temp_max); /* correct */
     document.getElementById('cityName').innerHTML = weatherData.name; /*correct */
     document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData); /* correct */
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData); /* correct */
-    document.getElementById('weatherdescription').innerHTML = weatherData.weather.description;
-    document.getElementById('weather').innerHTML = weatherData.weather;
-    document.getElementById('cloudy').innerHTML = weatherData.clouds.all;
-    document.getElementById('weatherid').innerHTML = weatherData.weather.id;
-    document.getElementById('weathericon').innerHTML = weatherData.weather.icon;
-    document.getElementById('weather').innerHTML = weatherData.weather;
-    document.getElementById('main').innerHTML = weatherData.main[0];
-    document.getElementById('wind').innerHTML = weatherData.wind[0];
-    document.getElementById('clouds').innerHTML = weatherData.clouds[0];
-    document.getElementById('rain').innerHTML = weatherData.rain[0]; */
-    console.log(weatherData.weather);
+    document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
+    document.getElementById('weathericon').innerHTML = iconImage(weatherData);
+
+
+    function iconImage(weatherData) {
+      let icon = document.createElement("img");
+      icon.setAttribute("src", "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png");
+      return icon;
+    }
+
   }

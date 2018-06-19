@@ -44,9 +44,7 @@
 
     <main>
 
-      <h2><span id="cityName"></h2><!-- NAME -->
-
-      <span id="weatherdescription"></span> <!-- WEATHER DESCRIPTION -->
+      <h2><span id="cityName"></span></h2><!-- NAME -->
 
       <div class="town-summary">
 
@@ -60,21 +58,20 @@
         </picture>
 
         <section class="weather-summary">
-          <h2><span id="cityName"></h2>
+          <h2><span id="cityName"></span></h2>
           <div class="current">
-            <span class="weather-type"><span id="current-temp"></span>&deg; Sunny</span>
+            <span class="weather-type">
+              <span id="weatherdescription"></span> <!-- WEATHER DESCRIPTION -->
+              <span id="current-temp"></span>&deg; Sunny</span>
               <!-- CURRENT TEMP -->
-            <span id="weather-icon"></span> <!-- WEATHER ICON -->
-            <picture>
-              <img src="images/sunny-weather-icon.png" alt="Sunny Weather Icon">
+            <picture  class="icon">
+               <span id="weathericon"></span><!-- WEATHER ICON -->
             </picture>
           </div>
 
           <div class="highlow">
             <p>High: <span id="high"><span id="max-temp"></span></span>&deg;</p> <!-- MAX TEMP -->
             <p>Low:  <span id="low"><span id="min-temp"></span></span>&deg;</p> <!-- LOW TEMP -->
-            <p>Precipitation: 0&percnt;</p>
-            <p>Clouds: <span id="cloudy"></span>&percnt;</p>
           </div>
 
           <div class="conditions">
