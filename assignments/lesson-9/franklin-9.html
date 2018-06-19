@@ -46,7 +46,7 @@
 
       <h2><span id="cityName"></h2><!-- NAME -->
 
-      <span id="weatherdescription"></span>
+      <span id="weatherdescription"></span> <!-- WEATHER DESCRIPTION -->
 
       <div class="town-summary">
 
@@ -60,7 +60,7 @@
         </picture>
 
         <section class="weather-summary">
-          <h2>Franklin, MN</h2>
+          <h2><span id="cityName"></h2>
           <div class="current">
             <span class="weather-type"><span id="current-temp"></span>&deg; Sunny</span>
               <!-- CURRENT TEMP -->
@@ -71,17 +71,19 @@
           </div>
 
           <div class="highlow">
-            <p>High: <span id="max-temp"></span> &nbsp; <span id="high">90</span>&deg;</p> <!-- MAX TEMP -->
-            <p>Low: <span id="min-temp"></span> &nbsp;  <span id="low">66</span>&deg;</p> <!-- LOW TEMP -->
+            <p>High: <span id="high"><span id="max-temp"></span></span>&deg;</p> <!-- MAX TEMP -->
+            <p>Low:  <span id="low"><span id="min-temp"></span></span>&deg;</p> <!-- LOW TEMP -->
             <p>Precipitation: 0&percnt;</p>
+            <p>Clouds: <span id="cloudy"></span>&percnt;</p>
           </div>
 
           <div class="conditions">
             <p>Wind Speed: <span id="windspeed"></span> mph SW</p> <!-- WIND SPEED -->
             <p>Windchill: <span id="windchill"></span>&deg;</p>
             <p>Humidity: <span id="humidity"></span>&percnt;</p> <!-- HUMIDITY -->
-            <p>Sunrise: <span id="sunrise"></span> a.m.</p>
-            <p>Sunset: <span id="sunset"></span> p.m.</p>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
+
           </div>
         </section>
 

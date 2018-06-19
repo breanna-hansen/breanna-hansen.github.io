@@ -5,24 +5,44 @@ let requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&APPI
   weatherRequest.onload =  function () {
   let weatherData = JSON.parse(weatherRequest.responseText);
 
-  document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
+    function timestampSunrise(weatherData)
+    {
+      var dt = new Date(weatherData.sys.sunrise * 1000);
+      var hr = dt.getHours();
+      var m = "0" + dt.getMinutes();
+      var s = "0" + dt.getSeconds();
+      return hr+ ':' + m.substr(-2) + ' a.m.';
+    }
+
+    function timestampSunset(weatherData)
+    {
+      var dt = new Date(weatherData.sys.sunset * 1000);
+      var hr = dt.getHours();
+      var m = "0" + dt.getMinutes();
+      var s = "0" + dt.getSeconds();
+      var pm = hr - 12;
+      return pm + ':' + m.substr(-2) + ' p.m.';
+    }
+
+
+
+   /* document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
     document.getElementById('humidity').innerHTML = weatherData.main.humidity; /* correct */
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed); /* correct */
-    document.getElementById('min-temp').innerHTML = weatherData.main.temp_min;
-    document.getElementById('max-temp').innerHTML = weatherData.main.temp_max;
+    document.getElementById('min-temp').innerHTML = Math.round(weatherData.main.temp_min); /* works */
+    document.getElementById('max-temp').innerHTML = Math.round(weatherData.main.temp_max); /* works */
     document.getElementById('cityName').innerHTML = weatherData.name; /*correct */
-    document.getElementById('main-weather').innerHTML = weatherData.weather.main;
-    document.getElementById('cloudy').innerHTML = weatherData.clouds.all;
-    document.getElementById('sunrise').innerHTML = weatherData.sys.sunrise;
-    document.getElementById('sunset').innerHTML = weatherData.sys.sunset;
+    document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData); /* correct */
+    document.getElementById('sunset').innerHTML = timestampSunset(weatherData); /* correct */
     document.getElementById('weatherdescription').innerHTML = weatherData.weather.description;
-    document.getElementById('weathericon').innerHTML = weatherData.weather.icon;
+    document.getElementById('weather').innerHTML = weatherData.weather;
+    document.getElementById('cloudy').innerHTML = weatherData.clouds.all;
     document.getElementById('weatherid').innerHTML = weatherData.weather.id;
+    document.getElementById('weathericon').innerHTML = weatherData.weather.icon;
     document.getElementById('weather').innerHTML = weatherData.weather;
     document.getElementById('main').innerHTML = weatherData.main[0];
     document.getElementById('wind').innerHTML = weatherData.wind[0];
     document.getElementById('clouds').innerHTML = weatherData.clouds[0];
-    document.getElementById('rain').innerHTML = weatherData.rain[0];
-    document.getElementById('weather-description').innerHTML = weatherData.weather.description;
-    console.log(weatherData);
+    document.getElementById('rain').innerHTML = weatherData.rain[0]; */
+    console.log(weatherData.weather);
   }
