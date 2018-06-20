@@ -54,6 +54,12 @@
     margin: 0px;
   }
 
+  .conditions {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .conditions p, .highlow p {
     font-size: 1.2rem;
     line-height: 1.2rem;
