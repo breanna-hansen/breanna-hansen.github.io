@@ -44,7 +44,7 @@
 
     <main>
 
-      <h2 class="cityName"></h2> <!-- NAME API -->
+      <h2 id="cityName"></h2> <!-- NAME API -->
 
       <div class="town-summary">
 
@@ -58,7 +58,7 @@
         </picture>
 
         <section class="weather-summary">
-          <h2 class="cityName"></h2> <!-- NAME API -->
+          <h2 id="cityNameMedium"></h2> <!-- NAME API -->
           <div class="current">
             <span class="weather-type">
               <span id="current-temp"></span>&deg; <span id="weatherdescription"></span> <!-- CURRENT TEMP & WEATHER DESCRIPTION -->
@@ -84,6 +84,8 @@
       </div>
 
       <section class="forecast">
+
+        <div id="fiveDayForecast"></div>
         <h3>Ten Day Forecast</h3>
         <table>
           <thead>
@@ -227,10 +229,11 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/toggleHam.js"></script>
-    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/towndata.js"></script>
     <script src="scripts/weather.js"></script>
     <script>
       GetData('franklin');
     </script>
+    <script src="scripts/fiveday.js"></script>
   </body>
 </html>

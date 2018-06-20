@@ -127,6 +127,10 @@ nav ul.hide {
   height: 235px;
 }
 
+.cityNameMedium {
+  display: none;
+}
+
 h2 {
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -139,10 +143,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-main h2.cityName {
-  display: none;
 }
 
 .current {
@@ -395,7 +395,16 @@ input[type="range"] {
 
 /* ---------- home page ---------- */
 
-.cityData {
+.weatherStory {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.weatherStory p {
+  padding: 0px 10px 5px 10px;
+}
+
+.cityData, .headline {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -413,7 +422,7 @@ input[type="range"] {
   padding: 0px 10px;
 }
 
-.cityData img {
+.cityData img, .headline img {
   width: 98%;
   padding: 10px;
 }
@@ -431,7 +440,7 @@ td {
   object-fit: cover;
 }
 
-#franklinCity, #Springfield, #Greenville {
+#franklinCity, #Springfield, #Greenville, {
   padding: 0px;
   line-height: 1rem;
   flex: 1 1 50%;

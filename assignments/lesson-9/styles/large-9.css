@@ -18,10 +18,14 @@
     margin-right: auto;
   }
 
-  main > h2 {
+  #cityName {
     display: flex;
     justify-content: center;
     padding: 30px 0px;
+  }
+
+  #cityNameMedium {
+    display: none;
   }
 
   .town-summary {
@@ -98,13 +102,18 @@
     display: flex;
   }
 
-  .cityData {
+  .cityData, .weatherStory {
     display: flex;
     flex-flow: column;
     box-shadow: 5px 5px 5px #ececec;
     padding: 0px 20px 20px 20px;
     border: 1px solid #ececec;
     margin: 20px auto 0px auto;
+  }
+
+  .headline div {
+    height: 295px;
+    margin-top: 0px;
   }
 
   .cityData img {
@@ -128,11 +137,12 @@
     box-shadow: none;
   }
 
-  #franklinCity, #Springfield, #Greenville {
+  #franklinCity, #Springfield, #Greenville, {
     border: none;
   }
 
   .cityInfo {
     box-shadow: 5px 5px 5px #ececec;
   }
+
 }
