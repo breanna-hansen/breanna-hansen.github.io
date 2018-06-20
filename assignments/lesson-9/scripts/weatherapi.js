@@ -27,7 +27,7 @@ let requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=4156210&APP
     document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
     document.getElementById('humidity').innerHTML = weatherData.main.humidity; /* correct */
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed); /* correct */
-    document.getElementById('cityName').innerHTML = weatherData.name; /*correct */
+    document.getElementsByClassName('cityName').innerHTML = weatherData.name; /*correct */
     document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData); /* correct */
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData); /* correct */
     document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;

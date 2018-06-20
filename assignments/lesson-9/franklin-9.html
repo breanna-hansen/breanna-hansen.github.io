@@ -44,7 +44,7 @@
 
     <main>
 
-      <h2><span id="cityName"></span></h2><!-- NAME -->
+      <h2 class="cityName"></h2> <!-- NAME API -->
 
       <div class="town-summary">
 
@@ -58,26 +58,26 @@
         </picture>
 
         <section class="weather-summary">
-          <h2><span id="cityName"></span></h2>
+          <h2 class="cityName"></h2> <!-- NAME API -->
           <div class="current">
             <span class="weather-type">
               <span id="current-temp"></span>&deg; <span id="weatherdescription"></span> <!-- CURRENT TEMP & WEATHER DESCRIPTION -->
-            </span>
+            </span> <!-- WEATHER DESCRIPTION API -->
             <picture class="icon">
                <span id="weathericon"></span><!-- WEATHER ICON -->
-            </picture>
+            </picture> <!-- WEATHER ICON API -->
           </div>
 
           <div class="highlow">
             <p>High: <span id="high">90</span>&deg; F</p>
             <p>Low:  <span id="low">66</span>&deg; F</p>
-            <p>Wind Speed: <span id="windspeed"></span> mph </p> <!-- WIND SPEED -->
+            <p>Wind Speed: <span id="windspeed"></span> mph </p> <!-- WIND SPEED API -->
           </div>
 
           <div class="conditions">
-            <p>Humidity: <span id="humidity"></span>&percnt;</p> <!-- HUMIDITY -->
-            <p>Sunrise: <span id="sunrise"></span></p>
-            <p>Sunset: <span id="sunset"></span></p>
+            <p>Humidity: <span id="humidity"></span>&percnt;</p> <!-- HUMIDITY API -->
+            <p>Sunrise: <span id="sunrise"></span></p> <!-- SUNRISE API -->
+            <p>Sunset: <span id="sunset"></span></p> <!-- SUNSET API -->
           </div>
         </section>
 
@@ -182,10 +182,10 @@
       </section>
 
       <div class="cityInfo">
-        <div id="franklinCity"></div>
+        <div id="franklinCity"></div> <!-- FRANKLIN CITY STATS API -->
         <div class="city-events">
           <h3>Events Calendar</h3>
-          <div id="events"></div>
+          <div id="events"></div> <!-- EVENTS API -->
         </div>
       </div>
 

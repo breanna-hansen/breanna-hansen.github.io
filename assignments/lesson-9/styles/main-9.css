@@ -141,7 +141,7 @@ h2 {
   justify-content: center;
 }
 
-.cityName {
+main h2.cityName {
   display: none;
 }
 
