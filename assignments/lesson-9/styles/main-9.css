@@ -415,6 +415,7 @@ input[type="range"] {
 
 .cityData img {
   width: 98%;
+  padding: 10px;
 }
 
 .order {
@@ -431,7 +432,7 @@ td {
 }
 
 #franklinCity, #Springfield, #Greenville {
-  padding: 10px;
+  padding: 0px;
   line-height: 1rem;
   flex: 1 1 50%;
 }
