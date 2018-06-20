@@ -81,6 +81,7 @@ header .subheading {
 
 nav {
   background-color: #00487c;
+  text-align: center;
 }
 
 nav ul {
@@ -99,7 +100,6 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  text-align: center;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -395,8 +395,45 @@ input[type="range"] {
 
 /* ---------- home page ---------- */
 
-div.stats (
-  display:
-)
+.cityData {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ececec;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  box-shadow: 5px 5px 5px #ececec;
+}
+
+.cityData img, .cityData div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.cityData img {
+  width: 98%;
+}
+
+.order {
+  display: flex;
+  flex-direction: column-reverse;
+}
+td {
+  padding-right: 1rem;
+}
+
+.cityData img {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+#franklinCity, #Springfield, #Greenville {
+  padding: 10px;
+  line-height: 1rem;
+  flex: 1 1 50%;
+}
 
 

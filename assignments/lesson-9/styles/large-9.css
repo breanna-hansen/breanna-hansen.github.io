@@ -40,7 +40,10 @@
     margin-top: 20px;
     flex: 1 1 100%;
     justify-content: space-around;
+    align-items: center;
     border: 1px solid #ececec;
+    box-shadow: 5px 5px 5px #ececec;
+    padding-bottom: 20px;
   }
 
   .weather-summary h2 {
@@ -55,12 +58,19 @@
     margin: 0px;
   }
 
+  .conditions {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .conditions p, .highlow p {
     font-size: 1.2rem;
     line-height: 1.2rem;
     padding: 10px 0px 0px 0px;
     width: 230px;
   }
+
 
   section.forecast {
     padding: 5px 0px 0px 0px;
@@ -122,7 +132,7 @@
     border: none;
   }
 
-  #weather-description {
-    background-color: aqua;
+  .cityInfo {
+    box-shadow: 5px 5px 5px #ececec;
   }
 }
