@@ -427,6 +427,10 @@ input[type="range"] {
   padding: 10px;
 }
 
+.cityData img {
+  max-width: 486px;
+  height: auto;
+}
 .order {
   display: flex;
   flex-direction: column-reverse;
@@ -438,6 +442,7 @@ td {
 .cityData img {
   max-height: 250px;
   object-fit: cover;
+  object-position: bottom-right;
 }
 
 #franklinCity, #Springfield, #Greenville {
