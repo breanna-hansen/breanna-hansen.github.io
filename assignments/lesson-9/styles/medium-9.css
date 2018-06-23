@@ -198,7 +198,7 @@
     object-fit: cover;
   }
 
-  #franklinCity, #Springfield, #Greenville, {
+  #franklinCity, #Springfield, #Greenville {
     padding: 10px;
     line-height: 1rem;
     flex: 1 1 50%;
