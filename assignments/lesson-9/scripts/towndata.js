@@ -24,9 +24,18 @@ function GetData(page){
 function homePage(data) {
     let dataSet = data.towns;
     let allData = buildTable(dataSet);
-    document.getElementById('franklinCity').innerHTML = buildTable(data.towns[0]);
-    document.getElementById('Springfield').innerHTML = buildTable(data.towns[1]);
-    document.getElementById('Greenville').innerHTML = buildTable(data.towns[3]);
+    for (let i = 0; i < data.towns.length; i++) {
+      if (data.towns[i]['name'] == "Franklin") {
+        document.getElementById('franklinCity').innerHTML = buildTable(data.towns[i]);
+      }
+      else if (data.towns[i]['name'] == "Springfield") {
+        document.getElementById('Springfield').innerHTML = buildTable(data.towns[i]);
+      }
+      else if (data.towns[i]['name'] == "Greenville") {
+      document.getElementById('Greenville').innerHTML = buildTable(data.towns[i]);
+      }
+      else {
+      }
     }
 
 function buildTable(tableData){
@@ -57,24 +66,52 @@ function buildTable(tableData){
   return allData;
 }
 
-
 function franklinData(data) {
-  let event = data.towns[0].events;
-  let date = "";
-  let x;
-  for (x in event) {
-    date += event[x] + "<br>";
+  let i;
+  for (i = 0; i < data.towns.length; i++) {
+    if (data.towns[i]['name'] == "Franklin") {
+      let event = data.towns[i].events;
+      let date = "";
+      let x;
+      for (x in event) {
+        date += event[x] + "<br>";
+      }
+      document.getElementById('events').innerHTML = date;
+    }
   }
-  document.getElementById('events').innerHTML = date;
-  document.getElementById('franklinCity').innerHTML = buildTable(data.towns[0]);
 }
 
 function springfieldData(data) {
+    let i;
+    for (i = 0; i < data.towns.length; i++) {
+      if (data.towns[i]['name'] == "Springfield") {
+        let event = data.towns[i].events;
+        let date = "";
+        let x;
+        for (x in event) {
+          date += event[x] + "<br>";
+        }
+        document.getElementById('events').innerHTML = date;
+      }
+    }
+  }
 
 }
 
 function greenvilleData(data) {
-
+    let i;
+    for (i = 0; i < data.towns.length; i++) {
+      if (data.towns[i]['name'] == "Greenville") {
+        let event = data.towns[i].events;
+        let date = "";
+        let x;
+        for (x in event) {
+          date += event[x] + "<br>";
+        }
+        document.getElementById('events').innerHTML = date;
+      }
+    }
+  }
 }
 
 

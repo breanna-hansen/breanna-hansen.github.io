@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather Forecasting and Alerts for Franklin, Springfield, and Greenville | Weatherview</title>
+    <meta name="description" content="WeatherView provides local and area weather forecasts for the towns of Franklin, Springfield, and Greenville, as well as related weather alerts and news articles.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo%7COpen+Sans+Condensed:300">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+
+    <script>
+      function GetData(page){
+        let requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        let weatherRequest = new XMLHttpRequest();
+        weatherRequest.open('GET', requestURL);
+        weatherRequest.send();
+        weatherRequest.onload = function () {
+          let weatherData = JSON.parse(weatherRequest.responseText);
+          switch(page) {
+            case 'homePage':
+              homePage(weatherData);
+              break;
+            case 'franklin':
+              franklinData(weatherData);
+              break;
+            case 'springfield':
+              springfieldData(weatherData);
+              break;
+            default:
+              greenvilleData(weatherData);
+          }
+        }
+      }
+
+      function franklinData(data) {
+        let i;
+        for (i = 0; i < data.towns.length; i++) {
+          if (data.towns[i]['name'] == "Franklin") {
+            let event = data.towns[i].events;
+            let date = "";
+            let x;
+            for (x in event) {
+              date += event[x] + "<br>";
+            }
+            document.getElementById('events').innerHTML = date;
+          }
+        }
+        }
+
+
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <figure>
+          <img src="images/weatherview-logo.png" alt="WeatherView Logo">
+        </figure>
+      </div>
+      <div class="title">
+        <h1>WeatherView</h1>
+        <div class="subheading">Precision Forecasting</div>
+      </div>
+      <button class="hamburger" onclick="toggleHam()">
+        &equiv;
+      </button>
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="franklin-9.html">Franklin</a></li>
+        <li><a href="#">Springfield</a></li>
+        <li><a href="#">Greenville</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <button type="button" onclick="GetData('franklin')">Test</button>
+
+      <div class="cityInfo">
+        <div id="franklinCity" class="cityStats"></div> <!-- FRANKLIN CITY STATS API -->
+        <div class="city-events">
+          <h3>Events Calendar</h3>
+          <div id="events"></div> <!-- EVENTS API -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <span class="site-name">WeatherView</span><br>
+        123 Main St.<br>
+        Franklin, MN 55333<br>
+        (218) 235-3859<br>
+        contact@weatherview.com
+      </div>
+
+      <div class="footer-bar">&copy; 2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span><br>
+        Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+    </footer>
+
+  </body>
+</html>
