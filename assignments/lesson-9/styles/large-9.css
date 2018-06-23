@@ -111,6 +111,11 @@
     margin: 20px auto 0px auto;
   }
 
+  .headline {
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+
   .headline div {
     height: 265px;
     margin-top: 0px;
