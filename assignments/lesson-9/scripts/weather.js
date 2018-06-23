@@ -24,13 +24,13 @@ function timestampSunset(weatherData)
   return pm + ':' + m.substr(-2) + ' p.m.';
 }
 
-document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp); /* correct */
-document.getElementById('humidity').innerHTML = weatherData.main.humidity; /* correct */
-document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed); /* correct */
-document.getElementById('cityName').innerHTML = weatherData.name; /*correct */
+document.getElementById('current-temp').innerHTML = Math.round(weatherData.main.temp);
+document.getElementById('humidity').innerHTML = weatherData.main.humidity;
+document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed);
+document.getElementById('cityName').innerHTML = weatherData.name;
 document.getElementById('cityNameMedium').innerHTML = weatherData.name;
-document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData); /* correct */
-document.getElementById('sunset').innerHTML = timestampSunset(weatherData); /* correct */
+document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData);
+document.getElementById('sunset').innerHTML = timestampSunset(weatherData);
 document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
 document.getElementById('weathericon').innerHTML = '<img src="http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png" alt="Weather Icon">';
 }
