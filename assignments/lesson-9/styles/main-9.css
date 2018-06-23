@@ -442,7 +442,7 @@ td {
 .cityData img {
   max-height: 250px;
   object-fit: cover;
-  object-position: bottom-right;
+  object-position: bottom;
 }
 
 #franklinCity, #Springfield, #Greenville {
