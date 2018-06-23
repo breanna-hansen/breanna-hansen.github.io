@@ -206,14 +206,11 @@
 
 /* ---------- city info/events ---------- */
 
-div.cityInfo {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  div.cityInfo {
+
   margin-top: 20px;
   border: 1px solid #ececec;
-}
+  }
 
   div.cityInfo h3 {
     padding-top: 10px;
@@ -229,10 +226,4 @@ div.cityInfo {
     align-items: center;
   }
 
-  .cityStats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
