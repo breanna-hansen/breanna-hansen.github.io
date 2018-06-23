@@ -22,21 +22,12 @@ function GetData(page){
 }
 
 function homePage(data) {
-    let dataSet = data.towns;
-    let allData = buildTable(dataSet);
-    for (let i = 0; i < data.towns.length; i++) {
-      if (data.towns[i]['name'] == "Franklin") {
-        document.getElementById('franklinCity').innerHTML = buildTable(data.towns[i]);
-      }
-      else if (data.towns[i]['name'] == "Springfield") {
-        document.getElementById('Springfield').innerHTML = buildTable(data.towns[i]);
-      }
-      else if (data.towns[i]['name'] == "Greenville") {
-      document.getElementById('Greenville').innerHTML = buildTable(data.towns[i]);
-      }
-      else {
-      }
-    }
+  let dataSet = data.towns;
+  let allData = buildTable(dataSet);
+  document.getElementById('franklinCity').innerHTML = buildTable(data.towns[0]);
+  document.getElementById('Springfield').innerHTML = buildTable(data.towns[1]);
+  document.getElementById('Greenville').innerHTML = buildTable(data.towns[3]);
+}
 
 function buildTable(tableData){
   allData = "<table>" +
