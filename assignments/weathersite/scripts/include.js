@@ -15,7 +15,7 @@ function include() {
           include(); // call the function again to start the process over
         }
       }
-      xhttp.open('GET', 'includes/' + file, true);  // matching file names in includes folder
+      xhttp.open('GET', 'modules/' + file, true);  // matching file names in includes folder
       xhttp.send();
       return;
     }

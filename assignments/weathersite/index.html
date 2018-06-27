@@ -15,18 +15,10 @@
 
   <body>
 
-    <header includefile="modules/header.html">
+    <header includefile="header.html">
     </header>
 
-    <nav>
-      <ul id="navigation" class="hide">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="franklin.html">Franklin</a></li>
-        <li><a href="springfield.html">Springfield</a></li>
-        <li><a href="greenville.html">Greenville</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
+    <nav includefile="nav.html">
     </nav>
 
   <main>
@@ -60,20 +52,10 @@
 
   </main>
 
-  <footer>
-    <div class="contact">
-      <span class="site-name">WeatherView</span><br>
-      123 Main St.<br>
-      Franklin, MN 55333<br>
-      (218) 235-3859<br>
-      contact@weatherview.com
-    </div>
-
-    <div class="footer-bar">&copy; 2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span><br>
-      Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+  <footer includefile="footer.html">
   </footer>
 
-    <script src="scripts/include.js"></script>
+  <script src="scripts/include.js"></script>
   <script src="scripts/toggleHam.js"></script>
   <script src="scripts/towndata.js"></script>
   <script>
