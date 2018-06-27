@@ -1,0 +1,157 @@
+@media only screen and (min-width: 64em) {
+
+  /* ---------- nav ---------- */
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
+
+  nav ul.hide {
+    width: 960px;
+  }
+
+  /* ---------- main ---------- */
+
+  main {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #cityName {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  #cityNameMedium {
+    display: none;
+  }
+
+  .town-summary {
+    flex-flow: column nowrap;
+  }
+
+  .town-summary picture{
+    flex: 1 1 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .weather-summary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex: 1 1 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ececec;
+    box-shadow: 5px 5px 5px #ececec;
+    padding-bottom: 20px;
+  }
+
+  .weather-summary h2 {
+      display: none;
+  }
+
+  .weather-type {
+    font-size: 1.5rem;
+  }
+
+  .current {
+    margin: 0px;
+  }
+
+  .conditions {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conditions p, .highlow p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 10px 0px 0px 0px;
+    width: 230px;
+  }
+
+
+  section.forecast {
+    padding: 5px 0px 0px 0px;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    padding: 30px 0px;
+  }
+
+ /* ---------- gallery ---------- */
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .box-shadow:hover {
+    box-shadow: 5px 5px 10px gray;
+  }
+
+/* ---------- home page ---------- */
+
+  div.stats {
+    display: flex;
+  }
+
+  .cityData, .weatherStory {
+    display: flex;
+    flex-flow: column;
+    box-shadow: 5px 5px 5px #ececec;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid #ececec;
+    margin: 20px auto 0px auto;
+  }
+
+  .headline {
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .headline div {
+    height: 265px;
+    margin-top: 0px;
+  }
+
+  .headline img {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .cityData img {
+    order: 1;
+  }
+
+  .cityData div {
+    min-height: 250px;
+    padding: 0px;
+  }
+
+  .cityData img, .cityData div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .cityData div {
+    box-shadow: none;
+  }
+
+  #franklinCity, #Springfield, #Greenville {
+    border: none;
+  }
+
+  .cityInfo {
+    box-shadow: 5px 5px 5px #ececec;
+  }
+
+}

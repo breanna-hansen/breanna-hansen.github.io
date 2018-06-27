@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather Forecasting and Alerts for Franklin, Springfield, and Greenville | Weatherview</title>
+    <meta name="description" content="WeatherView provides local and area weather forecasts for the towns of Franklin, Springfield, and Greenville, as well as related weather alerts and news articles.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo%7COpen+Sans+Condensed:300">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+  </head>
+
+  <body>
+
+    <header includefile="modules/header.html">
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <main>
+
+    <div class="headline">
+      <div class="weatherStory">
+        <h2>Torrential Rain in Northern Franklin</h2>
+        <p>
+          Excessive amounts of rain for June have deluged Franklin County with more water than they can handle. The torrential downpour caused flooding on the east side of town near the river, causing several homes to be evacuated.
+        </p>
+      </div>
+      <img src="images/downpour-in-franklin.jpg" alt="Torrential rain in Franklin">
+    </div>
+
+    <div class="stats">
+      <div class="cityData order">
+        <img src="images/franklin-city.jpg" alt="Franklin County, MN">
+        <div id="franklinCity"></div>
+      </div>
+
+      <div class="cityData">
+        <div id="Springfield"></div>
+        <img src="images/sunshine.jpg" alt="Springfield">
+      </div>
+
+      <div class="cityData order">
+        <img src="images/greenville-city.jpg" alt="Greenville">
+        <div id="Greenville"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="contact">
+      <span class="site-name">WeatherView</span><br>
+      123 Main St.<br>
+      Franklin, MN 55333<br>
+      (218) 235-3859<br>
+      contact@weatherview.com
+    </div>
+
+    <div class="footer-bar">&copy; 2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span><br>
+      Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+  </footer>
+
+    <script src="scripts/include.js"></script>
+  <script src="scripts/toggleHam.js"></script>
+  <script src="scripts/towndata.js"></script>
+  <script>
+    GetData('homePage');
+  </script>
+  <script defer src="scripts/currentdate.js"></script>
+  </body>
+</html>
