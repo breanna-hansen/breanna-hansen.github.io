@@ -17,6 +17,7 @@ function GetData(page){
         break;
       default:
         greenvilleData(weatherData);
+        break;
     }
   }
 }
@@ -79,7 +80,39 @@ function franklinData(data) {
         date += event[x] + "<br>";
       }
       document.getElementById('events').innerHTML = date;
-      document.getElementById('franklinCity').innerHTML = buildTable(data.towns[i])
+      document.getElementById('franklinCity').innerHTML = buildTable(data.towns[i]);
+    }
+  }
+}
+
+function greenvilleData(data) {
+  let i;
+  for (i = 0; i < data.towns.length; i++) {
+    if (data.towns[i]['name'] == "Greenville") {
+      let event = data.towns[i].events;
+      let date = "";
+      let x;
+      for (x in event) {
+        date += event[x] + "<br>";
+      }
+      document.getElementById('events').innerHTML = date;
+      document.getElementById('Greenville').innerHTML = buildTable(data.towns[i]);
+    }
+  }
+}
+
+function springfieldData(data) {
+  let i;
+  for (i = 0; i < data.towns.length; i++) {
+    if (data.towns[i]['name'] == "Springfield") {
+      let event = data.towns[i].events;
+      let date = "";
+      let x;
+      for (x in event) {
+        date += event[x] + "<br>";
+      }
+      document.getElementById('events').innerHTML = date;
+      document.getElementById('Springfield').innerHTML = buildTable(data.towns[i]);
     }
   }
 }
