@@ -13,13 +13,24 @@ function include() {
           if (this.status == 400) { allElements[i].innerHTML = "Page not found!";}
           allElements[i].removeAttribute('includefile');
           include(); // call the function again to start the process over
+          AfterIncludeFiles();
         }
+
       }
       xhttp.open('GET', 'modules/' + file, true);  // matching file names in includes folder
       xhttp.send();
       return;
     }
   }
+}
+
+function AfterIncludeFiles(){
+  if (document.querySelectorAll('a').length > 0) {
+    activeMenu();
+  }
+
+  if(document.getElementById("currentdate") !== null)
+    document.getElementById("currentdate").innerHTML = currentDate();
 }
 // initial call to the include function
 include();
