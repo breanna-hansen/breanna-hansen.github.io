@@ -93,6 +93,7 @@ nav ul {
 }
 
 nav ul li.active {
+  display: none;
   background-color: #003256;
 }
 
@@ -110,7 +111,6 @@ nav ul li a {
 nav ul li.active a {
   color: #ffd332;
 }
-
 nav ul li a:hover {
   color: #c0c0c0;
 }
@@ -432,23 +432,22 @@ input[type="range"] {
 .cityData img {
   max-width: 486px;
   height: auto;
-}
-.order {
-  display: flex;
-  flex-direction: column-reverse;
-}
-td {
-  padding-right: 1rem;
-}
-
-.cityData img {
   max-height: 250px;
   object-fit: cover;
   object-position: bottom;
 }
 
+.order {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+td {
+  padding-right: 1rem;
+}
+
 #franklinCity, #Springfield, #Greenville {
-  padding: 0px;
+  padding-left: 10px;
   line-height: 1rem;
   flex: 1 1 50%;
 }

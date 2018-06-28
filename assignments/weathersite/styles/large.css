@@ -108,7 +108,7 @@
     box-shadow: 5px 5px 5px #ececec;
     padding: 0px 20px 20px 20px;
     border: 1px solid #ececec;
-    margin: 20px auto 0px auto;
+    margin: 10px 0px 5px 0px;
   }
 
   .headline {
@@ -154,4 +154,7 @@
     box-shadow: 5px 5px 5px #ececec;
   }
 
+  .middle {
+    margin: 10px 15px 5px 15px;
+  }
 }
