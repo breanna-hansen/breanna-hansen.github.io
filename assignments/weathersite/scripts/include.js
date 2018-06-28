@@ -25,7 +25,7 @@ function include() {
 }
 
 function AfterIncludeFiles(){
-  if (document.querySelectorAll('a').length > 0) {
+  if (document.querySelectorAll('nav ul li a').length > 0) {
     activeMenu();
   }
 
