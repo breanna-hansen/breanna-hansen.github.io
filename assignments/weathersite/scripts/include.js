@@ -29,8 +29,9 @@ function AfterIncludeFiles(){
     activeMenu();
   }
 
-  if(document.getElementById("currentdate") !== null)
+  if(document.getElementById("currentdate") !== null) {
     document.getElementById("currentdate").innerHTML = currentDate();
+  }
 }
 // initial call to the include function
 include();
