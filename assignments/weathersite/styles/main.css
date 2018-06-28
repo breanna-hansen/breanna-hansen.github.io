@@ -93,7 +93,6 @@ nav ul {
 }
 
 nav ul li.active {
-  display: none;
   background-color: #003256;
 }
 
