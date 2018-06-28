@@ -1,6 +1,6 @@
 var urlString = document.location.href;
 var urlArray = urlString.split('/');
-var pageHREF = urlArrayp[urlArray.length - 1];
+var pageHREF = urlArray[urlArray.length - 1];
 
 if (pageHREF !=="") {
   var menu = document.querySelectorAll('ul#mainmenu li a');
