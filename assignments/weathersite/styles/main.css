@@ -446,7 +446,7 @@ td {
 }
 
 #franklinCity, #Springfield, #Greenville {
-  padding-left: 10px;
+  padding: 0px;
   line-height: 1rem;
   flex: 1 1 50%;
 }
