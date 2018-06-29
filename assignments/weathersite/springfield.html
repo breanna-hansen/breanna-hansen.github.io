@@ -23,12 +23,12 @@
 
     <main>
 
-      <h2 id="cityName"></h2> <!-- NAME API -->
+      <h2 id="cityName"></h2>
 
       <div class="town-summary">
 
         <picture>
-          <img class="franklin" src="images/springfield-banner-small-400.jpeg" alt="Landscape of Franklin, MN" sizes="100vw"
+          <img class="franklin" src="images/springfield-banner-small-400.jpeg" alt="City of Springfield" sizes="100vw"
                srcset="images/springfield-banner-small-400.jpeg 400w,
                        images/springfield-banner-small-600.jpeg 600w,
                        images/springfield-banner-medium-800.jpeg 800w,
@@ -37,24 +37,24 @@
         </picture>
 
         <section class="weather-summary">
-          <h2 id="cityNameMedium"></h2> <!-- NAME API -->
+          <h2 id="cityNameMedium"></h2>
           <div class="current">
             <div class="weather-type">
-              <span id="current-temp"></span>&deg; <span id="weatherdescription"></span> <!-- CURRENT TEMP & WEATHER DESCRIPTION API -->
+              <span id="current-temp"></span>&deg; <span id="weatherdescription"></span>
             </div>
-            <div class="icon" id="weathericon"></div> <!-- WEATHER ICON API -->
+            <div class="icon" id="weathericon"></div>
           </div>
 
           <div class="highlow">
             <p>High: <span id="high">90</span>&deg; F</p>
             <p>Low:  <span id="low">66</span>&deg; F</p>
-            <p>Wind Speed: <span id="windspeed"></span> mph </p> <!-- WIND SPEED API -->
+            <p>Wind Speed: <span id="windspeed"></span> mph </p>
           </div>
 
           <div class="conditions">
-            <p>Humidity: <span id="humidity"></span>&percnt;</p> <!-- HUMIDITY API -->
-            <p>Sunrise: <span id="sunrise"></span></p> <!-- SUNRISE API -->
-            <p>Sunset: <span id="sunset"></span></p> <!-- SUNSET API -->
+            <p>Humidity: <span id="humidity"></span>&percnt;</p>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
           </div>
         </section>
 
@@ -161,10 +161,10 @@
       </section>
 
       <div class="cityInfo">
-        <div id="Springfield" class="cityStats"></div> <!-- FRANKLIN CITY STATS API -->
+        <div id="Springfield" class="cityStats"></div>
         <div class="city-events">
           <h3>Events Calendar</h3>
-          <div id="events"></div> <!-- EVENTS API -->
+          <div id="events"></div>
         </div>
       </div>
 
@@ -192,7 +192,6 @@
 
     <script src="scripts/include.js"></script>
     <script src="scripts/active.js"></script>
-    <script src="scripts/currentdate.js"></script>
     <script src="scripts/toggleHam.js"></script>
     <script src="scripts/towndata.js"></script>
     <script src="scripts/weather.js"></script>
@@ -202,5 +201,6 @@
     <script>
       weatherData('springfield');
     </script>
+    <script src="scripts/currentdate.js"></script>
   </body>
 </html>
