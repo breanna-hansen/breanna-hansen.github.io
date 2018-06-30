@@ -120,7 +120,7 @@ nav ul.hide {
 
 /* ---------- main ---------- */
 
-.franklin {
+.main-image {
   width: 100%;
   object-fit: cover;
   object-position: bottom right;
@@ -250,6 +250,10 @@ figcaption {
 
 .box-shadow {
   margin: auto;
+}
+
+.small-text {
+  font-size: .8rem;
 }
 
 /* --------- form ---------- */
