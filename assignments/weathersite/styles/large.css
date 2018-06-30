@@ -29,10 +29,13 @@
   }
 
   .main-image {
+    height: 300px;
+  }
+
+  .town-summary picture {
     flex: 1 1 100%;
     margin: 0;
   }
-
   .weather-summary {
     display: flex;
     flex-direction: row;
