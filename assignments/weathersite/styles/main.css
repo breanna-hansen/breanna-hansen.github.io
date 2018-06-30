@@ -124,10 +124,7 @@ nav ul li a:hover {
   object-fit: cover;
   object-position: bottom right;
   height: 235px;
-}
-
-.cityNameMedium {
-  display: none;
+  padding-top: 20px;
 }
 
 h2 {

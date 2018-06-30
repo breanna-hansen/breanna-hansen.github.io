@@ -57,10 +57,6 @@
   }
 
   #cityName {
-    display: none;
-  }
-
-  #cityNameMedium {
     display: flex;
   }
 
@@ -77,6 +73,7 @@
 
   .main-image {
     height: 260px;
+    padding-top: 0;
   }
 
   .town-summary picture {

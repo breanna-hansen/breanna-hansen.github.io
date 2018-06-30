@@ -43,7 +43,6 @@ function franklinWeather() {
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed);
     document.getElementById('cityName').innerHTML = weatherData.name;
-    document.getElementById('cityNameMedium').innerHTML = weatherData.name;
     document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData);
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData);
     document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
@@ -82,7 +81,6 @@ function springfieldWeather() {
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed);
     document.getElementById('cityName').innerHTML = weatherData.name;
-    document.getElementById('cityNameMedium').innerHTML = weatherData.name;
     document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData);
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData);
     document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
@@ -121,7 +119,6 @@ function greenvilleWeather() {
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(weatherData.wind.speed);
     document.getElementById('cityName').innerHTML = weatherData.name;
-    document.getElementById('cityNameMedium').innerHTML = weatherData.name;
     document.getElementById('sunrise').innerHTML = timestampSunrise(weatherData);
     document.getElementById('sunset').innerHTML = timestampSunset(weatherData);
     document.getElementById('weatherdescription').innerHTML = weatherData.weather[0].description;
