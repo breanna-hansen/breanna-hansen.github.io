@@ -47,10 +47,6 @@
     padding-bottom: 20px;
   }
 
-  .weather-summary h2 {
-      display: none;
-  }
-
   .weather-type {
     font-size: 1.5rem;
   }
