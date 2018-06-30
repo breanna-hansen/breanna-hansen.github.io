@@ -21,7 +21,7 @@
   #cityName {
     display: flex;
     justify-content: center;
-    padding: 30px 0px;
+    padding: 30px 0;
   }
 
   #cityNameMedium {
@@ -34,8 +34,8 @@
 
   .town-summary picture{
     flex: 1 1 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .weather-summary {
@@ -59,11 +59,11 @@
   }
 
   .current {
-    margin: 0px;
+    margin: 0;
   }
 
   .conditions {
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
@@ -71,19 +71,19 @@
   .conditions p, .highlow p {
     font-size: 1.2rem;
     line-height: 1.2rem;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
     width: 230px;
   }
 
 
   section.forecast {
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0 0 0;
   }
 
   h3 {
     font-size: 1.375rem;
     line-height: 1.375rem;
-    padding: 30px 0px;
+    padding: 30px 0;
   }
 
  /* ---------- gallery ---------- */
@@ -106,23 +106,23 @@
     display: flex;
     flex-flow: column;
     box-shadow: 5px 5px 5px #ececec;
-    padding: 0px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     border: 1px solid #ececec;
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0 5px 0;
   }
 
   .headline {
-    padding: 10px 0px 0px 0px;
-    margin: 0px;
+    padding: 10px 0 0 0;
+    margin: 0;
   }
 
   .headline div {
     height: 265px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .headline img {
-    padding: 0px 0px 0px 20px;
+    padding: 0 0 0 20px;
   }
 
   .cityData img {
@@ -131,7 +131,7 @@
 
   .cityData div {
     min-height: 250px;
-    padding: 0px;
+    padding: 0;
   }
 
   .cityData img, .cityData div {
@@ -139,7 +139,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px;
+    padding: 0;
   }
 
   .cityData div {

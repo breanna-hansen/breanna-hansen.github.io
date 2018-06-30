@@ -10,15 +10,15 @@
     justify-content: center;
   }
 
-  header img, header h1, header .subheading {
-    padding: 8px 0px;
+  header img, h1, header .subheading {
+    padding: 8px 0;
   }
 
   .logo {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
-  header h1 {
+  h1 {
     font-size: 2.2rem;
   }
 
@@ -39,7 +39,7 @@
 
   nav ul li {
     display: inline-flex;
-    padding: 5px 0px;
+    padding: 5px 0;
     margin: auto;
   }
 
@@ -89,11 +89,11 @@
 
   .town-summary picture.icon {
     flex: auto;
-    padding: 0px;
+    padding: 0;
   }
 
   .weather-summary {
-    padding: 5px 0px;
+    padding: 5px 0;
     flex: 1 1 50%;
   }
 
@@ -113,14 +113,14 @@
   }
 
   .forecast th {
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0 5px 5px;
     background-color: #00487c;
     color: #ffffff;
     font-weight: 100;
   }
 
   .forecast td {
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0 0 0;
     border-bottom: 1px solid #0080aa;
   }
 
@@ -131,7 +131,7 @@
   .swap picture img {
     width: 50%;
     float: right;
-    padding: 0px 0px 0px  15px;
+    padding: 0 0 0 15px;
   }
 
   /* ---------- footer ---------- */
@@ -154,7 +154,7 @@
 /* ---------- form ---------- */
 
   input.submitbutton {
-    margin: 0rem 0rem 1.5rem 1rem;
+    margin: 0 0 1.5rem 1rem;
     align-self: flex-start;
   }
 /* ---------- home page ---------- */
@@ -172,7 +172,7 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     border: none;
     box-shadow: none;
   }
@@ -182,7 +182,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 
   .cityData div, .headline div {
