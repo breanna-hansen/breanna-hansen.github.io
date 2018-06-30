@@ -30,11 +30,9 @@
     </nav>
 
     <main>
-
       <h2 id="cityName"></h2>
 
       <div class="town-summary">
-
         <picture>
           <img class="main-image" src="images/franklin%20landscape.jpeg" alt="Landscape of Franklin" sizes="100vw"
           srcset="images/franklin-small-400.jpeg 400w,
@@ -50,26 +48,23 @@
             <div class="weather-type">
               <span id="current-temp"></span>&deg; <span id="weatherdescription"></span>
             </div>
-            <div class="icon" id="weathericon"></div>
+            <div class="icon" id="weathericon">
+            </div>
           </div>
-
           <div class="highlow">
             <p>High: <span id="high">90</span>&deg; F</p>
             <p>Low:  <span id="low">66</span>&deg; F</p>
             <p>Wind Speed: <span id="windspeed"></span> mph </p>
           </div>
-
           <div class="conditions">
             <p>Humidity: <span id="humidity"></span>&percnt;</p>
             <p>Sunrise: <span id="sunrise"></span></p>
             <p>Sunset: <span id="sunset"></span></p>
           </div>
         </section>
-
       </div>
 
       <section class="forecast">
-
         <div id="fiveDayForecast"></div>
         <h3>Ten Day Forecast</h3>
         <table>
@@ -169,10 +164,12 @@
       </section>
 
       <div class="cityInfo">
-        <div id="franklinCity" class="cityStats"></div>
+        <div id="franklinCity" class="cityStats">
+        </div>
         <div class="city-events">
           <h3>Events Calendar</h3>
-          <div id="events"></div>
+          <div id="events">
+          </div>
         </div>
       </div>
 
@@ -207,7 +204,8 @@
       </div>
 
       <div class="footer-bar">&copy; 2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span><br>
-        Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+        Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
     </footer>
 
     <script src="scripts/include.js"></script>
@@ -222,5 +220,6 @@
       weatherData('franklin');
     </script>
     <script src="scripts/currentdate.js"></script>
+
   </body>
 </html>

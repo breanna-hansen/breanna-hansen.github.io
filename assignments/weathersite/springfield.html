@@ -30,11 +30,9 @@
     </nav>
 
     <main>
-
       <h2 id="cityName"></h2>
 
       <div class="town-summary">
-
         <picture>
           <img class="main-image" src="images/springfield-banner-small-400.jpeg" alt="City of Springfield" sizes="100vw"
                srcset="images/springfield-banner-small-400.jpeg 400w,
@@ -50,7 +48,8 @@
             <div class="weather-type">
               <span id="current-temp"></span>&deg; <span id="weatherdescription"></span>
             </div>
-            <div class="icon" id="weathericon"></div>
+            <div class="icon" id="weathericon">
+            </div>
           </div>
 
           <div class="highlow">
@@ -69,7 +68,6 @@
       </div>
 
       <section class="forecast">
-
         <div id="fiveDayForecast"></div>
         <h3>Ten Day Forecast</h3>
         <table>
@@ -169,10 +167,12 @@
       </section>
 
       <div class="cityInfo">
-        <div id="Springfield" class="cityStats"></div>
+        <div id="Springfield" class="cityStats">
+        </div>
         <div class="city-events">
           <h3>Events Calendar</h3>
-          <div id="events"></div>
+          <div id="events">
+          </div>
         </div>
       </div>
 
@@ -205,7 +205,8 @@
       </div>
 
       <div class="footer-bar">&copy; 2018 Breanna G. Hansen | <a href="#">Terms of Use</a> | All Rights Reserved | WeatherView | <span id="currentdate"></span><br>
-        Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a></div>
+        Data compliments of <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+      </div>
     </footer>
 
     <script src="scripts/include.js"></script>
@@ -220,5 +221,6 @@
       weatherData('springfield');
     </script>
     <script src="scripts/currentdate.js"></script>
+
   </body>
 </html>
