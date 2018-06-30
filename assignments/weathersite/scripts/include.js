@@ -13,7 +13,6 @@ function include() {
           if (this.status == 400) { allElements[i].innerHTML = "Page not found!";}
           allElements[i].removeAttribute('includefile');
           include(); // call the function again to start the process over
-          AfterIncludeFiles();
         }
 
       }
@@ -24,14 +23,5 @@ function include() {
   }
 }
 
-function AfterIncludeFiles(){
-  if (document.querySelectorAll('nav ul li a').length > 0) {
-    activeMenu();
-  }
-
-  if(document.getElementById("currentdate") !== null) {
-    document.getElementById("currentdate").innerHTML = currentDate();
-  }
-}
 // initial call to the include function
 include();

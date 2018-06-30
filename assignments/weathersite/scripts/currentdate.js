@@ -7,3 +7,4 @@ function currentDate() {
   return (n + ", " + d.getDate() + " " + m + " " + d.getFullYear());
 }
 
+document.getElementById("currentdate").innerHTML = currentDate();
