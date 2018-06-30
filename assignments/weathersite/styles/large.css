@@ -28,10 +28,9 @@
     flex-flow: column nowrap;
   }
 
-  .town-summary picture{
+  .main-image {
     flex: 1 1 100%;
     margin: 0;
-    padding: 0;
   }
 
   .weather-summary {
