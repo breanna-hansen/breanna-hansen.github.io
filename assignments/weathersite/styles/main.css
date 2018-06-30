@@ -26,7 +26,6 @@ h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #0080aa;
   text-align: center;
-  padding: 10px;
 }
 
 /* ---------- header ---------- */
@@ -41,7 +40,7 @@ header {
   text-align: center;
 }
 
-header img, h1, header .subheading {
+header img, header .subheading {
   padding: 5px 0;
 }
 
@@ -114,7 +113,7 @@ nav ul li a:hover {
   color: #c0c0c0;
 }
 
-nav ul.hide {
+.hide {
   display: none;
 }
 
@@ -288,7 +287,7 @@ form div {
   padding-bottom: .5rem;
 }
 
-label.top, label.range {
+.top, .range {
   display: flex;
   flex-flow: column nowrap;
   padding-top: 1rem;
@@ -312,7 +311,7 @@ form div {
   padding-left: 1rem;
 }
 
-label.top input, label.top select {
+.top input, .top select {
   -webkit-appearance: none;
   display: block;
   border: solid 1px #c0c0c0;
@@ -323,12 +322,12 @@ label.top input, label.top select {
   margin: 0;
 }
 
-label.side {
+.side {
   display: block;
   padding: .25rem 0;
 }
 
-input.submitbutton {
+.submitbutton {
   background-color: #ffd332;
   color: #00487c;
   font-weight: bold;

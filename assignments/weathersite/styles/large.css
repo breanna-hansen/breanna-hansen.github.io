@@ -6,7 +6,7 @@
     padding: 8px 16px;
   }
 
-  nav ul.hide {
+  .hide {
     width: 960px;
   }
 
@@ -75,8 +75,7 @@
     width: 230px;
   }
 
-
-  section.forecast {
+  .forecast {
     padding: 5px 0 0 0;
   }
 
@@ -98,7 +97,7 @@
 
 /* ---------- home page ---------- */
 
-  div.stats {
+  .stats {
     display: flex;
   }
 

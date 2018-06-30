@@ -1,8 +1,5 @@
 @media only screen and (min-width: 37.5em) {
 
-  header, nav, main, footer {
-  }
-
   /* ---------- header ---------- */
 
   header {
@@ -10,7 +7,7 @@
     justify-content: center;
   }
 
-  header img, h1, header .subheading {
+  header img, header .subheading {
     padding: 8px 0;
   }
 
@@ -22,11 +19,11 @@
     font-size: 2.2rem;
   }
 
-  header .subheading {
+  .subheading {
     font-size: 1.2rem;
   }
 
-  button.hamburger {
+  .hamburger {
     display: none;
   }
 
@@ -48,7 +45,7 @@
     border: none;
   }
 
-  nav ul.hide {
+  .hide {
     display: inline-flex;
     width: 95%;
   }
@@ -87,7 +84,7 @@
     padding-top: 20px;
   }
 
-  .town-summary picture.icon {
+  .icon {
     flex: auto;
     padding: 0;
   }
@@ -153,13 +150,13 @@
 
 /* ---------- form ---------- */
 
-  input.submitbutton {
+  .submitbutton {
     margin: 0 0 1.5rem 1rem;
     align-self: flex-start;
   }
 /* ---------- home page ---------- */
 
-  div.stats {
+  .stats {
     display: block;
   }
 
