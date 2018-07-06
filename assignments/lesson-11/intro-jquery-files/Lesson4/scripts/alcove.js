@@ -1,4 +1,4 @@
-$(function() {
+$(function(){
 
   $('#alcoveLogo').css('opacity', 0.4);
   $('.servicesBtn').css('color', '#FFF');
