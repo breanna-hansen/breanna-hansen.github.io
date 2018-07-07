@@ -12,73 +12,54 @@ body {
   line-height: 1.1rem;
 }
 
-main {
-  margin: 0 4%;
-}
-
 a {
-  color: #0080aa;
+  color: #C1341E;
   text-decoration: none;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Russo', 'Times New Roman', serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #C1341E;
   text-align: center;
 }
 
 /* ---------- header ---------- */
 
-header {
-  height: 100px;
-  background-color: #000000;
-  color: #ffffff;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 15px 0;
-}
-
-header img {
-  height: 150px;
-}
-
-header img, header .subheading {
-  padding: 5px 0;
-}
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
-}
-
-h1 {
-  font-family: 'Lobster', 'Times New Roman', serif;
-  font-weight: 300;
-  font-size: 1.7rem;
-  line-height: 1.7rem;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-header .subheading {
-  font-size: 0.9rem;
-}
-
 .hamburger {
   border: none;
   color: #ffffff;
   background-color: transparent;
-  font-size: 2.8rem;
+  font-size: 3.0rem;
   font-weight: bold;
   padding: 0 3% 0 0;
   line-height: 2.2rem;
   align-self: flex-start;
+}
+
+header {
+  height: 145px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+}
+
+header img {
+  height: 75px;
+}
+
+h1 {
+  font-family: 'Lobster', 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 10px;
 }
 
 /* ---------- nav ---------- */
@@ -96,7 +77,7 @@ nav ul {
 }
 
 nav ul li.active {
-  background-color: #003256;
+  background-color: #59a1c9;
 }
 
 nav ul li a {
@@ -123,256 +104,96 @@ nav ul li a:hover {
 
 /* ---------- main ---------- */
 
-.main-image {
+main img {
   width: 100%;
   object-fit: cover;
   object-position: bottom right;
-  height: 235px;
-  padding-top: 20px;
+  height: 275px;
 }
 
-h2 {
-  font-size: 1.8rem;
-  line-height: 1.5rem;
-  padding: 20px;
-}
-
-.weather-summary {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.current {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.weather-type {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  align-self: center;
-  padding: 10px 0;
-}
-
-.highlow {
+main > ul {
+  position: absolute;
+  top: 145px;
+  right: 10px;
+  list-style-type: none;
   display: flex;
   flex-flow: column nowrap;
+  padding: 0;
+  overflow: hidden;
 }
 
-.conditions p, .highlow p {
-  padding: 5px 0 3px 0;
-  border-bottom: 1px solid #0080aa;
-  width: 200px;
+.top-buttons li {
+  background-color: #c1341e;
+  padding: 15px 10px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 175px;
+  align-self: flex-end;
 }
 
-.conditions {
-  padding-bottom: 20px;
-}
-
-section.forecast {
-  display: none;
-}
-
-h3 {
-  font-size: 1.250rem;
-  line-height: 1.250rem;
-  padding: 20px 0;
-}
-
-.swap {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-.swap p {
-  margin-bottom: 1rem;
-}
-
-.swap picture img {
-  padding-bottom: 15px;
-  max-width: 100%;
+.top-buttons li a {
+  color: #ffffff;
 }
 
 /* ---------- footer ---------- */
 
-.contact {
-  background-color: #ececec;
-  padding: 20px;
-}
-
-.site-name {
-  font-weight: 300;
-  font-family: 'Arvo', 'Times New Roman', serif;
-  font-size: 1.4rem;
-}
-
 footer {
-  text-align: center;
-  background-color: #59A1C9;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
   color: #ffffff;
-  padding: 20px;
+  background-color: #4c4c4c;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer iframe {
+  width: 96%;
+}
+
+footer h2 {
+  color: #59a1c9;
+  padding: 15px 0px;
+}
+
+.contact {
+  display: flex;
+}
+
+.icon, .contact-text {
+  padding: 7px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.company-info {
+  background-color: #000000;
+  padding: 15px 15px 0px 15px;
+}
+
+.social-media {
+  align-self: center;
+  padding: 10px 0px;
+}
+
+.social-media img {
+  padding: 0px 8px;
+}
+
+.footer-bar {
+  padding: 10px;
 }
 
 /* ---------- gallery ---------- */
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  grid-gap: 10px;
-  padding-bottom: 15px;
-}
 
-.box-shadow figure {
-  margin: 5px;
-  display: table;
-}
-
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-}
-
-.box-shadow {
-  margin: auto;
-}
-
-.small-text {
-  font-size: .8rem;
-}
 
 /* --------- form ---------- */
 
-form {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
 
-fieldset {
-  margin: 1.275rem 2%;
-  padding: 1rem 2%;
-  min-width: 96%;
-  background-color: #ececec;
-  border: 1px solid #0080aa;
-}
 
-legend {
-  background-color: #00487c;
-  padding: 5px 10px;
-  border: 1px solid #c0c0c0;
-  color: #ffffff;
-}
-
-form label, form div, textarea {
-  line-height: 1.5rem;
-}
-
-form div {
-  padding-bottom: .5rem;
-}
-
-.top, .range {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-top: 1rem;
-}
-
-form div {
-  padding-top: 1.5rem;
-}
-
-.rate {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 30rem;
-  padding-top: 0.5rem;
-  margin-left: 0;
-}
-
-#ratingvalue {
-  font-weight: bold;
-  padding-left: 1rem;
-}
-
-.top input, .top select {
-  -webkit-appearance: none;
-  display: block;
-  border: solid 1px #c0c0c0;
-  padding: .75rem;
-  line-height: 1.2rem;
-  width: 100%;
-  max-width: 30rem;
-  margin: 0;
-}
-
-.side {
-  display: block;
-  padding: .25rem 0;
-}
-
-.submitbutton {
-  background-color: #ffd332;
-  color: #00487c;
-  font-weight: bold;
-  padding: .75rem .75rem;
-  margin: 0 0 1.5rem 0;
-  width: 96%;
-  max-width: 30rem;
-  box-shadow: 3px 3px 3px #c0c0c0;
-  align-self: center;
-}
-
-textarea {
-  width: 100%;
-  max-width: 30rem;
-  height: 15rem;
-  margin: 0;
-}
-
-/* ---------- slider ---------- */
-
-input[type="range"] {
-  width: 18rem;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 8px;
-  background-color: #00487c;
-  outline: none;
-  margin: 0.5rem 0;
-}
-
-.slider:hover {
-  background-color: #0080aa;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: .8rem;
-  height: 1.5rem;
-  background: #c0c0c0;
-  border: 1px solid #000000;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: .8px;
-  height: 1.5rem;
-  background: #c0c0c0;
-  cursor: pointer;
-}
 
 /* ---------- thank you ---------- */
 
@@ -389,101 +210,50 @@ input[type="range"] {
   text-align: center;
 }
 
-/* ---------- home page ---------- */
-
-.weatherStory {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.weatherStory p {
-  padding: 0 10px 5px 10px;
-}
-
-.cityData, .headline {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ececec;
-  margin: 10px 0;
-  padding: 10px 0;
-  box-shadow: 5px 5px 5px #ececec;
-}
-
-.cityData img, .cityData div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-}
-
-.cityData img, .headline img {
-  width: 98%;
-  padding: 10px;
-}
-
-.cityData img {
-  max-width: 486px;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-.order {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-td {
-  padding-right: 1rem;
-}
-
-#franklinCity, #Springfield, #Greenville {
-  padding: 0;
-  line-height: 1rem;
-  flex: 1 1 50%;
-}
+/* MEDIUM VIEW */
 
 @media only screen and (min-width: 37.5em) {
 
   /* ---------- header ---------- */
 
+  .hamburger {
+    display: none;
+  }
+
   header {
-    justify-content: center;
-  }
-
-  header img, header .subheading {
-    padding: 8px 0;
-  }
-
-  .logo {
-    padding-left: 0;
+    height: 100px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-family: 'Lobster', 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 15px;
   }
 
-  .subheading {
-    font-size: 1.2rem;
-  }
-
-  .hamburger {
-    display: none;
+  .top-header {
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   /* ---------- nav ---------- */
 
   nav ul {
-    overflow: hidden;
     flex-flow: row nowrap;
+    padding: 5px;
   }
 
   nav ul li {
     display: inline-flex;
-    padding: 5px 0;
+    padding: 0px 5px;
     margin: auto;
   }
 
@@ -494,194 +264,106 @@ td {
 
   .hide {
     display: inline-flex;
-    width: 95%;
   }
 
   /* ---------- main ---------- */
 
-  main {
-    padding-bottom: 15px;
-  }
-
   main img {
     width: 100%;
-    height: 400px;
-  }
-  #cityName {
-    display: flex;
+    height: 330px;
   }
 
-  .town-summary {
-    display: flex;
-    flex-flow: row nowrap;
-    align-content: flex-start;
-    justify-content: center;
-  }
-
-  .main-image {
-    height: 260px;
-    padding-top: 0;
-  }
-
-  .town-summary picture {
-    flex: 1 1 50%;
-    padding-top: 20px;
-  }
-
-  .icon {
-    flex: auto;
-    padding: 0;
-  }
-
-  .weather-summary {
-    padding: 5px 0;
-    flex: 1 1 50%;
-  }
-
-  .weather-type {
-    font-size: 1.5rem;
-    flex: auto;
-  }
-
-  .current {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  section.forecast {
+  main > ul {
+    position: absolute;
+    top: 125px;
+    right: 30px;
+    list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
+    padding: 0;
+    overflow: hidden;
   }
 
-  .forecast th {
-    padding: 5px 0 5px 5px;
-    background-color: #00487c;
-    color: #ffffff;
-    font-weight: 100;
-  }
-
-  .forecast td {
-    padding: 5px 0 0 0;
-    border-bottom: 1px solid #0080aa;
-  }
-
-  .swap {
-    display: inline-block;
-  }
-
-  .swap picture img {
-    width: 50%;
-    float: right;
-    padding: 0 0 0 15px;
+  .top-buttons li {
+    margin: 10px;
   }
 
   /* ---------- footer ---------- */
 
+  footer {
+    height: 240px;
+  }
 
+  footer h2 {
+    padding: 0px 0px 10px 20px;
+    text-align: left;
+  }
 
-  /* ---------- gallery ---------- */
+  footer iframe {
+    width: 225px;
+    height: 165px;
+  }
 
-  .top-heading {
+  .icon {
+    padding-left: 20px;
+  }
+
+  .contact-text {
+    line-height: 1.0rem;
+  }
+
+  .company-info {
     display: flex;
-    justify-content: center;
+    background-color: #000000;
+    padding: 15px;
   }
 
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* ---------- form ---------- */
-
-  .submitbutton {
-    margin: 0 0 1.5rem 1rem;
+  .social-media {
+    display: flex;
     align-self: flex-start;
   }
-  /* ---------- home page ---------- */
 
-  .stats {
-    display: block;
-  }
-
-  .cityData, .headline {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    border: none;
-    box-shadow: none;
-  }
-
-  .cityData img, .cityData div, .headline img, .headline div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 0 20px;
-  }
-
-  .cityData div, .headline div {
-    box-shadow: 5px 5px 5px #ececec;
-  }
-
-  td {
-    padding-right: 1rem;
-  }
-
-  .cityData img {
-    max-height: 250px;
-    object-fit: cover;
-  }
-
-  #franklinCity, #Springfield, #Greenville {
-    padding: 10px;
-    line-height: 1rem;
-    flex: 1 1 50%;
-  }
-
-  /* ---------- city info/events ---------- */
-
-  div.cityInfo {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
-    border: 1px solid #ececec;
-  }
-
-  div.cityInfo h3 {
-    padding-top: 10px;
-  }
-
-  .city-events {
-    flex: 1 1 50%;
-    line-height: 1.2rem;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cityStats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
+/* LARGE VIEW */
 
 @media only screen and (min-width: 64em) {
 
-  /* ---------- nav ---------- */
+  /* ---------- header ---------- */
 
-  nav ul li a {
-    padding: 8px 16px;
+  header img {
+    padding-left: 15px;
   }
 
-  .hide {
-    width: 960px;
+  header {
+    height: 125px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+  }
+
+  h1 {
+    font-family: 'Lobster', 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: 3.0rem;
+    line-height: 1.7rem;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .top-header {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  /* ---------- nav ---------- */
+
+  nav ul {
+    margin: 15px 0px 0px 0px;
+  }
+
+  nav ul li {
+    padding: 0px 25px 0px 5px;
   }
 
   /* ---------- main ---------- */
@@ -691,137 +373,63 @@ td {
     margin-right: auto;
   }
 
-  #cityName {
-    flex: 0 0 100%;
-    justify-content: center;
-    padding: 30px 0;
-  }
-
-  .town-summary {
-    flex-flow: column nowrap;
-  }
-
-  .main-image {
-    height: 300px;
-  }
-
-  .town-summary picture {
-    flex: 1 1 100%;
-    margin: 0;
-  }
-  .weather-summary {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    flex: 1 1 100%;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #ececec;
-    box-shadow: 5px 5px 5px #ececec;
-    padding-bottom: 20px;
-  }
-
-  .weather-type {
-    font-size: 1.5rem;
-  }
-
-  .current {
-    margin: 0;
-  }
-
-  .conditions {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .conditions p, .highlow p {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    padding: 10px 0 0 0;
-    width: 230px;
-  }
-
-  .forecast {
-    padding: 5px 0 0 0;
-  }
-
-  h3 {
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    padding: 30px 0;
-  }
-
-  /* ---------- gallery ---------- */
-
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .box-shadow:hover {
-    box-shadow: 5px 5px 10px gray;
-  }
-
-  /* ---------- home page ---------- */
-
-  .stats {
-    display: flex;
-  }
-
-  .cityData, .weatherStory {
-    display: flex;
-    flex-flow: column;
-    box-shadow: 5px 5px 5px #ececec;
-    padding: 0 20px 20px 20px;
-    border: 1px solid #ececec;
-    margin: 10px 0 5px 0;
-  }
-
-  .headline {
-    padding: 10px 0 0 0;
-    margin: 0;
-  }
-
-  .headline div {
-    height: 265px;
-    margin-top: 0;
-  }
-
-  .headline img {
-    padding: 0 0 0 20px;
-  }
-
-  .cityData img {
-    order: 1;
-  }
-
-  .cityData div {
-    min-height: 250px;
-    padding: 0;
-  }
-
-  .cityData img, .cityData div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  main img {
     width: 100%;
+    height: 625px;
+  }
+
+  main > ul {
+    position: absolute;
+    top: 175px;
+    right: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
     padding: 0;
+    overflow: hidden;
   }
 
-  .cityData div {
-    box-shadow: none;
+  .top-buttons li {
+    padding: 35px 15px;
+    margin: 20px;
+    width: 275px;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
-  #franklinCity, #Springfield, #Greenville {
-    border: none;
+  /* ---------- footer ---------- */
+
+  footer {
+    height: 240px;
   }
 
-  .cityInfo {
-    box-shadow: 5px 5px 5px #ececec;
+  footer h2 {
+    padding: 0px 0px 10px 20px;
+    text-align: left;
   }
 
-  .middle {
-    margin: 10px 15px 5px 15px;
+  footer iframe {
+    width: 225px;
+    height: 165px;
+  }
+
+  .icon {
+    padding-left: 20px;
+  }
+
+  .contact-text {
+    line-height: 1.0rem;
+  }
+
+  .company-info {
+    display: flex;
+    background-color: #000000;
+    padding: 15px;
+  }
+
+  .social-media {
+    display: flex;
+    align-self: flex-start;
   }
 }
