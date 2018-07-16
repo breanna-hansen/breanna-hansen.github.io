@@ -1,0 +1,65 @@
+{
+  "packages" : [
+    {
+      "name" : "Basic Tune-Up",
+      "cost" : "$30",
+      "services" : [
+        "Align and adjust derailers",
+        "Align and adjust brakes",
+        "Clean lube and chain",
+        "Inflate tires to proper PSI",
+        "29 point bike inspection"
+      ]
+    },
+    {
+      "name" : "Midline Tune-Up",
+      "cost" : "$60",
+      "services" : [
+        "Align and adjust derailers",
+        "Align and adjust brakes",
+        "Clean lube and chain",
+        "Inflate tires to proper PSI",
+        "29 point bike inspection",
+        "Externally adjust wheel, headset, and bottom bracket bearings"
+      ]
+    },
+
+    {
+      "name" : "Deluxe Tune-Up",
+      "cost" : "$90",
+      "services" : [
+        "Align and adjust derailers",
+        "Align and adjust brakes",
+        "Clean lube and chain",
+        "Inflate tires to proper PSI",
+        "29 point bike inspection",
+        "Externally adjust wheel, headset, and bottom bracket bearings",
+        "Clean chain rings and cassette",
+        "True wheels",
+        "Hosty deep clean bike wash"
+      ]
+    },
+
+    {
+      "name" : "Premium Tune-Up",
+      "cost" : "$150",
+      "services" : [
+        "Align and adjust derailers",
+        "Align and adjust brakes",
+        "Inflate tires to proper PSI",
+        "29 point bike inspection",
+        "Externally adjust wheel, headset, and bottom bracket bearings",
+        "Clean chain rings and cassette",
+        "True wheels",
+        "Hosty deep clean bike wash",
+        "Remove and detail chain rings and cassette",
+        "Remove and detail chain and lube",
+        "Detail frame, fork, and wheels",
+        "Replace shifter cables and housing",
+        "Replace brake cables and housing (cable pull brakes)",
+        "$20+ for hydraulic brakes",
+        "$20+ tape for road bike bars"
+      ]
+    }
+  ]
+}

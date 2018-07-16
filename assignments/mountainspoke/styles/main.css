@@ -1,0 +1,516 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
+  text-align: left;
+  line-height: 1.1rem;
+}
+
+a {
+  color: #c1341e;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Anton', 'Times New Roman', serif;
+  font-weight: 400;
+  color: #c1341e;
+  text-align: left;
+}
+
+h2 {
+  line-height: 1.6rem;
+}
+/* ---------- header ---------- */
+
+.hamburger {
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 3.0rem;
+  font-weight: bold;
+  padding: 0;
+  line-height: 2.2rem;
+  align-self: flex-start;
+}
+
+header {
+  height: 185px;
+  background-color: #262721;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 10px solid #59a1c9;
+}
+
+header img {
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-family: 'Anton', 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ---------- nav ---------- */
+
+nav {
+  background-color: #59a1c9;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+nav ul li.active a {
+  color: #c1341e;
+}
+
+nav ul li a:hover {
+  color: #262721;
+}
+
+.hide {
+  display: none;
+}
+
+/* ---------- main ---------- */
+
+main img {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../images/pexels/cyclist-in-the-mountains-600.jpg');
+  height: 310px;
+}
+
+.middle {
+  object-fit: cover;
+  object-position: center;
+}
+
+.bottom {
+  object-fit: cover;
+  object-position: bottom;
+}
+.main-image h2 {
+  color: #ffffff;
+  font-size: 3.0rem;
+  padding: 0 0 10px 20px;
+  line-height: 3.0rem;
+}
+
+.main-image p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  width: 50%;
+  padding-left: 20px;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+
+.red {
+  color: #c1341e;
+}
+
+.top-button {
+  background-color: #c1341e;
+  padding: 10px 15px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px 0 10px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.top-button, .buttons {
+  color: #ffffff;
+}
+
+.pages a, .submitbutton {
+  background-color: #c1341e;
+  border: 1px solid #262721;
+  width: 175px;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.pages a {
+  text-align: center;
+}
+
+.buttons {
+  background-color: transparent;
+  border: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 200px;
+}
+
+.pages:nth-of-type(1) {
+  background-image: url('../images/flickr/row-of-bicycles.jpg');
+}
+
+.pages:nth-of-type(2) {
+  background-image: url('../images/wikipedia-commons/pub-bike-500.jpg');
+  background-position: top;
+}
+
+.pages:nth-of-type(3) {
+  background-image: url('../images/flickr/broken-bicycle-on-trail.jpg');
+  background-position: center;
+}
+
+.logos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.logos img {
+  width: 90%;
+  height: 65px;
+  object-fit: contain;
+  align-self: center;
+  padding: 5px 0;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #59a1c9;
+  text-align: center;
+}
+
+footer iframe {
+  width: 96%;
+}
+
+footer h2 {
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact img {
+  padding: 7px;
+  height: 40px;
+}
+
+.contact-text {
+  padding: 7px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+
+.company-info {
+  background-color: #262721;
+  padding: 15px 15px 0px 15px;
+}
+
+.social-media {
+  align-self: center;
+  padding: 10px 0 15px 0;
+}
+
+.social-media img {
+  padding: 0px 8px;
+}
+
+.icons img {
+  width: 50px;
+  height: 40px;
+  padding: 0 5px;
+}
+
+.footer-bar {
+  padding: 10px;
+}
+
+.company-info a {
+  color: #ffffff;
+}
+
+.underline {
+  border-bottom: 1px solid #c1341e;
+}
+
+.footer-bar a:hover {
+  color: #262721;
+}
+
+/* ---------- thank you ---------- */
+
+.thank-you {
+  padding-bottom: 30px;
+}
+
+/* ---------- contact us ---------- */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.logo-column {
+  display: none;
+}
+
+.item1 {
+  margin-top: 20px;
+}
+
+.item2 hr {
+  width: 100px;
+  color: #262721;
+  margin-top: 30px;
+}
+
+.second h2 {
+  padding: 30px 0 20px 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.first form {
+  padding-right: 10px;
+}
+
+.intro {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.intro h3 {
+  line-height: 1.4rem;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  border: none;
+  width: 100%;
+  padding: 0;
+}
+
+legend {
+  padding-top: 20px;
+  color: #c1341e;
+  font-family: 'Anton', "Times New Roman", serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+input, textarea {
+  margin: 0.5rem 0;
+}
+
+input {
+  padding: 5px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 1rem;
+}
+
+.side {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .25rem 0;
+}
+
+[type="checkbox"] {
+  width: 40px;
+  height: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+}
+
+.second iframe {
+  width: 100%;
+  min-height: 300px;
+}
+
+.submitbutton {
+  width: 100%;
+}
+
+/* ---------- sales ---------- */
+
+.content h3 {
+  margin: 20px 0;
+}
+
+.large-text {
+  padding-top: 5px;
+  font-size: 2.0rem;
+  line-height: 2.2rem;
+  font-family: 'Anton', 'Times New Roman', serif;
+}
+
+.products img {
+  width: 80%;
+  height: auto;
+  padding: 0 0 10px;
+}
+
+.products h3 {
+  color: #262721;
+}
+
+.products  p, .products ul {
+  padding-bottom: 1rem;
+}
+
+.accordian {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #262721;
+  background-color: #59a1c9;
+  color: #ffffff;
+  padding: 10px 0 10px 20px;
+  text-align: left;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.accordian.active {
+  background-color: #c1341e;
+}
+
+.products {
+  display: none;
+  overflow: hidden;
+}
+
+.content p {
+  margin-top: 20px;
+  padding-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.grid-container {
+  margin-bottom: 20px;
+}
+
+td {
+  border-bottom: 1px solid #c0c0c0;
+  padding-right: 1rem;
+}
+
+td ~ td {
+  padding-right: 0;
+}
+
+th {
+  color: #c1341e;
+  font-family: 'Anton', 'Times New Roman', serif;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+
+
+/* ---------- service ---------- */
+
+article p {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+/* ---------- tours ---------- */
+
+li span {
+  font-weight: bold;
+}
+
+.second ul {
+  padding-bottom: 20px;
+}
+
+.blue {
+  color: #59a1c9;
+}
+
+/* ---------- events ---------- */
+
+h4 ~ ul {
+  padding-top: 1rem;
+}
+
+ul ~ h4 {
+  padding-top: 1rem;
+}

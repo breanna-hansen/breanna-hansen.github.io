@@ -1,0 +1,146 @@
+/* LARGE VIEW */
+
+@media only screen and (min-width: 64em) {
+
+  /* ---------- header ---------- */
+
+  header{
+    height: 85px;
+  }
+
+  header img, nav {
+    padding-left: 15px;
+  }
+
+  h1 {
+    top: 25px;
+    left: 115px;
+    font-size: 3.0rem;
+    line-height: 1.7rem;
+  }
+
+  header img {
+    top: 20px;
+    width: auto;
+    height: 100px;
+  }
+
+  /* ---------- nav ---------- */
+
+  nav {
+    padding-left: 120px;
+    padding-bottom: 20px;
+  }
+
+  nav ul {
+    margin: 15px 0px 0px px;
+  }
+
+  nav ul li {
+    padding: 0px 25px 0px 5px;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+
+  /* ---------- main ---------- */
+
+  .main-image {
+    justify-content: center;
+    background-image: url('../images/pexels/cyclist-in-the-mountains-large.jpg');
+    height: 400px;
+  }
+
+  .main-image h2 {
+    font-size: 4.0rem;
+    line-height: 4.0rem;
+  }
+
+  .main-image p {
+    width: 40%;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .top-button {
+    width: 275px;
+    padding: 15px;
+  }
+
+  .top-button a {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .pages {
+    width: 80%;
+  }
+
+  .pages a {
+    width: 40%;
+    height: 60px;
+    font-weight: bold;
+  }
+
+  .logos img {
+    height: 65px;
+  }
+
+  .logo-column .logos img {
+    height: 30px;
+  }
+
+  /* ---------- footer ---------- */
+
+  .company-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .address {
+    padding-left: 40px;
+  }
+
+/* --------- contact us ---------- */
+
+  .center {
+    width: 60%;
+  }
+
+  .intro p, form, #data {
+    padding: 0 40px;
+  }
+
+
+/* ---------- sales ---------- */
+
+  .products img {
+    float: left;
+  }
+
+  .specifications {
+    float: right;
+  }
+
+  .products img, .specifications {
+    width: 50%;
+  }
+
+  .specifications {
+    padding-left: 20px;
+  }
+
+  .content p {
+    margin-top: 25px;
+  }
+
+  /* ---------- events ---------- */
+
+  .split {
+    padding-left: 40px;
+  }
+
+}

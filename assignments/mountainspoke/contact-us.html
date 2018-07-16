@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact Us | Address, Directions, and Contact Form | Mountain Spoke</title>
+    <meta name="description" content="Here at Mountain Spoke we take pride in making sure our customers are satisfied and questions are answered. If you have a question, contact us to let us know how we can help.">
+    <link rel="icon" href="images/mountain-spoke-favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CSource+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+  </head>
+
+  <body>
+
+    <header includefile="header.html">
+    </header>
+
+    <nav>
+      <ul id="navigation" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li class="active"><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <picture>
+        <img class="middle" src="images/unsplash/bicycle-lane-at-night.jpg" alt="Bicycle lane at night" sizes="100vw"
+             srcset="images/unsplash/bike-lane-400.jpg 400w,
+                     images/unsplash/bike-lane-600.jpg 600w,
+                     images/unsplash/bike-lane-800.jpg 800w,
+                     images/unsplash/bike-lane-1024.jpg 1024w,
+                     images/unsplash/bike-lane-1400.jpg 1400w">
+      </picture>
+
+      <div class="center">
+
+        <div class="grid-container">
+          <div class="item1"><h2>Contact Us</h2></div>
+          <div class="item2">
+            <hr>
+            <div class="logo-column" includefile="logos.html">
+            </div>
+          </div>
+          <div class="item3">
+            <div class="content">
+              <div class="intro">
+                <p>Here at Mountain Spoke we take pride in making sure our customers are satisfied and questions are answered. If you have a question, contact us to let us know how we can help.</p>
+              </div>
+              <div class="first">
+                <div>
+                  <form method="get" action="thank-you.html">
+                  <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name&ast;
+                      <input type="text" name="fullName" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required>
+                    </label>
+                    <label class="top">Email&ast;
+                      <input type="email" name="email" placeholder="youremail@gmail.com" required>
+                    </label>
+                    <label class="top">Phone
+                      <input type="tel" name="phone">
+                    </label>
+                  </fieldset>
+
+                  <fieldset>
+                  <legend>Interests</legend>
+                  <label class="side">
+                    <input type="checkbox" name="interests" value="Mountain Biking"> Mountain Biking
+                  </label>
+                  <label class="side">
+                    <input type="checkbox" name="interests" value="Road Cycling"> Road Cycling
+                  </label>
+                  <label class="side">
+                    <input type="checkbox" name="interests" value="Events"> Events
+                  </label>
+                    <label class="side">
+                      <input type="checkbox" name="interests" value="Tours"> Tours
+                    </label>
+                    <label class="side">
+                      <input type="checkbox" name="interests" value="Other"> Other </label>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Additional Information or Comments</legend>
+                    <textarea name="comments" placeholder="Enter comments here..."></textarea>
+                  </fieldset>
+
+                  <input type="submit" value="Request More Info" class="submitbutton">
+                </form>
+                </div>
+
+                <div class="second">
+                  <h2>Address</h2>
+                  Mountain Spoke<br>
+                  3950 Valley Commons Drive<br>
+                  Bozeman, MT 59718<br>
+                  (123) 456-7890
+                  info@mountainspoke.com
+                  <h2>Directions</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410406146!2d-111.09291154884183!3d45.672276627453286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531348718411" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer includefile="footer.html">
+    </footer>
+
+    <script src="scripts/include.js"></script>
+    <script src="scripts/toggleHam.js"></script>
+  </body>
+</html>
