@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-h2, h3, h4, h5, h6 {
+h4, h5, h6 {
   font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
   color: #c1341e;
@@ -27,11 +27,19 @@ h2, h3, h4, h5, h6 {
 h2 {
   font-size: 2.0rem;
   line-height: 2.0rem;
+  font-family: 'Anton', 'Times New Roman', serif;
+  font-weight: 400;
+  color: #c1341e;
+  text-align: left;
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 1.6rem;
+  font-family: 'Anton', 'Times New Roman', serif;
+  font-weight: 400;
+  color: #c1341e;
+  text-align: left;
 }
 
 /* ---------- header ---------- */
@@ -134,11 +142,13 @@ main > picture img {
   object-fit: cover;
   object-position: bottom;
 }
-.main-image h2 {
+
+.event {
   color: #ffffff;
   font-size: 3.0rem;
   padding: 0 0 10px 20px;
   line-height: 3.0rem;
+  font-family: 'Anton', 'Times New Roman', serif;
 }
 
 .main-image p {
