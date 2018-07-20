@@ -31,11 +31,11 @@
   }
 
   nav ul {
-    margin: 15px 0px 0px px;
+    margin: 15px 0 0 0;
   }
 
   nav ul li {
-    padding: 0px 25px 0px 5px;
+    padding: 0 25px 0 5px;
   }
 
   nav ul li a {

@@ -243,7 +243,7 @@ footer iframe {
 }
 
 footer h3 {
-  padding: 15px 0px;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -264,7 +264,7 @@ footer h3 {
 
 .company-info {
   background-color: #262721;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .social-media {
