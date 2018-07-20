@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
   font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
   color: #c1341e;
@@ -354,10 +354,6 @@ form {
 .intro {
   margin-top: 20px;
   width: 100%;
-}
-
-.intro h3 {
-  line-height: 1.4rem;
 }
 
 fieldset {
