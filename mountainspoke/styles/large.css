@@ -46,12 +46,6 @@
 
   /* ---------- main ---------- */
 
-  main > picture img {
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-  }
-
   .main-image {
     justify-content: center;
     background-image: url('../images/pexels/cyclist-in-the-mountains-1600.jpg');
