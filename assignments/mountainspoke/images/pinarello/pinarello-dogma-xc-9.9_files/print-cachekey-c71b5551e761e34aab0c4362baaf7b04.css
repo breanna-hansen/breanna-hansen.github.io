@@ -1,0 +1,107 @@
+
+/* - print.css - */
+/* http://www.pinarello.com/portal_css/print.css?original=1 */
+@media print{
+body{font-family:"Helvetica Neue", Arial, FreeSans, sans-serif}h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue", Arial, FreeSans, sans-serif;font-weight:bold;line-height:125%;page-break-inside:avoid;page-break-after:avoid}h1,h2{letter-spacing:-0.05em}a{text-decoration:none;border-bottom:0.1em solid gray;color:black}#portal-column-content{width:95%}.documentDescription{font-weight:bold}pre{border:1pt dotted black;white-space:pre;font-size:8pt;overflow:auto;padding:1em}table.listing,table.listing td{border:1pt solid black;border-collapse:collapse}table.listing td,table.listing th{padding:6px}div.pageBreak{page-break-before:always}#content dt{margin:1em 0 0.625em}#content p,#content table{margin-bottom:0.625em;margin-top:0.625em}#content .documentDescription,#content #description{margin:0.5em 0 1.31em}div.top,#portal-logo,#portal-siteactions,.hiddenStructure,#portal-searchbox,#portal-globalnav,#portal-personaltools,#portal-breadcrumbs,#edit-bar,#portal-column-one,#portal-column-two,#portal-languageselector,.contentViews,.contentActions,.help,.legend,.portalMessage,.documentActions,.netscape4,#viewlet-below-content .reply,#viewlet-below-content .discussion,#kss-spinner,#review-history,#content-history,.listingBar,#portal-footer,#portal-colophon,.skipnav,#kss-spinner,#review-history,#content-history,.listingBar,.link-presentation,input.standalone,.overlay,.managePortletsFallback,.close,.link-parent,.draggingHook,#foldercontents-order-column,input.context,.visualNoPrint{display:none}.image-left{float:left;clear:both;margin:0.5em 1em 0.5em 0;border:0.4pt solid Black}.image-inline{float:none}.image-right{float:right;clear:both;margin:0.5em;border:0.4pt solid Black}dd.image-caption{text-align:left;padding:0;margin:0}dl.captioned{padding:0.8em}.newsImageContainer{float:right;margin:0 0 0.5em 1em;width:16em}
+#portal-top,
+#main-nav,
+#viewlet-above-content,
+.addthis_toolbox,
+#footer,
+.well,
+#header,
+#filters,
+#cookies-header,
+#product-category-row,
+#viewlet-below-content,
+#from-here {display: none!important;}
+.clearfix {
+*zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+display: table;
+line-height: 0;
+content: "";
+}
+.clearfix:after {
+clear: both;
+}
+#portal-columns {border:0; margin-top: 0;}
+#invoice-view {
+width:100%;
+margin: 0 auto;
+overflow: hidden;
+font-size: 8pt;
+}
+table {
+border-collapse: collapse;
+}
+#xevents-logo {float: left; width: 55%;}
+#xevents-logo img {width: 300px;}
+#xevents-info {float: left; width: 25%; font-size: 7pt}
+#xevents-website {float: left; width: 15%; font-size: 7pt}
+hr {clear: both; height: 1px; border: 3px solid #000; background-color: #000; margin: 30px 0 10px;}
+#client-info {float: left; width: 33%; margin-right: 2%;}
+#client-info td {
+padding: 10px;
+vertical-align: middle;
+border: 2px solid #000;
+}
+#invoice-info {
+border: 2px solid #000;
+float: left;
+width: 65%;
+}
+#invoice-info td {
+padding: 10.5px 20px;
+vertical-align: middle;
+}
+#bank-info {
+width: 60%;
+margin-top: 30px;
+float: left;
+}
+#bank-info td {
+padding: 10px 0;
+vertical-align: top;
+}
+#client-address-info {
+width: 40%;
+margin-top: 30px;
+float: left;
+}
+#client-address-info td {
+padding: 5px 0;
+vertical-align: top;
+}
+#product-list {
+width: 100%;
+margin-top: 30px;
+margin-bottom: 50px;
+border-bottom: 2px solid #000;
+font-size: 80%;
+}
+#product-list th {
+padding: 10px 2px;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+border: 1px solid #000;
+vertical-align: middle;
+white-space: nowrap;
+}
+#product-list td {
+padding: 5px 2px;
+text-align: center;
+border: 1px solid #000;
+border-bottom: 0px none;
+vertical-align: middle
+}
+#product-list td.text-right {text-align: right;}
+#product-list .even td {background-color:#E4E4E4;}
+.mainWrapper {display:none;width:0}
+header {width:0}
+#page {margin-left:0;}
+}
+

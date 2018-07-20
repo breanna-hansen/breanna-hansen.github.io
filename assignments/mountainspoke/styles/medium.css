@@ -1,0 +1,293 @@
+/* MEDIUM VIEW */
+
+@media only screen and (min-width: 37.5em) {
+
+
+  /* ---------- header ---------- */
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    height: 55px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border: none;
+  }
+
+  header img {
+    position: absolute;
+    top: 10px;
+    height: 90px;
+    width: auto;
+  }
+
+  h1 {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  /* ---------- nav ---------- */
+
+  nav {
+    display: flex;
+    align-items:center;
+    background-color: #262721;
+    border-bottom: 10px solid #59a1c9;
+    text-align: left;
+    padding-left: 90px;
+    height: 55px;
+  }
+
+  nav ul {
+    flex-flow: row nowrap;
+  }
+
+  nav ul li {
+    padding: 0px 5px;
+  }
+
+  nav ul li a {
+    padding: 8px 10px;
+    border: none;
+  }
+
+  nav ul li a:hover {
+    color: #59a1c9;
+  }
+
+  .hide {
+    display: flex;
+    padding: 0;
+    margin: 10px 0px;
+  }
+
+  /* ---------- main ---------- */
+
+  main img {
+    height: 300px;
+    width: 80%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .main-image {
+    justify-content: center;
+    background-image: url('../images/pexels/cycling-in-the-mountains-800.jpg');
+    height: 350px;
+    width: 80%;
+    margin: 20px auto 10px auto;
+  }
+
+  .main-image p, .main-image h2 {
+    margin-left: 30px;
+  }
+
+  .main-image p {
+    width: 40%;
+  }
+
+  .top-button {
+    width: 225px;
+    margin: 10px 0 10px 50px;
+  }
+
+  .pages {
+    width: 33%;
+    margin: 5px;
+  }
+
+  .pages:nth-of-type(1) {
+    margin-left: 0px;
+  }
+
+  .pages:nth-of-type(3) {
+    margin-right: 0px;
+  }
+
+  .pages a {
+    width: 50%;
+  }
+
+  .sub-pages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .logos {
+    flex-direction: row;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+  }
+
+  .logos img {
+    width: 20%;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .logo-column .logos img {
+    padding: 0;
+    margin: 10px;
+  }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    height: auto;
+  }
+
+  footer h2 {
+    text-align: left;
+  }
+
+  footer iframe {
+    width: 33%;
+    height: auto;
+  }
+
+  .icon, .address {
+    padding-left: 20px;
+  }
+
+  .contact-text {
+    align-self: center;
+    line-height: 1.1rem;
+  }
+
+  .company-info {
+    display: flex;
+    background-color: #262721;
+    padding: 15px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+/* ---------- contact us ---------- */
+
+  .center {
+    padding-bottom: 20px;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .split, .second {
+    flex: 1 1 50%;
+  }
+
+  .split {
+    margin-right: 10px;
+  }
+
+  .second {
+    margin-left: 10px;
+  }
+
+  form, .second {
+    width: 100%;
+  }
+
+  .second h2 {
+      padding: 20px 0 20px 0;
+    }
+
+  .second h2:nth-of-type(2) {
+    padding: 25px 0 20px 0;
+  }
+
+  /* ---------- service ---------- */
+
+  .center {
+    margin-bottom: 0;
+  }
+
+  .center h2 {
+    align-self: flex-start;
+  }
+
+  .headline h3 {
+    line-height: 1.7rem;
+    padding: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    display: grid;
+    grid-gap: 0 30px;
+  }
+
+  .item1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20px;
+  }
+
+  .item2 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .item2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .item2 div img {
+    width: 100px;
+  }
+
+  /* - test - */
+
+  .row {
+    display: flex;
+    flex-flow: wrap;
+    padding-left: 40px;
+  }
+
+  .row table {
+    padding: 0 0.5rem;
+  }
+
+  /* ---------- sales ---------- */
+
+  .accordian:nth-of-type(4) {
+    margin-bottom: 30px;
+  }
+
+  .products:nth-of-type(4) {
+    margin-bottom: 20px;
+  }
+
+  .accordian:nth-of-type(4).active {
+    margin-bottom: 0px;
+  }
+
+  .grid-container {
+    margin-bottom: 0;
+  }
+
+  /* ---------- events ---------- */
+}
+
