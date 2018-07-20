@@ -13,7 +13,7 @@
   h1 {
     top: 25px;
     left: 115px;
-    font-size: 3.0rem;
+    font-size: 3rem;
     line-height: 1.7rem;
   }
 
@@ -31,7 +31,7 @@
   }
 
   nav ul {
-    margin: 15px 0 0 0;
+    margin: 15px 0 0;
   }
 
   nav ul li {
@@ -51,8 +51,8 @@
   }
 
   .event {
-    font-size: 4.0rem;
-    line-height: 4.0rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   .main-image p {
@@ -80,7 +80,7 @@
   .pages a {
     width: 40%;
     height: 60px;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   .logos img {

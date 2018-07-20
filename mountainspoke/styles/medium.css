@@ -63,7 +63,7 @@
   .hide {
     display: flex;
     padding: 0;
-    margin: 10px 0px;
+    margin: 10px 0;
   }
 
   /* ---------- main ---------- */
@@ -79,7 +79,7 @@
     background-image: url('../images/pexels/cycling-in-the-mountains-800.jpg');
     height: 350px;
     width: 80%;
-    margin: 20px auto 10px auto;
+    margin: 20px auto 10px;
   }
 
   .main-image p, .event {
@@ -197,6 +197,7 @@
 
   .second {
     margin-left: 10px;
+    text-align: left;
   }
 
   form, .second {
@@ -204,11 +205,11 @@
   }
 
   .second h2 {
-      padding: 20px 0 20px 0;
+      padding: 20px 0;
     }
 
   .second h2:nth-of-type(2) {
-    padding: 25px 0 20px 0;
+    padding: 25px 0 20px;
   }
 
   /* ---------- service ---------- */
@@ -222,14 +223,15 @@
   }
 
   .headline h3 {
-    line-height: 1.7rem;
     padding: 0;
   }
 
   .grid-container {
     grid-template-columns: auto auto;
     display: grid;
-    grid-gap: 0 30px;
+    grid-row-gap: 0;
+    grid-column-gap: 30px;
+    margin-bottom: 0;
   }
 
   .item1 {
@@ -255,24 +257,5 @@
     width: 100px;
   }
 
-  /* ---------- sales ---------- */
-
-  .accordian:nth-of-type(4) {
-    margin-bottom: 30px;
-  }
-
-  .products:nth-of-type(4) {
-    margin-bottom: 20px;
-  }
-
-  .accordian:nth-of-type(4).active {
-    margin-bottom: 0;
-  }
-
-  .grid-container {
-    margin-bottom: 0;
-  }
-
-  /* ---------- events ---------- */
 }
 
