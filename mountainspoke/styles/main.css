@@ -166,32 +166,29 @@ main > picture img {
 
 .top-button {
   background-color: #c1341e;
-  padding: 10px 15px;
+  padding: 20px 15px;
   border: 1px solid #000;
   border-radius: 10px;
-  width: 200px;
   margin: 10px 0 10px 20px;
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
+  width: 200px;
 }
 
-.top-button, .pages a, .submitbutton {
+.top-button, a.buttons, .submitbutton {
   color: #fff;
 }
 
-.buttons, .submitbutton {
+a.buttons, .submitbutton {
   background-color: #c1341e;
   border: 1px solid #262721;
   width: 175px;
-  padding: 15px;
+  padding: 20px;
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 10px;
-}
-
-.pages a {
-  padding: 10px 35px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .pages {
