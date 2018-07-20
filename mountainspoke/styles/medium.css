@@ -255,18 +255,6 @@
     width: 100px;
   }
 
-  /* - test - */
-
-  .row {
-    display: flex;
-    flex-flow: wrap;
-    padding-left: 40px;
-  }
-
-  .row table {
-    padding: 0 0.5rem;
-  }
-
   /* ---------- sales ---------- */
 
   .accordian:nth-of-type(4) {
