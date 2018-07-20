@@ -175,28 +175,23 @@ main > picture img {
   font-weight: 600;
 }
 
-.top-button, .buttons {
+.top-button, .pages a, .submitbutton {
   color: #fff;
 }
 
-.pages a, .submitbutton {
+.buttons, .submitbutton {
   background-color: #c1341e;
   border: 1px solid #262721;
   width: 175px;
-  color: #fff;
   padding: 15px;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 10px;
 }
 
 .pages a {
-  text-align: center;
-}
-
-.buttons {
-  background-color: transparent;
-  border: none;
+  padding: 10px 35px;
+  margin: 0 auto;
 }
 
 .pages {
