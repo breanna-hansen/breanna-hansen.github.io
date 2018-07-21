@@ -280,5 +280,8 @@
     width: 50%;
   }
 
+  .content p {
+    padding-left: 10px;
+  }
 }
 
