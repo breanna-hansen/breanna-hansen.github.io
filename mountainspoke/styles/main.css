@@ -523,3 +523,23 @@ ul ~ h4 {
 .resource-list h3 {
   padding: 20px 0;
 }
+ /* ---------- 404 ---------- */
+
+.extra-large-text {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+.center-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content a {
+  padding: 20px;
+  width: 80%;
+  margin: 20px;
+  align-self: center;
+}

@@ -283,5 +283,12 @@
   .content p {
     padding-left: 10px;
   }
+
+  /* ---------- 404 ---------- */
+
+  .center-content a {
+    padding: 25px;
+    width: 50%;
+  }
 }
 
