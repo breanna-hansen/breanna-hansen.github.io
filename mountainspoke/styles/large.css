@@ -138,4 +138,9 @@
     padding-left: 40px;
   }
 
+  /* ---------- resource ---------- */
+
+  .resource-list div {
+    width: 33%;
+  }
 }

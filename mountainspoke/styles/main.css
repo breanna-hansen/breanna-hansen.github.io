@@ -518,3 +518,8 @@ h4 ~ ul {
 ul ~ h4 {
   padding-top: 1rem;
 }
+ /* --------- resources --------- */
+
+.resource-list h3 {
+  padding: 20px 0;
+}
