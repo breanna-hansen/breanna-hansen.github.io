@@ -294,6 +294,7 @@
   .center-content div {
     display: block;
   }
+
   .center-content img {
     width: 80%;
     object-fit: contain;
@@ -301,8 +302,5 @@
     height: auto;
   }
 
-  .404 {
-    padding-top: 40px;
-  }
 }
 
