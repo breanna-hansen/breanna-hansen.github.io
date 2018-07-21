@@ -526,9 +526,9 @@ ul ~ h4 {
  /* ---------- 404 ---------- */
 
 .extra-large-text {
-  font-size: 4rem;
+  font-size: 6rem;
   line-height: 4rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .center-content {
@@ -542,4 +542,8 @@ ul ~ h4 {
   width: 80%;
   margin: 20px;
   align-self: center;
+}
+
+.center-content div {
+  display: none;
 }

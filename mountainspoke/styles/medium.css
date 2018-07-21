@@ -290,5 +290,19 @@
     padding: 25px;
     width: 50%;
   }
+
+  .center-content div {
+    display: block;
+  }
+  .center-content img {
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    height: auto;
+  }
+
+  .404 {
+    padding-top: 40px;
+  }
 }
 
