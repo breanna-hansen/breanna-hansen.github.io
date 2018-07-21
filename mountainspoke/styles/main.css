@@ -288,16 +288,20 @@ footer h3 {
   padding: 10px;
 }
 
-.company-info a {
+footer a {
   color: #fff;
 }
 
-.underline {
+.underline, .footer-bar a {
   border-bottom: 1px solid #c1341e;
 }
 
+footer a:hover {
+  color: #59a1c9;
+}
+
 .footer-bar a:hover {
-  color: #262721;
+  color: #c1341e;
 }
 
 /* ---------- thank you ---------- */
