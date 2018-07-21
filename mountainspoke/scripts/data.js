@@ -13,7 +13,7 @@ function showServices(jsonObj) {
   var service = jsonObj['packages'];
 
   for (var i = 0; i < service.length; i++) {
-    var myArticle = document.createElement('article');
+    var mySection = document.createElement('section');
     var myH3 = document.createElement('h3');
     var myPara = document.createElement('p');
     var myList = document.createElement('ul');
@@ -28,10 +28,10 @@ function showServices(jsonObj) {
       myList.appendChild(listItem);
     }
 
-    myArticle.appendChild(myH3);
-    myArticle.appendChild(myPara);
-    myArticle.appendChild(myList);
+    mySection.appendChild(myH3);
+    mySection.appendChild(myPara);
+    mySection.appendChild(myList);
 
-    section.appendChild(myArticle);
+    section.appendChild(mySection);
   }
 }
