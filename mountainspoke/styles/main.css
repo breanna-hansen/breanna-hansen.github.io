@@ -242,7 +242,7 @@ footer {
   text-align: center;
 }
 
-footer iframe {
+iframe {
   width: 96%;
 }
 
@@ -404,8 +404,7 @@ textarea {
 }
 
 .second iframe {
-  width: 100%;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .submitbutton {
