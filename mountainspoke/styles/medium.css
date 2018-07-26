@@ -210,17 +210,10 @@
     text-align: left;
   }
 
-  form, .second {
-    width: 100%;
+  .second iframe {
+    max-width: 400px;
   }
 
-  .second h2 {
-      padding: 20px 0;
-    }
-
-  .second h2:nth-of-type(2) {
-    padding: 25px 0 20px;
-  }
 
   /* ---------- service ---------- */
 
@@ -277,10 +270,6 @@
   .resource-list div {
     padding: 10px;
     width: 50%;
-  }
-
-  .content p {
-    padding-left: 10px;
   }
 
   /* ---------- 404 ---------- */
