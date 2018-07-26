@@ -13,33 +13,33 @@ body {
 }
 
 a {
-  color: #c1341e;
   text-decoration: none;
 }
 
 h4, h5, h6 {
-  font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
-  color: #c1341e;
-  text-align: left;
 }
 
 h2 {
   font-size: 2rem;
   line-height: 2rem;
-  font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
-  color: #c1341e;
-  text-align: left;
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 1.7rem;
-  font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
+}
+
+/* ---------- multiples ---------- */
+
+h1, h2, h3, h4, h5, h6, .event, legend, .large-text, th {
+  font-family: 'Anton', 'Times New Roman', serif;
+}
+
+h2, h3, h4, h5, h6, a, nav ul li.active a, .red, .footer-bar a:hover, legend, th {
   color: #c1341e;
-  text-align: left;
 }
 
 /* ---------- header ---------- */
@@ -72,7 +72,6 @@ header img {
 }
 
 h1 {
-  font-family: 'Anton', 'Times New Roman', serif;
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 2.2rem;
@@ -101,10 +100,6 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-}
-
-nav ul li.active a {
-  color: #c1341e;
 }
 
 nav ul li a:hover {
@@ -150,7 +145,6 @@ main > picture img {
   font-size: 3rem;
   padding: 0 0 10px 20px;
   line-height: 3rem;
-  font-family: 'Anton', 'Times New Roman', serif;
 }
 
 .main-image p {
@@ -160,10 +154,6 @@ main > picture img {
   padding-left: 20px;
   font-weight: 700;
   line-height: 1.3rem;
-}
-
-.red {
-  color: #c1341e;
 }
 
 .top-button {
@@ -178,11 +168,11 @@ main > picture img {
   width: 200px;
 }
 
-.top-button, a.buttons, .submitbutton {
+.top-button, .buttons, .submitbutton {
   color: #fff;
 }
 
-a.buttons, .submitbutton {
+.buttons, .submitbutton {
   background-color: #c1341e;
   border: 1px solid #262721;
   width: 175px;
@@ -302,10 +292,6 @@ footer a:hover {
   color: #59a1c9;
 }
 
-.footer-bar a:hover {
-  color: #c1341e;
-}
-
 /* ---------- thank you ---------- */
 
 .thank-you {
@@ -364,8 +350,6 @@ fieldset {
 
 legend {
   padding-top: 20px;
-  color: #c1341e;
-  font-family: 'Anton', "Times New Roman", serif;
   font-size: 1.5rem;
   line-height: 1.7rem;
 }
@@ -421,7 +405,6 @@ textarea {
   padding-top: 5px;
   font-size: 2rem;
   line-height: 2.2rem;
-  font-family: 'Anton', 'Times New Roman', serif;
 }
 
 .products img {
@@ -491,8 +474,6 @@ td ~ td {
 }
 
 th {
-  color: #c1341e;
-  font-family: 'Anton', 'Times New Roman', serif;
   padding: 5px 0;
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -528,6 +509,7 @@ ul ~ h4 {
 .resource-list h3 {
   padding: 20px 0;
 }
+
  /* ---------- 404 ---------- */
 
 .extra-large-text {
@@ -537,9 +519,10 @@ ul ~ h4 {
 }
 
 .center-content {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .center-content a {

@@ -14,12 +14,10 @@
     top: 25px;
     left: 115px;
     font-size: 3rem;
-    line-height: 1.7rem;
+    line-height: 3rem;
   }
 
   header img {
-    top: 20px;
-    width: auto;
     height: 100px;
   }
 
@@ -40,12 +38,12 @@
 
   nav ul li a {
     font-size: 1.3rem;
+    line-height: 1.3rem;
   }
 
   /* ---------- main ---------- */
 
   .main-image {
-    justify-content: center;
     background-image: url('../images/pexels/cyclist-in-the-mountains-1600-80.jpg');
   }
 
@@ -55,14 +53,13 @@
   }
 
   .main-image p {
-    width: 40%;
     font-size: 1.8rem;
     line-height: 1.8rem;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
-  a.top-button {
+  .top-button {
     width: 300px;
     padding: 25px;
     font-size: 1.8rem;
@@ -73,9 +70,8 @@
     width: 80%;
   }
 
-  a.buttons {
+  .buttons {
     width: 40%;
-    font-weight: 700;
     padding: 25px;
   }
 
@@ -90,12 +86,7 @@
   /* ---------- footer ---------- */
 
   .company-info {
-    display: flex;
     justify-content: center;
-  }
-
-  .address {
-    padding-left: 40px;
   }
 
 /* --------- contact us ---------- */
@@ -103,11 +94,6 @@
   .center {
     width: 60%;
   }
-
-  .intro p, form, #data {
-    padding: 0 40px;
-  }
-
 
 /* ---------- sales ---------- */
 
@@ -131,11 +117,6 @@
     margin-top: 25px;
   }
 
-  /* ---------- events ---------- */
-
-  .split {
-    padding-left: 40px;
-  }
 
   /* ---------- resource ---------- */
 
