@@ -186,7 +186,7 @@
 
   .center {
     padding-bottom: 20px;
-    margin-bottom: 0;
+    argin-bottom: 0;
   }
 
   .first {
@@ -208,8 +208,8 @@
 
   iframe {
     max-width: 425px;
+    min-height: 200px;
   }
-
 
   /* ---------- service ---------- */
 
