@@ -1,0 +1,31 @@
+{
+  "packages": [
+    {
+      "name": "Drivetrain Labor Pricing",
+      "services": [
+        {
+          "Adjust front or rear derailleur": "$10",
+          "Straighten derailleur hanger": "$10"
+        }
+      ]
+    },
+    {
+      "name": "Drivetrain Labor Pricing",
+      "services": [
+        {
+          "Adjust front or rear derailleur": "$10",
+          "Straighten derailleur hanger": "$10"
+        }
+      ]
+    },
+    {
+      "name": "Drivetrain Labor Pricing",
+      "services": [
+        {
+          "Adjust front or rear derailleur": "$10",
+          "Straighten derailleur hanger": "$10"
+        }
+      ]
+    }
+  ]
+}
