@@ -83,7 +83,7 @@
     flex: 1 0 auto;
   }
 
-  main > picture img {
+  main > picture img, main > iframe {
     height: 300px;
     object-fit: cover;
     object-position: center;

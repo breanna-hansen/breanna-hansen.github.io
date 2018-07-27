@@ -114,7 +114,7 @@ nav ul li a:hover {
 
 /* ---------- main ---------- */
 
-main > picture img {
+main > picture img, main > iframe {
   width: 80%;
   display: flex;
   margin: 0 auto;
