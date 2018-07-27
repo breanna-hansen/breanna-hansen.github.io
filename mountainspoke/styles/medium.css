@@ -158,7 +158,7 @@
   }
 
   footer iframe {
-    width: 33%;
+    max-width: 33%;
     height: auto;
   }
 
@@ -168,7 +168,6 @@
 
   .contact-text {
     align-self: center;
-    line-height: 1.1rem;
   }
 
   .company-info {
@@ -186,7 +185,7 @@
 
   .center {
     padding-bottom: 20px;
-    argin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .first {
@@ -206,19 +205,14 @@
     margin-left: 10px;
   }
 
-  iframe {
+  .second iframe {
     max-width: 425px;
-    min-height: 200px;
   }
 
   /* ---------- service ---------- */
 
   .center h2 {
     align-self: flex-start;
-  }
-
-  .headline h3 {
-    padding: 0;
   }
 
   .grid-container {
@@ -271,23 +265,11 @@
     width: 50%;
   }
 
-  .center-content div {
-    display: block;
-  }
-
-  .center-content img {
-    width: 80%;
-    object-fit: contain;
-    object-position: center;
-    height: auto;
-  }
-
   /* ---------- overview ---------- */
 
   video {
     padding-top: 20px;
     width: 65%;
-    height: auto;
   }
 
 }

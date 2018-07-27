@@ -527,10 +527,6 @@ ul ~ h4 {
   align-self: center;
 }
 
-.center-content div {
-  display: none;
-}
-
 /* ---------- overview ---------- */
 
 video {
