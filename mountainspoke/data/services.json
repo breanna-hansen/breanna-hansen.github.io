@@ -23,7 +23,6 @@
         "Externally adjust wheel, headset, and bottom bracket bearings"
       ]
     },
-
     {
       "name" : "Deluxe Tune-Up",
       "cost" : "$90",
@@ -39,7 +38,6 @@
         "Hosty deep clean bike wash"
       ]
     },
-
     {
       "name" : "Premium Tune-Up",
       "cost" : "$150",

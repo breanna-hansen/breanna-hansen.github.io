@@ -1,4 +1,4 @@
-var section = document.getElementById('data');
+var section = document.getElementById('services');
 var requestURL = 'data/services.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -13,25 +13,23 @@ function showServices(jsonObj) {
   var service = jsonObj['packages'];
 
   for (var i = 0; i < service.length; i++) {
-    var mySection = document.createElement('section');
-    var myH3 = document.createElement('h3');
-    var myPara = document.createElement('p');
-    var myList = document.createElement('ul');
-
-    myH3.textContent = service[i].name;
-    myPara.textContent = 'Price: ' + service[i].cost;
+    var newSection = document.createElement('section');
+    var heading = document.createElement('h3');
+    heading.textContent = service[i].name;
+    var price = document.createElement('p');
+    price.textContent = 'Price: ' + service[i].cost;
+    var list = document.createElement('ul');
 
     var offers = service[i].services;
-    for (var j = 0; j < offers.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = offers[j];
-      myList.appendChild(listItem);
+    for (var x = 0; x < offers.length; x++) {
+      var labor = document.createElement('li');
+      labor.textContent = service[i].services[x];
+      list.appendChild(labor);
     }
 
-    mySection.appendChild(myH3);
-    mySection.appendChild(myPara);
-    mySection.appendChild(myList);
-
-    section.appendChild(mySection);
+    newSection.appendChild(heading);
+    newSection.appendChild(price);
+    newSection.appendChild(list);
+    section.appendChild(newSection);
   }
 }
