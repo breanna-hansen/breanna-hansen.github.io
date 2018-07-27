@@ -89,10 +89,6 @@
     object-position: center;
   }
 
-  main > iframe {
-    height: 260px;
-  }
-
   .main-image {
     background-image: url('../images/pexels/cycling-in-the-mountains-800.jpg');
     width: 80%;

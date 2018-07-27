@@ -123,15 +123,6 @@ main > picture img {
   padding-bottom: 20px;
 }
 
-main > iframe {
-  width: 80%;
-  display: flex;
-  margin: 0 auto;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .main-image {
   display: flex;
   flex-direction: column;
