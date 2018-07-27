@@ -174,8 +174,8 @@
     height: auto;
   }
 
-  .icon, .address {
-    padding-left: 20px;
+  .company-info > .address {
+    padding: 0 30px;
   }
 
   .contact-text {
@@ -219,6 +219,7 @@
 
   .second iframe {
     max-width: 425px;
+    min-height: 300px;
   }
 
   /* ---------- service ---------- */

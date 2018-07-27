@@ -236,7 +236,7 @@ footer {
   text-align: center;
 }
 
-iframe {
+.second iframe, footer iframe {
   width: 96%;
   min-height: 200px;
 }
