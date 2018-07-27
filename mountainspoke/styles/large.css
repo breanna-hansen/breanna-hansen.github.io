@@ -89,6 +89,10 @@
     justify-content: center;
   }
 
+  footer iframe {
+    max-width: 425px;
+  }
+
 /* --------- contact us ---------- */
 
   .center {
