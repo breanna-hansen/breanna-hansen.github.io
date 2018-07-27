@@ -200,6 +200,10 @@
 
 /* ---------- contact us ---------- */
 
+  h2.top-page {
+    margin-top: 10px;
+  }
+
   .center {
     padding-bottom: 20px;
     margin-bottom: 0;
