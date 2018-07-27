@@ -114,13 +114,22 @@ nav ul li a:hover {
 
 /* ---------- main ---------- */
 
-main > picture img, main > iframe {
+main > picture img {
   width: 80%;
   display: flex;
   margin: 0 auto;
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+main > iframe {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-image {
