@@ -49,6 +49,7 @@ h2, h3, h4, h5, h6, a, nav ul li.active a, .red, .footer-bar a:hover, legend, th
   color: #fff;
   background-color: transparent;
   font-size: 3rem;
+  line-height: 3rem;
   font-weight: 700;
   padding: 0;
   line-height: 2.2rem;
@@ -97,6 +98,7 @@ nav ul li a {
   flex-direction: column;
   color: #fff;
   font-size: 1.2rem;
+  line-height: 1.2rem;
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
@@ -144,7 +146,7 @@ main > picture img {
   color: #fff;
   font-size: 3rem;
   padding: 0 0 10px 20px;
-  line-height: 3rem;
+  line-height: 3.1rem;
 }
 
 .main-image p {
@@ -163,6 +165,7 @@ main > picture img {
   border-radius: 10px;
   margin: 10px 0 10px 20px;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 600;
   text-align: center;
   width: 200px;
@@ -178,6 +181,7 @@ main > picture img {
   width: 175px;
   padding: 20px;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 700;
   border-radius: 10px;
   text-align: center;
