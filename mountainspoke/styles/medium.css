@@ -4,6 +4,10 @@
     height: 100%;
   }
 
+  a:hover {
+    color: #59a1c9;
+  }
+
   /* ---------- header ---------- */
 
   .hamburger {
@@ -192,6 +196,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-bar a:hover {
+    color: #c1341e;
   }
 
 /* ---------- contact us ---------- */

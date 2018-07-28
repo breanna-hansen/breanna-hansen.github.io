@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .event, legend, .large-text, th {
   font-family: 'Anton', 'Times New Roman', serif;
 }
 
-h2, h3, h4, h5, h6, a, nav ul li.active a, .red, .footer-bar a:hover, legend, th {
+h2, h3, h4, h5, h6, a, nav ul li.active a, .red, .footer-bar, legend, th {
   color: #c1341e;
 }
 
