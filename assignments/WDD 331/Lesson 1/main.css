@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #fff;
+}
+
+div {
+  width: 380px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: 'Lora', 'Arial', sans-serif;
+}
+
+h1 a {
+  color: #FAEBD7;
+}
+
+a:link, a:visited {
+  color: #6495ED;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------- header ---------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  background-color: #6495ED;
+  padding: 0 30px;
+  height: 265px;
+}
+
+header a {
+  color: #FAEBD7;
+  text-align: right;
+
+hr {
+  border-color: #ffffff;
+  margin-top: 20px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+nav a:link, nav a:visited {
+  font-weight: 550;
+  color: #FAEBD7;
+}
+
+nav a:active, p a:active {
+  color: #DEB887;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ---------- main ---------- */
+
+main {
+  background-color: #F6ECD4;
+  padding: 10px;
+}
+
+figure img {
+  display: block;
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+}
+
+article {
+  height: auto;
+  background-color: #ffffff;
+  margin: 30px 5px 15px 15px;
+  padding: 15px 30px 45px 30px;
+  color: #000000;
+  box-shadow: 3px 3px 4px #a5a5a5;
+}
+
+.post-date {
+  padding: 10px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 60px;
+}
+
+h2 a:link, h2 a:visited  {
+  color: #000000;
+}
+
+h2 a:hover {
+  color: #6495ED;
+}
+
+p {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 64em) {
+
+  div {
+    width: 1024px;
+    flex-flow: row nowrap;
+  }
+
+  header {
+    justify-content: flex-start;
+    width: 26%;
+    padding: 60px 40px 0 40px;
+    height: auto;
+  }
+
+  main  {
+    width: 74%;
+    padding: 0;
+  }
+
+  article {
+    height: auto;
+    background-color: #ffffff;
+    margin: 50px 80px;
+    padding: 35px 50px 60px 50px;
+    color: #000000;
+    box-shadow: 3px 3px 4px #a5a5a5;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  figure img {
+    width: 52%;
+  }
+
+}
