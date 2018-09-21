@@ -19,20 +19,17 @@ div {
   margin-right: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', 'Arial', sans-serif;
 }
 
-h1 a {
-  color: #FAEBD7;
+a, a:visited {
+  color: #6495ED;
+  text-decoration: none;
 }
 
-a:link, a:visited {
-  color: #6495ED;
+a:active {
+  color: #DEB887;
 }
 
 a:hover {
@@ -51,9 +48,10 @@ header {
   height: 265px;
 }
 
-header a {
+header a:link {
   color: #FAEBD7;
   text-align: right;
+}
 
 hr {
   border-color: #ffffff;
@@ -70,13 +68,9 @@ li {
   padding-top: 15px;
 }
 
-nav a:link, nav a:visited {
-  font-weight: 550;
+nav a, nav a:visited {
+  font-weight: 600;
   color: #FAEBD7;
-}
-
-nav a:active, p a:active {
-  color: #DEB887;
 }
 
 nav a:hover {
@@ -117,7 +111,7 @@ h2 {
   margin-bottom: 60px;
 }
 
-h2 a:link, h2 a:visited  {
+h2 a, h2 a:visited  {
   color: #000000;
 }
 
