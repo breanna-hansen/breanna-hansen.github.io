@@ -100,7 +100,7 @@ article {
 
 .post-date {
   padding: 20px 0 10px 0 ;
-  color: #000;
+  color: #808080;
 }
 
 h2 {
@@ -114,10 +114,6 @@ h2 a:link, h2 a:visited  {
 
 h2 a:hover {
   color: #6495ED;
-}
-
-p {
-  font-weight: 500;
 }
 
 @media only screen and (min-width: 64em) {
