@@ -8,7 +8,7 @@
 body {
   font-size: 16px;
   font-family: 'Helvetica', 'Arial', sans-serif;
-  color: #fff;
+  color: #000000;
 }
 
 div {
@@ -20,16 +20,17 @@ div {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', 'Arial', sans-serif;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
-a, a:visited {
+a:link, a:visited {
   color: #6495ED;
   text-decoration: none;
 }
 
 a:active {
   color: #DEB887;
+  text-decoration: none;
 }
 
 a:hover {
@@ -48,29 +49,27 @@ header {
   height: 265px;
 }
 
-header a:link {
+h1 a:link, h1 a:visited {
   color: #FAEBD7;
-  text-align: right;
 }
 
 hr {
-  border-color: #ffffff;
   margin-top: 20px;
-  width: 100%;
 }
+
+/* ---------- nav ---------- */
 
 ul {
   list-style-type: none;
 }
 
 li {
-  text-decoration: none;
   padding-top: 15px;
 }
 
-nav a, nav a:visited {
-  font-weight: 600;
+nav a:link, nav a:visited {
   color: #FAEBD7;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -80,8 +79,7 @@ nav a:hover {
 /* ---------- main ---------- */
 
 main {
-  background-color: #F6ECD4;
-  padding: 10px;
+  background-color: #FAEBD7;
 }
 
 figure img {
@@ -95,23 +93,22 @@ figure img {
 article {
   height: auto;
   background-color: #ffffff;
-  margin: 30px 5px 15px 15px;
+  margin: 30px 15px 15px 25px;
   padding: 15px 30px 45px 30px;
-  color: #000000;
-  box-shadow: 3px 3px 4px #a5a5a5;
+  box-shadow: 3px 3px 4px #b7b7b7;
 }
 
 .post-date {
-  padding: 10px 0;
+  padding: 20px 0 10px 0 ;
   color: #000;
 }
 
 h2 {
   font-size: 1.7em;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-h2 a, h2 a:visited  {
+h2 a:link, h2 a:visited  {
   color: #000000;
 }
 
@@ -132,27 +129,23 @@ p {
 
   header {
     justify-content: flex-start;
-    width: 26%;
+    width: 27%;
     padding: 60px 40px 0 40px;
     height: auto;
   }
 
   main  {
-    width: 74%;
-    padding: 0;
+    width: 73%;
   }
 
   article {
-    height: auto;
-    background-color: #ffffff;
-    margin: 50px 80px;
-    padding: 35px 50px 60px 50px;
+    margin: 45px 75px;
+    padding: 30px 50px 65px 50px;
     color: #000000;
-    box-shadow: 3px 3px 4px #a5a5a5;
   }
 
   h2 {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   figure img {
