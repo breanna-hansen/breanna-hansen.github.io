@@ -1,0 +1,385 @@
+/* mixin */
+/* main sass */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+.listDetails {
+  display: none;
+}
+
+.booksContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  margin: 0 0 10px 5px;
+}
+.booksContainer div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 10px 0 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 40vw;
+}
+
+.bookTitle {
+  margin: 0;
+  padding: 0;
+  color: #062148;
+}
+
+.bookImage {
+  margin: auto;
+  padding: 15px 0;
+  height: auto;
+  width: 40vw;
+}
+
+/* ----- buttons ----- */
+.button-trio {
+  margin: 5px;
+  width: 80px;
+}
+.button-trio:active, .button-trio:active, .button-trio:active {
+  -webkit-animation: buttonClick 2s;
+          animation: buttonClick 2s;
+}
+
+@-webkit-keyframes buttonClick {
+  0% {
+    background-color: #f59548;
+    border: 2px inset #f59548;
+    transform: scale(1.1);
+  }
+  15% {
+    background-color: #f27918;
+    border: 2px inset #f27918;
+    transform: scale(1.1);
+  }
+  90% {
+    background-color: #f27918;
+    border: 2px inset #f27918;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #f59548;
+    border: 2px outset #f59548;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes buttonClick {
+  0% {
+    background-color: #f59548;
+    border: 2px inset #f59548;
+    transform: scale(1.1);
+  }
+  15% {
+    background-color: #f27918;
+    border: 2px inset #f27918;
+    transform: scale(1.1);
+  }
+  90% {
+    background-color: #f27918;
+    border: 2px inset #f27918;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #f59548;
+    border: 2px outset #f59548;
+    transform: scale(1.1);
+  }
+}
+#buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+/* text styling */
+.noBottomMg {
+  margin-bottom: 0;
+}
+
+.noTopMg {
+  margin-top: 0;
+}
+
+.imgDescWidth {
+  width: 48%;
+}
+
+/* ----- media queries ----- */
+@media only screen and (min-width: 700px) {
+  .booksContainer {
+    grid-template-columns: 33% 33% 33%;
+  }
+  .booksContainer div {
+    width: 29vw;
+  }
+  .booksContainer h2, .booksContainer p {
+    margin: auto;
+    padding: 0;
+    width: 27vw;
+  }
+  .bookImage {
+    width: 28vw;
+  }
+  #buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto 15px auto;
+    padding: 0;
+  }
+}
+/* mixin */
+/* main sass */
+.list {
+  display: none;
+  z-index: 10;
+}
+
+.display-list {
+  background-color: #fff;
+  border: 3px solid #cecece;
+  display: inline-block;
+  left: 50%;
+  margin: auto;
+  max-height: 101%;
+  max-width: 500px;
+  overflow-x: hidden;
+  overflow-x: auto;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 101%;
+}
+
+#list ul {
+  margin: 0;
+}
+#list h2 {
+  margin: 0;
+  padding: 20px 0;
+  background-color: #062148;
+  color: #fff;
+  font-size: 1.875em;
+  text-align: center;
+}
+
+.your-list, #close-list {
+  border: 2px outset #f59548;
+  float: left;
+}
+.your-list:active, #close-list:active {
+  background-color: #f27918;
+}
+
+.your-list {
+  margin: 15px 0 10px 15px;
+}
+
+#close-list {
+  margin: 15px;
+}
+
+#addedToList {
+  list-style-type: none;
+  padding: 0 15px;
+}
+#addedToList li {
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  display: flex;
+  padding: 15px 0;
+}
+#addedToList li:last-of-type {
+  border: none;
+}
+
+/* Buttons */
+canvas {
+  background-color: #f59548;
+  border: 1px outset #f59548;
+  height: 30px;
+  width: 30px;
+}
+
+.buyButtonBox {
+  margin: 0 10px;
+}
+
+.titleText {
+  left: 100px;
+  padding-right: 15px;
+  position: absolute;
+}
+
+#buyBox {
+  margin-left: 10px;
+}
+
+#close-button {
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #cecece;
+  bottom: 0;
+  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+}
+#close-button button {
+  margin: 20px 15px;
+}
+
+.remove {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .your-list {
+    margin: 20px 0 0 15px;
+  }
+}
+/* ----- Google fonts ----- */
+/* mixin */
+/* ----- body ----- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #062148;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* ----- header ----- */
+header {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  background-color: #062148;
+  color: #fff;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+header h1 {
+  margin: auto;
+  padding: 0 0 10px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+header h2 {
+  font-size: 1.275em;
+  font-weight: normal;
+  margin: auto;
+  width: 90%;
+}
+header p {
+  margin-bottom: 0;
+}
+
+/* ----- main ----- */
+main {
+  margin: 120px -1px 50px 0;
+  min-height: 400px;
+  z-index: 10;
+}
+
+button {
+  background-color: #f59548;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  padding: 8px;
+}
+
+/* ----- list data ----- */
+.buttonAndCategoryName {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0 15px 0 0;
+  align-items: center;
+  background-image: radial-gradient(#84a6c2, #2a5381);
+  border: none;
+  border-bottom: 5px outset #2a5381;
+  color: #fff;
+}
+
+/* ----- list details ----- */
+button.categoryItem {
+  background: transparent;
+  border: none;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding-left: 15px;
+  width: 40px;
+}
+
+.down-arrow {
+  align-items: center;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  height: 0;
+  line-height: 40px;
+  margin-right: 10px;
+  width: 0;
+  margin-top: 8px;
+}
+
+#display-list {
+  display: block;
+}
+
+/* ----- footer ----- */
+footer {
+  background-color: #062148;
+  bottom: -1px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+/* ----- ads ----- */
+.amazonAd {
+  position: absolute;
+  right: 0;
+}
+
+.large-ad {
+  display: none;
+}
+
+#catDetails0, #catDetails1, #catDetails2 {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    margin-bottom: 70px;
+  }
+  footer {
+    height: 70px;
+  }
+  .large-ad {
+    border: none;
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    width: 320px;
+  }
+  .amazonAd {
+    display: none;
+  }
+}/*# sourceMappingURL=main-styles.css.map */
