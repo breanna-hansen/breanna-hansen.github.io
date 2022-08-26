@@ -1,0 +1,243 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+ /* font-family: 'Orbitron', sans-serif; */
+	html {
+		margin: 0;
+		padding: 0;
+	}
+
+	body { 
+		font: 1em Helvetica, sans-serif;
+		line-height: 1.88889;
+		color: #f4f0ec; 
+		background: #181f2a; 
+		margin: 0; 
+		padding: 0;
+		box-sizing: border-box;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Orbitron', sans-serif;
+	}
+	h3 {
+		color: #7cff01;
+	}
+	a {
+		color: #00E5DB;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #7cff01;
+	}
+	.page-wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 20px 20px 130px 20px;
+	}
+	.intro {
+		order: -2;
+		margin: 50px 0 0 0;
+	}
+	ul {
+		padding: none;
+	}
+	li {
+		list-style-type: none;
+	}
+	.summary, .preamble, .sidebar, .explanation, .benefits, .participation, .requirements {
+		padding: 0 20px;
+		margin: 10px 0;
+		border: 4px ridge #fff;
+		border-radius: 10px;
+		background-color: #181f2a;
+	}
+	.sidebar {
+		order: 5;
+		margin: 0 0 10px 0;
+		box-shadow: 0 0 30px #00E5DB;
+		width: 100vw;
+	}
+	.summary {
+		box-shadow: 0 0 30px #fe0000;	
+	}
+	.preamble {
+		box-shadow: 0 0 30px #fff204;
+	}
+	.explanation {
+		margin: 0 0 10px 0;
+		box-shadow: 0 0 30px #00E5DB;
+	}
+	.participation {
+		box-shadow: 0 0 30px #ff1178;
+	}
+	.benefits {
+		box-shadow: 0 0 30px #fe0000;
+	}
+	.requirements {
+		box-shadow: 0 0 30px #fff204;
+	}
+
+	header {
+		border: 4px ridge #fff;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0 0 30px #ff1178;
+	}
+
+	h1, h2 {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin: 0;
+	}
+	h1 {
+		font-size: 3.5em;
+		padding: 20px;
+		line-height: 1.5em;
+		background: -webkit-linear-gradient(360deg, #ff1178, #fe0000, #fff204, #01fff4, #7cff01);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin: 0;
+	}
+	h2 {
+		background: -webkit-linear-gradient(360deg, #7cff01, #00E5DB, #fff204, #fe0000, #ff1178);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin: 0 0 10px 0;
+		font-size: 16px;
+	}
+	h1::before {
+		content:"";
+		height: 40px;
+		width: 100vw;
+		position: absolute;
+		top: 10px;
+		bottom: 10px;
+		left: 0;
+		background:	radial-gradient(#fff 4px, #ff1178 7px, #181f2a 10px);
+		background-size: 32.7px 32.7px, 16px 1px, 1px 16px;
+	}
+
+	footer {
+		background-color: linear;
+		position: fixed;
+		width: 100vw;
+		bottom: 0;
+		left: 0;
+		padding: 30px 0;
+		background: -webkit-linear-gradient(360deg, #ff1178, #fe0000, #fff204, #01fff4, #7cff01);
+		color: #fff;
+		font-size: 2em;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer a:hover {
+		color: gray;
+	}
+	
+	footer a {
+		width: 65px;
+	}
+	.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
+		visibility: hidden;
+	}
+	
+	.zen-validate-html::before, .zen-validate-css::before, .zen-license::before, .zen-accessibility::before, .zen-github::before {
+		content:"";
+		visibility: visible;
+		padding: 15px 30px;
+	}
+	.zen-validate-html::before {
+		background-image: url('./images/html5-black.png');
+	}
+
+	.zen-validate-css::before {
+		background-image: url(./images/css-icon.png);
+	}
+
+	.zen-license::before {
+	background-image: url(./images/cc-icon.png);
+	}
+
+	.zen-accessibility::before {
+		background-image: url(./images/accessible-icon.svg);
+	}
+
+	.zen-github::before {
+		background-image: url(./images/github-icon.png);
+	}
+
+	@media only screen and (min-width: 650px) {
+		.sidebar {
+			order: -2;
+			width: 25vw;
+			margin: 50px 20px 20px 0;
+			max-width: 300px;
+		}
+		.intro {
+			order: -1;
+			width: 57vw;
+		}
+		.page-wrapper {
+			flex-flow: row wrap;
+		}
+		.sidebar ul {
+			padding-left: 0;
+			list-style-type: none;
+		}
+		.main {
+			
+			display: flex;
+			justify-content: row wrap;
+		}
+		.explanation, .participation, .benefits, .requirements {
+			max-width: 100%;
+			margin: 20px 10px;
+		}
+		/* .page-wrapper{
+			width: 55vw;
+		}
+		.sidebar {
+			order: -1;
+			width: 25vw;
+			margin-top: 50px;
+			position: absolute;
+			right: -10px;
+			padding-right: 30px;
+			z-index: -1;
+			height: 935px;
+		}
+		.sidebar h3 {
+			width: 299px;
+		}
+		.sidebar ul {
+			padding-left: 0;
+			list-style-type: none;
+		}
+		.intro {
+			order: -2;
+		}
+		header {
+			width: 65vw;
+			max-width: 600px;
+		}
+		.summary, .preamble {
+			width: 60vw;
+		}
+		.requirements, .benefits {
+			width: 100vw;
+		} */
+	  }
