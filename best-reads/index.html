@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CIT 261 Final Project</title>
+    <link rel="icon" type="image/png" href="images/best-reads-favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="manifest" type="manifest" href="manifest.webmanifest" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZC1DBETDC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9ZC1DBETDC');
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Best Reads</h1>
+        <h2>NYT Best Seller List</h2>
+    </header>
+
+    <main>
+        <div id="bookCategories"></div>
+    </main>
+
+    <footer>
+        <div>
+            <div id="list" class="list">
+                <h2>Book List</h2>
+                <div>
+                    <ul id="addedToList">
+                    </ul>
+                </div>
+                <div id="close-button">
+                    <button class="your-list" type="button" onclick="showList()">Close List</button>
+                </div>
+            </div>
+            <button id="your-List" class="your-list" type="button" onclick="showList()">Your List</button>
+        </div>
+        <iframe class="amazonAd" src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=40&l=ur1&category=books&banner=01C0Z0F1JZARPFRFG382&f=ifr&linkID=a52c5620911582417d7eb8c06270dc33&t=budgetmealrecipesfb-20&tracking_id=budgetmealrecipesfb-20" width="120" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+        <iframe class="large-ad" src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=288&l=ur1&category=books&banner=1Q1EX20Z2R7864E3D582&f=ifr&linkID=19a6cc24741641326d7b67b6217572c4&t=budgetmealrecipesfb-20&tracking_id=budgetmealrecipesfb-20" scrolling="no" frameborder="0"></iframe>
+        
+    </footer>
+
+    <script src="scripts/nyt-api.js"></script> 
+    <script src="scripts/class-styles.js"></script>
+    <script src="scripts/booklist.js"></script>
+    <script src="scripts/accordian.js"></script>
+    <script src="scripts/sounds.js"></script>
+    
+
+</body>
+</html>

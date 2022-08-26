@@ -1,0 +1,119 @@
+/* mixin */
+
+@mixin marg-pad($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+/* main sass */
+
+.list {
+    display: none;
+    z-index: 10;
+}
+
+.display-list {
+    background-color: $white;
+    border: 3px solid $medium-gray;
+    display: inline-block;
+    left: 50%;
+    margin: auto;
+    max-height: 101%;
+    max-width: 500px;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 101%;
+}
+
+#list {
+    ul {
+    margin: 0;
+    }
+    h2 {
+        @include marg-pad(0, 20px 0);
+        background-color: $dark-background;
+        color: $white;
+        font-size: 1.875em;
+        text-align: center;
+    }
+}
+
+.your-list, #close-list {
+    border: 2px outset $medium-accent;
+    float: left;
+    &:active {
+        background-color: $dark-accent;
+    }
+}
+
+.your-list {
+    margin: 15px 0 10px 15px;
+}
+
+#close-list {
+    margin: 15px;
+}
+
+#addedToList {
+    list-style-type: none;
+    padding: 0 15px;
+    li {
+        align-items: center;
+        border-bottom: 1px solid $medium-gray;
+        display: flex;
+        padding: 15px 0;
+        &:last-of-type {
+            border: none;
+        }
+    }
+}
+
+/* Buttons */
+
+canvas {
+    background-color: $medium-accent;
+    border: 1px outset $medium-accent;
+    height: 30px;
+    width: 30px;
+}
+
+.buyButtonBox {
+    margin: 0 10px;
+}
+
+.titleText {
+    left: 100px;
+    padding-right: 15px;
+    position: absolute;
+}
+
+#buyBox {
+    margin-left: 10px;
+}
+
+#close-button {
+    background-color: $white;
+    border: none;
+    border-top: 1px solid $medium-gray;
+    bottom: 0;
+    height: 60px;
+    position: sticky;
+    width: 100%;
+    button {
+        margin: 20px 15px;
+    }
+} 
+
+.remove {
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .your-list {
+        margin: 20px 0 0 15px;
+    }
+}

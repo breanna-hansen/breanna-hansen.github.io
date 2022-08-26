@@ -1,0 +1,100 @@
+/* mixin */
+
+@mixin marg-pad($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex($display, $flow, $justify, $align) {
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* main sass */
+
+.listDetails {
+    display: none;
+}
+
+.booksContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin: 0 0 10px 5px;
+    div {
+        @include flex(flex, column nowrap, center, flex-start);
+        @include marg-pad(10px 10px 0 5px, 10px);
+        background-color: $white;
+        width: 40vw;
+    }
+}
+
+.bookTitle {
+    @include marg-pad(0, 0);
+    color: $dark-background;
+}
+
+.bookImage {
+    @include marg-pad(auto, 15px 0);
+    height: auto;
+    width: 40vw;
+}
+
+/* ----- buttons ----- */
+
+.button-trio {
+    margin: 5px;
+    width: 80px; 
+    &:active, &:active, &:active {
+        animation: buttonClick 2s;
+    }
+}
+@keyframes buttonClick {
+    0% {background-color: $medium-accent; border: 2px inset $medium-accent; transform: scale(1.1);} 
+    15% {background-color: $dark-accent; border: 2px inset $dark-accent; transform: scale(1.1);}
+    90% {background-color: $dark-accent; border: 2px inset $dark-accent; transform: scale(1.1);}
+    100% {background-color: $medium-accent; border: 2px outset $medium-accent; transform: scale(1.1);}
+}
+
+#buttons {
+    @include flex(flex, column nowrap, center, center);
+    @include marg-pad(10px 0 0 0, 0);
+}
+
+/* text styling */
+
+.noBottomMg {
+    margin-bottom: 0;
+}
+.noTopMg {
+    margin-top: 0;
+}
+
+.imgDescWidth {
+    width: 48%;
+}
+
+/* ----- media queries ----- */
+
+@media only screen and (min-width: 700px) {
+
+    .booksContainer {
+        grid-template-columns: 33% 33% 33%;
+        div {
+            width: 29vw;
+        }
+        h2, p {
+            @include marg-pad(auto, 0);
+            width: 27vw;
+        }
+    }
+    .bookImage {
+        width: 28vw;
+    }
+    #buttons {
+        @include flex(flex, row nowrap, center, center);
+        @include marg-pad(5px auto 15px auto, 0);
+    }
+}

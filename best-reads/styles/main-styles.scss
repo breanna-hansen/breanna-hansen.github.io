@@ -1,0 +1,155 @@
+@import 'colors';
+@import 'accordian';
+@import 'booklist';
+
+/* ----- Google fonts ----- */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* mixin */
+
+@mixin marg-pad($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex($display, $flow, $justify, $align) {
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* ----- body ----- */
+
+body {
+    @include marg-pad(0, 0);
+    background-color: $dark-background;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* ----- header ----- */
+
+header {
+    @include marg-pad(0, 20px 0 20px 0);
+    background-color: $dark-background;
+    color: $white;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    h1 {
+        @include marg-pad(auto, 0 0 10px 0);
+        font-size: 2em;
+        text-transform: uppercase;    
+    }
+    h2 {
+        font-size: 1.275em;
+        font-weight: normal;
+        margin: auto;
+        width: 90%;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* ----- main ----- */
+
+main {
+    margin: 120px -1px 50px 0;
+    min-height: 400px;
+    z-index: 10;
+}
+
+button {
+    background-color: $medium-accent;
+    border: none;
+    color: $dark-text;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* ----- list data ----- */
+
+.buttonAndCategoryName {
+    @include flex(flex, row nowrap, flex-start, center);
+    @include marg-pad(0, 0 15px 0 0);
+    align-items: center;
+    background-image: radial-gradient($light-background, $medium-background);
+    border: none;
+    border-bottom: 5px outset $medium-background;
+    color: $white;
+}
+
+/* ----- list details ----- */
+
+button.categoryItem {
+    background: transparent;
+    border: none;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    padding-left: 15px;
+    width: 40px;
+}
+
+.down-arrow {
+    align-items: center;
+    border-color: $white transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    height: 0;
+    line-height: 40px;
+    margin-right: 10px;
+    width: 0;
+}
+
+#display-list {
+    display: block;
+}
+
+/* ----- footer ----- */
+ 
+footer {
+    background-color: $dark-background;
+    bottom: -1px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+/* ----- ads ----- */
+
+.amazonAd {
+    position: absolute;
+    right: 0;
+}
+
+.large-ad {
+    display: none;
+}
+
+
+#catDetails0, #catDetails1, #catDetails2 {
+    display: none;
+}
+@media only screen and (min-width: 700px) {
+
+    main {
+        margin-bottom: 70px;
+    }
+    footer {
+        height: 70px;
+    }
+    .large-ad {
+        border: none;
+        display: inline-block;
+        margin: 10px;
+        position: absolute;
+        right: 0;
+        width: 320px;
+    }
+    .amazonAd {
+        display: none;
+    }
+}
