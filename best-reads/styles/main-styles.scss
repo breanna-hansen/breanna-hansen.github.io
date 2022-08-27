@@ -38,7 +38,7 @@ header {
     top: 0;
     width: 100%;
     h1 {
-        @include marg-pad(auto, 0 0 10px 0);
+        @include marg-pad(auto, 0 0 5px 0);
         font-size: 2em;
         text-transform: uppercase;    
     }
@@ -56,7 +56,8 @@ header {
 /* ----- main ----- */
 
 main {
-    margin: 120px -1px 50px 0;
+    margin: 105px -1px 50px 0;
+    border-top: 2px solid $dark-gray;
     min-height: 400px;
     z-index: 10;
 }
@@ -79,8 +80,8 @@ button {
     // background-image: radial-gradient($light-background, $medium-background);
     border: none;
     border-bottom: 2px outset $white;
-    color: $medium-background;
-    background-color: $white;
+    color: $white;
+    background-color: $medium-background;
 }
 
 h2 {
@@ -100,7 +101,7 @@ button.categoryItem {
 
 .down-arrow {
     align-items: center;
-    border-color: $medium-background transparent transparent transparent;
+    border-color: $white transparent transparent transparent;
     border-style: solid;
     border-width: 10px 10px 0 10px;
     height: 0;

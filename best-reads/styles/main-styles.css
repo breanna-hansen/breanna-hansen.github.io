@@ -294,7 +294,8 @@ header p {
 
 /* ----- main ----- */
 main {
-  margin: 120px -1px 50px 0;
+  margin: 114px -1px 50px 0;
+  border-top: 10px solid #BFC0C0;
   min-height: 400px;
   z-index: 10;
 }
@@ -319,8 +320,8 @@ button {
   align-items: center;
   border: none;
   border-bottom: 2px outset #fff;
-  color: #4F5D75;
-  background-color: #fff;
+  color: #fff;
+  background-color: #4F5D75;
 }
 
 h2 {
@@ -340,7 +341,7 @@ button.categoryItem {
 
 .down-arrow {
   align-items: center;
-  border-color: #4F5D75 transparent transparent transparent;
+  border-color: #fff transparent transparent transparent;
   border-style: solid;
   border-width: 10px 10px 0 10px;
   height: 0;
