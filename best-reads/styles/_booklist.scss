@@ -14,18 +14,19 @@
 
 .display-list {
     background-color: $white;
-    border: 3px solid $medium-gray;
+    border: 1px solid $medium-gray;
     display: inline-block;
     left: 50%;
     margin: auto;
     max-height: 101%;
-    max-width: 500px;
+    max-width: 85%;
     overflow-x: hidden; 
     overflow-x: auto;
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 101%;
+    border-radius: 5px;
 }
 
 #list {

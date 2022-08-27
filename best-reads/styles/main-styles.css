@@ -155,18 +155,19 @@
 
 .display-list {
   background-color: #fff;
-  border: 3px solid #BFC0C0;
+  border: 1px solid #BFC0C0;
   display: inline-block;
   left: 50%;
   margin: auto;
   max-height: 101%;
-  max-width: 500px;
+  max-width: 85%;
   overflow-x: hidden;
   overflow-x: auto;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 101%;
+  border-radius: 5px;
 }
 
 #list ul {
