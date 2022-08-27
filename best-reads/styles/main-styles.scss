@@ -57,7 +57,7 @@ header {
 
 main {
     margin: 105px -1px 50px 0;
-    border-top: 2px solid $dark-gray;
+    border-top: 4px solid $medium-gray;
     min-height: 400px;
     z-index: 10;
 }
@@ -109,6 +109,10 @@ button.categoryItem {
     margin-right: 10px;
     width: 0;
     margin-top: 8px;
+}
+
+.down-arrow::before {
+    content: "&caron;";
 }
 
 #display-list {
