@@ -351,10 +351,6 @@ button.categoryItem {
   margin-top: 8px;
 }
 
-.down-arrow::before {
-  content: "&caron;";
-}
-
 #display-list {
   display: block;
 }
