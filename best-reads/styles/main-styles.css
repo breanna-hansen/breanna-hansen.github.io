@@ -25,7 +25,7 @@
 .bookTitle {
   margin: 0;
   padding: 0;
-  color: #062148;
+  color: #2D3142;
 }
 
 .bookImage {
@@ -47,46 +47,46 @@
 
 @-webkit-keyframes buttonClick {
   0% {
-    background-color: #f59548;
-    border: 2px inset #f59548;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   15% {
-    background-color: #f27918;
-    border: 2px inset #f27918;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   90% {
-    background-color: #f27918;
-    border: 2px inset #f27918;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   100% {
-    background-color: #f59548;
-    border: 2px outset #f59548;
+    background-color: #EF8354;
+    border: 2px outset #EF8354;
     transform: scale(1.1);
   }
 }
 
 @keyframes buttonClick {
   0% {
-    background-color: #f59548;
-    border: 2px inset #f59548;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   15% {
-    background-color: #f27918;
-    border: 2px inset #f27918;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   90% {
-    background-color: #f27918;
-    border: 2px inset #f27918;
+    background-color: #EF8354;
+    border: 2px inset #EF8354;
     transform: scale(1.1);
   }
   100% {
-    background-color: #f59548;
-    border: 2px outset #f59548;
+    background-color: #EF8354;
+    border: 2px outset #EF8354;
     transform: scale(1.1);
   }
 }
@@ -99,6 +99,11 @@
   padding: 0;
 }
 
+.rounded-border {
+  border-radius: 5px;
+  border: 1px solid #BFC0C0;
+}
+
 /* text styling */
 .noBottomMg {
   margin-bottom: 0;
@@ -106,6 +111,10 @@
 
 .noTopMg {
   margin-top: 0;
+}
+
+.noMg {
+  margin: 0;
 }
 
 .imgDescWidth {
@@ -146,7 +155,7 @@
 
 .display-list {
   background-color: #fff;
-  border: 3px solid #cecece;
+  border: 3px solid #BFC0C0;
   display: inline-block;
   left: 50%;
   margin: auto;
@@ -166,18 +175,18 @@
 #list h2 {
   margin: 0;
   padding: 20px 0;
-  background-color: #062148;
+  background-color: #2D3142;
   color: #fff;
   font-size: 1.875em;
   text-align: center;
 }
 
 .your-list, #close-list {
-  border: 2px outset #f59548;
   float: left;
+  border-radius: 5px;
 }
 .your-list:active, #close-list:active {
-  background-color: #f27918;
+  background-color: #EF8354;
 }
 
 .your-list {
@@ -194,7 +203,7 @@
 }
 #addedToList li {
   align-items: center;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #BFC0C0;
   display: flex;
   padding: 15px 0;
 }
@@ -204,10 +213,10 @@
 
 /* Buttons */
 canvas {
-  background-color: #f59548;
-  border: 1px outset #f59548;
+  background-color: #EF8354;
   height: 30px;
   width: 30px;
+  border-radius: 5px;
 }
 
 .buyButtonBox {
@@ -227,7 +236,7 @@ canvas {
 #close-button {
   background-color: #fff;
   border: none;
-  border-top: 1px solid #cecece;
+  border-top: 1px solid #BFC0C0;
   bottom: 0;
   height: 60px;
   position: -webkit-sticky;
@@ -253,7 +262,6 @@ canvas {
 body {
   margin: 0;
   padding: 0;
-  background-color: #062148;
   font-family: Roboto, Helvetica, sans-serif;
 }
 
@@ -261,7 +269,7 @@ body {
 header {
   margin: 0;
   padding: 20px 0 20px 0;
-  background-color: #062148;
+  background-color: #2D3142;
   color: #fff;
   position: fixed;
   text-align: center;
@@ -292,8 +300,9 @@ main {
 }
 
 button {
-  background-color: #f59548;
+  background-color: #EF8354;
   border: none;
+  border-radius: 5px;
   color: #000000;
   font-weight: bold;
   padding: 8px;
@@ -308,10 +317,14 @@ button {
   margin: 0;
   padding: 0 15px 0 0;
   align-items: center;
-  background-image: radial-gradient(#84a6c2, #2a5381);
   border: none;
-  border-bottom: 5px outset #2a5381;
-  color: #fff;
+  border-bottom: 2px outset #fff;
+  color: #4F5D75;
+  background-color: #fff;
+}
+
+h2 {
+  margin: 10px 0 0 0;
 }
 
 /* ----- list details ----- */
@@ -327,7 +340,7 @@ button.categoryItem {
 
 .down-arrow {
   align-items: center;
-  border-color: #fff transparent transparent transparent;
+  border-color: #4F5D75 transparent transparent transparent;
   border-style: solid;
   border-width: 10px 10px 0 10px;
   height: 0;
@@ -343,7 +356,7 @@ button.categoryItem {
 
 /* ----- footer ----- */
 footer {
-  background-color: #062148;
+  background-color: #2D3142;
   bottom: -1px;
   height: 60px;
   position: fixed;

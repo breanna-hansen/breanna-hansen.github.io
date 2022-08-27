@@ -42,8 +42,9 @@
 }
 
 .your-list, #close-list {
-    border: 2px outset $medium-accent;
+    // border: 2px outset $medium-accent;
     float: left;
+    border-radius: 5px;
     &:active {
         background-color: $dark-accent;
     }
@@ -75,9 +76,10 @@
 
 canvas {
     background-color: $medium-accent;
-    border: 1px outset $medium-accent;
+    // border: 1px outset $medium-accent;
     height: 30px;
     width: 30px;
+    border-radius: 5px;
 }
 
 .buyButtonBox {

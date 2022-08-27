@@ -41,6 +41,7 @@ function listInCategory(listID, categoryUrl) {
 
             //Content for second div
             var secondContainer = document.createElement('div');
+            secondContainer.classList += "rounded-border";
             //Title
             var bookHeader = document.createElement('h2');
             bookHeader.textContent = number + ". " + title;
@@ -53,7 +54,7 @@ function listInCategory(listID, categoryUrl) {
             //ISBN
             var showISBN = document.createElement('p');
             showISBN.textContent = "ISBN: " + isbn;
-            showISBN.classList += "noTopMg";
+            showISBN.classList += "noMg";
             secondContainer.appendChild(showISBN);
             //Image
             var bookImage = document.createElement('img');

@@ -23,7 +23,7 @@
 
 body {
     @include marg-pad(0, 0);
-    background-color: $dark-background;
+    // background-color: $gray;
     font-family: Roboto, Helvetica, sans-serif;
 }
 
@@ -64,6 +64,7 @@ main {
 button {
     background-color: $medium-accent;
     border: none;
+    border-radius: 5px;
     color: $dark-text;
     font-weight: bold;
     padding: 8px;
@@ -75,12 +76,16 @@ button {
     @include flex(flex, row nowrap, flex-start, center);
     @include marg-pad(0, 0 15px 0 0);
     align-items: center;
-    background-image: radial-gradient($light-background, $medium-background);
+    // background-image: radial-gradient($light-background, $medium-background);
     border: none;
-    border-bottom: 5px outset $medium-background;
-    color: $white;
+    border-bottom: 2px outset $white;
+    color: $medium-background;
+    background-color: $white;
 }
 
+h2 {
+    margin: 10px 0 0 0;
+}
 /* ----- list details ----- */
 
 button.categoryItem {
@@ -95,7 +100,7 @@ button.categoryItem {
 
 .down-arrow {
     align-items: center;
-    border-color: $white transparent transparent transparent;
+    border-color: $medium-background transparent transparent transparent;
     border-style: solid;
     border-width: 10px 10px 0 10px;
     height: 0;

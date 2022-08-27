@@ -63,6 +63,11 @@
     @include marg-pad(10px 0 0 0, 0);
 }
 
+.rounded-border {
+    border-radius: 5px;
+    border: 1px solid $gray;
+}
+
 /* text styling */
 
 .noBottomMg {
@@ -70,6 +75,10 @@
 }
 .noTopMg {
     margin-top: 0;
+}
+
+.noMg {
+    margin: 0;
 }
 
 .imgDescWidth {
