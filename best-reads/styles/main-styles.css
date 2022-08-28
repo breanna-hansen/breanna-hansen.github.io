@@ -21,6 +21,10 @@
   background-color: #fff;
   width: 40vw;
 }
+.booksContainer div h2, .booksContainer div p {
+  margin: 0 auto;
+  padding: 0;
+}
 
 .bookTitle {
   margin: 0;
@@ -135,7 +139,7 @@
     width: 27vw;
   }
   .bookImage {
-    width: 28vw;
+    width: 25vw;
   }
   #buttons {
     display: flex;
@@ -144,6 +148,20 @@
     align-items: center;
     margin: 5px auto 15px auto;
     padding: 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .booksContainer div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .booksContainer .bookImage, .booksContainer p:last-of-type {
+    width: 48%;
+  }
+  .booksContainer p:last-of-type {
+    margin: 15px 0 0 10px;
   }
 }
 /* mixin */

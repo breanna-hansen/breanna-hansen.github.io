@@ -28,6 +28,9 @@
         @include marg-pad(10px 10px 0 5px, 10px);
         background-color: $white;
         width: 40vw;
+        h2, p {
+            @include marg-pad(0 auto, 0);
+        }
     }
 }
 
@@ -100,10 +103,25 @@
         }
     }
     .bookImage {
-        width: 28vw;
+        width: 25vw;
     }
     #buttons {
         @include flex(flex, row nowrap, center, center);
         @include marg-pad(5px auto 15px auto, 0);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .booksContainer {
+        div {
+            @include flex(flex, row wrap, flex-start, flex-start);
+        }
+        .bookImage, p:last-of-type {
+            width: 48%;
+        }
+        p:last-of-type {
+            margin: 15px 0 0 10px;
+        }
+
     }
 }
