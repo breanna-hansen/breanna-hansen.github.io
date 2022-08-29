@@ -268,7 +268,7 @@ canvas {
   width: 100%;
 }
 #close-button button {
-  margin: 20px 15px;
+  margin: 20px 0px 20px 15px;
 }
 
 .remove {
@@ -331,6 +331,14 @@ button {
   font-weight: 500;
   padding: 8px;
   color: #fff;
+}
+
+button, canvas, .your-list {
+  box-shadow: 0 0 3px gray;
+}
+
+footer button, .categoryItem {
+  box-shadow: none;
 }
 
 /* ----- list data ----- */

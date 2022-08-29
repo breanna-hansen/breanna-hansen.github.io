@@ -71,6 +71,14 @@ button {
     color: $white;
 }
 
+button, canvas, .your-list {
+    box-shadow: 0 0 3px gray;
+}
+
+footer button, .categoryItem {
+    box-shadow: none;
+}
+
 /* ----- list data ----- */
 
 .buttonAndCategoryName {

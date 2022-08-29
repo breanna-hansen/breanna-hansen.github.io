@@ -131,3 +131,26 @@ class Books {
       buy.fillText("$", 150, 120);
     }
   }
+
+  function shareList() {
+    var shareButton = document.getElementById("share");
+    var titles = "";
+    for (i = 0; i < storageArray.length; i++) {
+      var count = i + 1;
+      titles += count + ". Title: " + storageArray[i].title + "\n   URL: " + storageArray[i].url + "\n";
+    }
+    console.log(titles);
+    shareButton.addEventListener('click', event => {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Best Reads Book List',
+          text: titles
+        }).then(() => {
+          console.log('Thanks for sharing!');
+        })
+        .catch(console.error);
+      } else {
+        shareDialog.classList.add('is-open');
+      }
+    });
+  }
