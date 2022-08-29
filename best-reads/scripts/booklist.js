@@ -132,7 +132,8 @@ class Books {
     }
   }
 
-  function shareList() {
+  // Share list
+  document.getElementById("share").addEventListener("click", function shareList() {
     var shareButton = document.getElementById("share");
     var titles = "";
     for (i = 0; i < storageArray.length; i++) {
@@ -140,17 +141,15 @@ class Books {
       titles += count + ". Title: " + storageArray[i].title + "\n   URL: " + storageArray[i].url + "\n";
     }
     console.log(titles);
-    shareButton.addEventListener('click', event => {
-      if (navigator.share) {
-        navigator.share({
-          title: 'Best Reads Book List',
-          text: titles
-        }).then(() => {
-          console.log('Thanks for sharing!');
-        })
-        .catch(console.error);
-      } else {
-        shareDialog.classList.add('is-open');
-      }
-    });
-  }
+    if (navigator.share) {
+      navigator.share({
+        title: 'Best Reads Book List',
+        text: titles
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      })
+      .catch(console.error);
+    } else {
+      shareDialog.classList.add('is-open');
+    }
+  });

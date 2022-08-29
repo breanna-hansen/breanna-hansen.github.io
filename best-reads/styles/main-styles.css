@@ -269,6 +269,7 @@ canvas {
 }
 #close-button button {
   margin: 20px 0px 20px 15px;
+  background-color: #4F5D75;
 }
 
 .remove {
@@ -299,6 +300,7 @@ header {
   text-align: center;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 header h1 {
   margin: auto;
@@ -331,14 +333,6 @@ button {
   font-weight: 500;
   padding: 8px;
   color: #fff;
-}
-
-button, canvas, .your-list {
-  box-shadow: 0 0 3px gray;
-}
-
-footer button, .categoryItem {
-  box-shadow: none;
 }
 
 /* ----- list data ----- */
