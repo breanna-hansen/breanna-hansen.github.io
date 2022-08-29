@@ -110,17 +110,24 @@ class Books {
       var newID = "removeBox" + count;
       var c = document.getElementById(newID);
       var ctx = c.getContext("2d");
+      ctx.strokeStyle = "#fff";
       ctx.moveTo(60,75);
       ctx.lineTo(230,75);
-      ctx.lineWidth = 5;
+      ctx.lineWidth = 7;
       ctx.stroke();
-      
+
       //Buy Button
       var newBuyId = "buyBox" + count;
       var b = document.getElementById(newBuyId);
       var buy = b.getContext("2d");
+      buy.strokeStyle = "#fff";
+      buy.moveTo(145,140);
+      buy.lineTo(155,20);
+      buy.lineWidth = 9;
+      buy.stroke();
       buy.font = "500 120px Arial";
       buy.textAlign = "center";
+      buy.fillStyle = "#fff";
       buy.fillText("$", 150, 120);
     }
   }

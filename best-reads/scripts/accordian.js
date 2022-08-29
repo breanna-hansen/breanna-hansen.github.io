@@ -49,7 +49,7 @@ function listInCategory(listID, categoryUrl) {
             //Author
             var author = document.createElement('p');
             author.textContent = "by: " + listData.results.books[i].author;
-            author.classList += "noBottomMg";
+            author.classList += "author";
             secondContainer.appendChild(author);
             //ISBN
             var showISBN = document.createElement('p');

@@ -25,6 +25,10 @@
   margin: 0 auto;
   padding: 0;
 }
+.booksContainer div .author {
+  margin-bottom: 0;
+  font-style: italic;
+}
 
 .bookTitle {
   margin: 0;
@@ -43,6 +47,7 @@
 .button-trio {
   margin: 5px;
   width: 80px;
+  color: #fff;
 }
 .button-trio:active, .button-trio:active, .button-trio:active {
   -webkit-animation: buttonClick 2s;
@@ -323,9 +328,9 @@ button {
   background-color: #EF8354;
   border: none;
   border-radius: 5px;
-  color: #000000;
-  font-weight: bold;
+  font-weight: 500;
   padding: 8px;
+  color: #fff;
 }
 
 /* ----- list data ----- */

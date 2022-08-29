@@ -31,6 +31,10 @@
         h2, p {
             @include marg-pad(0 auto, 0);
         }
+        .author {
+            margin-bottom: 0;
+            font-style: italic;
+        }
     }
 }
 
@@ -50,6 +54,7 @@
 .button-trio {
     margin: 5px;
     width: 80px; 
+    color: #fff;
     &:active, &:active, &:active {
         animation: buttonClick 2s;
     }
