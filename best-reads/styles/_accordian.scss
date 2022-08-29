@@ -22,7 +22,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    margin: 0 0 10px 5px;
+    margin: 0 0 20px 5px;
+    max-width: 1800px;
+    margin: auto;
     div {
         @include flex(flex, column nowrap, center, flex-start);
         @include marg-pad(10px 10px 0 5px, 10px);
@@ -101,6 +103,7 @@
         grid-template-columns: 33% 33% 33%;
         div {
             width: 29vw;
+            max-width: 550px;
         }
         h2, p {
             @include marg-pad(auto, 0);
@@ -118,6 +121,7 @@
 
 @media only screen and (min-width: 1000px) {
     .booksContainer {
+        margin-bottom: 10px;
         div {
             @include flex(flex, row wrap, flex-start, flex-start);
         }
@@ -127,6 +131,14 @@
         p:last-of-type {
             margin: 15px 0 0 10px;
         }
-
     }
 }
+
+// @media only screen and (min-width: 1300px) { 
+//    #buttons {
+//     @include flex(flex, column, flex-start, flex-start);
+//     margin-top: -140px;
+//     width: 48%;
+//     margin-right: 0;
+//    }
+// }

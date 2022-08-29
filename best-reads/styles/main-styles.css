@@ -9,7 +9,9 @@
   display: grid;
   grid-template-columns: 50% 50%;
   justify-items: center;
-  margin: 0 0 10px 5px;
+  margin: 0 0 20px 5px;
+  max-width: 1800px;
+  margin: auto;
 }
 .booksContainer div {
   display: flex;
@@ -137,6 +139,7 @@
   }
   .booksContainer div {
     width: 29vw;
+    max-width: 550px;
   }
   .booksContainer h2, .booksContainer p {
     margin: auto;
@@ -156,6 +159,9 @@
   }
 }
 @media only screen and (min-width: 1000px) {
+  .booksContainer {
+    margin-bottom: 10px;
+  }
   .booksContainer div {
     display: flex;
     flex-flow: row wrap;
@@ -372,9 +378,8 @@ button.categoryItem {
   border-width: 10px 10px 0 10px;
   height: 0;
   line-height: 40px;
-  margin-right: 10px;
+  margin: 8px 12px 10px 10px;
   width: 0;
-  margin-top: 8px;
 }
 
 #display-list {

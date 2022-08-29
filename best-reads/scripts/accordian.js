@@ -63,7 +63,11 @@ function listInCategory(listID, categoryUrl) {
             secondContainer.appendChild(bookImage);
             //Description
             var bookDescription = document.createElement('p');
-            bookDescription.textContent = listData.results.books[i].description;
+            if (!listData.results.books[i].description) {
+                bookDescription.textContent = "No description available.";
+            } else {
+                bookDescription.textContent = listData.results.books[i].description;
+            }
             secondContainer.appendChild(bookDescription);
             //Content for buttons div
             var buttonsDiv = document.createElement('div');
