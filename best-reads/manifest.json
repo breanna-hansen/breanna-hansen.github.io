@@ -1,0 +1,51 @@
+{
+    "name": "Best Reads",
+    "short_name": "BestReads",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#4F5D75",
+    "theme_color": "#2D3142", 
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/icons/br-icon-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/images/icons/br-icon-96",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/images/icons/br-icon-128",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/images/icons/br-icon-144",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/images/icons/br-icon-152",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/images/icons/br-icon-192",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icons/br-icon-384",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/images/icons/br-icon-512",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
