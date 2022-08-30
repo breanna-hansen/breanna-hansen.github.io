@@ -74,17 +74,19 @@ function listInCategory(listID, categoryUrl) {
             buttonsDiv.id = "buttons";
             
             //Add button
-            var addButton = document.createElement('button');
-            addButton.classList += "button-trio";
-            addButton.textContent = "Add";
             let passedTitle = title;
             let passedURL = bookURL;
+            var addButton = document.createElement('button');
+            addButton.setAttribute('aria-label', 'add ' + passedTitle + ' to list');
+            addButton.classList += "button-trio";
+            addButton.textContent = "Add";
             addButton.addEventListener("touchstart", poppingClick);
             addButton.addEventListener("touchstart", function () {
                 addItem(passedTitle, passedURL);
             });
             //Remove button
             var removeButton = document.createElement('button');
+            removeButton.setAttribute('aria-label', 'remove ' + passedTitle + ' from list');
             removeButton.classList += "button-trio";
             removeButton.textContent = "Remove";
             removeButton.addEventListener("touchstart", poppingClick);
@@ -93,6 +95,7 @@ function listInCategory(listID, categoryUrl) {
             });
             //Buy button
             var amazonBuy = document.createElement('button');
+            amazonBuy.setAttribute('aria-label', 'buy ' + passedTitle + ' from Amazon');
             amazonBuy.classList += "button-trio";
             amazonBuy.textContent = "Amazon";
             amazonBuy.href = passedURL;
