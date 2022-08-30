@@ -5,53 +5,62 @@ let bestBooks = 'https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=d
 let books = new XMLHttpRequest();
 books.open('GET', bestBooks);
 books.send();
-books.onload =  function () {
-    let booksInfo = JSON.parse(books.responseText);
-    var sortedCategories = booksInfo.results.sort((a, b) => (a.list_name > b.list_name) ? 1 : -1);
-    for (var i = 0; i < sortedCategories.length; i++) {
-      //Create new category div
-      var bookCategories = document.getElementById('bookCategories');
-      var containerDiv = document.createElement('div');
-      containerDiv.className = "categoryContent";
-      bookCategories.append(containerDiv);
+books.onload = function () {
+  let booksInfo = JSON.parse(books.responseText);
+  // if (books.responseText) {
+  //   localStorage.setItem('books', JSON.stringify(booksInfo.results));
+  // } else {
+  //   booksInfo = localStorage.getItem('books');
+  // }
+  var sortedCategories = booksInfo.results.sort((a, b) => (a.list_name > b.list_name) ? 1 : -1);
+  for (var i = 0; i < sortedCategories.length; i++) {
+    //Create new category div
+    var bookCategories = document.getElementById('bookCategories');
+    var containerDiv = document.createElement('div');
+    containerDiv.className = "categoryContent";
+    bookCategories.append(containerDiv);
 
-      //Add second div
-      var catDetails = document.createElement('div');
-      catDetails.classList += "listDetails";
-      var categoryName = "catDetails" + i;
-      catDetails.id = categoryName;
-      catDetails.style.display = "none";
-      var categoryUrl = sortedCategories[i].list_name_encoded;
-      bookCategories.appendChild(catDetails);
+    //Add second div
+    var catDetails = document.createElement('div');
+    catDetails.classList += "listDetails";
+    var categoryName = "catDetails" + i;
+    catDetails.id = categoryName;
+    catDetails.style.display = "none";
+    var categoryUrl = sortedCategories[i].list_name_encoded;
+    bookCategories.appendChild(catDetails);
 
-      //Add sub div to containerDiv, assign class, and append to containerDiv
-      var innerDiv = document.createElement('div');
-      innerDiv.className = "buttonAndCategoryName";
+    //Add sub div to containerDiv, assign class, and append to containerDiv
+    var innerDiv = document.createElement('div');
+    innerDiv.className = "buttonAndCategoryName";
 
-      //Create button
-      var categoryButton = document.createElement('button');
-      categoryButton.setAttribute('aria-label', 'category drop down button');
-      categoryButton.classList += "categoryItem";
-      var categoryID = "categoryButton" + i;
-      categoryButton.id = categoryID;
-      let j = i;
-      let catURL = categoryUrl;
-      categoryButton.addEventListener("click", poppingClick, {passive: false});
-      // Add accordian open to whole blue bar for each category
-      innerDiv.addEventListener("click", function () { 
-        toggleDetails(j, catURL);
-      }, {passive: false});
-      innerDiv.appendChild(categoryButton);
+    //Create button
+    var categoryButton = document.createElement('button');
+    categoryButton.setAttribute('aria-label', 'category drop down button');
+    categoryButton.classList += "categoryItem";
+    var categoryID = "categoryButton" + i;
+    categoryButton.id = categoryID;
+    let j = i;
+    let catURL = categoryUrl;
+    categoryButton.addEventListener("click", poppingClick, {
+      passive: false
+    });
+    // Add accordian open to whole blue bar for each category
+    innerDiv.addEventListener("click", function () {
+      toggleDetails(j, catURL);
+    }, {
+      passive: false
+    });
+    innerDiv.appendChild(categoryButton);
 
-      //Create arrow for button
-      var arrowButton = document.createElement('span');
-      arrowButton.classList += "down-arrow";
-      categoryButton.appendChild(arrowButton);
+    //Create arrow for button
+    var arrowButton = document.createElement('span');
+    arrowButton.classList += "down-arrow";
+    categoryButton.appendChild(arrowButton);
 
-      //Add category name
-      var categoryName = document.createElement('span');
-      categoryName.textContent = sortedCategories[i].list_name;
-      innerDiv.appendChild(categoryName);
-      containerDiv.appendChild(innerDiv);
-    }
+    //Add category name
+    var categoryName = document.createElement('span');
+    categoryName.textContent = sortedCategories[i].list_name;
+    innerDiv.appendChild(categoryName);
+    containerDiv.appendChild(innerDiv);
+  }
 }
