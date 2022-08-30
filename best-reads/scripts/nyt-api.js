@@ -30,16 +30,17 @@ books.onload =  function () {
 
       //Create button
       var categoryButton = document.createElement('button');
+      categoryButton.setAttribute('aria-label', 'category drop down button');
       categoryButton.classList += "categoryItem";
       var categoryID = "categoryButton" + i;
       categoryButton.id = categoryID;
       let j = i;
       let catURL = categoryUrl;
-      categoryButton.addEventListener("click", poppingClick);
+      categoryButton.addEventListener("click", poppingClick, passive, false);
       // Add accordian open to whole blue bar for each category
       innerDiv.addEventListener("click", function () { 
         toggleDetails(j, catURL);
-      });
+      }, passive, false);
       innerDiv.appendChild(categoryButton);
 
       //Create arrow for button

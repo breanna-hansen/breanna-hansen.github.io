@@ -80,29 +80,29 @@ function listInCategory(listID, categoryUrl) {
             addButton.setAttribute('aria-label', 'add ' + passedTitle + ' to list');
             addButton.classList += "button-trio";
             addButton.textContent = "Add";
-            addButton.addEventListener("touchstart", poppingClick);
+            addButton.addEventListener("touchstart", poppingClick, passive, false);
             addButton.addEventListener("touchstart", function () {
                 addItem(passedTitle, passedURL);
-            });
+            }, passive, false);
             //Remove button
             var removeButton = document.createElement('button');
             removeButton.setAttribute('aria-label', 'remove ' + passedTitle + ' from list');
             removeButton.classList += "button-trio";
             removeButton.textContent = "Remove";
-            removeButton.addEventListener("touchstart", poppingClick);
+            removeButton.addEventListener("touchstart", poppingClick, passive, false);
             removeButton.addEventListener("touchstart", function () {
                 removeItem(passedTitle);
-            });
+            }, passive, false);
             //Buy button
             var amazonBuy = document.createElement('button');
             amazonBuy.setAttribute('aria-label', 'buy ' + passedTitle + ' from Amazon');
             amazonBuy.classList += "button-trio";
             amazonBuy.textContent = "Amazon";
             amazonBuy.href = passedURL;
-            amazonBuy.addEventListener("touchstart", poppingClick);
+            amazonBuy.addEventListener("touchstart", poppingClick, passive, false);
             amazonBuy.addEventListener("touchstart", function () {
                 window.open(passedURL);
-            });
+            }, passive, false);
             //Appending
             buttonsDiv.appendChild(addButton);
             buttonsDiv.appendChild(removeButton);
