@@ -3,7 +3,7 @@
     "short_name": "BestReads",
     "start_url": "./index.html",
     "display": "standalone",
-    "background_color": "#4F5D75",
+    "background_color": "#fff",
     "theme_color": "#2D3142", 
     "orientation": "portrait-primary",
     "icons": [
