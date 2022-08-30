@@ -8,42 +8,42 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/images/icons/br-icon-72.png",
+            "src": "./images/icons/br-icon-72.png",
             "type": "image/png",
             "sizes": "72x72"
         },
         {
-            "src": "/images/icons/br-icon-96",
+            "src": "./images/icons/br-icon-96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "/images/icons/br-icon-128",
+            "src": "./images/icons/br-icon-128.png",
             "type": "image/png",
             "sizes": "128x128"
         },
         {
-            "src": "/images/icons/br-icon-144",
+            "src": "./images/icons/br-icon-144.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "/images/icons/br-icon-152",
+            "src": "./images/icons/br-icon-152.png",
             "type": "image/png",
             "sizes": "152x152"
         },
         {
-            "src": "/images/icons/br-icon-192",
+            "src": "./images/icons/br-icon-192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/images/icons/br-icon-384",
+            "src": "./images/icons/br-icon-384.png",
             "type": "image/png",
             "sizes": "384x384"
         },
         {
-            "src": "/images/icons/br-icon-512",
+            "src": "./images/icons/br-icon-512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
