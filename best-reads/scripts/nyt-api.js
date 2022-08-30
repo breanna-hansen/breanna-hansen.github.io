@@ -36,7 +36,8 @@ books.onload =  function () {
       let j = i;
       let catURL = categoryUrl;
       categoryButton.addEventListener("click", poppingClick);
-      categoryButton.addEventListener("click", function () { 
+      // Add accordian open to whole blue bar for each category
+      innerDiv.addEventListener("click", function () { 
         toggleDetails(j, catURL);
       });
       innerDiv.appendChild(categoryButton);
