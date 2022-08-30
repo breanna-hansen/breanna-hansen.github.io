@@ -32,8 +32,7 @@ class Books {
       removeBox.addEventListener('touchstart', function(event) {
         var removeTitle = event.target.parentNode.textContent;
         removeItem(removeTitle);
-      }, passive, false
-      );
+      }, {passive: false});
       listItem.appendChild(removeBox);
       
       //create buy button
@@ -153,4 +152,4 @@ class Books {
     } else {
       shareDialog.classList.add('is-open');
     }
-  }, passive, false);
+  }, {passive: false});
