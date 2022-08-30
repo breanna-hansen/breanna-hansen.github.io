@@ -48,7 +48,7 @@
 /* ----- buttons ----- */
 .button-trio {
   margin: 5px;
-  width: 80px;
+  width: 100px;
   color: #fff;
 }
 .button-trio:active, .button-trio:active, .button-trio:active {
@@ -220,7 +220,7 @@
 }
 
 .your-list {
-  margin: 15px 0 10px 15px;
+  margin: 10px;
 }
 
 #close-list {
@@ -274,7 +274,7 @@ canvas {
   width: 100%;
 }
 #close-button button {
-  margin: 20px 0px 20px 15px;
+  margin: 10px 0px 10px 15px;
   background-color: #4F5D75;
 }
 
@@ -284,7 +284,7 @@ canvas {
 
 @media only screen and (min-width: 700px) {
   .your-list {
-    margin: 20px 0 0 15px;
+    margin: 15px 0 0 15px;
   }
 }
 /* ----- Google fonts ----- */
@@ -294,12 +294,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.125em;
 }
 
 /* ----- header ----- */
 header {
   margin: 0;
-  padding: 20px 0 20px 0;
+  padding: 15px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #2D3142;
   color: #fff;
   position: fixed;
@@ -309,15 +314,16 @@ header {
   z-index: 10;
 }
 header h1 {
-  margin: auto;
+  margin: 0 0 0 15px;
   padding: 0 0 5px 0;
-  font-size: 2em;
+  font-size: 1.875em;
   text-transform: uppercase;
+  text-align: left;
 }
 header h2 {
   font-size: 1.275em;
   font-weight: normal;
-  margin: auto;
+  margin: 0 0 0 -30px;
   width: 90%;
 }
 header p {
@@ -326,7 +332,7 @@ header p {
 
 /* ----- main ----- */
 main {
-  margin: 105px -1px 50px 0;
+  margin: 73px -1px 50px 0;
   border-top: 4px solid #BFC0C0;
   min-height: 400px;
   z-index: 10;
@@ -337,8 +343,9 @@ button {
   border: none;
   border-radius: 5px;
   font-weight: 500;
-  padding: 8px;
+  padding: 10px;
   color: #fff;
+  font-size: 18px;
 }
 
 /* ----- list data ----- */
@@ -414,7 +421,7 @@ footer {
     margin-bottom: 70px;
   }
   footer {
-    height: 70px;
+    height: 60px;
   }
   .large-ad {
     border: none;

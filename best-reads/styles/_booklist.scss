@@ -52,7 +52,7 @@
 }
 
 .your-list {
-    margin: 15px 0 10px 15px;
+    margin: 10px;
 }
 
 #close-list {
@@ -106,7 +106,7 @@ canvas {
     position: sticky;
     width: 100%;
     button {
-        margin: 20px 0px 20px 15px;
+        margin: 10px 0px 10px 15px;
         background-color: $medium-background;
     }
 } 
@@ -118,6 +118,6 @@ canvas {
 @media only screen and (min-width: 700px) {
     
     .your-list {
-        margin: 20px 0 0 15px;
+        margin: 15px 0 0 15px;
     }
 }
