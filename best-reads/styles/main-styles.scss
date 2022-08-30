@@ -152,10 +152,13 @@ footer {
     footer {
         height: 60px;
     }
+    .your-list {
+        margin: 7px;
+    }
     .large-ad {
         border: none;
         display: inline-block;
-        margin: 10px;
+        margin: 3px 5px 3px 0;
         position: absolute;
         right: 0;
         width: 320px;
