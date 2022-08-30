@@ -16,7 +16,7 @@
 .booksContainer div {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 10px 10px 0 5px;
   padding: 10px;
@@ -24,7 +24,7 @@
   width: 40vw;
 }
 .booksContainer div h2, .booksContainer div p {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 .booksContainer div .author {

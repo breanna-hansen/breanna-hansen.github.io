@@ -26,12 +26,12 @@
     max-width: 1800px;
     margin: auto;
     div {
-        @include flex(flex, column nowrap, center, flex-start);
+        @include flex(flex, column nowrap, flex-start, flex-start);
         @include marg-pad(10px 10px 0 5px, 10px);
         background-color: $white;
         width: 40vw;
         h2, p {
-            @include marg-pad(0 auto, 0);
+            @include marg-pad(0, 0);
         }
         .author {
             margin-bottom: 0;
