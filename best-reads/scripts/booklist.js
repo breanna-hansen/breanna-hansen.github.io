@@ -149,7 +149,7 @@ class Books {
         console.log('Thanks for sharing!');
       })
       .catch(console.error);
-    } else {
+    } else {this.inputMode
       shareDialog.classList.add('is-open');
     }
   }, {passive: false});
