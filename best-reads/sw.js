@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static';
+const staticCacheName = 'site-static-v2';
 const assets = [
     '/',
     '/index.html',
@@ -20,7 +20,7 @@ const assets = [
     './images/icons/br-icon-384.png',
     './images/best-reads-favicon.png',
     './sounds/click.mp3',
-    'https://www.googletagmanager.com/gtag/js?id=G-9ZC1DBETDC',
+    // 'https://www.googletagmanager.com/gtag/js?id=G-9ZC1DBETDC',
     // NYT api url
     //'https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=diIY45XysDkQAiOZr6dGSPoNM5ARPGeg',
 ];
@@ -39,6 +39,15 @@ self.addEventListener('install', evt => {
 // active service worker
 self.addEventListener('activate', evt => {
     // console.log('service worker has been activated');
+    evt.waitUntil(
+        caches.keys().then(keys => {
+            // console.log(keys);
+            return Promise.all(keys
+                .filter(key => key !== staticCacheName)
+                .map(key => caches.delete(key))
+                )
+        })
+    )
 });
 
 // fetch event

@@ -31,7 +31,7 @@ body {
 /* ----- header ----- */
 
 header {
-    @include marg-pad(0, 15px 0);
+    @include marg-pad(0, 0);
     @include flex(flex, row nowrap, flex-start, center);
     background-color: $dark-background;
     color: $white;
