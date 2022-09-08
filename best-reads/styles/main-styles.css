@@ -300,7 +300,7 @@ body {
 /* ----- header ----- */
 header {
   margin: 0;
-  padding: 15px 0;
+  padding: 5px 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -315,7 +315,7 @@ header {
 }
 header h1 {
   margin: 0 0 0 15px;
-  padding: 0 0 5px 0;
+  padding: 0;
   font-size: 1.875em;
   text-transform: uppercase;
   text-align: left;
@@ -323,7 +323,7 @@ header h1 {
 header h2 {
   font-size: 1.275em;
   font-weight: normal;
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -50px;
   width: 90%;
 }
 header p {
@@ -332,7 +332,7 @@ header p {
 
 /* ----- main ----- */
 main {
-  margin: 73px -1px 50px 0;
+  margin: 68px -1px 50px 0;
   border-top: 4px solid #BFC0C0;
   min-height: 400px;
   z-index: 10;
@@ -414,6 +414,10 @@ footer {
 
 #catDetails0, #catDetails1, #catDetails2 {
   display: none;
+}
+
+.center {
+  text-align: center;
 }
 
 @media only screen and (min-width: 700px) {
