@@ -31,7 +31,7 @@ body {
 /* ----- header ----- */
 
 header {
-    @include marg-pad(0, 0);
+    @include marg-pad(0, 5px 0);
     @include flex(flex, row nowrap, flex-start, center);
     background-color: $dark-background;
     color: $white;
@@ -60,7 +60,7 @@ header {
 /* ----- main ----- */
 
 main {
-    margin: 73px -1px 50px 0;
+    margin: 68px -1px 50px 0;
     border-top: 4px solid $medium-gray;
     min-height: 400px;
     z-index: 10;
