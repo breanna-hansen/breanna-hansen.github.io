@@ -1,0 +1,102 @@
+@media only screen and (min-width: 850px) {
+   
+    main {
+        margin: 0 50px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .header-link {
+        margin: 20px 0 0 10px;
+        background-color: #ff813f;
+        padding: 8px 8px 10px 8px;
+        text-decoration: none;
+        border: none;
+    }
+    .chartCompilation {
+        width: 72%;
+    }
+
+    .chartCompilation > div {
+        max-width: 255px;
+        margin: 0;
+    }
+
+    .chartCompilation iframe {
+        width: 100%;
+        margin: 10px 10px 0 10px;
+    }
+
+#name1, #name2, #name3, #name4, #name5, #name6, #name7, #name8, #name9, #name10, #name11,
+#name12, #name13, #name14, #name15, #name16, #name17, #name18, #name19, #name20, #name21, 
+#name22, #name23, #name24, #name25, #name26, #name27, #name28, #name29, #name30, #name31, 
+#name32, #name33, #name34, #name35, #name36, #name37, #name38, #name39, #name40, #name41, 
+#name42, #name43, #name44, #name45, #name46, #name47, #name48, #name49, #name50, #name51, 
+#name52, #name53, #name54, #name55,#name56 {
+    visibility: hidden;
+}
+
+    .canvasjs-chart-canvas {
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 0 20px 20px;
+    }
+
+    footer section {
+        padding: 0 20px;
+        width: auto;
+        max-width: 310px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    footer section:first-of-type {
+        max-width: 340px;
+    }
+    footer section div:first-of-type {
+        width: 80%;
+    }
+    footer section div:last-of-type {
+        width: 5%;
+    }
+    footer section:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+    }
+    footer section:nth-of-type(2) div:first-of-type {
+        width: 250px;
+    }
+    .bar {
+        height: 150px;
+        border-right: 1px solid #fff;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* World */
+
+    .row {
+        width: 68%;
+        margin: 0 30px 0 0;
+    }
+
+    .cases-multi-line {
+        display: inline-block;
+    }
+}

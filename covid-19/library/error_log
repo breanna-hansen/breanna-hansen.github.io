@@ -1,0 +1,18 @@
+[10-Apr-2020 21:49:23 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-2020-04-10' for key 'PRIMARY' in /home4/dapperf2/public_html/covid19datacurve/library/functions.php:23
+Stack trace:
+#0 /home4/dapperf2/public_html/covid19datacurve/library/functions.php(23): PDOStatement->execute()
+#1 /home4/dapperf2/public_html/covid19datacurve/library/virus.php(120): insert_Daily_StateRecord('1', 'Alabama', '3008', '80', '0', '0')
+#2 {main}
+  thrown in /home4/dapperf2/public_html/covid19datacurve/library/functions.php on line 23
+[10-Apr-2020 21:49:44 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-2020-04-10' for key 'PRIMARY' in /home4/dapperf2/public_html/covid19datacurve/library/functions.php:23
+Stack trace:
+#0 /home4/dapperf2/public_html/covid19datacurve/library/functions.php(23): PDOStatement->execute()
+#1 /home4/dapperf2/public_html/covid19datacurve/library/virus.php(120): insert_Daily_StateRecord('1', 'Alabama', '3008', '80', '0', '0')
+#2 {main}
+  thrown in /home4/dapperf2/public_html/covid19datacurve/library/functions.php on line 23
+[10-Apr-2020 21:49:44 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-2020-04-10' for key 'PRIMARY' in /home4/dapperf2/public_html/covid19datacurve/library/functions.php:23
+Stack trace:
+#0 /home4/dapperf2/public_html/covid19datacurve/library/functions.php(23): PDOStatement->execute()
+#1 /home4/dapperf2/public_html/covid19datacurve/library/virus.php(120): insert_Daily_StateRecord('1', 'Alabama', '3008', '80', '0', '0')
+#2 {main}
+  thrown in /home4/dapperf2/public_html/covid19datacurve/library/functions.php on line 23

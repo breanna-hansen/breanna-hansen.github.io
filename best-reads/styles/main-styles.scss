@@ -60,7 +60,7 @@ header {
 /* ----- main ----- */
 
 main {
-    margin: 68px -1px 50px 0;
+    margin: 48px -1px 65px 0;
     border-top: 4px solid $medium-gray;
     min-height: 400px;
     z-index: 10;
@@ -78,15 +78,29 @@ button {
 
 /* ----- list data ----- */
 
+#bookCategories {
+    @include flex(flex, row wrap, center, flex-start);
+}
+
 .buttonAndCategoryName {
-    @include flex(flex, row nowrap, flex-start, center);
-    @include marg-pad(0, 0 15px 0 0);
+    @include flex(flex, row wrap, flex-start, center);
+    @include marg-pad(5px 10px, 0 15px 0 0);
     align-items: center;
     // background-image: radial-gradient($light-background, $medium-background);
     border: none;
     border-bottom: 2px outset $white;
+    border-radius: 5px;
     color: $white;
     background-color: $medium-background;
+    height: 80px;
+    width: 40vw;
+    max-width: 275px;
+    .categoryItem {
+        display: none;   
+    }
+    span {
+        padding: 0 15px;
+    }
 }
 
 h2 {
@@ -111,8 +125,10 @@ button.categoryItem {
     border-width: 10px 10px 0 10px;
     height: 0;
     line-height: 40px;
-    margin: 8px 12px 10px 10px;
+    margin: 5px 12px 10px 10px;
+    padding: 0;
     width: 0;
+    // display: none;
 }
  
 #display-list {
@@ -152,7 +168,7 @@ footer {
 @media only screen and (min-width: 700px) {
 
     main {
-        margin-bottom: 70px;
+        margin: 48px -1px 70px 0;
     }
     footer {
         height: 60px;

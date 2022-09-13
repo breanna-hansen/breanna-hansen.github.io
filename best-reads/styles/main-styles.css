@@ -332,7 +332,7 @@ header p {
 
 /* ----- main ----- */
 main {
-  margin: 68px -1px 50px 0;
+  margin: 48px -1px 65px 0;
   border-top: 4px solid #BFC0C0;
   min-height: 400px;
   z-index: 10;
@@ -349,18 +349,35 @@ button {
 }
 
 /* ----- list data ----- */
+#bookCategories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .buttonAndCategoryName {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 0;
+  margin: 5px 10px;
   padding: 0 15px 0 0;
   align-items: center;
   border: none;
   border-bottom: 2px outset #fff;
+  border-radius: 5px;
   color: #fff;
   background-color: #4F5D75;
+  height: 80px;
+  width: 40vw;
+  max-width: 275px;
+}
+.buttonAndCategoryName .categoryItem {
+  display: none;
+}
+.buttonAndCategoryName span {
+  padding: 0 15px;
 }
 
 h2 {
@@ -385,7 +402,8 @@ button.categoryItem {
   border-width: 10px 10px 0 10px;
   height: 0;
   line-height: 40px;
-  margin: 8px 12px 10px 10px;
+  margin: 5px 12px 10px 10px;
+  padding: 0;
   width: 0;
 }
 
@@ -422,7 +440,7 @@ footer {
 
 @media only screen and (min-width: 700px) {
   main {
-    margin-bottom: 70px;
+    margin: 48px -1px 70px 0;
   }
   footer {
     height: 60px;
