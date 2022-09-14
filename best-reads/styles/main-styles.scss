@@ -79,12 +79,12 @@ button {
 /* ----- list data ----- */
 
 #bookCategories {
-    @include flex(flex, row wrap, center, flex-start);
+    @include flex(flex, row wrap, center, center);
 }
 
 .buttonAndCategoryName {
-    @include flex(flex, row wrap, flex-start, center);
-    @include marg-pad(5px 10px, 0 15px 0 0);
+    @include flex(flex, row nowrap, flex-start, center);
+    @include marg-pad(3px 10px, 0 15px 0 0);
     align-items: center;
     // background-image: radial-gradient($light-background, $medium-background);
     border: none;
@@ -92,16 +92,8 @@ button {
     border-radius: 5px;
     color: $white;
     background-color: $medium-background;
-    height: 80px;
-    width: 40vw;
-    max-width: 275px;
-    .categoryItem {
-        display: none;   
+    width: calc(100vw - 30px);
     }
-    span {
-        padding: 0 15px;
-    }
-}
 
 h2 {
     margin: 10px 0 0 0;

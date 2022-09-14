@@ -113,10 +113,6 @@
     .bookImage {
         width: 25vw;
     }
-    #buttons {
-        @include flex(flex, row nowrap, center, center);
-        @include marg-pad(5px auto 15px auto, 0);
-    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -131,6 +127,10 @@
         p:last-of-type {
             margin: 15px 0 0 10px;
         }
+    }
+    #buttons {
+        @include flex(flex, row nowrap, center, center);
+        @include marg-pad(5px auto 15px auto, 0);
     }
 }
 

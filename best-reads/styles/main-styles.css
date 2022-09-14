@@ -149,14 +149,6 @@
   .bookImage {
     width: 25vw;
   }
-  #buttons {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 5px auto 15px auto;
-    padding: 0;
-  }
 }
 @media only screen and (min-width: 1000px) {
   .booksContainer {
@@ -173,6 +165,14 @@
   }
   .booksContainer p:last-of-type {
     margin: 15px 0 0 10px;
+  }
+  #buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto 15px auto;
+    padding: 0;
   }
 }
 /* mixin */
@@ -353,15 +353,15 @@ button {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .buttonAndCategoryName {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 5px 10px;
+  margin: 3px 10px;
   padding: 0 15px 0 0;
   align-items: center;
   border: none;
@@ -369,15 +369,7 @@ button {
   border-radius: 5px;
   color: #fff;
   background-color: #4F5D75;
-  height: 80px;
-  width: 40vw;
-  max-width: 275px;
-}
-.buttonAndCategoryName .categoryItem {
-  display: none;
-}
-.buttonAndCategoryName span {
-  padding: 0 15px;
+  width: calc(100vw - 30px);
 }
 
 h2 {

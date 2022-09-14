@@ -5,9 +5,9 @@ function listInCategory(listID, categoryUrl) {
     let lists = new XMLHttpRequest();
     lists.open('GET', currentLists);
     lists.send();
-    lists.onload =  function (details) {
+    lists.onload = function (details) {
         let listData = JSON.parse(lists.responseText);
-    
+
         //Create divs
         var details = document.getElementById("catDetails" + listID);
         var containerDiv = document.createElement('div');
@@ -20,11 +20,12 @@ function listInCategory(listID, categoryUrl) {
             //Get book title and change to capitalize
             var bookTitle = listData.results.books[i].title;
             var title = titleCase(bookTitle);
+
             function titleCase(str) { //Function obtained from the internet and altered
                 var splitStr = str.toLowerCase().split(' ');
                 for (var i = 0; i < splitStr.length; i++) {
                     // Assign it back to the array
-                    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+                    splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
                 }
                 // Directly return the joined string
                 return splitStr.join(' ');
@@ -36,8 +37,8 @@ function listInCategory(listID, categoryUrl) {
             }
 
             //Get URL
-            var bookURL = listData.results.books[i].amazon_product_url + 
-                "/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0399590501&linkCode=as2&tag=budgetmealrecipesfb-20&linkId=1cecfc480f866b384c941a1069a078f7";  
+            var bookURL = listData.results.books[i].amazon_product_url +
+                "/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0399590501&linkCode=as2&tag=budgetmealrecipesfb-20&linkId=1cecfc480f866b384c941a1069a078f7";
 
             //Content for second div
             var secondContainer = document.createElement('div');
@@ -72,7 +73,7 @@ function listInCategory(listID, categoryUrl) {
             //Content for buttons div
             var buttonsDiv = document.createElement('div');
             buttonsDiv.id = "buttons";
-            
+
             //Add button
             let passedTitle = title;
             let passedURL = bookURL;
@@ -80,29 +81,41 @@ function listInCategory(listID, categoryUrl) {
             addButton.setAttribute('aria-label', 'add ' + passedTitle + ' to list');
             addButton.classList += "button-trio";
             addButton.textContent = "Add";
-            addButton.addEventListener("touchstart", poppingClick, {passive: false});
+            addButton.addEventListener("touchstart", poppingClick, {
+                passive: false
+            });
             addButton.addEventListener("touchstart", function () {
                 addItem(passedTitle, passedURL);
-            }, {passive: false});
+            }, {
+                passive: false
+            });
             //Remove button
             var removeButton = document.createElement('button');
             removeButton.setAttribute('aria-label', 'remove ' + passedTitle + ' from list');
             removeButton.classList += "button-trio";
             removeButton.textContent = "Remove";
-            removeButton.addEventListener("touchstart", poppingClick, {passive: false});
+            removeButton.addEventListener("touchstart", poppingClick, {
+                passive: false
+            });
             removeButton.addEventListener("touchstart", function () {
                 removeItem(passedTitle);
-            }, {passive: false});
+            }, {
+                passive: false
+            });
             //Buy button
             var amazonBuy = document.createElement('button');
             amazonBuy.setAttribute('aria-label', 'buy ' + passedTitle + ' from Amazon');
             amazonBuy.classList += "button-trio";
             amazonBuy.textContent = "Amazon";
             amazonBuy.href = passedURL;
-            amazonBuy.addEventListener("touchstart", poppingClick, {passive: false});
+            amazonBuy.addEventListener("touchstart", poppingClick, {
+                passive: false
+            });
             amazonBuy.addEventListener("touchstart", function () {
                 window.open(passedURL);
-            }, {passive: false});
+            }, {
+                passive: false
+            });
             //Appending
             buttonsDiv.appendChild(addButton);
             buttonsDiv.appendChild(removeButton);
@@ -113,7 +126,7 @@ function listInCategory(listID, categoryUrl) {
         //Append containerDiv and secondContainer
         details.appendChild(containerDiv);
     }
-  }
+}
 
 function toggleDetails(listID, categoryUrl) {
     var categoryName = "catDetails" + listID;
@@ -121,8 +134,7 @@ function toggleDetails(listID, categoryUrl) {
     if (details.style.display == 'none') {
         details.style.display = 'block';
         listInCategory(listID, categoryUrl);
-    } 
-    else {
+    } else {
         details.style.display = 'none';
     }
 }
