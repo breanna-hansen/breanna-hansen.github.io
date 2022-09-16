@@ -61,7 +61,7 @@ header {
 
 main {
     margin: 48px -1px 65px 0;
-    border-top: 4px solid $medium-gray;
+    // border-top: 4px solid $medium-gray;
     min-height: 400px;
     z-index: 10;
 }
@@ -88,7 +88,7 @@ button {
     align-items: center;
     // background-image: radial-gradient($light-background, $medium-background);
     border: none;
-    border-bottom: 2px outset $white;
+    // border-bottom: 2px outset $white;
     border-radius: 5px;
     color: $white;
     background-color: $medium-background;
@@ -160,7 +160,10 @@ footer {
 @media only screen and (min-width: 700px) {
 
     main {
-        margin: 48px -1px 70px 0;
+        margin: 52px -1px 65px 0;
+    }
+    .buttonAndCategoryName {
+        width: calc(100vw - 40px);
     }
     footer {
         height: 60px;
