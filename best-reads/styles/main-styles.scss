@@ -60,7 +60,7 @@ header {
 /* ----- main ----- */
 
 main {
-    margin: 48px -1px 65px 0;
+    margin: 50px -1px 65px 0;
     // border-top: 4px solid $medium-gray;
     min-height: 400px;
     z-index: 10;
@@ -74,6 +74,12 @@ button {
     padding: 10px;
     color: $white;
     font-size: 18px;
+}
+
+.termly {
+    margin: auto;
+    width: 100vw;
+    max-width: 960px;
 }
 
 /* ----- list data ----- */
