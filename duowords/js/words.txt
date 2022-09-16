@@ -1,0 +1,2267 @@
+{"Unit 1L Introduction":{
+"el agua":"the water",
+"beber":"to drink",
+"comer":"to eat",
+"él":"he",
+"ella":"she",
+"el hombre":"the man",
+"la leche":"the milk",
+"la manzana":"the apple",
+"la mujer":"the woman",
+"el niño":"the boy",
+"la niña":"the girl (n..)",
+"el pan":"the bread",
+"ser":"to be",
+"eres":"you are (sing. informal)",
+"es":"he/she/it is",
+"soy":"I am",
+"tú":"you (singular, informal)",
+"usted":"you (formal)",
+"yo":"I"}
+
+
+// *** Common Phrases (/course/114794/spanish-duolingo/2/)
+// adiós goodbye
+// disculpe excuse me (d..)
+// por favor please
+// buenos días good morning
+// gracias thank you
+// hola hello
+// no no
+// buenas noches good night
+// buenas tardes good afternoon
+// sí yes
+// mucho gusto nice to meet you
+// de nada you're welcome
+// lo siento I'm sorry
+// hablar to speak
+// perdón excuse me, sorry (p..)
+// inglés English
+// nada nothing
+// español Spanish
+// la tarde the afternoon
+// *** Travel (/course/114794/spanish-duolingo/3/)
+// el pasaporte the passport
+// mi my
+// la maleta the suitcase
+// el taxi the taxi
+// el telefono the telephone
+// necesitar to need
+// el hotel the hotel
+// tener to have
+// la reserva the reservation
+// en in
+// dónde where
+// estar to be (temporary qualities/states, location, feeling)
+// aquí here
+// el autobús the bus
+// el tren the train
+// el dinero the money
+// el boleto the ticket
+// a to
+// tu your
+// el supermercado the supermarket
+// el baño the bathroom
+// cerrado closed
+// el banco the bank, the bench
+// la calle the street
+// el hospital the hospital
+// el museo the museum
+// *** Restaurant (/course/114794/spanish-duolingo/4/)
+// el restaurante the restaurant
+// la mesa the table
+// la persona person
+// para for
+// uno one
+// dos two
+// tres three
+// el sándwich the sandwich
+// de of, from
+// la carne the meat
+// el pescado fish
+// el queso the cheese
+// la hamburguesa the hamburger
+// con with
+// el café coffee
+// el vaso glass
+// la taza cup; mug
+// el azúcar sugar
+// sin without
+// la naranja the orange
+// el jugo juice
+// la cuenta the bill
+// querer to want
+// pagar to pay
+// la ensalada the salad
+// el tomate the tomato
+// la sal the salt
+// o or
+// *** Family (/course/114794/spanish-duolingo/5/)
+// la madre mother
+// el padre father
+// inteligente intelligent
+// elegante elegant
+// tener to have
+// el carro car
+// la casa the home, house (c..)
+// hermano/a sibling
+// muy very
+// el perro dog
+// el gato the cat
+// bonito pretty
+// grande big
+// esposo/a husband/wife
+// el apartamento flat/apartment
+// abuelo/a grandfather/mother
+// perfecto perfect
+// la familia the family
+// la bicicleta bicycle
+// vivir to live
+// hijo/a son/daughter
+// y and
+// interesante interesting
+// *** Shopping (/course/114794/spanish-duolingo/6/)
+// la ropa the clothes
+// la tienda shop, store
+// la camisa the shirt
+// verde green
+// azul blue
+// la chaqueta the jacket
+// querer to want
+// el vestido the dress
+// el sombrero the hat
+// gris grey
+// marrón brown
+// comprar to buy
+// la camiseta t-shirt
+// este this
+// la falda the skirt
+// el abrigo the coat
+// rojo red
+// caro expensive
+// barato cheap
+// ese that
+// diferente different
+// favorito favorite
+// cómodo comfortable
+// la cartera wallet
+// el reloj watch
+// el regalo gift, present
+// demasiado too much
+// el cinturón belt
+// *** School (/course/114794/spanish-duolingo/7/)
+// la clase the class
+// el examen exam
+// fácil easy
+// el libro the book
+// el bolígrafo the pen (b..)
+// la escuela the school (e..)
+// el maestro the teacher (m..)
+// la pregunta question (p..)
+// el estudiante student
+// difícil difficult
+// el problema problem
+// estudiar to study
+// leer to read
+// escribir to write
+// mucho much, many, a lot
+// importante important
+// comprender to understand
+// la universidad university
+// la medicina the medicine
+// el profesor the teacher (p..)
+// la computadora the computer
+// *** People (/course/114794/spanish-duolingo/8/)
+// llamar to call
+// americano American
+// los estados unidos The United States
+// España Spain
+// China China
+// el estudiante student
+// mi my
+// el nombre the name
+// en in
+// vivir to live
+// dónde where
+// México Mexico
+// Cuba Cuba
+// cubano Cuban
+// mexicano Mexican
+// interesante interesting
+// *** Greetings (/course/114794/spanish-duolingo/9/)
+// cómo how
+// bien well
+// estar to be (temporary qualities/states, location, feeling)
+// cansado tired
+// señor Mr.
+// señora Mrs.
+// señorita miss, young lady
+// hasta mañana see you tomorrow
+// ¿Cómo está? How are you? (formal)
+// buenas tardes good afternoon
+// hasta luego see you later
+// usted you (formal)
+// feliz happy (f..)
+// mal bad, wrong
+// muy very
+// ocupado busy
+// *** Travel 2 (/course/114794/spanish-duolingo/10/)
+// el café coffee
+// la banana banana
+// querer to want
+// más more
+// el té the tea
+// el carro car
+// el taxi taxi
+// ayuda help
+// el dinero the money
+// necesitar to need
+// el teléfono the phone
+// usar to use (u.., short)
+// la computadora the computer
+// el bolígrafo the pen (b..)
+// tener to have
+// el pasaporte the passport
+// el boleto the ticket
+// la maleta suitcase
+// la cartera wallet
+// *** Schedule (/course/114794/spanish-duolingo/11/)
+// hoy today
+// lunes monday
+// mañana tomorrow
+// el partido game (match), party (political)
+// martes Tuesday
+// el fútbol soccer
+// cuándo when
+// miércoles wednesday
+// jueves thursday
+// viernes friday
+// el día day
+// el béisbol baseball
+// qué what? (q..)
+// el cumpleaños birthday
+// tu your
+// sábado saturday
+// la fiesta party
+// domingo sunday
+// el concierto concert
+// divertido fun
+// el baile dancing
+// favorito favorite
+// la película film
+// la semana week
+// la fin de semana the weekend
+// disfrutar de to enjoy
+// *** People 2 (/course/114794/spanish-duolingo/12/)
+// hablar to speak
+// francés French
+// estudiar to study
+// trabajar to work
+// la oficina the office
+// la fábrica the factory
+// quién who
+// Inglaterra England
+// Francia France
+// Europa Europe
+// *** People 3 (/course/114794/spanish-duolingo/13/)
+// el camarero waiter
+// portugués portuguese
+// joven young
+// la dirección the direction, the address
+// el número the number (n..)
+// celular cellular
+// el amigo friend
+// el médico the doctor (m..)
+// la ciudad city
+// el pueblo the town
+// el novio boyfriend
+// *** School 2 (/course/114794/spanish-duolingo/14/)
+// cero zero
+// cuatro four
+// la biblioteca library
+// cinco five
+// seis six
+// siete seven
+// ocho eight
+// *** Family 2 (/course/114794/spanish-duolingo/15/)
+// italiano Italian
+// su his, her
+// pequeño small
+// simpático nice (s..)
+// alto tall (a..)
+// bajo short (b..)
+// la mascota pet
+// el año year
+// nueve nine
+// diez ten
+// *** Work (/course/114794/spanish-duolingo/16/)
+// el trabajo work
+// el jefe boss
+// el mensaje message
+// el secretario secretary
+// el escritorio desk
+// escribir to write
+// para for
+// la carta letter, menu
+// cuál which
+// poco a little, few
+// el problema problem
+// el correo electrónico e-mail
+// nuevo new
+// el negocio business
+// ahora now
+// *** Emotions (/course/114794/spanish-duolingo/17/)
+// qué tal How are you?
+// emocionar to excite, to thrill
+// enfermo sick
+// conmigo with me
+// contigo with you
+// siempre always
+// triste sad
+// preocupado worried
+// por qué why
+// aburrido boring
+// enojado angry
+// o or
+// mañana tomorrow
+// también also, too
+// a veces sometimes
+// contento happy
+// disfrutar de to enjoy
+// dormir to sleep
+// papá father
+// mamá mother
+// nunca never (n..)
+// sentir to feel
+// otra vez again
+// el bebé baby
+// sorprendido surprised
+// *** Fashion (/course/114794/spanish-duolingo/18/)
+// el zapato the shoe
+// el pantalón the pants
+// *** Travel 3 (/course/114794/spanish-duolingo/19/)
+// viajar to travel
+// cerca near
+// ir to go
+// la estación station
+// el aeropuerto the airport
+// del of the
+// el parque park
+// al to the
+// lejos far
+// al lado beside
+// la parada bus stop
+// la puerta door
+// la calle the street
+// tomar to take, to have (something to eat or to drink)
+// la izquierda the left
+// la derecha the right (direction)
+// el metro metro, subway
+// *** Leisure (/course/114794/spanish-duolingo/20/)
+// caminar to walk (c..)
+// el periódico newspaper
+// la playa the beach
+// la tarde afternoon
+// divertido fun
+// aburrido boring
+// la comida food
+// el pollo chicken
+// el arroz rice
+// bueno good
+// abrir to open
+// el verano summer
+// junto together
+// *** Activities (/course/114794/spanish-duolingo/21/)
+// hablar to speak
+// tomar to take, to have (something to eat or to drink)
+// trabajar to work
+// beber to drink
+// querer to want
+// comer to eat
+// leer to read
+// escribir to write
+// vivir to live
+// abrir to open
+// comprar to buy
+// aprender to learn
+// salir to leave, to go out
+// *** Preference (/course/114794/spanish-duolingo/22/)
+// gustar to like
+// el chocolate chocolate
+// el pastel cake
+// el queso cheese
+// favorito favorite
+// porque because
+// el azúcar sugar
+// ese that
+// el sombrero hat
+// la falda skirt
+// creer to think, to believe
+// pero but
+// algo something
+// jugar to play
+// correr to run
+// me encanta I love
+// nadar to swim
+// te encanta you love
+// la piscina the pool
+// dibujar to draw
+// la música music
+// la ropa clothes
+// la bicicleta bicycle
+// chico small (c..)
+// elegante elegant
+// viejo old (v..)
+// el perro dog
+// *** Routines (/course/114794/spanish-duolingo/23/)
+// ir to go
+// a menudo frequently
+// todo all, everything
+// el cine movie theater
+// la noche night
+// el día day
+// media average; half
+// la televisión television
+// sábado saturday
+// mirar to look at, to watch
+// tenir que (to) have to
+// domingo sunday
+// levantar to lift, pick up, to raise
+// duchar to shower
+// once eleven
+// doce twelve
+// *** Household (/course/114794/spanish-duolingo/24/)
+// hay there is, there are
+// la cocina kitchen
+// la nevera fridge
+// el dormitorio bedroom
+// la cama bed
+// la sala room, living room
+// moderno modern
+// el baño bath, bathroom
+// la habitación room (h..)
+// la ventana window
+// azul blue
+// el reloj the watch
+// la estanteria shelf
+// comprar to buy
+// la silla the chair
+// sobre on, about
+// pintar to paint
+// limpiar to clean
+// el Jardin the yard
+// la planta the plant
+// el teléfono telephone
+// celular cellular
+// debajo underneath
+// *** Restaurant 2 (/course/114794/spanish-duolingo/25/)
+// el camarero waiter
+// la mesa table
+// el pescado fish
+// el frijol bean
+// la cerveza beer
+// el menú menu
+// poder to be able to, can
+// traer to bring
+// la cuchara spoon
+// el cuchillo knife
+// el tenedor fork
+// la sal salt
+// el plato plate
+// el vaso glass
+// sin without
+// la bebida the drink
+// blanco white
+// tinto red (wine)
+// otro other
+// la botella bottle
+// pagar to pay
+// la cuenta the check
+// la sopa soup
+// la patata potato
+// frito fried
+// el postre dessert
+// *** Family 3 (/course/114794/spanish-duolingo/26/)
+// nuestro our
+// el baloncesto basketball
+// el deporte the sport
+// el concierto concert
+// escuchar to listen
+// el piano piano
+// tocar to touch, to play [an instrument]
+// la guitarra guitar
+// la película movie, film
+// mayor older
+// menor younger
+// el marido the husband (m..)
+// *** Shopping 2 (/course/114794/spanish-duolingo/27/)
+// ir de compras to go shopping
+// la tienda shop, store
+// buscar to search
+// abrir to open
+// cerrar to close
+// el precio price
+// barato cheap
+// la talla size (clothing)
+// probar to test, to try (on clothes, food)
+// el probador fitting room
+// costar to cost
+// caro expensive
+// trece thirteen
+// quince fifteen
+// el dólar dollar
+// catorce fourteen
+// dieciséis sixteen
+// diecisiete seventeen
+// dieciocho eighteen
+// diecinueve nineteen
+// veinte twenty
+// en efectivo cash
+// la tarjeta de crédito credit card
+// *** Description (/course/114794/spanish-duolingo/28/)
+// feliz happy (f..)
+// triste sad
+// preocupado worried
+// enojado angry
+// nervioso nervous
+// sorprendido surprised
+// emocionado excited, emotional
+// cansado tired
+// ocupado busy
+// limpio clean
+// sucio dirty
+// abierto open
+// cerrado closed
+// enfermo sick
+// alto tall (a..)
+// guapo good-looking
+// rubio blonde
+// moreno brunette (adj)
+// amarillo yellow
+// negro black
+// divertido fun
+// simpático nice
+// inteligente intelligent
+// perezoso lazy
+// estudioso studious
+// la persona person
+// responsable responsible
+// *** Recreation (/course/114794/spanish-duolingo/29/)
+// gustar to like, to taste
+// encantar to enchant, like
+// disfrutar de to enjoy
+// el regalo gift, present
+// aquel that
+// el zoológico zoo
+// el tenis tennis
+// el tiempo time, the weather (t..)
+// pasar to pass, to happen (p..)
+// normalmente normally
+// montar to mount, ride
+// el caballo horse
+// la pelota ball (p..)
+// correr to run
+// el río river
+// caminar to walk (c..)
+// *** Community (/course/114794/spanish-duolingo/30/)
+// conocer to know (be familiar with)
+// Alemania Germany
+// el maestro the teacher (m..)
+// el médico the doctor (m..)
+// el país country
+// visitar to visit
+// la parte the place, part
+// el pueblo the town
+// la gente the people
+// el lugar the place (l..)
+// diferente different
+// llamar to call
+// ayudar to help
+// alguno some
+// usualmente usually
+// el niño the boy
+// ver to see
+// la tele television
+// enseñar to teach, to show
+// amar to love
+// *** Phrases 2 (/course/114794/spanish-duolingo/31/)
+// cuánto how much/many
+// el año year
+// veintiuno twenty-one
+// veintidós twenty-two
+// jóvenes young, youth, young people
+// la señorita miss, young lady
+// el adulto adult
+// veintitrés twenty-three
+// veinticuatro twenty-four
+// el jugo the juice
+// veinticinco twenty-five
+// el sed the thirst
+// la pizza pizza
+// el hambre hunger
+// el color the color
+// el frío cold
+// el abrigo the coat
+// puesto switched on
+// largo long
+// marrón brown
+// gris grey
+// el sueño dream
+// la gana desire, wish, win
+// el miedo fear (m..)
+// de verdad Truly, truthfull, (Really?)
+// bailar to dance
+// el animal animal
+// *** Community 2 (/course/114794/spanish-duolingo/32/)
+// me me, to me
+// te to you, for you
+// nos us, to us
+// comprar to buy
+// la muñeca doll, wrist
+// conocer to know (be familiar with)
+// visitar to visit
+// necesitar to need
+// escuchar to listen
+// llamar to call
+// amar to love
+// ayudar to help
+// el curso the course (c..)
+// enseñar to teach, to show
+// el idioma language
+// alemán German
+// *** Routines 2 (/course/114794/spanish-duolingo/33/)
+// hacer to do, to make
+// la tarea task/homework
+// el desayuno breakfast
+// el almuerzo lunch
+// la cena dinner
+// demasiado too much
+// el diario the newspaper (d..)
+// la cosa thing
+// antes before
+// después after
+// solo alone
+// poner to put, to place
+// ponerse to become
+// cada each, every
+// ducharse to take a shower
+// levantar to lift, pick up, to raise
+// levantarse to get up
+// salir to leave (s..)
+// temprano early
+// tarde late
+// la semana week
+// fácil easy
+// difícil difficult
+// *** Activities 2 (/course/114794/spanish-duolingo/34/)
+// probar to test, to try (on clothes, food)
+// almorzar to have lunch
+// poder to be able to, can
+// volver to return (v..)
+// cerrar to close
+// empezar to begin, to start
+// entender to understand
+// perder to lose
+// *** Weather (/course/114794/spanish-duolingo/35/)
+// el frío the cold
+// el calor the heat
+// hacer frío to be cold outside
+// hacer calor to be hot outside
+// el sol the sun
+// el viento wind
+// el tiempo time, the weather (t..)
+// mal tiempo bad weather
+// buen tiempo nice weather
+// nublado cloudy
+// oscuro dark
+// el invierno the winter
+// el enero January
+// el febrero February
+// el marzo March
+// nevar to snow
+// llover to rain
+// la primavera spring
+// el abril April
+// el mayo May
+// el junio June
+// el julio July
+// el otoño autumn
+// el mes month
+// el agosto August
+// el septiembre September
+// el octubre October
+// el noviembre November
+// el diciembre December
+// *** placemarker (/course/114794/spanish-duolingo/36/)
+// *** Food (Part 1) (/course/114794/spanish-duolingo/37/)
+// el almuerzo the lunch
+// el arroz the rice
+// el azúcar the sugar
+// la carne the meat
+// la cebolla the onion
+// la cena the dinner
+// la cerveza the beer
+// cocinar to cook
+// la comida the food
+// el desayuno the breakfast
+// el emparedado the sandwich
+// la fresa the strawberry
+// la fruta the fruit
+// el huevo the egg
+// el jugo the juice
+// *** Food (Part 2) (/course/114794/spanish-duolingo/38/)
+// el limón the lemon
+// el menú the menu
+// la naranja the orange
+// la papa the potato
+// la pasta the pasta
+// el pescado fish
+// el pollo the chicken
+// el queso the cheese
+// la sal the salt
+// la salsa the salsa
+// la sopa the soup
+// el té the tea
+// el tomate the tomato
+// el vegetal the vegetable
+// vegetariano vegetarian
+// *** Animals (/course/114794/spanish-duolingo/39/)
+// el animal the animal
+// la araña the spider
+// el caballo the horse
+// el cangrejo the crab
+// el elefante the elephant
+// el gato the cat
+// el oso the bear
+// el pájaro the bird
+// el pato the duck
+// el perro dog
+// el pingüino the penguin
+// la tortuga the turtle
+// el ratón the mouse
+// el cerdo the pig
+// el toro the bull
+// el mono the monkey
+// el conejo the rabbit
+// el león the lion
+// *** Possessives (/course/114794/spanish-duolingo/40/)
+// mi my
+// tu your
+// su his / her / your (ud.)
+// nuestro our
+// mío mine
+// tuyo yours
+// suyo his / hers / yours (ud.)
+// *** Questions (/course/114794/spanish-duolingo/41/)
+// qué what? (q..)
+// por qué why?
+// porque because
+// cuáles which (plural)
+// quién who
+// cómo how?
+// cuánto how much?
+// cuándo when?
+// la pregunta the question
+// cuál what (c..), which (sing.)
+// *** Verbs: Present 1 (/course/114794/spanish-duolingo/42/)
+// nadar to swim
+// caminar to walk (c..)
+// ver to see
+// pagar to pay
+// querer to want
+// correr to run
+// ir to go
+// dormir to sleep
+// tener to have (t..)
+// poder to be able to, can
+// oír to hear
+// hacer to do, to make
+// tocar to touch
+// *** Food 2 (/course/114794/spanish-duolingo/43/)
+// si if
+// aunque although, even though
+// mientras while
+// y and
+// ni nor
+// o or
+// que that (conj.)
+// pero but (p..)
+// sino but (s..)
+// el aceite the oil
+// la ensalada the salad
+// el ajo the garlic
+// la mantequilla the butter
+// la zanahoria the carrot
+// la lechuga the lettuce
+// la uva the grape
+// la piña the pineapple
+// el pastel the cake
+// el banano the banana
+// el hongo the mushroom, the fungus
+// la pimienta the pepper
+// el atún the tuna
+// el maíz the corn
+// el pavo the turkey
+// el hielo the ice
+// *** Family (Part 2) (/course/114794/spanish-duolingo/44/)
+// a to
+// al to the
+// acerca about (on the subject of)
+// bajo under
+// cerca near
+// con with
+// contra against
+// de of
+// del of the
+// durante during
+// en in
+// entre among, between
+// hacia towards
+// para for
+// según according to
+// sin without
+// sobre on, about (s..)
+// por on (p..)
+// *** Sizes (/course/114794/spanish-duolingo/45/)
+// alto tall (a..)
+// bajo low, short (b..)
+// corto short (c..)
+// enorme huge
+// grande big
+// largo long
+// pequeño small
+// el tamaño the size
+// *** Household (Part 1) (/course/114794/spanish-duolingo/46/)
+// el baño the bathroom
+// la cama bed
+// la cartera the wallet / the purse
+// el cepillo the brush
+// la cocina the kitchen
+// la cuchara the spoon
+// el cuchillo the knife
+// la cuna the crib
+// el dormitorio the bedroom
+// la escalera the ladder
+// el escritorio the desk
+// el espejo the mirror
+// la esponja the sponge
+// la habitación the room (h..)
+// el horno the oven
+// el jabón the soap
+// la lámpara the lamp
+// la lavadora the washing machine
+// limpiar to clean
+// la mesa the table
+// *** Household (Part 2) (/course/114794/spanish-duolingo/47/)
+// el paraguas the umbrella
+// la pared the wall
+// la piscina the pool
+// el piso the floor
+// el plato the plate
+// la puerta the door
+// la rasuradora the razor
+// el refrigerador the refrigerator
+// la sábana the bed sheet
+// la sartén the frying pan
+// la secadora the dryer
+// la silla the chair
+// el sofá the sofa
+// el sótano the basement
+// la taza the cup (t..)
+// el techo the ceiling, roof
+// el teléfono the phone
+// la televisión the television
+// el vaso glass
+// la ventana the window
+// *** Occupations (Part 1) (/course/114794/spanish-duolingo/48/)
+// el abogado the lawyer
+// el actor the actor
+// el agente the agent
+// el artista the artist
+// el atleta the athlete
+// el autor the author
+// el cajero the cashier
+// el capitán the captain
+// el carpintero the carpenter
+// el cocinero the cook
+// el comandante the commander
+// el conductor the driver
+// el coronel the colonel
+// el doctor the doctor (d..)
+// el dueño the owner
+// el empleado the employee
+// el empresario the businessman
+// el enfermero the nurse
+// la especialidad the specialty
+// el especialista the specialist
+// el estudiante the student
+// *** Occupations (Part 2) (/course/114794/spanish-duolingo/49/)
+// el granjero the farmer
+// el guardia the guard
+// el ingeniero the engineer
+// el jefe the boss
+// el juez the judge
+// el maestro the teacher (m..)
+// el mesero the waiter
+// el panadero the baker
+// el periodista the journalist
+// el pintor the painter
+// el poeta the poet
+// la policía the police
+// el príncipe the prince
+// la profesión the profession
+// el profesor the professor
+// el rey the king
+// la reina the queen
+// el sacerdote the priest
+// el secretario the secretary
+// el soldado the soldier
+// el trabajo the job
+// *** Dates and Time (Part 1) (/course/114794/spanish-duolingo/50/)
+// abril April
+// el agosto August
+// el año the year
+// anoche last night
+// ayer yesterday
+// el calendario the calender
+// la cita the appointment
+// el cumpleaños the birthday
+// desde since
+// el día the day
+// el diciembre December
+// domingo sunday
+// el enero January
+// la estación the season (e..)
+// el febrero February
+// la fecha the date
+// la fiesta the party
+// hasta until
+// la hora the hour
+// hoy today
+// el invierno the winter
+// jueves Thursday
+// el julio July
+// el junio June
+// lunes Monday
+// *** Dates and Time (Part 2) (/course/114794/spanish-duolingo/51/)
+// la madrugada the dawn
+// mañana tomorrow
+// martes Tuesday
+// marzo March
+// mayo May
+// el mediodía the noon
+// el mes the month
+// miércoles Wednesday
+// el minuto the minute
+// el momento the moment
+// la noche the night
+// noviembre November
+// octubre October
+// la primavera the spring
+// un rato a while
+// sábado Saturday
+// el segundo the second
+// la semana the week
+// septiembre September
+// la temporada the season (t..)
+// las vacaciones the vacations
+// a veces sometimes
+// el verano the summer
+// una vez once
+// la vez the time (v..)
+// viernes Friday
+// *** Adjectives 1 (Part 1) (/course/114794/spanish-duolingo/52/)
+// barato cheap
+// bilingüe bilingual
+// bonito pretty
+// bueno good
+// capaz able
+// caro expensive
+// cierto true (c..)
+// claro clear
+// diferente different
+// distinto distinct
+// duro hard
+// familiar family, friendly, familiar
+// feo ugly
+// final final
+// fuerte strong
+// histórico historical
+// importante important
+// imposible impossible
+// inteligente intelligent
+// joven young
+// junto together
+// *** Adjectives 1 (Part 2) (/course/114794/spanish-duolingo/53/)
+// justo fair
+// listo smart, clever, ready
+// local local
+// malo bad
+// mayor older
+// mejor better
+// menor younger
+// mismo same (m..)
+// natural natural
+// necesario necessary
+// normal normal
+// nuevo new
+// pasado past
+// peor worst
+// personal personal
+// plano flat
+// pobre poor
+// popular popular
+// posible possible
+// positivo positive
+// primero first
+// principal main
+// *** Adjectives 1 (Part 3) (/course/114794/spanish-duolingo/54/)
+// profesional professional
+// propio own
+// próximo next
+// público public
+// rápido fast
+// real real
+// reciente recent
+// responsable responsible
+// rico rich
+// seguro safe
+// siguiente following
+// simple simple (si..)
+// solo alone
+// sólo only (s..o)
+// suficiente enough (s..)
+// tanto so much
+// tradicional traditional
+// último last (final)
+// único only, unique
+// útil useful
+// viejo old (v..)
+// *** Verbs: Present 2 (Part 1) (/course/114794/spanish-duolingo/55/)
+// abrir to open
+// acabar to finish (a..)
+// aceptar to accept
+// aparecer to appear
+// ayudar to help
+// bajar to go down
+// buscar to search
+// caber to fit
+// cerrar to close
+// comenzar to begin (c..)
+// conocer to know (persons, things), to meet
+// contar to count, to tell
+// culpar to blame
+// dar to give
+// decir to say
+// depender to depend
+// empezar to begin (e..)
+// encontrar to find
+// entrar to enter
+// entregar to deliver
+// estar to be (quality, location, feeling)
+// estudiar to study
+// firmar to sign
+// importar to matter, to import
+// *** Verbs: Present 2 (Part 2) (/course/114794/spanish-duolingo/56/)
+// incluir to include
+// jugar to play
+// llegar to arrive
+// llevar to take, to carry, to wear (l..)
+// mirar to look at
+// mostrar to show
+// parecer to seem
+// pensar to think
+// pesar to weigh
+// presentar to introduce
+// probar to try, to test, to taste (p..)
+// quedar to remain
+// recordar to remember
+// requerir to require
+// respetar to respect
+// saber to know (information, skills)
+// seguir to follow, to continue
+// sentir to feel
+// servir to serve
+// soñar to dream
+// tomar to take, to drink (t..)
+// venir to come
+// visitar to visit
+// volver to return (v..)
+// *** Determiners (/course/114794/spanish-duolingo/57/)
+// alguno some
+// ambos both
+// aquel that
+// cada each
+// cualquier any
+// cuantos a few (c..)
+// ese that
+// este this
+// mucho a lot, much
+// ninguno no (not one)
+// otro other
+// poco few, little (p..)
+// todo all
+// uno one
+// *** Adverbs (Part 1) (/course/114794/spanish-duolingo/58/)
+// absolutamente absolutely
+// actualmente currently
+// adelante forward
+// además besides
+// ahora now
+// allí there
+// alrededor around
+// anteriormente previously
+// antes before
+// apenas hardly
+// aproximadamente approximately
+// aquí here
+// así like that
+// aún still (a..)
+// bastante enough, quite (b..)
+// bien well
+// casi almost
+// completamente completely
+// debajo underneath
+// definitivamente definitely
+// demasiado too much
+// despacio slowly (d..)
+// después after
+// dónde where
+// *** Adverbs (Part 2) (/course/114794/spanish-duolingo/59/)
+// entonces then (e..)
+// especialmente especially
+// exactamente exactly
+// fácilmente easily
+// general general
+// generalmente usually
+// igualmente equally, likewise
+// inmediatamente immediately
+// jamás never (j..)
+// lentamente slowly (l..)
+// luego then, later (l..)
+// más more
+// menos less
+// muy very
+// naturalmente naturally
+// necesariamente necessarily
+// normalmente normally
+// nuevamente again
+// nunca never (n..)
+// perfectamente perfectly
+// posiblemente possibly
+// prácticamente practically
+// principalmente principally
+// probablemente probably
+// pronto soon
+// lejos far
+// *** Adverbs (Part 3) (/course/114794/spanish-duolingo/60/)
+// quizá perhaps
+// rápidamente quickly
+// realmente really
+// recientemente recently
+// relativamente relatively
+// seguramente certainly
+// siempre always
+// simplemente simply
+// solamente only, just (s..mente)
+// por supuesto of course
+// también also, too
+// tampoco neither (t..)
+// tan so, as (much)
+// tanto so much
+// todavía still (t..)
+// totalmente totally
+// únicamente only (solely) (ú..)
+// ya already
+// *** Objects (Part 1) (/course/114794/spanish-duolingo/61/)
+// el alcohol the alcohol
+// el aparato the apparatus
+// el arma the gun
+// el auto the car (a..)
+// el autobús the bus
+// el avión the airplane
+// la bandera the flag
+// el barco the ship
+// la batería the battery
+// la bicicleta the bicycle
+// la bola the ball
+// el bolígrafo the pen (b..)
+// la bolsa the bag
+// la bomba the bomb
+// la botella the bottle
+// la cadena the chain
+// la caja the box, the cash register
+// la cámara the camera
+// la llave the key (l..)
+// la campana the bell
+// *** Objects (Part 2) (/course/114794/spanish-duolingo/62/)
+// el celular the mobile phone
+// el coche the car (c..)
+// la columna the column
+// la computadora the computer
+// la copa the cup (c..)
+// la cosa the thing
+// el dinero the money
+// el documento the document
+// el dólar the dollar
+// la foto the photo (..o)
+// la fuente the source, the fountain
+// la lista the list
+// la llave the key (l..)
+// la maleta the suitcase
+// el mapa the map
+// la máquina the machine
+// la mochila the backpack
+// la moneda the coin, the currency
+// la moto the motorcycle
+// el motor the motor
+// *** Objects (Part 3) (/course/114794/spanish-duolingo/63/)
+// la nota the note
+// el objeto the object
+// la página the page
+// la pantalla the screen
+// el papel the paper
+// el periódico the newspaper (p..)
+// la pieza the piece
+// la pluma the feather, the pen
+// el polvo the powder, the dust
+// el puente the bridge
+// la radio the radio
+// la regla the rule, the ruler
+// el reloj the clock
+// la revista the magazine
+// la rueda the wheel
+// la tarjeta the card
+// las tijeras the scissors
+// el tren the train
+// el vehículo the vehicle
+// *** To Be: Ser/Estar (/course/114794/spanish-duolingo/64/)
+// soy I am (permanent)
+// eres you (singular) are (permanent)
+// es he, she, it is; you (formal) are (permanent)
+// somos we are (permanent)
+// son you (plural), they are (permanent)
+// sois you (plural) are (permanent)
+// estoy I am (temporary)
+// estás you (singular) are (temporary)
+// está he, she, it is; you (formal) are (temporary)
+// estamos we are (temporary)
+// están you (formal), they are (temporary)
+// estáis you (plural) are (temporary)
+// *** Places (Part 1) (/course/114794/spanish-duolingo/65/)
+// el restaurante the restaurant
+// la playa the beach
+// el hotel the hotel
+// el jardín the garden
+// el aeropuerto the airport
+// la calle the street
+// dónde where
+// el café the coffee
+// la ciudad the city
+// la casa the home, house (c..)
+// el castillo the castle
+// el lugar the place (l..)
+// el país the country
+// la zona the area (z..)
+// la comunidad the community
+// la universidad the university
+// el banco the bank, the bench
+// la plaza the (city) square
+// la región the region
+// la escuela the school (e..)
+// el cuarto the room (c..)
+// *** Places (Part 2) (/course/114794/spanish-duolingo/66/)
+// el puerto the port, the harbor
+// la costa the coast
+// la sala the room (s..) (fem.), the lounge
+// la institución the institution
+// el área the area (á..)
+// el hospital the hospital
+// la nación the nation
+// el departamento the department, the apartment
+// el terreno the land
+// el palacio the palace
+// la isla the island
+// el pueblo the town
+// el territorio the territory
+// el edificio the building
+// el barrio the neighborhood
+// el museo the museum
+// la oficina the office
+// el parque the park
+// la cárcel the jail
+// la hacienda the ranch
+// *** Places (Part 3) (/course/114794/spanish-duolingo/67/)
+// la carretera the road
+// el salón the living room (s..) (masc.)
+// la patria the homeland
+// el festival the festival
+// la torre the tower
+// el hogar the home (h..)
+// la frontera the border
+// el patio the backyard
+// la pista the track, the clue
+// la avenida the avenue
+// el continente the continent
+// el bar the bar
+// la esquina the corner
+// la biblioteca the library, the bookcase
+// la ruta the route
+// la colonia the colony
+// oeste west
+// la galería the gallery
+// la agencia the agency
+// la distancia the distance
+// la capital the capital (main city)
+// *** People (/course/114794/spanish-duolingo/68/)
+// el amigo the friend
+// la persona the person
+// la gente the people
+// señora Mrs.
+// la población the population
+// la cultura the culture
+// el trabajador the worker
+// la revolución the revolution
+// el ciudadano the citizen
+// el vecino the neighbor
+// el compañero the colleague, the partner
+// la audiencia the audience
+// la pareja the couple
+// el matrimonio the marriage
+// la victima the victim
+// el individuo the individual
+// el turismo the tourism
+// la humanidad the humanity
+// el enemigo the enemy
+// la costumbre the custom, the habit
+// la chica the girl (c..)
+// el campesino the peasant
+// la feria the fair
+// el caballero the gentleman
+// el testigo the witness
+// el adulto the adult
+// *** Object Pronouns (/course/114794/spanish-duolingo/69/)
+// me me, to me
+// te you (singular), to you (singular)
+// le to him, to her, to it, to you (usted)
+// les to them, to you (ustedes)
+// nos us, to us
+// os you (plural), to you (plural)
+// lo him, it, you (usted)
+// la her, it, you (usted)
+// los them, you (ustedes) (masc.)
+// las them, you (ustedes) (fem.)
+// *** Numbers (/course/114794/spanish-duolingo/70/)
+// dos two
+// tres three
+// cuatro four
+// cinco five
+// seis six
+// siete seven
+// ocho eight
+// nueve nine
+// diez ten
+// once eleven
+// doce twelve
+// trece thirteen
+// catorce fourteen
+// quince fifteen
+// veinte twenty
+// treinta thirty
+// cuarenta forty
+// cincuenta fifty
+// sesenta sixty
+// setenta seventy
+// el número the number (n..)
+// mil one thousand
+// la mayoría the majority
+// el metro the meter
+// el par the pair
+// el kilómetro the kilometer
+// millón million
+// la tonelada the ton
+// la mitad the half
+// tercer third
+// doble double
+// *** Past Tense (/course/114794/spanish-duolingo/71/)
+// gustar to like
+// llover to rain
+// siquiera at least, even
+// dejar to leave (d..)
+// pasar to pass, to happen (p..)
+// recién just
+// poner to put
+// explicar to explain
+// preguntar to ask (pr..)
+// salir to leave (s..)
+// pedir to ask for, to request (pe..)
+// recibir to receive
+// decidir to decide
+// lograr to achieve, to reach (l..)
+// ocurrir to happen (o..)
+// responder to respond, reply (r..)
+// llamar to call
+// ganar to win, to earn
+// perder to lose
+// terminar to finish (t..)
+// iniciar to begin (i..)
+// caer to fall
+// conseguir to get
+// permitir to allow
+// obtener to obtain
+// contestar to answer (c..)
+// alcanzar to reach (a..)
+// sacar to take out
+// negar to deny
+// considerar to consider
+// intentar to try (i..)
+// insistir to insist
+// ofrecer to offer
+// hace ago
+// *** Verbs: Present 3 (Part 1) (/course/114794/spanish-duolingo/72/)
+// comprar to buy
+// dudar to doubt
+// llenar to fill
+// salvar to save
+// regresar to return, to come back (r..)
+// continuar to continue
+// poseer to possess, own
+// mezclar to mix
+// parar to stop (p..)
+// añadir to add (a..)
+// vivir to live
+// utilizar to use (u.., long)
+// valer to cost, to be worth (v..)
+// contener to contain
+// gastar to spend
+// *** Verbs: Present 3 (Part 2) (/course/114794/spanish-duolingo/73/)
+// afectar to affect, to upset, to damage
+// mejorar to improve
+// desear to desire (d..)
+// observar to observe
+// consultar to consult
+// crear to create
+// volar to fly
+// creer to think, to believe (c..)
+// reservar to reserve
+// expresar to express
+// reconocer to recognize
+// interesarse to take an interest, to become interested
+// costar to cost, to be worth (c..)
+// manejar to handle, to drive
+// ocupar to occupy
+// cortar to cut (c..)
+// trabajar to work
+// rechazar to reject
+// *** Verbs: Present 3 (Part 3) (/course/114794/spanish-duolingo/74/)
+// tratar to treat
+// usar to use (u.., short)
+// pertenecer to belong
+// andar to walk, to go (a..)
+// levantar to lift
+// necesitar to need
+// descansar to rest
+// esperar to hope, to wait
+// tirar to throw, to toss, to throw away
+// girar to turn
+// derrotar to defeat
+// curar to heal, to cure
+// saltar to jump
+// cantar to sing
+// secar to dry
+// odiar to hate
+// *** Verbs: Infinitive 1 (/course/114794/spanish-duolingo/75/)
+// alquilar to rent
+// despertar to wake up
+// evitar to avoid, to prevent
+// mantener to maintain, to support, to hold
+// cambiar to change
+// establecer to establish
+// resolver to solve, to resolve
+// producir to produce
+// morir to die
+// partir to cut (p..)
+// *** Phrasal Future Tense (/course/114794/spanish-duolingo/76/)
+// entender to understand
+// escuchar to listen
+// reducir to reduce
+// olvidar to forget
+// abandonar to abandon
+// aumentar to increase
+// aprender to learn
+// superar to overcome
+// controlar to control
+// recuperar to recover
+// descubrir to discover
+// aplicar to apply
+// demostrar to demonstrate, to prove
+// elegir to elect, choose
+// defender to defend
+// *** Countries (/course/114794/spanish-duolingo/77/)
+// chino Chinese
+// francés French
+// europeo European
+// internacional international
+// norteamericano North American
+// italiano Italian
+// cubano Cuban
+// británico British
+// mexicano Mexican
+// estadounidense American (US)
+// americano American, from the Americas
+// Italia Italy
+// China China
+// España Spain
+// México Mexico
+// Francia France
+// extranjero foreign, abroad
+// Inglaterra England
+// París Paris
+// Roma Rome
+// Europa Europe
+// Argentina Argentina
+// América America, the Americas
+// argentino Argentinian
+// Alemania Germany
+// alemán German
+// *** Adjectives 2 (Part 1) (/course/114794/spanish-duolingo/78/)
+// sucio dirty
+// limpio clean
+// abierto open
+// enfermo sick
+// cansado tired
+// regular regular
+// disponible available
+// perdido lost
+// especial special
+// universal universal
+// intelectual intellectual
+// interesante interesting
+// amplio wide, spacious, ample
+// máximo maximum
+// ideal ideal
+// extraño strange
+// común common
+// moderno modern
+// numeroso numerous
+// independiente independent
+// lógico logical
+// nacional national
+// *** Adjectives 2 (Part 2) (/course/114794/spanish-duolingo/79/)
+// superior superior, top
+// excelente excellent
+// industrial industrial
+// verdadero true, real (v..)
+// mundial worldwide, world (adj.)
+// puro pure
+// infantil childish, infantile
+// original original
+// profundo profound, deep
+// mal bad, wrong, ill
+// adecuado appropriate
+// oscuro dark, gloomy
+// loco crazy
+// dulce sweet
+// similar similar
+// eléctrico electric
+// probable probable
+// antiguo old, ancient, antique (a..)
+// consciente aware, conscious
+// clásico classical
+// terrible terrible
+// eficaz efficient, effective
+// *** Adjectives 2 (Part 3) (/course/114794/spanish-duolingo/80/)
+// famoso famous
+// particular particular
+// conveniente convenient
+// previo previous
+// negativo negative
+// pendiente pending
+// elevado high, tall, elevated (e..)
+// escaso scarce
+// brillante bright, shiny, sparkling, brilliant
+// básico basic
+// difícil difficult
+// privado private
+// perfecto perfect
+// vivo alive
+// ácido bitter, sour, acidic
+// mínimo minimum, minimal
+// libre free (at liberty, available)
+// legal legal
+// débil weak, faint, dim
+// formal formal
+// presente present (of place)
+// femenino feminine
+// igual equal, same (i..)
+// tranquilo quiet, calm, peaceful
+// sencillo simple, easy, straightforward (se..)
+// múltiple multiple
+// *** Pronouns (/course/114794/spanish-duolingo/81/)
+// algo something
+// alguien someone
+// conmigo with me
+// nadie nobody
+// varios several
+// *** Directions (/course/114794/spanish-duolingo/82/)
+// la izquierda the left
+// la derecha the right (direction)
+// el lado the side
+// el centro the center
+// la posición the position
+// la entrada the entrance
+// el exterior the outside
+// la salida the exit
+// la llegada the arrival
+// la búsqueda the search
+// el tráfico the traffic
+// la orientación the orientation
+// el viaje the trip, the journey
+// el fin the end (f..)
+// la dirección the direction, the address
+// la señal the sign, the signal (fem.)
+// el rumbo the course (r..)
+// el norte the north
+// el sur the south
+// el paso the step
+// *** Education (/course/114794/spanish-duolingo/83/)
+// sumar to sum, to add (s..)
+// la historia the history
+// el ejemplo the example
+// el problema the problem
+// el nivel the level
+// la educación the education
+// el colegio the school (c..)
+// el estudio the study, the studio
+// la respuesta the response
+// el título the title, the degree (t..)
+// el grado the degree (g..)
+// el material the material
+// el curso the course (c..)
+// el capítulo the chapter
+// la clase the class
+// la tarea the task, the chore, the homework
+// el juego the game
+// la ausencia the absence
+// la lectura the reading
+// la inteligencia intelligence
+// la sección the section
+// el conocimiento knowledge
+// la discusión the discussion, the argument
+// la academia the academy
+// la facultad the faculty
+// la explicación the explanation
+// el tema the theme, the topic, the subject
+// la solución the solution
+// el premio the prize
+// *** Vocabulary 1 (Part 1) (/course/114794/spanish-duolingo/84/)
+// el tiempo time, the weather (t..)
+// la edad the age
+// el grupo the group
+// el tipo the type, the guy
+// el proceso the process
+// la realidad reality
+// el cambio the change
+// la obra the work (of art)
+// la información the information
+// el nombre the name
+// la verdad the truth
+// la acción the action
+// el servicio the service
+// la producción the production
+// la paz peace
+// el sector the sector
+// la imagen the image
+// el movimiento the movement
+// la actividad the activity
+// la posibilidad the possibility
+// el código the code (masc.)
+// la capacidad the capacity
+// *** Vocabulary 1 (Part 2) (/course/114794/spanish-duolingo/85/)
+// el efecto the effect
+// la investigación the research, the investigation
+// la necesidad the need, the necessity
+// el programa the program
+// la calidad the quality
+// el carácter the character, the characteristic (c..)
+// el control the control
+// el resultado the result
+// la importancia the importance
+// el origen the origin
+// oficial official
+// el objetivo the objective
+// el crecimiento the growth
+// el éxito the success
+// la construcción the construction
+// la memoria the memory
+// la expresión the expression
+// la práctica the practice
+// la conciencia the conscience
+// la creación the creation
+// la suerte luck
+// el aspecto the aspect
+// *** Vocabulary 1 (Part 3) (/course/114794/spanish-duolingo/86/)
+// la ocasión the occasion
+// la mirada the look
+// el asunto the issue, the matter
+// el principio the beginning, the principle
+// el juicio the trial
+// la visión vision
+// la selección the selection
+// la red the internet, the network (r..)
+// el acceso the access
+// el contenido the content
+// el término the end, the term (t..)
+// la frecuencia the frequency
+// el peligro the danger
+// la altura the height
+// la escena the scene
+// el pensamiento the thought
+// la aplicación the application
+// el personaje the character (p..)
+// la competencia the competition
+// la protección the protection
+// la circunstancia the circumstance
+// el propósito the purpose
+// *** Verbs: Participle (/course/114794/spanish-duolingo/87/)
+// detener to stop, to detain (d..)
+// sentar to sit
+// publicar to publish
+// dedicar to dedicate
+// herir to wound
+// *** Feelings (/course/114794/spanish-duolingo/88/)
+// la sonrisa the smile
+// el amor love
+// la amistad friendship
+// feliz happy
+// la tensión the tension
+// la alegría joy, happiness (a..)
+// la felicidad happiness (f..)
+// la soledad loneliness
+// la esperanza hope
+// la personalidad the personality
+// el miedo fear (m..)
+// el dolor the pain
+// la sorpresa the surprise
+// el temor fear (t..)
+// la celebración the celebration
+// la curiosidad curiosity
+// triste sad
+// el deseo the desire
+// nervioso nervous
+// el humor the mood
+// la satisfacción the satisfaction
+// el sentimiento the feeling
+// el placer pleasure
+// *** Verbs: Present Perfect (/course/114794/spanish-duolingo/89/)
+// haber to have (h..)
+// preparar to prepare
+// enviar to send
+// nacer to be born
+// obligar to force
+// realizar to carry out
+// citar to quote, to cite
+// desarrollar to develop
+// sufrir to suffer
+// determinar to determine
+// prever to foresee
+// tratar to treat
+// *** Verbs: Past Perfect (/course/114794/spanish-duolingo/90/)
+// formar to form
+// dirigir to manage, to run
+// suponer to suppose
+// *** Nature (Part 1) (/course/114794/spanish-duolingo/91/)
+// el pasto the pasture, the lawn, the grass
+// el mar the sea
+// la flor the flower
+// el calor the heat
+// el árbol the tree
+// la luna the moon
+// el mundo the world
+// el volcán the volcano
+// el fuego the fire
+// la tierra the earth
+// la lluvia the rain
+// el sol the sun
+// el río the river
+// el cielo the sky
+// la madera the wood
+// el campo the field
+// la naturaleza nature
+// la especie the species
+// la evolución evolution
+// el aire the air
+// la luz the light
+// el planeta the planet
+// la piedra the stone
+// *** Nature (Part 2) (/course/114794/spanish-duolingo/92/)
+// el universo the universe
+// la hoja the leaf, the sheet (of paper)
+// el gas the gas
+// la célula the cell
+// el clima the climate
+// el bosque the forest
+// el paisaje the landscape, the scenery
+// la raíz the root
+// el cerebro the brain
+// la montaña the mountain (fem.)
+// el diente the tooth
+// el hueso the bone
+// el viento the wind
+// la estrella the star
+// el humo the smoke
+// la planta the plant
+// el ambiente the environment, the atmosphere (masc.)
+// la corriente the current, the trend
+// el monte the mountain (masc.)
+// la rosa the rose
+// la arena the sand
+// el espacio the space, space
+// *** Vocabulary 2 (Part 1) (/course/114794/spanish-duolingo/93/)
+// el gesto the gesture
+// la relación the relationship
+// la influencia the influence
+// la experiencia the experience
+// la intención the intention
+// la belleza the beauty
+// la ceremonia the ceremony
+// la pérdida the loss
+// la situación the situation
+// la versión the version
+// la unión the union
+// la consecuencia the consequence
+// la unidad the unity, the unit
+// la conducta the behavior (fem.)
+// el compromiso the commitment
+// la identidad the identity
+// la presencia the presence
+// la edición the edition
+// la presentación the presentation
+// *** Vocabulary 2 (Part 2) (/course/114794/spanish-duolingo/94/)
+// el comportamiento the behavior (masc.)
+// la distribución the distribution
+// la sombra the shadow
+// el canal the channel, the canal
+// la división the division
+// la continuación the continuation
+// la decisión the decision
+// el error the error
+// el puesto the position, the place, the job (p..)
+// la preocupación the concern
+// la perspectiva the perspective
+// el factor the factor
+// la misión the mission
+// la caída the fall
+// el esfuerzo the effort
+// el margen the margin
+// la sesión the session
+// el motivo the motive, the reason (m..)
+// *** Vocabulary 2 (Part 3) (/course/114794/spanish-duolingo/95/)
+// la concentración concentration
+// el honor the honor
+// el recurso the resource
+// la categoría the category
+// la propuesta the proposal
+// el significado the meaning
+// el impacto the impact
+// la intensidad the intensity
+// el ruido the noise
+// la excepción the exception
+// la crítica the review, the criticism
+// el sueño the dream
+// la definición the definition
+// el orden the order
+// la pausa the pause
+// la extensión the area, the extension (e..)
+// el cargo the charge
+// el fracaso the failure
+// *** Verbs: Infinitive 2 (/course/114794/spanish-duolingo/96/)
+// participar to participate
+// construir to build
+// actuar to act
+// matar to kill
+// analizar to analyze
+// colocar to place
+// vender to sell
+// subir to go up, to climb, to get on
+// definir to define
+// comprobar to check, to prove
+// asumir to assume
+// cubrir to cover
+// atender to look after, to attend to
+// impedir to prevent
+// romper to break
+// eliminar to remove, to eliminate
+// existir to exist
+// deber to have to, must, to owe
+// *** Sports (/course/114794/spanish-duolingo/97/)
+// el jugador the player
+// el torneo the tournament
+// el estadio the stadium
+// el equipo the team, the equipment
+// el fútbol soccer
+// el ejercicio the exercise
+// el deporte the sport
+// el campeón the champion
+// la carrera the career, the race
+// el campeonato the championship
+// la liga the league
+// el gol the goal
+// el descenso the drop, the descent
+// *** Medical (Part 1) (/course/114794/spanish-duolingo/98/)
+// la mano the hand
+// el brazo the arm
+// el pie the foot
+// el ojo the eye
+// el cuerpo the body (alive)
+// el dedo the finger, the toe
+// la pierna the leg
+// la boca the mouth
+// la cabeza the head
+// la espalda the back
+// la cara the face
+// el cuello the neck
+// el labio the lip
+// el oído the ear
+// la piel the skin
+// la lengua the tongue, the language (fem.)
+// el pecho the chest
+// el pelo the hair
+// el frente the front
+// la frente the forehead
+// la nariz the nose
+// *** Medical (Part 2) (/course/114794/spanish-duolingo/99/)
+// el estómago the stomach
+// la salud the health
+// salud cheers, bless you
+// doler to hurt
+// el tratamiento the treatment
+// el hombro the shoulder
+// la sangre the blood
+// la rodilla the knee
+// el codo the elbow
+// la enfermedad the disease
+// el corazón the heart
+// el riesgo the risk
+// el médico the doctor (m..)
+// la emergencia the emergency
+// la ambulancia the ambulance
+// la operación the operation
+// la dosis the dose
+// la presión the pressure
+// la medicina the medicine
+// el paciente the patient
+// *** Medical (Part 3) (/course/114794/spanish-duolingo/100/)
+// el síntoma the symptom
+// el diagnóstico the diagnosis
+// la condición the condition
+// la dieta the diet
+// el órgano the organ
+// la emoción the emotion
+// la clínica the clinic
+// el virus the virus
+// la depresión the depression
+// la lágrima the tear (crying)
+// la circulación the circulation
+// el cadáver the corpse, the body (dead)
+// el remedio the remedy
+// el olor the smell
+// la mente the mind
+// muerto dead
+// la proteína the protein
+// el sabor the taste
+// grave serious
+// la ayuda the help, the aid
+// *** Business (Part 1) (/course/114794/spanish-duolingo/101/)
+// el interés the interest
+// la oferta the offer
+// la cifra the number (c..)
+// la cuenta the check, the account
+// el negocio business
+// el contrato the contract
+// la industria the industry
+// el ejecutivo the executive
+// la deuda the debt
+// el valor the value
+// la tasa the rate, the tax (t..)
+// el comercio the trade, commerce
+// la fortuna the fortune
+// el producto the product
+// el porcentaje the percentage
+// la promoción the promotion
+// el crédito the loan, the credit
+// *** Business (Part 2) (/course/114794/spanish-duolingo/102/)
+// el ingreso the entry, the admission
+// los ingresos the income
+// la propiedad the property
+// el oro the gold
+// la reunión the meeting
+// la empresa the company, the venture (e..)
+// el mercado the market
+// la compañía the company (c..)
+// la junta the meeting, the board
+// la inversión the investment
+// la conferencia the lecture, the conference
+// la inflación the inflation
+// la economía the economy
+// económico economic, cheap
+// la venta the sale
+// el costo the cost
+// la negociación the negotiation
+// *** Communication (/course/114794/spanish-duolingo/103/)
+// la prensa the press
+// el artículo the article
+// la palabra the word
+// la voz the voice
+// la comunicación the communication
+// la conversación the conversation (c..)
+// el lenguaje the language (masc.)
+// la noticia the news
+// la llamada the call
+// el secreto the secret
+// el contacto the contact
+// el grito the shout, the scream
+// el mensaje the message
+// el argumento the argument, the plot
+// la entrevista the interview
+// la publicidad the advertising, the publicity
+// el internet the internet (i..)
+// el silencio the silence
+// la estampilla the stamp
+// el comentario the comment, the essay
+// la postal the postcard
+// la frase the sentence, the phrase
+// el editorial the editorial
+// *** Spiritual (/course/114794/spanish-duolingo/104/)
+// el ángel the angel
+// la vida the life
+// la religión the religion
+// el Dios God
+// la fe the faith
+// el espíritu the spirit
+// el alma the soul
+// la cruz the cross, the crucifix
+// la iglesia the church
+// religioso religious
+// el destino the destiny, the destination
+// la tradición the tradition
+// católico Catholic
+// santo holy
+// *** Arts (Part 1) (/course/114794/spanish-duolingo/105/)
+// el teatro the theater
+// el estilo the style
+// la literatura the literature
+// la poesía the poetry, the poem
+// el cine the movie theater
+// la música the music
+// el ritmo the rhythm
+// el arte the art
+// el sonido the sound
+// la moda the fashion
+// el violín the violin
+// la flauta the flute
+// el instrumento the instrument
+// el concierto the concert
+// la orquesta the orchestra
+// la ópera the opera
+// *** Arts (Part 2) (/course/114794/spanish-duolingo/106/)
+// la danza the dance
+// la película the movie, the film
+// la arquitectura the architecture
+// la canción the song
+// el disco the disc
+// el escenario the stage
+// el espectáculo the show
+// musical musical
+// la pintura the painting, the paint
+// la actuación the performance, the acting
+// la fotografía the photograph (..a)
+// el cuadro the painting, the square
+// la letra the letter (of the alphabet)
+// el acto the act
+// la novela the novel
+// la pasión the passion
+// *** Politics (Part 1) (/course/114794/spanish-duolingo/107/)
+// la guerra the war
+// el presidente the president
+// la sociedad the society
+// la ley the law (l..)
+// el partido the party (political), the game (match)
+// el gobierno the government
+// el ministro the minister
+// la elección the election
+// el político the politician
+// la libertad liberty, freedom
+// el derecho the law, the right (d..)
+// la organización the organization (fem.)
+// el consejo the advice
+// la seguridad the safety, the security
+// la justicia the justice
+// la crisis the crisis
+// el ministerio the ministry
+// el plan the plan
+// el congreso the congress
+// la administración the administration
+// la defensa the defense
+// el ejército the army
+// la campaña the campaign
+// *** Politics (Part 2) (/course/114794/spanish-duolingo/108/)
+// la democracia the democracy
+// la república the republic
+// la política politics
+// la oposición the opposition
+// el socialista the socialist
+// el discurso the speech
+// la declaración the statement
+// el organismo the organism, the organization (masc.)
+// el alcalde the mayor
+// la constitución the constitution
+// el líder the leader
+// la violencia the violence
+// la presidencia the presidency
+// el presupuesto the budget, the estimate
+// el candidato the candidate
+// la estrategia the strategy
+// federal federal
+// el conflicto the conflict
+// el diálogo the conversation, the talks (d..)
+// la independencia the independence
+// la federación the federation
+// la corrupción the corruption
+// la cooperación the cooperation
+// *** Politics (Part 3) (/course/114794/spanish-duolingo/109/)
+// acordar to agree
+// el gobernador the governor
+// democrático democratic
+// el embajador the ambassador
+// la agricultura agriculture
+// el déficit the deficit
+// el impuesto the tax (i..)
+// presidencial presidential
+// la manifestación the demonstration, the protest
+// el crimen the crime
+// la dictadura the dictatorship
+// el imperio the empire
+// la pobreza the poverty
+// la estabilidad the stability
+// civil civil
+// el civil the civilian
+// la riqueza the wealth
+// el poder the power
+// la legislación the legislation
+// el senador the senator
+// electoral electoral
+// la diferencia the difference
+// el arresto the arrest
+// *** Science (Part 1) (/course/114794/spanish-duolingo/110/)
+// la energía the energy
+// la medida the measurement
+// el análisis the analysis
+// la línea the line
+// el punto the dot, the period
+// la materia the matter, the substance
+// la función the function
+// la ciencia science
+// la superficie the surface
+// la tecnología the technology
+// el concepto the concept
+// la teoría the theory
+// la física phsyics
+// la técnica the technique
+// el técnico the technician
+// el elemento the element
+// la velocidad the speed
+// la temperatura the temperature
+// la masa the mass, the dough
+// *** Science (Part 2) (/course/114794/spanish-duolingo/111/)
+// el método the method
+// el volumen the volume
+// la filosofía philosophy
+// la tesis the thesis
+// el equilibrio the balance
+// el límite the border, the limit
+// la fórmula the formula
+// el científico the scientist
+// el promedio the average
+// la sustancia the substance
+// la atmósfera the atmosphere (fem.)
+// la química chemistry
+// el químico the chemist
+// el núcleo the nucleus
+// el laboratorio the laboratory
+// la proporción the proportion
+// el descubrimiento the discovery
+// la observación the observation
+// la profundidad the depth
+// *** Vocabulary 3 (Part 1) (/course/114794/spanish-duolingo/112/)
+// la imaginación the imagination
+// la cumbre the summit
+// el concurso the contest
+// la dificultad the difficulty
+// la reflexión the reflection
+// el signo the sign (masc.)
+// la opinión the opinion
+// la evidencia the evidence
+// la infancia the childhood
+// la colección the collection
+// la obligación the obligation
+// la dimensión the dimension
+// la petición the request
+// la transformación the transformation
+// la instalación the installation
+// la publicación the publication
+// el círculo the circle
+// el procedimiento the procedure
+// el fenómeno the phenomenon
+// la ventaja the advantage
+// la actitud the attitude
+// la introducción the introduction
+// la cola the tail, the line, the glue
+// *** Vocabulary 3 (Part 2) (/course/114794/spanish-duolingo/113/)
+// la aventura the adventure
+// la cantidad the amount
+// la variedad the variety
+// el transporte the transportation
+// la oportunidad the opportunity
+// la oscuridad the darkness
+// la disminución the decrease
+// la conclusión the conclusion
+// la opción the option
+// la conservación the conservation
+// el permiso the permission
+// el panorama the panorama
+// la destrucción the destruction
+// el símbolo the symbol
+// el rival the rival
+// la igualdad the equality
+// la revisión the revision, the inspection
+// el escándalo the scandal
+// el perfil the profile
+// el bienestar the well-being
+// la fama the fame
+// la identificación the identification
+// la manera the way, the manner (m..)
+// *** Vocabulary 3 (Part 3) (/course/114794/spanish-duolingo/114/)
+// el daño the damage
+// la descripción the description
+// la confusión the confusion
+// la reacción the reaction
+// la razón the reason (r..)
+// la alternativa the alternative
+// el detalle the detail
+// la responsabilidad the responsibility
+// la clave the code, the key (fem., c..)
+// el ataque the attack
+// la fuerza the strength
+// la idea the idea
+// la forma the form, the way (f..)
+// el resto the rest, the remainder
+// la causa the cause
+// el proyecto the project
+// la figura the figure
+// el sitio the place (s..)
+// el progreso the progress
+// la parte the part
+// la disciplina the discipline
+// el beneficio the benefit
+}
