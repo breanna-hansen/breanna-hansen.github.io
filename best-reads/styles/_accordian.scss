@@ -71,11 +71,13 @@
 #buttons {
     @include flex(flex, column nowrap, center, center);
     @include marg-pad(10px 0 0 0, 0);
+    width: 100%;
 }
 
 .rounded-border {
     border-radius: 5px;
     border: 1px solid $gray;
+    width: 100%;
 }
 
 /* text styling */
