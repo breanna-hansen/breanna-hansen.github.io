@@ -119,6 +119,25 @@ h6 {
   background: rgba(40, 58, 90, 0.9);
 }
 
+#header span, #footer span {
+  font-size: 3em;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: -5px;
+  padding-left: 20px;
+}
+
+span.first-letter {
+  color: #209dd8;
+  position: absolute;
+}
+
+span.last-letter {
+  position: relative;
+  color: #afb9cc;
+  margin: 0 35px 0 -20px;
+}
+
 #header .logo {
   font-size: 30px;
   margin: 0;
@@ -1865,6 +1884,18 @@ section {
   background: #37517e;
 }
 
+#footer span {
+  font-size: 1.5em;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: -5px;
+  padding-left: 20px;
+}
+
+#footer span:last-of-type {
+  letter-spacing:normal;
+}
+
 #footer .footer-newsletter {
   padding: 50px 0;
   background: #f3f5fa;
@@ -1872,6 +1903,10 @@ section {
   font-size: 15px;
   color: #444444;
 }
+
+#footer h4:first-of-type {
+  color: pink;
+} 
 
 #footer .footer-newsletter h4 {
   font-size: 24px;
