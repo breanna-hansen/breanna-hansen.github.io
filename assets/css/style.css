@@ -1214,6 +1214,11 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
+#pricing, .pricing {
+  content-visibility: visible;
+}
+
 .pricing .row {
   padding-top: 40px;
 }
@@ -1341,6 +1346,11 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
+#faq, .faq {
+  content-visibility: visible;
+}
+
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -1429,11 +1439,6 @@ section {
   margin-top: -30px;
   height: 40px;
 }
-
-/* #pricing-anchor, #faq-anchor {
-  margin-top: -30px;
-  height: 40px;
-} */
 
 /*--------------------------------------------------------------
 # Contact
