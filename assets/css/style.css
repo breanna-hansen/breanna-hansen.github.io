@@ -2180,6 +2180,10 @@ section {
   color: #fff;
 }
 
+.footer-bottom p {
+  display: inline-block;
+}
+
 #footer .copyright {
   float: left;
 }
@@ -2197,6 +2201,14 @@ section {
   #footer .footer-bottom {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  #footer span {
+    padding-left: 0;
+  }
+  
+  .footer-bottom p {
+    display: block;
   }
 
   #footer .copyright,
