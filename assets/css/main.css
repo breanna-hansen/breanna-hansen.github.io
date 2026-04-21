@@ -622,6 +622,19 @@ h6 {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.footer .footer-newsletter .footer-newsletter-feedback {
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.footer .footer-newsletter .footer-newsletter-feedback.is-success {
+  color: #0f9d58;
+}
+
+.footer .footer-newsletter .footer-newsletter-feedback.is-error {
+  color: #d93025;
+}
+
 .footer .footer-top {
   padding-top: 50px;
 }
@@ -1545,6 +1558,21 @@ section,
   color: #ffd7d7;
 }
 
+.contact .contact-inline-feedback {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.contact .contact-inline-feedback.is-success {
+  color: #0f9d58;
+}
+
+.contact .contact-inline-feedback.is-error {
+  color: #d93025;
+}
+
 @media (max-width: 575px) {
   .call-to-action .early-list-form {
     width: 100%;
@@ -2336,7 +2364,20 @@ section,
   border-radius: 50px;
 }
 
+.contact .contact-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
 .contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.contact .contact-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 

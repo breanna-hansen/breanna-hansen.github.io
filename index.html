@@ -1200,7 +1200,7 @@
             </div>
 
             <div class="col-lg-7">
-              <form action="forms/contact.php" method="post" class="php-email-form"><!-- data-aos="fade-up"
+              <form action="https://formspree.io/f/meevrovd" method="post" class="contact-form" id="contact-form"><!-- data-aos="fade-up"
                 data-aos-delay="200" -->
                 <div class="row gy-4">
 
@@ -1225,11 +1225,8 @@
                   </div>
 
                   <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
                     <button type="submit">Send Message</button>
+                    <div class="contact-inline-feedback" aria-live="polite"></div>
                   </div>
 
                 </div>
@@ -1252,17 +1249,13 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="https://forminit.com/f/63t7blkhe88" method="POST" class="php-email-form">
+            <form action="https://formspree.io/f/xeevroyv" method="POST" class="footer-newsletter-form" id="footer-newsletter-form">
               <div class="newsletter-form">
-                <input type="email" name="fi-sender-email" placeholder="Enter your email" required aria-required="true">
+                <input type="email" name="email" placeholder="Enter your email" required aria-required="true">
                 <input type="submit" value="Subscribe">
               </div>
-              <!-- Optional honeypot for basic spam protection (hidden, leave empty) -->
               <input type="text" name="_gotcha" style="display:none;">
-
-              <div class="loading">Loading...</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="footer-newsletter-feedback" aria-live="polite"></div>
             </form>
           </div>
         </div>
@@ -1405,55 +1398,131 @@
     })();
   </script>
 
-  <!-- forminit -->
+  <!-- Footer newsletter (Formspree AJAX) -->
   <script>
-    document.querySelector('.php-email-form').addEventListener('submit', async function (e) {
-      e.preventDefault(); // Stop page reload
+    (function () {
+      const newsletterForm = document.querySelector('#footer-newsletter-form');
+      if (!newsletterForm) return;
 
-      const form = e.target;
-      const loading = form.querySelector('.loading');
-      const errorDiv = form.querySelector('.error-message');
-      const sentDiv = form.querySelector('.sent-message');
+      const feedback = newsletterForm.querySelector('.footer-newsletter-feedback');
+      const submit = newsletterForm.querySelector('input[type="submit"]');
 
-      // Reset UI
-      loading.style.display = 'block';
-      errorDiv.style.display = 'none';
-      sentDiv.style.display = 'none';
-      errorDiv.textContent = ''; // Clear previous text
+      newsletterForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
 
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form)
-        });
-
-        const result = await response.json();
-
-        loading.style.display = 'none';
-
-        if (result.success === true) {
-          // Forminit success – show your message
-          sentDiv.textContent = 'Your subscription request has been sent. Thank you!';
-          sentDiv.style.display = 'block';
-          form.reset(); // Clear email field
-
-          // Optional: Redirect to thank-you page after 2 seconds (so user sees message)
-          // setTimeout(() => {
-          //   window.location.href = result.redirectUrl || 'https://cimadevelopment.com/thank-you.html';
-          // }, 2000);
-
-        } else {
-          // Forminit returned an actual error
-          errorDiv.textContent = result.message || 'Submission failed. Please check your email and try again.';
-          errorDiv.style.display = 'block';
+        if (feedback) {
+          feedback.textContent = '';
+          feedback.classList.remove('is-success', 'is-error');
         }
-      } catch (err) {
-        loading.style.display = 'none';
-        errorDiv.textContent = 'Network or connection issue – please try again later.';
-        errorDiv.style.display = 'block';
-        console.error('Submission error:', err); // Log for debugging
-      }
-    });
+
+        const originalLabel = submit.value;
+        submit.disabled = true;
+        submit.value = 'Submitting...';
+
+        try {
+          const response = await fetch(newsletterForm.action, {
+            method: 'POST',
+            body: new FormData(newsletterForm),
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          const result = await response.json().catch(() => null);
+          const isSuccessful = response.ok || (result && result.ok === true);
+
+          if (isSuccessful) {
+            newsletterForm.reset();
+            if (feedback) {
+              feedback.textContent = 'Thanks! You are subscribed.';
+              feedback.classList.add('is-success');
+            }
+          } else {
+            const errorMessage = (result && result.errors && result.errors[0] && result.errors[0].message)
+              ? result.errors[0].message
+              : 'Unable to subscribe right now. Please try again in a moment.';
+            if (feedback) {
+              feedback.textContent = errorMessage;
+              feedback.classList.add('is-error');
+            }
+          }
+        } catch (err) {
+          if (feedback) {
+            feedback.textContent = 'Network issue. Please try again in a moment.';
+            feedback.classList.add('is-error');
+          }
+          console.error('Footer newsletter submission error:', err);
+        } finally {
+          submit.disabled = false;
+          submit.value = originalLabel;
+        }
+      });
+    })();
+  </script>
+
+  <!-- Contact form (Formspree AJAX) -->
+  <script>
+    const contactForm = document.querySelector('#contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+        const feedback = form.querySelector('.contact-inline-feedback');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.textContent : '';
+
+        if (feedback) {
+          feedback.textContent = '';
+          feedback.classList.remove('is-success', 'is-error');
+        }
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+        }
+
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          const result = await response.json().catch(() => null);
+          const isSuccessful = response.ok || (result && result.ok === true);
+
+          if (isSuccessful) {
+            form.reset();
+            if (feedback) {
+              feedback.textContent = 'Thanks! Your message has been sent.';
+              feedback.classList.add('is-success');
+            }
+          } else {
+            const errorMessage = (result && result.errors && result.errors[0] && result.errors[0].message)
+              ? result.errors[0].message
+              : 'Unable to send right now. Please try again in a moment.';
+            if (feedback) {
+              feedback.textContent = errorMessage;
+              feedback.classList.add('is-error');
+            }
+          }
+        } catch (err) {
+          if (feedback) {
+            feedback.textContent = 'Network issue. Please try again in a moment.';
+            feedback.classList.add('is-error');
+          }
+          console.error('Contact form submission error:', err);
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          }
+        }
+      });
+    }
   </script>
 
 </body>
