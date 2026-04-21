@@ -116,7 +116,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: #37517e;
 }
 
 #header span {
@@ -139,11 +139,12 @@ span.last-letter {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 500;
+  font-family: "Jost", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -152,8 +153,25 @@ span.last-letter {
   color: #fff;
 }
 
+#header .logo a .brand-line {
+  display: block;
+  line-height: 1.05;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 #header .logo img {
   max-height: 40px;
+}
+
+#header .container > div img {
+  max-height: 52px;
+  width: auto;
 }
 
 /*--------------------------------------------------------------
@@ -306,12 +324,40 @@ span.last-letter {
 }
 
 @media (max-width: 991px) {
+  #header {
+    padding: 0;
+  }
+
   .mobile-nav-toggle {
     display: block;
   }
 
   .navbar ul {
     display: none;
+  }
+
+  #header .logo {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    max-width: calc(100vw - 100px);
+    overflow: visible;
+    line-height: 1;
+  }
+
+  #header .logo a .brand-line {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  #header .logo a {
+    display: block;
+  }
+
+  #header .container > div img {
+    max-height: 80px;
   }
 }
 
@@ -1752,20 +1798,20 @@ section {
   padding: 15px 0;
   background: #f3f5fa;
   min-height: 40px;
-  margin-top: 72px;
+  margin-top: 5px;
 }
 
 body.policy-page .breadcrumbs {
-  margin-top: 96px;
+  margin-top: 5px;
 }
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 68px;
+    margin-top: 5px;
   }
 
   body.policy-page .breadcrumbs {
-    margin-top: 108px;
+    margin-top: 5px;
   }
 }
 
