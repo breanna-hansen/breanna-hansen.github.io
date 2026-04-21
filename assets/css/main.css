@@ -289,6 +289,12 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
+
+  /* Temporarily hide Portfolio menu item in desktop and mobile nav. */
+  .navmenu li:has(> a[href="index.html#portfolio"]),
+  #navmenu li:has(> a[href="index.html#portfolio"]) {
+    display: none;
+  }
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);

@@ -192,6 +192,12 @@ span.last-letter {
   align-items: center;
 }
 
+/* Temporarily hide Portfolio menu item in desktop and mobile nav. */
+.navbar li:has(> a[href="index.html#portfolio"]),
+#navbar li:has(> a[href="index.html#portfolio"]) {
+  display: none;
+}
+
 .navbar li {
   position: relative;
 }
