@@ -173,10 +173,12 @@ h6 {
   align-items: center;
 }
 
-/* Temporarily hide Portfolio menu item in desktop and mobile nav. */
-.navbar li:has(> a[href="index.html#portfolio"]),
-#navbar li:has(> a[href="index.html#portfolio"]) {
-  display: none;
+/* Temporarily hide Portfolio menu link in desktop and mobile nav. */
+.navbar a[href="index.html#portfolio"],
+.navbar a[href="#portfolio"],
+#navbar a[href="index.html#portfolio"],
+#navbar a[href="#portfolio"] {
+  display: none !important;
 }
 
 .navbar li {

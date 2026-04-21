@@ -289,12 +289,6 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-
-  /* Temporarily hide Portfolio menu item in desktop and mobile nav. */
-  .navmenu li:has(> a[href="index.html#portfolio"]),
-  #navmenu li:has(> a[href="index.html#portfolio"]) {
-    display: none;
-  }
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
@@ -304,6 +298,14 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+  }
+
+  /* Temporarily hide Portfolio menu link in desktop and mobile nav. */
+  .navmenu a[href="index.html#portfolio"],
+  .navmenu a[href="#portfolio"],
+  #navmenu a[href="index.html#portfolio"],
+  #navmenu a[href="#portfolio"] {
+    display: none !important;
   }
 
   .navmenu a i,
@@ -3672,6 +3674,14 @@ section,
 /* Optional: make buttons darker/more black if needed */
 .store-buttons img {
   filter: brightness(0.9) contrast(1.1);
+}
+
+/* Keep Portfolio link in markup, but hide it site-wide for now. */
+#navmenu a[href="index.html#portfolio"],
+#navmenu a[href="#portfolio"],
+#navbar a[href="index.html#portfolio"],
+#navbar a[href="#portfolio"] {
+  display: none !important;
 }
 
 /*--------------------------------------------------------------
