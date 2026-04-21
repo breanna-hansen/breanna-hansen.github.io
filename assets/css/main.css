@@ -1476,25 +1476,80 @@ section,
 
 .call-to-action p {
   color: var(--default-color);
+  max-width: 760px;
 }
 
-.call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
+.call-to-action .early-list-form {
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-top: 12px;
+  padding: 6px 8px;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  display: flex;
 }
 
-.call-to-action .cta-btn:hover {
+.call-to-action .early-list-form .form-control {
+  min-height: 48px;
+  height: 48px;
+  width: 100%;
+  min-width: 0;
+  border-radius: 50px;
+  border: 0;
+  padding: 4px 136px 4px 14px;
+  background-color: #ffffff;
+  color: var(--default-color);
+}
+
+.call-to-action .early-list-form .form-control:focus {
+  box-shadow: none;
+}
+
+.call-to-action .early-list-form input[type=submit] {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  bottom: 6px;
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: 0;
   background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.call-to-action .early-list-form input[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.call-to-action .early-list-feedback {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.call-to-action .early-list-feedback.is-success {
+  color: #c9ffd6;
+}
+
+.call-to-action .early-list-feedback.is-error {
+  color: #ffd7d7;
+}
+
+@media (max-width: 575px) {
+  .call-to-action .early-list-form {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 /*--------------------------------------------------------------

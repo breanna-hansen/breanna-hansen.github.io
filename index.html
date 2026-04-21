@@ -528,14 +528,19 @@
       <div class="container">
 
         <div class="row"><!-- data-aos="zoom-in" data-aos-delay="100" -->
-          <div class="col-xl-9 text-center text-xl-start">
+          <div class="col-xl-8 text-center text-xl-start pe-xl-4">
             <h3>Be the First to Know When We Launch</h3>
-            <p>Join our early interest list — get VIP pricing and first access to custom app slots.</p>
+            <p>Join our early access list for launch updates, preregistration links, and beta invites for DotJot,
+              Celebrate Hub, LDS Temple Puzzles, and Lingua Learn.</p>
           </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSctwnlIxotWePjXVTc7Nx1OFnQLyhpSzENYIJwK_eJVcPksnw/viewform?usp=header"  target="_blank">
-              Join Early List</a>
+          <div class="col-xl-4 cta-btn-container text-center text-xl-end">
+            <form action="https://formspree.io/f/mzdyjzrq" method="POST"
+              class="early-list-form newsletter-form">
+              <input type="email" name="email" class="form-control" placeholder="Email address" required
+                aria-label="Email address">
+              <input type="submit" value="Join Early List" aria-label="Join Early List">
+            </form>
+            <div class="early-list-feedback" aria-live="polite"></div>
           </div>
         </div>
 
@@ -982,7 +987,7 @@
     </section><!-- /Faq 2 Section -->
 
     <!-- Subscribe Section -->
-    <section id="subscribe" class="subscribe section">
+    <section id="subscribe" class="subscribe section d-none">
       <div class="container"><!-- data-aos="fade-up" data-aos-delay="100" -->
         <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-lg-6">
@@ -1125,7 +1130,7 @@
     </section> --><!-- /Recent Blog Postst Section -->
 
       <!-- Contact Section -->
-      <section id="contact" class="contact section">
+      <section id="contact" class="contact section" style="background-color: #fff;">
 
         <!-- Section Title -->
         <div class="container section-title"><!-- data-aos="fade-up" -->
@@ -1347,6 +1352,58 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    (function () {
+      const earlyListForm = document.querySelector('.early-list-form');
+      if (!earlyListForm) return;
+
+      const feedback = document.querySelector('.early-list-feedback');
+      const submit = earlyListForm.querySelector('input[type="submit"]');
+
+      earlyListForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        if (feedback) {
+          feedback.textContent = '';
+          feedback.classList.remove('is-success', 'is-error');
+        }
+
+        submit.disabled = true;
+        const originalLabel = submit.value;
+        submit.value = 'Submitting...';
+
+        try {
+          const response = await fetch(earlyListForm.action, {
+            method: 'POST',
+            body: new FormData(earlyListForm),
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (!response.ok) {
+            throw new Error('Submission failed');
+          }
+
+          earlyListForm.reset();
+          if (feedback) {
+            feedback.textContent = 'Thanks! You are on the early access list.';
+            feedback.classList.add('is-success');
+          }
+        } catch (err) {
+          if (feedback) {
+            feedback.textContent = 'Unable to submit right now. Please try again in a moment.';
+            feedback.classList.add('is-error');
+          }
+          console.error('Early list submission error:', err);
+        } finally {
+          submit.disabled = false;
+          submit.value = originalLabel;
+        }
+      });
+    })();
+  </script>
 
   <!-- forminit -->
   <script>
