@@ -169,14 +169,19 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 50px;
+  max-height: 64px;
   width: auto;
   margin-right: 10px;
 }
 
 @media (max-width: 1199px) {
+  .header {
+    padding: 0;
+  }
+
   .header .logo img {
-    max-height: 48px;
+    max-height: 80px;
+    margin-right: 0;
   }
 
   .header .logo h1 {
