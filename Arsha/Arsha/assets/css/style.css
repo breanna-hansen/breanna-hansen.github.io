@@ -1767,39 +1767,37 @@ section {
   color: #37517e;
 }
 
-#footer .footer-newsletter form {
+#footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
+  margin-bottom: 15px;
   background: #fff;
-  padding: 6px 10px;
+  padding: 6px 8px;
   position: relative;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter .newsletter-form input[type=email] {
   border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
+  padding: 4px;
+  width: 100%;
+  min-width: 0;
 }
 
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+#footer .footer-newsletter .newsletter-form input[type=submit] {
   border: 0;
-  background: none;
   font-size: 16px;
+  margin: -7px -8px -7px 0;
   padding: 0 20px;
   background: #47b2e4;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter .newsletter-form input[type=submit]:hover {
   background: #209dd8;
 }
 
@@ -1905,7 +1903,7 @@ section {
 }
 
 #footer .copyright {
-  float: left;
+  text-align: center;
 }
 
 #footer .credits {

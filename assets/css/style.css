@@ -119,7 +119,7 @@ h6 {
   background: rgba(40, 58, 90, 0.9);
 }
 
-#header span, #footer span {
+#header span {
   font-size: 3em;
   font-family:'Times New Roman', Times, serif;
   font-weight: bold;
@@ -1443,8 +1443,13 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.info, .php-email-form {
+.contact .info,
+.contact .php-email-form {
   min-height: 375px;
+}
+
+#footer .footer-newsletter .php-email-form {
+  min-height: 0;
 }
 
 .contact .info {
@@ -1750,9 +1755,17 @@ section {
   margin-top: 72px;
 }
 
+body.policy-page .breadcrumbs {
+  margin-top: 96px;
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 68px;
+  }
+
+  body.policy-page .breadcrumbs {
+    margin-top: 108px;
   }
 }
 
@@ -2010,16 +2023,8 @@ section {
   background: #37517e;
 }
 
-#footer span {
-  font-size: 1.5em;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: bold;
-  letter-spacing: -5px;
-  padding-left: 20px;
-}
-
-#footer span:last-of-type {
-  letter-spacing:normal;
+body.policy-page #footer {
+  background: #fff;
 }
 
 #footer .footer-newsletter {
@@ -2030,10 +2035,6 @@ section {
   color: #444444;
 }
 
-#footer h4:first-of-type {
-  color: pink;
-} 
-
 #footer .footer-newsletter h4 {
   font-size: 24px;
   margin: 0 0 20px 0;
@@ -2043,39 +2044,49 @@ section {
   color: #37517e;
 }
 
-#footer .footer-newsletter form {
+#footer .footer-newsletter .newsletter-form {
   margin-top: 30px;
+  margin-bottom: 15px;
   background: #fff;
-  padding: 6px 10px;
+  padding: 6px 8px;
   position: relative;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: 0.3s;
 }
 
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
+#footer .footer-newsletter .newsletter-form:focus-within {
+  border-color: #47b2e4;
 }
 
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+#footer .footer-newsletter .newsletter-form input[type=email] {
   border: 0;
-  background: none;
+  padding: 4px;
+  width: 100%;
+  min-width: 0;
+  background-color: transparent;
+}
+
+#footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+  outline: none;
+}
+
+#footer .footer-newsletter .newsletter-form input[type=submit] {
+  border: 0;
   font-size: 16px;
+  margin: -7px -8px -7px 0;
   padding: 0 20px;
   background: #47b2e4;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter .newsletter-form input[type=submit]:hover {
   background: #209dd8;
 }
 
@@ -2174,6 +2185,29 @@ section {
   text-decoration: none;
 }
 
+body.policy-page #footer .footer-top .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(68, 68, 68, 0.5);
+  background: transparent;
+  color: rgba(68, 68, 68, 0.8);
+  font-size: 16px;
+  margin-right: 10px;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+}
+
+body.policy-page #footer .footer-top .social-links a:hover {
+  background: transparent;
+  color: #47b2e4;
+  border-color: #47b2e4;
+}
+
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2185,7 +2219,7 @@ section {
 }
 
 #footer .copyright {
-  float: left;
+  text-align: center;
 }
 
 #footer .credits {
@@ -2203,10 +2237,6 @@ section {
     padding-bottom: 20px;
   }
 
-  #footer span {
-    padding-left: 0;
-  }
-  
   .footer-bottom p {
     display: block;
   }
