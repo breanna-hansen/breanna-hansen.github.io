@@ -1,3 +1,60 @@
+@media (max-width: 600px) {
+  #ll-early-access-btn {
+    font-size: 16px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 600px) {
+  #dotjot-launch-updates-btn {
+    font-size: 16px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 600px) {
+  #ll-signup-btn {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+}
+/* Mobile-only button adjustments for Celebrate Hub and LDS Temple Puzzles */
+@media (max-width: 600px) {
+  #ch-contact-btn,
+  #lds-optin-btn {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  #ch-early-access-btn,
+  #lds-launch-updates-btn {
+    font-size: 16px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lds-launch-updates-btn {
+    margin-bottom: 1.5rem !important;
+  }
+}
 /**
 * Template Name: Arsha
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -3787,12 +3844,24 @@ section,
 
 /*--------------------------------------------------------------
 # Breadcrumbs
---------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
   background: #f3f5fa;
   min-height: 40px;
   margin-top: 5px;
+}
+
+/* Fix wide buttons on mobile (<=400px) */
+@media (max-width: 400px) {
+  .custom-button .btn-getstarted,
+  .btn-getstarted {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 body.policy-page .breadcrumbs {
